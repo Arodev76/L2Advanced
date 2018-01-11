@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2Advanced Full" default="build" basedir=".">
+	<description>
+		This script will build the GameServer.
+	</description>
+
+	<property name="build" location="./build/L2Advanced Full" />
+	<property name="build.bin" location="${build}/bin" />
+	<property name="build.dist" location="${build}/dist" />
+	<property name="build.dist.tools" location="${build.dist}/tools" />
+	<property name="libs" location="dist/libs" />
+	<property name="src" location="java" />
+
+	<path id="classpath">
+		<fileset dir="${libs}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<pathconvert property="manifest.libs" pathsep=" ">
+		<path refid="classpath" />
+		<mapper>
+			<chainedmapper>
+				<flattenmapper />
+				<globmapper from="*.jar" to="../libs/*.jar" />
+			</chainedmapper>
+		</mapper>
+	</pathconvert>
+	
+	<tstamp>
+		<format property="build.tstamp" pattern="yyyy.MM.dd HH:mm" />
+	</tstamp>
+	
+	<target name="clean" description="Remove the output directories.">
+			<delete dir="${build.bin}" />
+		</target>	
+	
+	<target name="init" depends="clean" description="Create the output directories.">
+			<mkdir dir="${build.bin}" />
+		</target>
+
+	<target name="dist" depends="init" description="Export the files to the output directory.">
+		<sync todir="${build.dist}" includeemptydirs="true">
+			<fileset dir="dist" />
+		</sync>
+	</target>
+
+	<target name="compile" depends="dist" description="Compile the source.">
+		<javac srcdir="${src}" classpathref="classpath" destdir="${build.bin}" encoding="UTF-8" compiler="javac1.8" debug="true" debuglevel="lines,vars,source" includeantruntime="false" source="1.8" target="1.8" />
+	</target>
+
+	<target name="jar" depends="compile" description="Create the jar files.">
+		<jar destfile="${build.dist}/libs/l2f-loginserver.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/Elemental/**" />
+				<exclude name="**/commons/**" />
+				<exclude name="**/gameserver/**" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+			</manifest>
+		</jar>
+		<jar destfile="${build.dist}/libs/l2f-gameserver..jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/commons/**"/>
+	            <exclude name="**/loginserver/**"/>
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+			</manifest>
+		</jar>
+		<jar destfile="${build.dist}/libs/l2f-commons.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/Elemental/**" />
+				<exclude name="**/loginserver/**" />
+				<exclude name="**/gameserver/**" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+			</manifest>
+		</jar>
+	</target>
+	
+	<target name="build" depends="jar" description="Create the Zip file.">
+		<delete dir="${build.bin}" />
+		<zip destfile="${build}/L2Advanced Gold Revision.zip" basedir="${build.dist}" level="9" />
+		<delete dir="${build.dist}" />
+	</target>
+</project>
