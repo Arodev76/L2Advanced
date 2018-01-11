@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2Advanced Scripts" default="build" basedir=".">
+	<description>
+		This script will build the Server Scripts.
+	</description>
+	
+	<property name="src" location="java" />
+	<property name="src.scripts" location="dist/gameserver/data" />
+	<property name="libs" location="dist/libs" />
+	<property name="build" location="../build/L2Advanced Scripts" />
+	<property name="build.classes" location="${build}/classes" />
+	<property name="build.dist" location="${build}/dist" />
+	<property name="build.dist.libs" location="${build.dist}/libs" />
+	
+	<path id="classpath">
+		<fileset dir="${libs}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="verifyRequirements" description="Checks if the necessary requirements for building L2J are fulfilled">
+		<available classname="javax.script.ScriptContext" property="JDK8.present" />
+		<fail unless="JDK8.present" message="JDK 8 or greater is required." />
+	</target>
+
+	<target name="init" depends="verifyRequirements" description="Create the output directories.">
+		<mkdir dir="${build}" />
+		<mkdir dir="${build.classes}" />
+		<mkdir dir="${build.dist}" />
+		<mkdir dir="${build.dist.libs}" />
+	</target>
+
+	<target name="compile" depends="init" description="Compile the source.">
+		<javac destdir="${build.classes}" optimize="on" debug="on" source="1.8" target="1.8" nowarn="off" includeantruntime="false" encoding="UTF-8" >
+			<src path="${src}" />
+			<src path="${src.scripts}" />
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+
+    <target name="jar" depends="compile" description="Create the jar file">
+        <jar destfile="${build}/libs/l2f-scripts.jar">
+            <fileset dir="${build.classes}" >
+                <exclude name="**/loginserver/**"/>
+            	<exclude name="**/Elemental/**"/>
+            	<exclude name="**/gameserver/**"/>
+                <exclude name="**/commons/**"/>
+            </fileset>
+        </jar>
+        <delete dir="${build.classes}" />
+		<delete dir="${build.dist}" />
+    </target>
+
+	<target name="build" depends="jar">
+        <copy todir="${build.dist.libs}">
+            <fileset dir="${src}">
+                <include name="*.jar" />
+            </fileset>
+        </copy>
+    </target>
+</project>
