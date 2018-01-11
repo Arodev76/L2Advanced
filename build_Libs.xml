@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2Advanced Libs" default="jar" basedir=".">
+	<description>
+		This script will build the GameServer, LoginServer and Commons.
+	</description>
+
+	<property name="build" location="./Build/Core Build" />
+	<property name="build.bin" location="${build}/bin" />
+	<property name="build.dist" location="${build}/dist" />
+	<property name="build.dist.game" location="${build.dist}/gameserver" />
+	<property name="build.dist.login" location="${build.dist}/loginserver" />
+	<property name="build.dist.tools" location="${build.dist}/tools" />
+	<property name="libs" location="dist/libs" />
+	<property name="src" location="java" />
+
+	<path id="classpath">
+		<fileset dir="${libs}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<target name="clean" description="Remove the output directories.">
+		<delete dir="${build}" />
+	</target>	
+	
+	<target name="init" depends="clean" description="Create the output directories.">
+		<mkdir dir="${build.bin}" />
+	</target>
+	
+	<target name="dist" depends="init" description="Export the files to the output directory.">
+		<sync todir="${build.dist}" includeemptydirs="true">
+			<fileset dir="dist" />
+		</sync>
+	</target>
+
+	<target name="compile" depends="init" description="Compile the source.">
+		<javac srcdir="${src}" classpathref="classpath" destdir="${build.bin}" encoding="UTF-8" compiler="javac1.8" debug="true" debuglevel="lines,vars,source" includeantruntime="false" source="1.8" target="1.8" />
+	</target>
+
+	<target name="jar" depends="compile" description="Create the jar files.">
+		<jar destfile="${build}/libs/l2f-loginserver.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/Elemental/**" />
+				<exclude name="**/commons/**" />
+				<exclude name="**/gameserver/**" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+			</manifest>
+		</jar>
+		<jar destfile="${build}/libs/l2f-gameserver.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/loginserver/**" />
+				<exclude name="**/commons/**" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+			</manifest>
+		</jar>
+		<jar destfile="${build}/libs/l2f-commons.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/Elemental/**" />
+				<exclude name="**/loginserver/**" />
+				<exclude name="**/gameserver/**" />
+			</fileset>
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+			</manifest>
+		</jar>
+	</target>
+
+</project>
