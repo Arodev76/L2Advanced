@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "maps.dtd">
+<list>
+	<map name="[Tully_Last_Floor]">
+		<parameter name="events" value="KoreanStyle"/>
+		<parameter name="teamsCount" value="2"/>
+		<parameter name="minAllPlayers" value="2"/>
+		<parameter name="maxAllPlayers" value="30"/>
+		
+		<objects name="teamSpawns" team="1">
+			<point x="21384" y="244888" z="11088"/>
+			<point x="21450" y="244844" z="11088"/>
+			<point x="21516" y="244800" z="11088"/>
+			<point x="21582" y="244756" z="11088"/>
+			<point x="21648" y="244712" z="11088"/>
+			<point x="21714" y="244668" z="11088"/>
+			<point x="21780" y="244624" z="11088"/>
+			<point x="21846" y="244580" z="11088"/>
+			<point x="21912" y="244536" z="11088"/>
+			<point x="21978" y="244492" z="11088"/>
+			<point x="22044" y="244448" z="11088"/>
+			<point x="22110" y="244404" z="11088"/>
+			<point x="22176" y="244360" z="11088"/>
+			<point x="22242" y="244316" z="11088"/>
+			<point x="22308" y="244272" z="11088"/>
+			<point x="22374" y="244228" z="11088"/>
+			<point x="22440" y="244184" z="11088"/>
+			<point x="22506" y="244140" z="11088"/>
+			<point x="22572" y="244096" z="11088"/>
+			<point x="22638" y="244052" z="11088"/>
+			<point x="22704" y="244008" z="11088"/>
+			<point x="22770" y="243964" z="11088"/>
+			<point x="22836" y="243920" z="11088"/>
+			<point x="22902" y="243876" z="11088"/>
+			<point x="22968" y="243832" z="11088"/>
+		</objects>
+		<objects name="teamSpawns" team="2">
+			<point x="20904" y="244088" z="11088"/>
+			<point x="20969" y="244044" z="11088"/>
+			<point x="21034" y="244000" z="11088"/>
+			<point x="21099" y="243956" z="11088"/>
+			<point x="21164" y="243912" z="11088"/>
+			<point x="21229" y="243868" z="11088"/>
+			<point x="21294" y="243824" z="11088"/>
+			<point x="21359" y="243780" z="11088"/>
+			<point x="21424" y="243736" z="11088"/>
+			<point x="21489" y="243692" z="11088"/>
+			<point x="21554" y="243648" z="11088"/>
+			<point x="21619" y="243604" z="11088"/>
+			<point x="21684" y="243560" z="11088"/>
+			<point x="21749" y="243516" z="11088"/>
+			<point x="21814" y="243472" z="11088"/>
+			<point x="21879" y="243428" z="11088"/>
+			<point x="21944" y="243384" z="11088"/>
+			<point x="22009" y="243340" z="11088"/>
+			<point x="22074" y="243296" z="11088"/>
+			<point x="22139" y="243252" z="11088"/>
+			<point x="22204" y="243208" z="11088"/>
+			<point x="22269" y="243164" z="11088"/>
+			<point x="22334" y="243120" z="11088"/>
+			<point x="22399" y="243076" z="11088"/>
+			<point x="22464" y="243032" z="11088"/>
+		</objects>
+		
+		<objects name="keyLocations">
+			<point x="21528" y="244216" z="10080"/>
+			<point x="22360" y="243624" z="10080"/>
+		</objects>
+		
+		<objects name="territory">
+			<zone name="[FC_Tully_Last_Floor]" />
+		</objects>
+	</map>
+	<map name="[Devasted_Castle]">
+		<parameter name="events" value="KoreanStyle"/>
+		<parameter name="teamsCount" value="2"/>
+		<parameter name="minAllPlayers" value="2"/>
+		<parameter name="maxAllPlayers" value="30"/>
+		
+		<objects name="teamSpawns" team="1">
+			<point x="177944" y="-15320" z="-2287"/>
+			<point x="177993" y="-15320" z="-2287"/>
+			<point x="178042" y="-15320" z="-2287"/>
+			<point x="178091" y="-15320" z="-2287"/>
+			<point x="178140" y="-15320" z="-2287"/>
+			<point x="178189" y="-15320" z="-2287"/>
+			<point x="178238" y="-15320" z="-2287"/>
+			<point x="178287" y="-15320" z="-2287"/>
+			<point x="178336" y="-15320" z="-2287"/>
+			<point x="178385" y="-15320" z="-2287"/>
+			<point x="178434" y="-15320" z="-2287"/>
+			<point x="178483" y="-15320" z="-2287"/>
+			<point x="178532" y="-15320" z="-2287"/>
+			<point x="178581" y="-15320" z="-2287"/>
+			<point x="178630" y="-15320" z="-2287"/>
+			<point x="178679" y="-15320" z="-2287"/>
+			<point x="178728" y="-15320" z="-2287"/>
+		</objects>
+		<objects name="teamSpawns" team="2">
+			<point x="177976" y="-16040" z="-2287"/>
+			<point x="178021" y="-16040" z="-2287"/>
+			<point x="178066" y="-16040" z="-2287"/>
+			<point x="178111" y="-16040" z="-2287"/>
+			<point x="178156" y="-16040" z="-2287"/>
+			<point x="178201" y="-16040" z="-2287"/>
+			<point x="178246" y="-16040" z="-2287"/>
+			<point x="178291" y="-16040" z="-2287"/>
+			<point x="178336" y="-16040" z="-2287"/>
+			<point x="178381" y="-16040" z="-2287"/>
+			<point x="178426" y="-16040" z="-2287"/>
+			<point x="178471" y="-16040" z="-2287"/>
+			<point x="178516" y="-16040" z="-2287"/>
+			<point x="178561" y="-16040" z="-2287"/>
+			<point x="178606" y="-16040" z="-2287"/>
+			<point x="178651" y="-16040" z="-2287"/>
+			<point x="178696" y="-16040" z="-2287"/>
+		</objects>
+		
+		<objects name="keyLocations">
+			<point x="177688" y="-15672" z="-2287"/>
+			<point x="179160" y="-15656" z="-2287"/>
+		</objects>
+		
+		<objects name="territory">
+			<zone name="[FC_Devasted_Castle]" />
+		</objects>
+	</map>
+	<map name="[Freya_Room]">
+		<parameter name="events" value="KoreanStyle"/>
+		<parameter name="teamsCount" value="2"/>
+		<parameter name="minAllPlayers" value="2"/>
+		<parameter name="maxAllPlayers" value="30"/>
+		
+		<objects name="teamSpawns" team="1">
+			<point x="113912" y="-115624" z="-11225"/>
+			<point x="113912" y="-115524" z="-11225"/>
+			<point x="113912" y="-115424" z="-11225"/>
+			<point x="113912" y="-115324" z="-11225"/>
+			<point x="113912" y="-115224" z="-11225"/>
+			<point x="113912" y="-115124" z="-11225"/>
+			<point x="113912" y="-115024" z="-11225"/>
+			<point x="113912" y="-114924" z="-11225"/>
+			<point x="113912" y="-114824" z="-11225"/>
+			<point x="113912" y="-114724" z="-11225"/>
+			<point x="113912" y="-114624" z="-11225"/>
+			<point x="113912" y="-114524" z="-11225"/>
+			<point x="113912" y="-114424" z="-11225"/>
+			<point x="113912" y="-114324" z="-11225"/>
+			<point x="113912" y="-114224" z="-11225"/>
+			<point x="113912" y="-114124" z="-11225"/>
+			<point x="113912" y="-114024" z="-11225"/>
+		</objects>
+		<objects name="teamSpawns" team="2">
+			<point x="115480" y="-115576" z="-11225"/>
+			<point x="115480" y="-115476" z="-11225"/>
+			<point x="115480" y="-115376" z="-11225"/>
+			<point x="115480" y="-115276" z="-11225"/>
+			<point x="115480" y="-115176" z="-11225"/>
+			<point x="115480" y="-115076" z="-11225"/>
+			<point x="115480" y="-114976" z="-11225"/>
+			<point x="115480" y="-114876" z="-11225"/>
+			<point x="115480" y="-114776" z="-11225"/>
+			<point x="115480" y="-114676" z="-11225"/>
+			<point x="115480" y="-114576" z="-11225"/>
+			<point x="115480" y="-114476" z="-11225"/>
+			<point x="115480" y="-114376" z="-11225"/>
+			<point x="115480" y="-114276" z="-11225"/>
+			<point x="115480" y="-114176" z="-11225"/>
+			<point x="115480" y="-114076" z="-11225"/>
+			<point x="115480" y="-113976" z="-11225"/>
+		</objects>
+		
+		<objects name="keyLocations">
+			<point x="114728" y="-115800" z="-11228"/>
+			<point x="114728" y="-113864" z="-11229"/>
+		</objects>
+		
+		<objects name="territory">
+			<zone name="[FC_Freya_Room]" />
+		</objects>
+	</map>
+	<map name="[Heart_of_Infinity]">
+		<parameter name="events" value="KoreanStyle"/>
+		<parameter name="teamsCount" value="2"/>
+		<parameter name="minAllPlayers" value="2"/>
+		<parameter name="maxAllPlayers" value="30"/>
+		
+		<objects name="teamSpawns" team="1">
+			<point x="-180536" y="208952" z="-15526"/>
+			<point x="-180536" y="209038" z="-15526"/>
+			<point x="-180536" y="209124" z="-15526"/>
+			<point x="-180536" y="209210" z="-15526"/>
+			<point x="-180536" y="209296" z="-15526"/>
+			<point x="-180536" y="209382" z="-15526"/>
+			<point x="-180536" y="209468" z="-15526"/>
+			<point x="-180536" y="209554" z="-15526"/>
+			<point x="-180536" y="209640" z="-15526"/>
+			<point x="-180536" y="209726" z="-15526"/>
+			<point x="-180536" y="209812" z="-15526"/>
+			<point x="-180536" y="209898" z="-15526"/>
+			<point x="-180536" y="209984" z="-15526"/>
+			<point x="-180536" y="210070" z="-15526"/>
+			<point x="-180536" y="210156" z="-15526"/>
+			<point x="-180536" y="210242" z="-15526"/>
+			<point x="-180536" y="210328" z="-15526"/>
+		</objects>
+		<objects name="teamSpawns" team="2">
+			<point x="-178552" y="208952" z="-15526"/>
+			<point x="-178552" y="209038" z="-15526"/>
+			<point x="-178552" y="209124" z="-15526"/>
+			<point x="-178552" y="209210" z="-15526"/>
+			<point x="-178552" y="209296" z="-15526"/>
+			<point x="-178552" y="209382" z="-15526"/>
+			<point x="-178552" y="209468" z="-15526"/>
+			<point x="-178552" y="209554" z="-15526"/>
+			<point x="-178552" y="209640" z="-15526"/>
+			<point x="-178552" y="209726" z="-15526"/>
+			<point x="-178552" y="209812" z="-15526"/>
+			<point x="-178552" y="209898" z="-15526"/>
+			<point x="-178552" y="209984" z="-15526"/>
+			<point x="-178552" y="210070" z="-15526"/>
+			<point x="-178552" y="210156" z="-15526"/>
+			<point x="-178552" y="210242" z="-15526"/>
+			<point x="-178552" y="210328" z="-15526"/>
+		</objects>
+		
+		<objects name="keyLocations">
+			<point x="-179528" y="208824" z="-15526"/>
+			<point x="-179544" y="210696" z="-15526"/>
+		</objects>
+		
+		<objects name="territory">
+			<zone name="[FC_Heart_Of_Infinity]" />
+		</objects>
+	</map>
+
+    <map name="[Bandit_Stronghold]">
+        <parameter name="events" value="KoreanStyle"/>
+        <parameter name="teamsCount" value="2"/>
+        <parameter name="minAllPlayers" value="2"/>
+        <parameter name="maxAllPlayers" value="30"/>
+
+        <objects name="teamSpawns" team="1">
+            <point x="81608" y="-15416" z="-1857"/>
+            <point x="81697" y="-15416" z="-1857"/>
+            <point x="81786" y="-15416" z="-1857"/>
+            <point x="81875" y="-15416" z="-1857"/>
+            <point x="81964" y="-15416" z="-1857"/>
+            <point x="82053" y="-15416" z="-1857"/>
+            <point x="82142" y="-15416" z="-1857"/>
+            <point x="82231" y="-15416" z="-1857"/>
+            <point x="82320" y="-15416" z="-1857"/>
+            <point x="82409" y="-15416" z="-1857"/>
+            <point x="82498" y="-15416" z="-1857"/>
+            <point x="82587" y="-15416" z="-1857"/>
+            <point x="82676" y="-15416" z="-1857"/>
+            <point x="82765" y="-15416" z="-1857"/>
+            <point x="82854" y="-15416" z="-1857"/>
+            <point x="82943" y="-15416" z="-1857"/>
+            <point x="83032" y="-15416" z="-1891"/>
+        </objects>
+        <objects name="teamSpawns" team="2">
+            <point x="81608" y="-16696" z="-1863"/>
+            <point x="81697" y="-16696" z="-1863"/>
+            <point x="81786" y="-16696" z="-1863"/>
+            <point x="81875" y="-16696" z="-1863"/>
+            <point x="81964" y="-16696" z="-1863"/>
+            <point x="82053" y="-16696" z="-1863"/>
+            <point x="82142" y="-16696" z="-1863"/>
+            <point x="82231" y="-16696" z="-1863"/>
+            <point x="82320" y="-15416" z="-1857"/>
+            <point x="82409" y="-16696" z="-1863"/>
+            <point x="82498" y="-16696" z="-1863"/>
+            <point x="82587" y="-16696" z="-1863"/>
+            <point x="82676" y="-16696" z="-1863"/>
+            <point x="82765" y="-16696" z="-1863"/>
+            <point x="82854" y="-16696" z="-1863"/>
+            <point x="82943" y="-16696" z="-1863"/>
+            <point x="83032" y="-16696" z="-1918"/>
+        </objects>
+
+        <objects name="keyLocations">
+            <point x="81416" y="-16104" z="-1879"/>
+            <point x="82968" y="-16120" z="-1918"/>
+        </objects>
+
+        <objects name="territory">
+            <zone name="[FC_Bandit_Stronghold]" />
+        </objects>
+    </map>
+    <map name="[Giran_Throne_Room]">
+        <parameter name="events" value="KoreanStyle"/>
+        <parameter name="teamsCount" value="2"/>
+        <parameter name="minAllPlayers" value="2"/>
+        <parameter name="maxAllPlayers" value="30"/>
+
+        <objects name="teamSpawns" team="1">
+            <point x="116792" y="144920" z="-2589"/>
+            <point x="116719" y="144920" z="-2589"/>
+            <point x="116646" y="144920" z="-2589"/>
+            <point x="116573" y="144920" z="-2589"/>
+            <point x="116500" y="144920" z="-2589"/>
+            <point x="116427" y="144920" z="-2589"/>
+            <point x="116354" y="144920" z="-2589"/>
+            <point x="116281" y="144920" z="-2589"/>
+            <point x="116208" y="144920" z="-2589"/>
+            <point x="116135" y="144920" z="-2589"/>
+            <point x="116062" y="144920" z="-2589"/>
+            <point x="115989" y="144920" z="-2589"/>
+            <point x="115916" y="144920" z="-2589"/>
+            <point x="115843" y="144920" z="-2589"/>
+            <point x="115770" y="144920" z="-2589"/>
+            <point x="115697" y="144920" z="-2589"/>
+            <point x="115624" y="144920" z="-2589"/>
+            <point x="115624" y="144920" z="-2589"/>
+        </objects>
+        <objects name="teamSpawns" team="2">
+            <point x="116792" y="145272" z="-2589"/>
+            <point x="116719" y="145272" z="-2589"/>
+            <point x="116646" y="145272" z="-2589"/>
+            <point x="116573" y="145272" z="-2589"/>
+            <point x="116500" y="145272" z="-2589"/>
+            <point x="116427" y="145272" z="-2589"/>
+            <point x="116354" y="145272" z="-2589"/>
+            <point x="116281" y="145272" z="-2589"/>
+            <point x="116208" y="145272" z="-2589"/>
+            <point x="116135" y="145272" z="-2589"/>
+            <point x="116062" y="145272" z="-2589"/>
+            <point x="115989" y="145272" z="-2589"/>
+            <point x="115916" y="145272" z="-2589"/>
+            <point x="115843" y="145272" z="-2589"/>
+            <point x="115770" y="145272" z="-2589"/>
+            <point x="115697" y="145272" z="-2589"/>
+            <point x="115624" y="145272" z="-2589"/>
+            <point x="115624" y="145272" z="-2589"/>
+        </objects>
+
+        <objects name="keyLocations">
+            <point x="116776" y="145096" z="-2588"/>
+            <point x="115832" y="145096" z="-2605"/>
+        </objects>
+
+        <objects name="territory">
+            <zone name="[FC_Giran_Throne_Room]" />
+        </objects>
+    </map>
+</list>

@@ -1,0 +1,44 @@
+<html><title>Premium Service:</title><center>
+<body>
+<img src="L2UI.SquareWhite" width=263 height=1>
+<table width=260 bgcolor="abd0bc">
+    <tr>
+        <td width="40"><button value="Main" action="bypass -h admin_admin" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></td>
+        <td width="180" align="center"><font color="99ff00">Premium Service</font></td>
+        <td width="40"><button value="Back" action="bypass -h admin_current_player" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></td>
+    </tr>
+</table>
+<img src="L2UI.SquareWhite" width=263 height=1>
+<br>
+<font color="99ff00">Editing Premium Service:</font><br>
+%char_name%<br>
+<font color="99ff00">Status Premium Service:</font><br>
+%is_premium%<br>
+<font color="99ff00">Enter rates the Premium Service<br1>(integer or floating point):</font><br1>
+<table width=280>
+    <tr>
+        <td width="52" align="center">EXP:<br1><edit var="exp" width=35 height=12 /><br1>now:<br1>%current_exp%</td>
+        <td width="52" align="center">SP:<br1><edit var="sp" width=35 height=12 /><br1>now:<br1>%current_sp%</td>
+        <td width="52" align="center">Adena:<br1><edit var="adena" width=35 height=12 /><br1>now:<br1>%current_adena%</td>
+        <td width="52" align="center">Items:<br1><edit var="items" width=35 height=12 /><br1>now:<br1>%current_items%</td>
+        <td width="52" align="center">Spoil:<br1><edit var="spoil" width=35 height=12 /><br1>now:<br1>%current_spoil%</td>
+    </tr>
+</table>
+<table width=280>
+    <tr>
+        <td width="140" align="center">Attribute Chance:<br1><edit var="attrchance" width=35 height=12 /><br1>now:<br1>%current_attrchance%</td>
+        <td width="140" align="center">Enchant Chance:<br1><edit var="enchchance" width=35 height=12 /><br1>now:<br1>%current_enchchance%</td>
+    </tr>
+</table><br>
+<img src="L2UI.SquareWhite" width=263 height=1><br>
+<table width=280>
+<tr>
+    <td width="40" align="center">Hours:</td>
+    <td width="40" align="center"><edit var="day" width=35 height=12 /></td>
+    <td width="75"><button value="ADD HOURS" action="bypass -h admin_add_day_pr %char_name% $day" width=75 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></td>
+    <td width="5">|</td>
+    <td width="40"><button value="SET" action="bypass -h admin_set_pr %char_name% $day $exp $sp $adena $items $spoil $attrchance $enchchance" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></td>
+    <td width="40"><button value="DEL" action="bypass -h admin_del_pr %char_name%" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></td>
+</tr>
+</table>
+</center></body></html>

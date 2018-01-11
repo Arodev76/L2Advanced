@@ -1,0 +1,1533 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Open Beta NPC - Sorin Alexe -->
+<!-- 9143 = Golden Apiga -->
+<!-- DELETE THIS XML AFTER BETA STOP -->
+<list>
+	<item>
+	<ingredient id="57" count="1"/> 
+	<production id="37000" count="10000"/>
+	</item>
+	
+		<item>
+	<ingredient id="57" count="1"/> 
+	<production id="5575" count="100000000"/>
+	</item>
+	
+    <item>
+	<ingredient id="57" count="1"/> 
+	<production id="57" count="100000000000"/>
+	</item>
+	
+	<item>
+	<ingredient id="57" count="1"/> 
+	<production id="9143" count="10000"/>
+	</item>
+	
+	<item>
+	<ingredient id="57" count="1"/> 
+	<production id="6673" count="10000"/>
+	</item>
+	
+	<item>
+	<ingredient id="57" count="1"/> 
+	<production id="37000" count="10000"/>
+	</item>
+	
+		<item>
+	<ingredient id="57" count="1"/> 
+	<production id="6392" count="10000"/>
+	</item>
+	
+	<item>
+	<ingredient id="57" count="1"/> 
+	<production id="6393" count="10000"/>
+	</item>
+	
+ <!-- Bogs -->
+ <item id="1">
+    <ingredient id="9143" count="1"/>
+    <production id="6622" count="100"/>
+    <production id="9626" count="100"/>
+    <production id="9625" count="100"/>
+    <production id="9627" count="100"/>
+  </item>
+ 
+ 
+  <!-- RB -->
+ <item id="1">
+    <ingredient id="9143" count="1"/>
+    <production id="6657" count="1"/>
+    <production id="6656" count="1"/>
+    <production id="21712" count="1"/>
+    <production id="6658" count="1"/>
+	<production id="10314" count="1"/>
+	<production id="6660" count="1"/>
+  </item>
+  
+  	<item>
+	<ingredient id="9143" count="1"/> 
+	<production id="14953" count="1"/>
+	</item>
+	
+	  	<item>
+	<ingredient id="9143" count="1"/> 
+	<production id="14957" count="1"/>
+	</item>
+	
+	  	<item>
+	<ingredient id="9143" count="1"/> 
+	<production id="14961" count="1"/>
+	</item>
+	
+	
+	  	<item>
+	<ingredient id="9143" count="1"/> 
+	<production id="21719" count="1"/>
+	</item>
+	
+	  	<item>
+	<ingredient id="9143" count="1"/> 
+	<production id="21720" count="1"/>
+	</item>
+	
+	  	<item>
+	<ingredient id="9143" count="1"/> 
+	<production id="21721" count="1"/>
+	</item>
+  
+  	<item>
+		<ingredient id="9143" count="1" />
+		<production id="22020" count="1" />
+	</item>
+	<item>
+		<ingredient id="9143" count="1" />
+		<production id="22018" count="1" />
+	</item>
+	<item>
+		<ingredient id="9143" count="1" />
+		<production id="22021" count="1" />
+	</item>
+	<item>
+		<ingredient id="9143" count="1" />
+		<production id="22019" count="1" />
+	</item>
+	<item>
+		<ingredient id="9143" count="1" />
+		<production id="20522" count="1" />
+	</item>
+	<item>
+		<ingredient id="9143" count="1" />
+		<production id="20521" count="1" />
+	</item>
+	
+		<item>
+		<ingredient id="9143" count="1" />
+		<production id="10210" count="1" />
+	</item>
+	
+
+ <!-- Vesper Breastplate -->
+ <item id="1">
+    <ingredient id="9143" count="1"/>
+    <production id="13432" count="1"/>
+    <production id="13438" count="1"/>
+    <production id="13439" count="1"/>
+    <production id="13137" count="1"/>
+    <production id="13440" count="1"/>
+  </item>
+
+  <!-- Vesper Leather Breastplate -->
+  <item id="2">
+    <ingredient id="9143" count="1"/>
+    <production id="13433" count="1"/>
+    <production id="13442" count="1"/>
+    <production id="13138" count="1"/>
+    <production id="13441" count="1"/>
+    <production id="13443" count="1"/>
+  </item>
+
+  <!-- Vesper Tunic -->
+  <item id="3">
+    <ingredient id="9143" count="1"/>
+    <production id="13434" count="1"/>
+    <production id="13444" count="1"/>
+    <production id="13446" count="1"/>
+    <production id="13445" count="1"/>
+    <production id="13139" count="1"/>
+  </item>
+
+  <item id="1">
+   <ingredient id="9143" count="1"/>
+    <production id="13137" count="1"/>
+  </item>
+
+  <item id="2">
+   <ingredient id="9143" count="1"/>
+    <production id="13138" count="1"/>
+  </item>
+
+  <item id="3">
+   <ingredient id="9143" count="1"/>
+    <production id="13139" count="1"/>
+  </item>
+
+  <item id="4">
+   <ingredient id="9143" count="1"/>
+    <production id="13432" count="1"/>
+  </item>
+
+  <item id="5">
+   <ingredient id="9143" count="1"/>
+    <production id="13433" count="1"/>
+  </item>
+
+  <item id="6">
+   <ingredient id="9143" count="1"/>
+    <production id="13434" count="1"/>
+  </item>
+
+  <item id="7">
+   <ingredient id="9143" count="1"/>
+    <production id="13438" count="1"/>
+  </item>
+
+  <item id="8">
+   <ingredient id="9143" count="1"/>
+    <production id="13439" count="1"/>
+  </item>
+
+  <item id="9">
+   <ingredient id="9143" count="1"/>
+    <production id="13440" count="1"/>
+  </item>
+
+  <item id="10">
+   <ingredient id="9143" count="1"/>
+    <production id="13441" count="1"/>
+  </item>
+
+  <item id="11">
+   <ingredient id="9143" count="1"/>
+    <production id="13442" count="1"/>
+  </item>
+
+  <item id="12">
+   <ingredient id="9143" count="1"/>
+    <production id="13443" count="1"/>
+  </item>
+
+  <item id="13">
+   <ingredient id="9143" count="1"/>
+    <production id="13444" count="1"/>
+  </item>
+
+  <item id="14">
+   <ingredient id="9143" count="1"/>
+    <production id="13445" count="1"/>
+  </item>
+
+  <item id="15">
+   <ingredient id="9143" count="1"/>
+    <production id="13446" count="1"/>
+  </item>
+ <item id="16">
+   <ingredient id="9143" count="1"/>
+    <production id="13140" count="1"/>
+  </item>
+
+  <item id="17">
+   <ingredient id="9143" count="1"/>
+    <production id="13141" count="1"/>
+  </item>
+
+  <item id="18">
+   <ingredient id="9143" count="1"/>
+    <production id="13142" count="1"/>
+  </item>
+
+  <item id="19">
+   <ingredient id="9143" count="1"/>
+    <production id="13435" count="1"/>
+  </item>
+
+  <item id="20">
+   <ingredient id="9143" count="1"/>
+    <production id="13436" count="1"/>
+  </item>
+
+  <item id="21">
+   <ingredient id="9143" count="1"/>
+    <production id="13437" count="1"/>
+  </item>
+
+  <item id="22">
+   <ingredient id="9143" count="1"/>
+    <production id="13448" count="1"/>
+  </item>
+
+  <item id="23">
+   <ingredient id="9143" count="1"/>
+    <production id="13451" count="1"/>
+  </item>
+
+  <item id="24">
+   <ingredient id="9143" count="1"/>
+    <production id="13454" count="1"/>
+  </item>
+
+  <item id="25">
+   <ingredient id="9143" count="1"/>
+    <production id="13449" count="1"/>
+  </item>
+
+  <item id="26">
+   <ingredient id="9143" count="1"/>
+    <production id="13452" count="1"/>
+  </item>
+
+  <item id="27">
+   <ingredient id="9143" count="1"/>
+    <production id="13455" count="1"/>
+  </item>
+
+  <item id="28">
+   <ingredient id="9143" count="1"/>
+    <production id="13450" count="1"/>
+  </item>
+
+  <item id="29">
+   <ingredient id="9143" count="1"/>
+    <production id="13453" count="1"/>
+  </item>
+
+  <item id="30">
+   <ingredient id="9143" count="1"/>
+    <production id="13456" count="1"/>
+  </item>
+  <item id="31">
+   <ingredient id="9143" count="1"/>
+    <production id="13471" count="1"/>
+  </item>
+  <item id="32">
+   <ingredient id="9143" count="1"/>
+    <production id="12813" count="1"/>
+  </item>
+  
+    <!-- Elegia Heavy -->
+  <item id="1">
+  <ingredient id="9143" count="1"/>
+    <production id="15575" count="1"/>
+    <production id="15572" count="1"/>
+	<production id="15578" count="1"/>
+	<production id="15581" count="1"/>
+	<production id="15584" count="1"/>
+
+  </item>
+
+  <!-- Elegia Leather -->
+  <item id="2">
+  <ingredient id="9143" count="1"/>
+    <production id="15576" count="1"/>
+    <production id="15573" count="1"/>
+	<production id="15579" count="1"/>
+	<production id="15582" count="1"/>
+	<production id="15585" count="1"/>
+  </item>
+
+  <!-- Elegia Robe -->
+  <item id="3">
+    <ingredient id="9143" count="1"/>
+    <production id="15577" count="1"/>
+	<production id="15574" count="1"/>
+	<production id="15580" count="1"/>
+	<production id="15583" count="1"/>
+	<production id="15586" count="1"/>
+  </item>
+
+  <!-- Elegia Shield -->
+  <item id="16">
+    <ingredient id="9143" count="1"/>
+    <production id="15587" count="1"/>
+  </item>
+
+  <!-- Elegia Sigil -->
+  <item id="17">
+  <ingredient id="9143" count="1"/>
+    <production id="15588" count="1"/>
+  </item>
+
+  <!-- Vorpal Heavy -->
+  <item id="1">
+    <ingredient id="9143" count="1"/>
+    <production id="15592" count="1"/>
+    <production id="15589" count="1"/>
+	<production id="15595" count="1"/>
+	<production id="15598" count="1"/>
+	<production id="15601" count="1"/>
+  </item>
+
+  <!-- Vorpal Leather -->
+  <item id="2">
+  <ingredient id="9143" count="1"/>
+    <production id="15593" count="1"/>
+    <production id="15590" count="1"/>
+	<production id="15596" count="1"/>
+	<production id="15599" count="1"/>
+	<production id="15602" count="1"/>
+  </item>
+
+  <!-- Vorpal Robe -->
+  <item id="3">
+  <ingredient id="9143" count="1"/>
+    <production id="15594" count="1"/>
+    <production id="15591" count="1"/>
+	<production id="15597" count="1"/>
+	<production id="15600" count="1"/>
+	<production id="15603" count="1"/>
+  </item>
+
+  <!-- Vorpal Shield -->
+  <item id="16">
+  <ingredient id="9143" count="1"/>
+    <production id="15604" count="1"/>
+  </item>
+
+  <!-- Vorpal Sigil -->
+  <item id="17">
+    <ingredient id="9143" count="1"/>
+    <production id="15605" count="1"/>
+  </item>
+
+  <!-- Moirai Heavy -->
+  <item id="1">
+  <ingredient id="9143" count="1"/>
+     <production id="15609" count="1"/>
+    <production id="15606" count="1"/>
+	<production id="15612" count="1"/>
+	<production id="15615" count="1"/>
+	<production id="15618" count="1"/>
+  </item>
+
+  <!-- Moirai Leather -->
+  <item id="2">
+    <ingredient id="9143" count="1"/>
+     <production id="15610" count="1"/>
+    <production id="15607" count="1"/>
+	<production id="15613" count="1"/>
+	<production id="15616" count="1"/>
+	<production id="15619" count="1"/>
+  </item>
+
+  <!-- Moirai Robe -->
+  <item id="3">
+    <ingredient id="9143" count="1"/>
+    <production id="15611" count="1"/>
+    <production id="15608" count="1"/>
+	<production id="15614" count="1"/>
+	<production id="15617" count="1"/>
+	<production id="15620" count="1"/>
+  </item>
+
+  <!-- Moirai Shield -->
+  <item id="16">
+    <ingredient id="9143" count="1"/>
+    <production id="15621" count="1"/>
+  </item>
+
+  <!-- Moirai Sigil -->
+  <item id="17">
+      <ingredient id="9143" count="1"/>
+    <production id="15622" count="1"/>
+  </item>
+
+   <!-- Dynasty Helmet -->
+  <item id="16">
+    <ingredient id="9143" count="1"/>
+    <production id="9422" count="1"/>
+  </item>
+
+  <!-- Dynasty Gauntlet -->
+  <item id="17">
+    <ingredient id="9143" count="1"/>
+    <production id="9423" count="1"/>
+  </item>
+
+  <!-- Dynasty Boots -->
+  <item id="18">
+    <ingredient id="9143" count="1"/>
+    <production id="9424" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Helmet -->
+  <item id="19">
+    <ingredient id="9143" count="1"/>
+    <production id="9429" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Gloves -->
+  <item id="20">
+    <ingredient id="9143" count="1"/>
+    <production id="9430" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Boots -->
+  <item id="21">
+    <ingredient id="9143" count="1"/>
+    <production id="9431" count="1"/>
+  </item>
+
+  <!-- Dynasty Circlet -->
+  <item id="22">
+    <ingredient id="9143" count="1"/>
+    <production id="9438" count="1"/>
+  </item>
+
+  <!-- Dynasty Gloves -->
+  <item id="23">
+    <ingredient id="9143" count="1"/>
+    <production id="9439" count="1"/>
+  </item>
+
+  <!-- Dynasty Shoes -->
+  <item id="24">
+    <ingredient id="9143" count="1"/>
+    <production id="9440" count="1"/>
+  </item>
+
+  <!-- Dynasty Shield -->
+  <item id="25">
+    <ingredient id="9143" count="1"/>
+    <production id="9441" count="1"/>
+  </item>
+
+  <!-- Dynasty Breast Plate -->
+  <item id="26">
+    <ingredient id="9143" count="1"/>
+    <production id="9416" count="1"/>
+  </item>
+
+  <!-- Dynasty Breast Plate - Bard -->
+  <item id="27">
+    <ingredient id="9143" count="1"/>
+    <production id="9420" count="1"/>
+  </item>
+
+  <!-- Dynasty Breast Plate - Force Master -->
+  <item id="28">
+    <ingredient id="9143" count="1"/>
+    <production id="9419" count="1"/>
+  </item>
+
+  <!-- Dynasty Breast Plate - Shield Master -->
+  <item id="29">
+    <ingredient id="9143" count="1"/>
+    <production id="9417" count="1"/>
+  </item>
+
+  <!-- Dynasty Breast Plate - Weapon Master -->
+  <item id="30">
+    <ingredient id="9143" count="1"/>
+    <production id="9418" count="1"/>
+  </item>
+
+  <!-- Dynasty Gaiter -->
+  <item id="31">
+    <ingredient id="9143" count="1"/>
+    <production id="9421" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Armor - Bow Master -->
+  <item id="32">
+    <ingredient id="9143" count="1"/>
+    <production id="9427" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Armor - Dagger Master -->
+  <item id="33">
+    <ingredient id="9143" count="1"/>
+    <production id="9426" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Armor - Weapon Master -->
+  <item id="34">
+    <ingredient id="9143" count="1"/>
+    <production id="10127" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Armor - Force Master -->
+  <item id="35">
+    <ingredient id="9143" count="1"/>
+    <production id="10126" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Armor - Enchanter -->
+  <item id="36">
+    <ingredient id="9143" count="1"/>
+    <production id="10168" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Armor -->
+  <item id="37">
+    <ingredient id="9143" count="1"/>
+    <production id="9425" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Armor - Summoner -->
+  <item id="38">
+    <ingredient id="9143" count="1"/>
+    <production id="10214" count="1"/>
+  </item>
+
+  <!-- Dynasty Leather Leggings -->
+  <item id="39">
+    <ingredient id="9143" count="1"/>
+    <production id="9428" count="1"/>
+  </item>
+
+  <!-- Dynasty Tunic -->
+  <item id="40">
+    <ingredient id="9143" count="1"/>
+    <production id="9432" count="1"/>
+  </item>
+
+  <!-- Dynasty Tunic - Summoner -->
+  <item id="41">
+    <ingredient id="9143" count="1"/>
+    <production id="9435" count="1"/>
+  </item>
+
+  <!-- Dynasty Tunic - Human Wizard -->
+  <item id="42">
+    <ingredient id="9143" count="1"/>
+    <production id="9436" count="1"/>
+  </item>
+
+  <!-- Dynasty Tunic - Healer -->
+  <item id="43">
+    <ingredient id="9143" count="1"/>
+    <production id="9433" count="1"/>
+  </item>
+
+  <!-- Dynasty Tunic - Enchanter -->
+  <item id="44">
+    <ingredient id="9143" count="1"/>
+    <production id="9434" count="1"/>
+  </item>
+
+  <!-- Dynasty Stockings -->
+  <item id="45">
+    <ingredient id="9143" count="1"/>
+    <production id="9437" count="1"/>
+  </item>
+  
+  <item id="16">
+    <ingredient id="9143" count="1"/>
+    <production id="14163" count="1"/>
+  </item>
+
+  <item id="17">
+    <ingredient id="9143" count="1"/>
+    <production id="14164" count="1"/>
+  </item>
+
+  <item id="18">
+    <ingredient id="9143" count="1"/>
+    <production id="14165" count="1"/>
+  </item>
+
+  <!-- Vorpal Necklace -->
+  <item id="1">
+   <ingredient id="9143" count="1"/>
+    <production id="15722" count="1"/>
+  </item>
+
+  <!-- Vorpal Earring -->
+  <item id="2">
+   <ingredient id="9143" count="1"/>
+    <production id="15721" count="1"/>
+  </item>
+
+  <!-- Vorpal Ring -->
+  <item id="3">
+   <ingredient id="9143" count="1"/>
+    <production id="15720" count="1"/>
+  </item>
+  <!-- Elegia Necklace -->
+  <item id="1">
+   <ingredient id="9143" count="1"/>
+    <production id="15719" count="1"/>
+  </item>
+
+  <!-- Elegia Earring -->
+  <item id="2">
+   <ingredient id="9143" count="1"/>
+    <production id="15718" count="1"/>
+  </item>
+
+  <!-- Elegia Ring -->
+  <item id="3">
+   <ingredient id="9143" count="1"/>
+    <production id="15717" count="1"/>
+  </item>
+  
+  <!-- Dynasty Earrings -->
+  <item id="2">
+    <ingredient id="9143" count="1"/>
+    <production id="9455" count="1"/>
+  </item>
+
+  <!-- Dynasty Earrings -->
+  <item id="3">
+    <ingredient id="9143" count="1"/>
+    <production id="9458" count="1"/>
+  </item>
+
+  <!-- Dynasty Earrings -->
+  <item id="4">
+    <ingredient id="9143" count="1"/>
+    <production id="9461" count="1"/>
+  </item>
+
+  <!-- Dynasty Earrings -->
+  <item id="5">
+    <ingredient id="9143" count="1"/>
+    <production id="9464" count="1"/>
+  </item>
+
+  <!-- Dynasty Earrings -->
+  <item id="6">
+    <ingredient id="9143" count="1"/>
+    <production id="9467" count="1"/>
+  </item>
+
+  <!-- Dynasty Earrings -->
+  <item id="7">
+    <ingredient id="9143" count="1"/>
+    <production id="9470" count="1"/>
+  </item>
+
+  <!-- Dynasty Earrings -->
+  <item id="8">
+    <ingredient id="9143" count="1"/>
+    <production id="9473" count="1"/>
+  </item>
+
+  <!-- Dynasty Earrings -->
+  <item id="9">
+    <ingredient id="9143" count="1"/>
+    <production id="9476" count="1"/>
+  </item>
+
+  <!-- Dynasty Earrings -->
+  <item id="10">
+    <ingredient id="9143" count="1"/>
+    <production id="9479" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="11">
+    <ingredient id="9143" count="1"/>
+    <production id="9460" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="12">
+    <ingredient id="9143" count="1"/>
+    <production id="9463" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="13">
+    <ingredient id="9143" count="1"/>
+    <production id="9466" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="14">
+    <ingredient id="9143" count="1"/>
+    <production id="9469" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="15">
+    <ingredient id="9143" count="1"/>
+    <production id="9472" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="16">
+    <ingredient id="9143" count="1"/>
+    <production id="9475" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="17">
+    <ingredient id="9143" count="1"/>
+    <production id="9478" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="18">
+    <ingredient id="9143" count="1"/>
+    <production id="9481" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="19">
+    <ingredient id="9143" count="1"/>
+    <production id="9457" count="1"/>
+  </item>
+
+  <!-- Dynasty Necklace -->
+  <item id="20">
+    <ingredient id="9143" count="1"/>
+    <production id="9459" count="1"/>
+  </item>
+
+  <!-- Dynasty Necklace -->
+  <item id="21">
+    <ingredient id="9143" count="1"/>
+    <production id="9462" count="1"/>
+  </item>
+
+  <!-- Dynasty Necklace -->
+  <item id="22">
+    <ingredient id="9143" count="1"/>
+    <production id="9456" count="1"/>
+  </item>
+
+
+ <!-- Moirai Necklace -->
+  <item id="1">
+   <ingredient id="9143" count="1"/>
+    <production id="15725" count="1"/>
+  </item>
+
+  <!-- Moirai Earring -->
+  <item id="2">
+   <ingredient id="9143" count="1"/>
+    <production id="15724" count="1"/>
+  </item>
+
+  <!-- Moirai Ring -->
+  <item id="3">
+   <ingredient id="9143" count="1"/>
+    <production id="15723" count="1"/>
+  </item>
+  
+   <!-- Dynasty Phantom - Acumen -->
+  <item id="1">
+    <ingredient id="9143" count="1"/>
+    <production id="9860" count="1"/>
+  </item>
+
+  <!-- Dynasty Phantom - Conversion -->
+  <item id="2">
+    <ingredient id="9143" count="1"/>
+    <production id="9862" count="1"/>
+  </item>
+
+  <!-- Dynasty Phantom - Mana Up -->
+  <item id="3">
+    <ingredient id="9143" count="1"/>
+    <production id="9861" count="1"/>
+  </item>
+
+  <!-- Dynasty Sword - Focus -->
+  <item id="4">
+    <ingredient id="9143" count="1"/>
+    <production id="9854" count="1"/>
+  </item>
+
+  <!-- Dynasty Sword - Health -->
+  <item id="5">
+    <ingredient id="9143" count="1"/>
+    <production id="9855" count="1"/>
+  </item>
+
+  <!-- Dynasty Sword - Light -->
+  <item id="6">
+    <ingredient id="9143" count="1"/>
+    <production id="9856" count="1"/>
+  </item>
+
+  <!-- Dynasty Rapier - Focus -->
+  <item id="7">
+    <ingredient id="9143" count="1"/>
+    <production id="9377" count="1"/>
+  </item>
+
+  <!-- Dynasty Rapier - Health -->
+  <item id="8">
+    <ingredient id="9143" count="1"/>
+    <production id="9378" count="1"/>
+  </item>
+
+  <!-- Dynasty Rapier - Light -->
+  <item id="9">
+    <ingredient id="9143" count="1"/>
+    <production id="9379" count="1"/>
+  </item>
+
+  <!-- Dynasty Halberd - Anger -->
+  <item id="10">
+    <ingredient id="9143" count="1"/>
+    <production id="9869" count="1"/>
+  </item>
+
+  <!-- Dynasty Halberd - Critical Stun -->
+  <item id="11">
+    <ingredient id="9143" count="1"/>
+    <production id="9870" count="1"/>
+  </item>
+
+  <!-- Dynasty Halberd - Light -->
+  <item id="12">
+    <ingredient id="9143" count="1"/>
+    <production id="9871" count="1"/>
+  </item>
+
+  <!-- Dynasty Bagh-Nakh - Haste -->
+  <item id="13">
+    <ingredient id="9143" count="1"/>
+    <production id="9880" count="1"/>
+  </item>
+
+  <!-- Dynasty Bagh-Nakh - Rsk. Evasion -->
+  <item id="14">
+    <ingredient id="9143" count="1"/>
+    <production id="9878" count="1"/>
+  </item>
+
+  <!-- Dynasty Bagh-Nakh - Rsk. Haste -->
+  <item id="15">
+    <ingredient id="9143" count="1"/>
+    <production id="9879" count="1"/>
+  </item>
+
+  <!-- Dynasty Knife - Critical Damage -->
+  <item id="16">
+    <ingredient id="9143" count="1"/>
+    <production id="9868" count="1"/>
+  </item>
+
+  <!-- Dynasty Knife - Evasion -->
+  <item id="17">
+    <ingredient id="9143" count="1"/>
+    <production id="9867" count="1"/>
+  </item>
+
+  <!-- Dynasty Knife - Focus -->
+  <item id="18">
+    <ingredient id="9143" count="1"/>
+    <production id="9866" count="1"/>
+  </item>
+
+  <!-- Dynasty Crossbow - Cheap Shot -->
+  <item id="19">
+    <ingredient id="9143" count="1"/>
+    <production id="9385" count="1"/>
+  </item>
+
+  <!-- Dynasty Crossbow - Focus -->
+  <item id="20">
+    <ingredient id="9143" count="1"/>
+    <production id="9387" count="1"/>
+  </item>
+
+  <!-- Dynasty Crossbow - Guidance -->
+  <item id="21">
+    <ingredient id="9143" count="1"/>
+    <production id="9386" count="1"/>
+  </item>
+
+  <!-- Dynasty Bow - Cheap Shot -->
+  <item id="22">
+    <ingredient id="9143" count="1"/>
+    <production id="9863" count="1"/>
+  </item>
+
+  <!-- Dynasty Bow - Focus -->
+  <item id="23">
+    <ingredient id="9143" count="1"/>
+    <production id="9865" count="1"/>
+  </item>
+
+  <!-- Dynasty Cudgel - Anger -->
+  <item id="24">
+    <ingredient id="9143" count="1"/>
+    <production id="9872" count="1"/>
+  </item>
+
+  <!-- Dynasty Cudgel - Health -->
+  <item id="25">
+    <ingredient id="9143" count="1"/>
+    <production id="9873" count="1"/>
+  </item>
+
+  <!-- Dynasty Cudgel - Rsk. Focus -->
+  <item id="26">
+    <ingredient id="9143" count="1"/>
+    <production id="9874" count="1"/>
+  </item>
+
+  <!-- Dynasty Blade - Focus -->
+  <item id="27">
+    <ingredient id="9143" count="1"/>
+    <production id="9857" count="1"/>
+  </item>
+
+  <!-- Dynasty Blade - Health -->
+  <item id="28">
+    <ingredient id="9143" count="1"/>
+    <production id="9858" count="1"/>
+  </item>
+
+  <!-- Dynasty Blade - Light -->
+  <item id="29">
+    <ingredient id="9143" count="1"/>
+    <production id="9859" count="1"/>
+  </item>
+
+  <!-- Dynasty Dual Sword -->
+  <item id="30">
+    <ingredient id="9143" count="1"/>
+    <production id="10004" count="1"/>
+  </item>
+
+  <!-- Dynasty Staff - Acumen -->
+  <item id="31">
+    <ingredient id="9143" count="1"/>
+    <production id="10529" count="1"/>
+  </item>
+
+  <!-- Dynasty Staff - Conversion -->
+  <item id="32">
+    <ingredient id="9143" count="1"/>
+    <production id="10528" count="1"/>
+  </item>
+
+  <!-- Dynasty Staff - Mana Up -->
+  <item id="33">
+    <ingredient id="9143" count="1"/>
+    <production id="10527" count="1"/>
+  </item>
+
+  <!-- Dynasty Crusher - Anger -->
+  <item id="34">
+    <ingredient id="9143" count="1"/>
+    <production id="10530" count="1"/>
+  </item>
+
+  <!-- Dynasty Crusher - Health -->
+  <item id="35">
+    <ingredient id="9143" count="1"/>
+    <production id="10531" count="1"/>
+  </item>
+
+  <!-- Dynasty Crusher - Rsk. Focus -->
+  <item id="36">
+    <ingredient id="9143" count="1"/>
+    <production id="10532" count="1"/>
+  </item>
+
+  <!-- Icarus Hammer - Anger -->
+  <item id="37">
+    <ingredient id="9143" count="1"/>
+    <production id="10452" count="1"/>
+  </item>
+
+  <!-- Icarus Hammer - Rsk. Focus -->
+  <item id="38">
+    <ingredient id="9143" count="1"/>
+    <production id="10454" count="1"/>
+  </item>
+
+  <!-- Icarus Hammer - Health -->
+  <item id="39">
+    <ingredient id="9143" count="1"/>
+    <production id="10453" count="1"/>
+  </item>
+
+  <!-- Icarus Hand - Focus -->
+  <item id="40">
+    <ingredient id="9143" count="1"/>
+    <production id="10459" count="1"/>
+  </item>
+
+  <!-- Icarus Hand - Haste -->
+  <item id="41">
+    <ingredient id="9143" count="1"/>
+    <production id="10460" count="1"/>
+  </item>
+
+  <!-- Icarus Hand - Rsk. Evasion -->
+  <item id="42">
+    <ingredient id="9143" count="1"/>
+    <production id="10458" count="1"/>
+  </item>
+
+  <!-- Icarus Heavy Arms - Focus -->
+  <item id="43">
+    <ingredient id="9143" count="1"/>
+    <production id="10437" count="1"/>
+  </item>
+
+  <!-- Icarus Heavy Arms - Health -->
+  <item id="44">
+    <ingredient id="9143" count="1"/>
+    <production id="10438" count="1"/>
+  </item>
+
+  <!-- Icarus Heavy Arms - Light -->
+  <item id="45">
+    <ingredient id="9143" count="1"/>
+    <production id="10439" count="1"/>
+  </item>
+
+  <!-- Icarus Sawsword Focus -->
+  <item id="46">
+    <ingredient id="9143" count="1"/>
+    <production id="10434" count="1"/>
+  </item>
+
+  <!-- Icarus Sawsword Health -->
+  <item id="47">
+    <ingredient id="9143" count="1"/>
+    <production id="10435" count="1"/>
+  </item>
+
+  <!-- Icarus Sawsword Light -->
+  <item id="48">
+    <ingredient id="9143" count="1"/>
+    <production id="10436" count="1"/>
+  </item>
+
+  <!-- Icarus Shooter - Cheap Shot -->
+  <item id="49">
+    <ingredient id="9143" count="1"/>
+    <production id="10467" count="1"/>
+  </item>
+
+  <!-- Icarus Shooter - Focus -->
+  <item id="50">
+    <ingredient id="9143" count="1"/>
+    <production id="10469" count="1"/>
+  </item>
+
+  <!-- Icarus Shooter - Guidance -->
+  <item id="51">
+    <ingredient id="9143" count="1"/>
+    <production id="10468" count="1"/>
+  </item>
+
+  <!-- Icarus Spirit - Acumen -->
+  <item id="52">
+    <ingredient id="9143" count="1"/>
+    <production id="10440" count="1"/>
+  </item>
+
+  <!-- Icarus Spirit - Conversion -->
+  <item id="53">
+    <ingredient id="9143" count="1"/>
+    <production id="10442" count="1"/>
+  </item>
+
+  <!-- Icarus Spirit - Mana Up -->
+  <item id="54">
+    <ingredient id="9143" count="1"/>
+    <production id="10441" count="1"/>
+  </item>
+
+  <!-- Icarus Spitter - Cheap Shot -->
+  <item id="55">
+    <ingredient id="9143" count="1"/>
+    <production id="10443" count="1"/>
+  </item>
+
+  <!-- Icarus Spitter - Focus -->
+  <item id="56">
+    <ingredient id="9143" count="1"/>
+    <production id="10445" count="1"/>
+  </item>
+
+  <!-- Icarus Spitter - Guidance -->
+  <item id="57">
+    <ingredient id="9143" count="1"/>
+    <production id="10444" count="1"/>
+  </item>
+
+  <!-- Icarus Stinger - Focus -->
+  <item id="58">
+    <ingredient id="9143" count="1"/>
+    <production id="10461" count="1"/>
+  </item>
+
+  <!-- Icarus Stinger - Health -->
+  <item id="59">
+    <ingredient id="9143" count="1"/>
+    <production id="10462" count="1"/>
+  </item>
+
+  <!-- Icarus Stinger - Light -->
+  <item id="60">
+    <ingredient id="9143" count="1"/>
+    <production id="10463" count="1"/>
+  </item>
+
+  <!-- Icarus Trident - Anger -->
+  <item id="61">
+    <ingredient id="9143" count="1"/>
+    <production id="10449" count="1"/>
+  </item>
+
+  <!-- Icarus Trident - Critical Stun -->
+  <item id="62">
+    <ingredient id="9143" count="1"/>
+    <production id="10450" count="1"/>
+  </item>
+
+  <!-- Icarus Trident - Light -->
+  <item id="63">
+    <ingredient id="9143" count="1"/>
+    <production id="10451" count="1"/>
+  </item>
+
+  <!-- Icarus Wingblade - Focus -->
+  <item id="64">
+    <ingredient id="9143" count="1"/>
+    <production id="10464" count="1"/>
+  </item>
+
+  <!-- Icarus Wingblade - Health -->
+  <item id="65">
+    <ingredient id="9143" count="1"/>
+    <production id="10465" count="1"/>
+  </item>
+
+  <!-- Icarus Wingblade - Light -->
+  <item id="66">
+    <ingredient id="9143" count="1"/>
+    <production id="10466" count="1"/>
+  </item>
+
+  <!-- Icarus Hall - Conversion -->
+  <item id="67">
+    <ingredient id="9143" count="1"/>
+    <production id="10456" count="1"/>
+  </item>
+
+  <!-- Icarus Disperser - Critical Damage -->
+  <item id="68">
+    <ingredient id="9143" count="1"/>
+    <production id="10448" count="1"/>
+  </item>
+
+  <!-- Icarus Disperser - Evasion -->
+  <item id="69">
+    <ingredient id="9143" count="1"/>
+    <production id="10447" count="1"/>
+  </item>
+
+  <!-- Icarus Disperser - Focus -->
+  <item id="70">
+    <ingredient id="9143" count="1"/>
+    <production id="10446" count="1"/>
+  </item>
+
+  <!-- Icarus Hall - Acumen -->
+  <item id="71">
+    <ingredient id="9143" count="1"/>
+    <production id="10457" count="1"/>
+  </item>
+
+  <!-- Icarus Hall - Mana Up -->
+  <item id="72">
+    <ingredient id="9143" count="1"/>
+    <production id="10455" count="1"/>
+  </item>
+
+  <!-- Icarus Dual Sword -->
+  <item id="73">
+    <ingredient id="9143" count="1"/>
+    <production id="10415" count="1"/>
+  </item>
+  <!-- Icarus Hall - Mana Up -->
+
+  <item id="74">
+    <ingredient id="9143" count="1"/>
+    <production id="13882" count="1"/>
+  </item>
+
+  <!-- Icarus Dual Sword -->
+  <item id="75">
+    <ingredient id="9143" count="1"/>
+    <production id="13883" count="1"/>
+  </item>
+
+<!-- Eternal Core Sword -->
+  <item id="1">
+  <ingredient id="9143" count="1"/>
+    <production id="15871" count="1"/>
+  </item>
+
+  <!-- Eternal Core Sword -->
+  <item id="2">
+  <ingredient id="9143" count="1"/>
+    <production id="15872" count="1"/>
+  </item>
+
+  <!-- Eternal Core Sword -->
+  <item id="3">
+  <ingredient id="9143" count="1"/>
+    <production id="15873" count="1"/>
+  </item>
+
+  <!-- Mamba Edge -->
+  <item id="4">
+  <ingredient id="9143" count="1"/>
+    <production id="15874" count="1"/>
+  </item>
+
+  <!-- Mamba Edge -->
+  <item id="5">
+  <ingredient id="9143" count="1"/>
+    <production id="15875" count="1"/>
+  </item>
+
+  <!-- Mamba Edge -->
+  <item id="6">
+  <ingredient id="9143" count="1"/>
+    <production id="15876" count="1"/>
+  </item>
+
+  <!-- Eversor Mace -->
+  <item id="7">
+  <ingredient id="9143" count="1"/>
+    <production id="15877" count="1"/>
+  </item>
+
+  <!-- Eversor Mace -->
+  <item id="8">
+  <ingredient id="9143" count="1"/>
+    <production id="15878" count="1"/>
+  </item>
+
+  <!-- Eversor Mace -->
+  <item id="9">
+  <ingredient id="9143" count="1"/>
+    <production id="15879" count="1"/>
+  </item>
+
+  <!-- Contristo Hammer -->
+  <item id="10">
+  <ingredient id="9143" count="1"/>
+    <production id="15880" count="1"/>
+  </item>
+
+  <!-- Contristo Hammer -->
+  <item id="11">
+  <ingredient id="9143" count="1"/>
+    <production id="15881" count="1"/>
+  </item>
+
+  <!-- Contristo Hammer -->
+  <item id="12">
+  <ingredient id="9143" count="1"/>
+    <production id="15882" count="1"/>
+  </item>
+
+  <!-- Lava Saw -->
+  <item id="13">
+  <ingredient id="9143" count="1"/>
+    <production id="15883" count="1"/>
+  </item>
+
+  <!-- Lava Saw -->
+  <item id="14">
+  <ingredient id="9143" count="1"/>
+    <production id="15884" count="1"/>
+  </item>
+
+  <!-- Lava Saw -->
+  <item id="15">
+  <ingredient id="9143" count="1"/>
+    <production id="15885" count="1"/>
+  </item>
+
+  <!-- Jade Claw -->
+  <item id="16">
+  <ingredient id="9143" count="1"/>
+    <production id="15886" count="1"/>
+  </item>
+
+  <!-- Jade Claw -->
+  <item id="17">
+  <ingredient id="9143" count="1"/>
+    <production id="15887" count="1"/>
+  </item>
+
+  <!-- Jade Claw -->
+  <item id="18">
+  <ingredient id="9143" count="1"/>
+    <production id="15888" count="1"/>
+  </item>
+
+  <!-- Demitelum -->
+  <item id="19">
+  <ingredient id="9143" count="1"/>
+    <production id="15889" count="1"/>
+  </item>
+
+  <!-- Demitelum -->
+  <item id="20">
+  <ingredient id="9143" count="1"/>
+    <production id="15890" count="1"/>
+  </item>
+
+  <!-- Demitelum -->
+  <item id="21">
+  <ingredient id="9143" count="1"/>
+    <production id="15891" count="1"/>
+  </item>
+
+  <!-- Sacredium -->
+  <item id="22">
+  <ingredient id="9143" count="1"/>
+    <production id="15892" count="1"/>
+  </item>
+
+  <!-- Sacredium -->
+  <item id="23">
+  <ingredient id="9143" count="1"/>
+    <production id="15893" count="1"/>
+  </item>
+
+  <!-- Sacredium -->
+  <item id="24">
+  <ingredient id="9143" count="1"/>
+    <production id="15894" count="1"/>
+  </item>
+
+  <!-- Cyclic Cane -->
+  <item id="25">
+  <ingredient id="9143" count="1"/>
+    <production id="15895" count="1"/>
+  </item>
+
+  <!-- Cyclic Cane -->
+  <item id="26">
+  <ingredient id="9143" count="1"/>
+    <production id="15896" count="1"/>
+  </item>
+
+  <!-- Cyclic Cane -->
+  <item id="27">
+  <ingredient id="9143" count="1"/>
+    <production id="15897" count="1"/>
+  </item>
+
+  <!-- Archangel Sword -->
+  <item id="28">
+  <ingredient id="9143" count="1"/>
+    <production id="15898" count="1"/>
+  </item>
+
+  <!-- Archangel Sword -->
+  <item id="29">
+  <ingredient id="9143" count="1"/>
+    <production id="15899" count="1"/>
+  </item>
+
+  <!-- Archangel Sword -->
+  <item id="30">
+  <ingredient id="9143" count="1"/>
+    <production id="15900" count="1"/>
+  </item>
+
+  <!-- Recurve Thorne Bow -->
+  <item id="31">
+  <ingredient id="9143" count="1"/>
+    <production id="15901" count="1"/>
+  </item>
+
+  <!-- Recurve Thorne Bow -->
+  <item id="32">
+  <ingredient id="9143" count="1"/>
+    <production id="15902" count="1"/>
+  </item>
+
+  <!-- Recurve Thorne Bow -->
+  <item id="33">
+  <ingredient id="9143" count="1"/>
+    <production id="15903" count="1"/>
+  </item>
+
+  <!-- Heavenstare Rapier -->
+  <item id="34">
+  <ingredient id="9143" count="1"/>
+    <production id="15904" count="1"/>
+  </item>
+
+  <!-- Heavenstare Rapier -->
+  <item id="35">
+  <ingredient id="9143" count="1"/>
+    <production id="15905" count="1"/>
+  </item>
+
+  <!-- Heavenstare Rapier -->
+  <item id="36">
+  <ingredient id="9143" count="1"/>
+    <production id="15906" count="1"/>
+  </item>
+
+  <!-- Pyseal Blade -->
+  <item id="37">
+  <ingredient id="9143" count="1"/>
+    <production id="15907" count="1"/>
+  </item>
+
+  <!-- Pyseal Blade -->
+  <item id="38">
+  <ingredient id="9143" count="1"/>
+     <production id="15908" count="1"/>
+  </item>
+
+  <!-- Pyseal Blade -->
+  <item id="39">
+  <ingredient id="9143" count="1"/>
+    <production id="15909" count="1"/>
+  </item>
+
+  <!-- Thorne Crossbow -->
+  <item id="40">
+  <ingredient id="9143" count="1"/>
+    <production id="15910" count="1"/>
+  </item>
+
+  <!-- Thorne Crossbow -->
+  <item id="41">
+  <ingredient id="9143" count="1"/>
+    <production id="15911" count="1"/>
+  </item>
+
+  <!-- Thorne Crossbow -->
+  <item id="42">
+  <ingredient id="9143" count="1"/>
+    <production id="15912" count="1"/>
+  </item>
+
+  <!-- Eternal Core Dual Sword -->
+  <item id="43">
+  <ingredient id="9143" count="1"/>
+    <production id="16158" count="1"/>
+  </item>
+
+  <!-- Mamba Edge Dual Daggers -->
+  <item id="44">
+  <ingredient id="9143" count="1"/>
+    <production id="16156" count="1"/>
+  </item>
+
+  
+  </list>

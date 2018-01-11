@@ -1,0 +1,271 @@
+<html noscrollbar>
+<title>Drop Calculator</title>
+<body><br>
+<table width=755>
+	<tr>
+		<center><td>
+			<table border=0 cellpadding=0 cellspacing=0 width=769 height=492 background="l2ui_ct1.Windows_DF_TooltipBG">
+				<tr>
+					<td valign="top" align="center">
+						<table width=755 height=415 border=0>
+							<tr>
+								<td align=center width=755><br><br><br><br><br>
+									<center>
+									<table border=0 cellpadding=0 cellspacing=0>
+										<tr>
+											<td>
+												<img src="L2UI_CT1.Frame_DF_Hor_Large_Left" width="32" height="44">
+											</td>
+											<td>
+												<img src="L2UI_CT1.Frame_DF_Hor_Large_Tile" width="243" height="44">
+											</td>
+											<td align=center width="128" height="44" background=L2UI_CT1.Frame_DF_Hor_Large_Center>
+												<br><br>
+												<font name="hs12">Database Engine</font>
+											</td>
+											<td>
+												<img src="L2UI_CT1.Frame_DF_Hor_Large_Tile" width="243" height="44">
+											</td>
+											<td>
+												<img src="L2UI_CT1.Frame_DF_Hor_Large_Right" width="32" height="44">
+											</td>
+										</tr>
+									</table>
+									<table width=680 height=350 background="L2UI_CT1.Windows_DF_Large_Bg_Darker">
+										<tr>
+											<td align=center>
+												<br><br>
+												<table border=0 width=580 height=50>
+													<tr>
+														<td valign="top" align="center">
+															<table border=0 width=600 height=46 cellspacing=4 cellpadding=3 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+																<tr>
+																	<td width=40 align=right valign=top>
+																		<img src="icon.skill0319" width=32 height=32>
+																	</td>
+																	<td width=460 align=left valign=top>
+																		<font color="LEVEL">Drop Calculator</font><br1> <font color=00FF00 name="__SYSTEMWORLDFONT">Shows exact informations about Drop and Spoil List of all Monsters</font>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table width=480 height=94>
+													<tr>
+														<td valign="top" align="center">
+															<table border=0 width=298 height=90 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+																<tr>
+																	<td valign=top align=center>
+																		<table width=250>
+																			<tr>
+																				<td valign="top" align="center"><font color="FFCC00" name="CreditTextNormal">Look for Item</font></td>
+																			</tr>
+																		</table>
+																		<table width=250 height=25>
+																			<tr>
+																				<td valign="top" align="center"><edit var="item" type="text" width=160 length=20></td>
+																			</tr>
+																		</table>
+																		<table width=250>
+																			<tr>
+																				<td valign="top" align="center"><button value="Search" action="bypass _dropItemsByName_ $item _1" width=80 height=28 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td valign="top" align="center">
+															<table border=0 width=297 height=90 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+																<tr>
+																	<td valign=top align=center>
+																		<table width=250>
+																			<tr>
+																				<td valign="top" align="center"><font color="FF3333" name="CreditTextNormal">Look for Monster</font></td>
+																			</tr>
+																		</table>
+																		<table width=250 height=25>
+																			<tr>
+																				<td valign="top" align="center"><edit var="monster" type="text" width=160 length=20></td>
+																			</tr>
+																		</table>
+																		<table width=250>
+																			<tr>
+																				<td valign="top" align="center"><button value="Search" action="bypass _dropMonstersByName_ $monster _1" width=80 height=28 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table width=580 height=50>
+													<tr>
+														<td valign="top" align="center">
+															<table border=0 width=600 height=46 cellspacing=4 cellpadding=3 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+																<tr>
+																	<td width=40 align=right valign=top>
+																		<img src="icon.skill0219" width=32 height=32>
+																	</td>
+																	<td width=460 align=left valign=top>
+																		<font color="FF6600" name="__SYSTEMWORLDFONT">How is work?</font><br1> <font color="00FF00" name="__SYSTEMWORLDFONT">Simply enter the name of an item or a monster in the box and click button </font><font color="BCB3A9" name="__SYSTEMWORLDFONT">'search'</font>.
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table width=580 height=94>
+													<tr>
+														<td valign="top" align="center">
+															<table border=0 width=298 height=90 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+																<tr>
+																	<td valign=top align=center>
+																		<table width=250>
+																			<tr>
+																				<td valign="top" align="center"><font color="669933" name="CreditTextNormal">Popular requests for items</font></td>
+																			</tr>
+																		</table>
+																		<table border=0 width=280 height=25>
+																			<tr>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.etc_adena_i00">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropItemsByName_ Adena _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Adena
+																				</td>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.armor_t94_u_i00">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropItemsByName_ Vesper _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Vesper
+																				</td>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.armor_t94_u_i03">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropItemsByName_ Vorpal _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Vorpal
+																				</td>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.etc_water_crystal_i00">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropItemsByName_ Crystal _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Crystal
+																				</td>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.energy_condenser_i01">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropItemsByName_ Enhancement _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Noble
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td valign="top" align="center">
+															<table border=0 width=297 height=90 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+																<tr>
+																	<td valign=top align=center>
+																		<table width=250>
+																			<tr>
+																				<td valign="top" align="center"><font color="669933" name="CreditTextNormal">Popular requests for Monster</font></td>
+																			</tr>
+																		</table>
+																		<table width=280 height=25>
+																			<tr>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.skill4295">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropMonstersByName_ Knoriks _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Knoriks
+																				</td>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.skill4298">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropMonstersByName_ Karik _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Karik
+																				</td>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.skill4299">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropMonstersByName_ Drakos _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Drakos
+																				</td>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.skill4292">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropMonstersByName_ Tyrannosaurus _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					T-Rex
+																				</td>
+																				<td width=60 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="Icon.skill4291">
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<button action="bypass _dropMonstersByName_ Chest _1" width=34 height=34 back="L2UI_CT1.ItemWindow_DF_Frame_Down" fore="L2UI_CT1.ItemWindow_DF_Frame"/>
+																							</td>
+																						</tr>
+																					</table><br>
+																					Chest
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									</center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td></center>
+	</tr>
+</table>
+</body></html>

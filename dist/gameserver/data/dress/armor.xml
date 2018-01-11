@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "armor.dtd">
+<list>
+	<dress id="1" name="Apella Combat Armor Set">
+		<set chest="14583" legs="-1" gloves="14584" feet="14585" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="2" name="Apella Combat Clothes Set">
+		<set chest="14586" legs="-1" gloves="14587" feet="14588" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="3" name="Apella Combat Overcoat Set">
+		<set chest="14589" legs="-1" gloves="14590" feet="14591" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="4" name="School Uniform A">
+		<set chest="57000" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="5" name="School Uniform B">
+		<set chest="57001" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="6" name="Christmas Uniform">
+		<set chest="57002" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="7" name="Dark Knight Uniform">
+		<set chest="57003" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="8" name="Quipao Uniform">
+		<set chest="57004" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="9" name="Navi Uniform">
+		<set chest="57005" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="10" name="Pirat Uniform">
+		<set chest="57007" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="11" name="Musketeer Uniform">
+		<set chest="57008" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="12" name="Magician Uniform">
+		<set chest="57009" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="13" name="Magician Upgraded Uniform">
+		<set chest="57010" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="14" name="Ninja Suit">
+		<set chest="57011" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="15" name="Dark Assasin Suit">
+		<set chest="57012" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+	<dress id="16" name="Formal Wear">
+		<set chest="6408" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="20" />
+	</dress>
+</list>

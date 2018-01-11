@@ -1,0 +1,94 @@
+<html noscrollbar>
+	<head>
+		<title>Welcome</title>
+	</head>
+<body>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=353 background="l2ui_ct1.Windows_DF_TooltipBG">
+<tr>
+	<td align=center>
+	<br>
+		<table width=280>
+			<tr>
+				<td align=center valign=center>
+					<img src="L2UI.squaregray" width="285" height="1"/> 
+						<font name="hs12" color="3399FF">L2Advanced</font>
+					<img src="L2UI.squaregray" width="285" height="1"/>
+				</td>
+			</tr>
+		</table>
+	<br>
+	</td>
+</tr>
+<tr>
+	<td align=center>
+	<br>
+		<table width=280>
+			<tr>
+				<td align=center>
+					<font color=00bb99>
+						Write your current Security Password !<br>
+					</font>
+				</td>
+			</tr>
+		</table>
+		<table width=280>
+			<tr>
+				<td align=center width=100>
+					<font color=686764>Current Password:</font>
+				</td>
+				<td align=center>
+					<multiedit var="pass1" width=150 height=25 />
+				</td>
+			</tr>
+		</table>
+	<br>
+		<table width=280>
+			<tr>
+				<td align=center>
+					<font color=00bb99>
+						Write a new Security Password !<br1>
+						Requests : <font line=UNDERLINE color=FF9900>Uppecase</font>, <font line=UNDERLINE color=FF9900>Number </font>and a <font line=UNDERLINE color=FF9900>Symbol</font> . <br>
+						Example : <font color=FF9900>#High5</font> <br> (<font color=FF9900>#</font> - Symbol <font color=FF9900>H</font> - Uppercase and <font color=FF9900>5</font> - Number)
+					</font>
+				</td>
+			</tr>
+		</table>
+		<table width=280>
+			<tr>
+				<td align=center width=100>
+					<font color=686764>New Password:</font>
+				</td>
+				<td align=center>
+					<multiedit var="pass2" width=150 height=25 />
+				</td>
+			</tr>
+		</table>
+		<table width=280>
+			<tr>
+				<td align=center>
+					<br><br>
+					<button value="Change My Password" action="bypass -h user_control secondaryPassC | $pass1 | $pass2" width=250 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+					<button value="Back" action="bypass -h user_control back" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/><br>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td align=center>
+	<br>
+		<table width=280>
+			<tr>
+				<td align=center valign=center>
+					<img src="L2UI.squaregray" width="285" height="1"/> 
+						<font name="hs12" color="3399FF">L2Advanced</font>
+					<img src="L2UI.squaregray" width="285" height="1"/>
+				</td>
+			</tr>
+		</table>
+	<br>
+	</td>
+</tr>
+</table>
+</body>
+</html>

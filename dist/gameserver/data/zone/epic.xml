@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "zone.dtd">
+<list>
+	<zone name="[baium_epic]" type="epic">
+		<set name="epicPvP" val="true" />
+		<polygon>
+			<coords loc="116616 17576 10032 10232"/>
+			<coords loc="117064 16552 10032 10232"/>
+			<coords loc="117032 15592 10032 10232"/>
+			<coords loc="116664 14632 10032 10232"/>
+			<coords loc="116024 14008 10032 10232"/>
+			<coords loc="115128 13640 10032 10232"/>
+			<coords loc="114136 13624 10032 10232"/>
+			<coords loc="113256 13992 10032 10232"/>
+			<coords loc="112568 14664 10032 10232"/>
+			<coords loc="112216 15592 10032 10232"/>
+			<coords loc="112216 16552 10032 10232"/>
+			<coords loc="112600 17432 10032 10232"/>
+			<coords loc="113288 18120 10032 10232"/>
+			<coords loc="114152 18472 10032 10232"/>
+			<coords loc="115144 18488 10032 10232"/>
+			<coords loc="116152 18024 10032 10232"/>
+		</polygon>
+	</zone>
+	<zone name="[antharas_epic]" type="epic">
+		<set name="epicPvP" val="true" />
+        <polygon>
+            <coords loc="173000 111000 -9000 -7000"/>
+            <coords loc="173000 118600 -9000 -7000"/>
+            <coords loc="187500 118600 -9000 -7000"/>
+            <coords loc="187500 111000 -9000 -7000"/>
+        </polygon>
+	</zone>
+	<zone name="[valakas_epic]" type="epic">
+		<set name="epicPvP" val="true" />
+		<polygon>
+			<coords loc="206088 -107576 -2572 5428"/>
+			<coords loc="208104 -104424 -2572 5428"/>
+			<coords loc="212840 -103640 -2572 5428"/>
+			<coords loc="218680 -105016 -2572 5428"/>
+			<coords loc="224008 -113320 -2572 5428"/>
+			<coords loc="223209 -117763 -2572 5428"/>
+			<coords loc="218489 -124769 -2572 5428"/>
+			<coords loc="213681 -125520 -2572 5428"/>
+			<coords loc="206515 -123778 -2572 5428"/>
+			<coords loc="202753 -120443 -2572 5428"/>
+			<coords loc="200331 -113198 -2572 5428"/>
+			<coords loc="203374 -107683 -2572 5428"/>
+		</polygon>
+	</zone>
+	<zone name="[sailren_epic]" type="epic">
+		<polygon>
+			<coords loc="26248 -7992 -5000 5000"/>
+			<coords loc="27608 -8472 -5000 5000"/>
+			<coords loc="29416 -7960 -5000 5000"/>
+			<coords loc="29864 -6792 -5000 5000"/>
+			<coords loc="29267 -4969 -5000 5000"/>
+			<coords loc="26150 -4353 -5000 5000"/>
+			<coords loc="25382 -5565 -5000 5000"/>
+			<coords loc="25890 -7743 -5000 5000"/>
+		</polygon>
+	</zone>
+	<zone name="[baylor_epic]" type="epic">
+		<polygon>
+			<coords loc="154488 143672 -15000 -12000"/>
+			<coords loc="153576 143768 -15000 -12000"/>
+			<coords loc="152664 143688 -15000 -12000"/>
+			<coords loc="151736 142072 -15000 -12000"/>
+			<coords loc="151960 141176 -15000 -12000"/>
+			<coords loc="153576 140232 -15000 -12000"/>
+			<coords loc="154504 140488 -15000 -12000"/>
+			<coords loc="155208 141192 -15000 -12000"/>
+			<coords loc="155416 142056 -15000 -12000"/>
+		</polygon>
+	</zone>
+	<zone name="[queen_ant_epic]" type="epic">
+		<set name="epicPvP" val="true" />
+		<set name="levelLimit" val="48"/>
+		<set name="maxClassLevelAllowed" val="3"/>
+		<set name="tele" val="-25464 172424 -4203"/>
+		<polygon>
+			<coords loc="-23176 185080 -6000 -5500"/>
+			<coords loc="-20104 185080 -6000 -5500"/>
+			<coords loc="-20104 177928 -6000 -5500"/>
+			<coords loc="-23176 177928 -6000 -5500"/>
+		</polygon>
+	</zone>
+	<zone name="[fix_exploit_beleth]" type="epic">
+		<set name="epicPvP" val="true" />
+		<set name="levelLimit" val="1"/>
+		<set name="maxClassLevelAllowed" val="3"/>
+		<set name="tele" val="147480 26968 -2208"/>
+		<polygon>
+			<coords loc="0 196608 -4510 -3810"/>
+			<coords loc="32768 196608 -4510 -3810"/>
+			<coords loc="32768 229376 -4510 -3810"/>
+			<coords loc="0 229376 -4510 -3810"/>
+		</polygon>
+	</zone>
+	<zone name="[fix_exploit_beleth_2]" type="epic">
+		<set name="epicPvP" val="true" />
+		<set name="levelLimit" val="1"/>
+		<set name="maxClassLevelAllowed" val="3"/>
+		<set name="tele" val="147480 26968 -2208"/>
+		<polygon>
+			<coords loc="-65536 229376 -4400 -3810"/>
+			<coords loc="-32768 229376 -4400 -3810"/>
+			<coords loc="-32768 262144 -4400 -3810"/>
+			<coords loc="-65536 262144 -4400 -3810"/>
+		</polygon>
+	</zone>
+	<zone name="[FourSepulchers1]" type="epic">
+		<polygon>
+			<coords loc="181241 -86443 -7225 -6621"/>
+			<coords loc="181241 -84575 -7225 -6621"/>
+			<coords loc="192134 -84575 -7225 -6621"/>
+			<coords loc="192134 -86443 -7225 -6621"/>
+		</polygon>
+	</zone>
+	<zone name="[FourSepulchers2]" type="epic">
+		<polygon>
+			<coords loc="179551 -89844 -7225 -6621"/>
+			<coords loc="179551 -88042 -7225 -6621"/>
+			<coords loc="190342 -88042 -7225 -6621"/>
+			<coords loc="190342 -89844 -7225 -6621"/>
+		</polygon>
+	</zone>
+	<zone name="[FourSepulchers3]" type="epic">
+		<polygon>
+			<coords loc="172354 -86630 -7225 -6621"/>
+			<coords loc="172354 -75565 -7225 -6621"/>
+			<coords loc="174073 -75565 -7225 -6621"/>
+			<coords loc="174073 -86630 -7225 -6621"/>
+		</polygon>
+	</zone>
+	<zone name="[FourSepulchers4]" type="epic">
+		<polygon>
+			<coords loc="174697 -82707 -7225 -6621"/>
+			<coords loc="174697 -71885 -7225 -6621"/>
+			<coords loc="176500 -71885 -7225 -6621"/>
+			<coords loc="176500 -82707 -7225 -6621"/>
+		</polygon>
+	</zone>
+	<zone name="[Frintezza]" type="epic">
+		<polygon>
+			<coords loc="-85512 -151432"/>
+			<coords loc="-85512 -155384"/>
+			<coords loc="-89848 -155384"/>
+			<coords loc="-89848 -151432"/>
+		</polygon>
+	</zone>
+	<zone name="[LastImperialTomb]" type="epic">
+		<polygon>
+			<coords loc="172176 -74106 -5300 -3600"/>
+			<coords loc="172176 -90033 -5300 -3600"/>
+			<coords loc="175984 -90033 -5300 -3600"/>
+			<coords loc="175984 -74106 -5300 -3600"/>
+		</polygon>
+	</zone>
+	<zone name="[vanhalter_epic]" type="epic">
+		<polygon>
+			<coords loc="-11512 -44168"/>
+			<coords loc="-11512 -57336"/>
+			<coords loc="-21384 -57336"/>
+			<coords loc="-21384 -44168"/>
+		</polygon>
+	</zone>
+	<zone name="[beleth_epic]" type="epic">
+		<polygon>
+			<coords loc="11214 205578 -10412 -5112"/>
+			<coords loc="20607 205578 -10412 -5112"/>
+			<coords loc="20648 220271 -10412 -5112"/>
+			<coords loc="11172 220271 -10412 -5112"/>
+		</polygon>
+	</zone>
+	<zone name="[freya_normal_epic]" type="epic">
+		<polygon>
+			<coords loc="112898 -117865 -11249 -10749"/>
+			<coords loc="116554 -117891 -11249 -10749"/>
+			<coords loc="116597 -112972 -11249 -10749"/>
+			<coords loc="112920 -112997 -11249 -10749"/>
+		</polygon>
+	</zone>
+	<zone name="[tiat_room_epic]" type="epic">
+		<polygon>
+			<coords loc="-252328 210376 -12300 -10200"/>
+			<coords loc="-252376 206072 -12300 -10200"/>
+			<coords loc="-248552 205944 -12300 -10200"/>
+			<coords loc="-248456 210344 -12300 -10200"/>
+		</polygon>
+	</zone>
+	<zone name="[freya_landing_room_epic]" type="epic">
+		<polygon>
+			<coords loc="114456 -112632 -11249 -10749"/>
+			<coords loc="114456 -112008 -11249 -10749"/>
+			<coords loc="113592 -112008 -11249 -10749"/>
+			<coords loc="113592 -112632 -11249 -10749"/>
+		</polygon>
+	</zone>
+	<zone name="[pvp_zone_toi]" type="epic">
+	<set name="epicPvP" val="true" />
+		<polygon>
+			<coords loc="120324 16042 8000 11000"/>
+			<coords loc="117967 10107 8000 11000"/>
+			<coords loc="108843 11462 8000 11000"/>
+			<coords loc="108774 20132 8000 11000"/>
+			<coords loc="115734 22851 8000 11000"/>
+			<coords loc="120398 19805 8000 11000"/>
+		</polygon>
+	</zone>
+	<zone name="[zaken_day_epic]" type="epic" >
+		<polygon>
+			<coords loc="53256 217080 -3550 -2800" />
+			<coords loc="57336 217080 -3550 -2800" />
+			<coords loc="57336 221176 -3550 -2800" />
+			<coords loc="53256 221176 -3550 -2800" />
+		</polygon>
+	</zone>
+</list>
+

@@ -1,0 +1,185 @@
+package services.community;
+
+import l2f.gameserver.Config;
+import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.handler.bbs.CommunityBoardManager;
+import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.network.serverpackets.ShowBoard;
+import l2f.gameserver.scripts.ScriptFile;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.StringTokenizer;
+
+public class CommunityRanking implements ScriptFile, ICommunityBoardHandler
+{
+	private static final Logger _log = LoggerFactory.getLogger(CommunityRanking.class);
+	private static final long SECONDS_TO_REFRESH = 300L;
+	
+	@Override
+	public void onLoad()
+	{
+		if (Config.COMMUNITYBOARD_ENABLED)
+		{
+			_log.info("CommunityBoard: Region service loaded.");
+			CommunityBoardManager.getInstance().registerHandler(this);
+		}
+	}
+
+	@Override
+	public void onReload()
+	{
+		if (Config.COMMUNITYBOARD_ENABLED)
+			CommunityBoardManager.getInstance().removeHandler(this);
+	}
+
+	private long lastCheck;
+	private final RankingInfo[][] latestRankings;
+	
+	public CommunityRanking()
+	{
+		lastCheck = 0L;
+		latestRankings = new RankingInfo[3][10];
+	}
+
+	@Override
+	public String[] getBypassCommands()
+	{
+		return new String[] { "_bbsloc", "_bbsranking" };
+	}
+	
+	private enum RankingType {
+		PVP("pvpkills"),
+		PK("pkkills"),
+		ONLINE("onlinetime");
+		
+		public final String db;
+		RankingType(String db)
+		{
+			this.db = db;
+		}
+	}
+
+	@Override
+	public void onBypassCommand(Player player, String bypass)
+	{
+		StringTokenizer st = new StringTokenizer(bypass, "_");
+		String cmd = st.nextToken();
+		player.setSessionVar("add_fav", null);
+		if ("bbsloc".equals(cmd) || "bbsranking".equals(cmd))
+		{
+			sendRankingPage(player);
+		}
+	}
+	
+	private void sendRankingPage(Player player)
+	{
+		if (lastCheck < System.currentTimeMillis())
+		{
+			lastCheck = System.currentTimeMillis() + SECONDS_TO_REFRESH*1000L;
+			updateRankingStats();
+		}
+
+		String html = HtmCache.getInstance().getNotNull(Config.BBS_HOME_DIR + "bbs_region_list.htm", player);
+		html = getRankingReplacements(html);
+		ShowBoard.separateAndSend(html, player);
+	}
+	
+	private String getRankingReplacements(String html)
+	{
+		String newHtml = html;
+		for (RankingType type : RankingType.values())
+		{
+			for (int i = 0 ; i < 10 ; i++)
+			{
+				RankingInfo info = latestRankings[type.ordinal()][i];
+				String typePos = Integer.toString(type.ordinal()+1)+Integer.toString(i+1);//13 for Third Place of PvP Stats
+				newHtml = newHtml.replace("%nick"  + typePos + '%', info.getPlayerName());
+				newHtml = newHtml.replace("%score" + typePos + '%', info.getScore());
+			}
+		}
+		
+		return newHtml;
+	}
+
+	private void updateRankingStats()
+	{
+		try (Connection con = DatabaseFactory.getInstance().getConnection())
+		{
+			for (RankingType type : RankingType.values())
+			{
+				updateRanking(type, con);
+			}
+		}
+		catch (SQLException e)
+		{
+			_log.error("Error in updateRankingStats, CommunityRanking:", e);
+		}
+	}
+	
+	private void updateRanking(RankingType type, Connection con) throws SQLException
+	{
+		try (PreparedStatement statement = con.prepareStatement("SELECT * FROM characters ORDER BY " + type.db + " DESC LIMIT 10"))
+		{
+			try (ResultSet rset = statement.executeQuery())
+			{
+				int index = 0;
+				while (rset.next())
+				{
+					String playerName = rset.getString("char_name");
+					int score = rset.getInt(type.db);
+					String realScore = type == RankingType.ONLINE ? getOnlineTime(score) : String.valueOf(score);
+					RankingInfo info = new RankingInfo(playerName, realScore);
+
+					latestRankings[type.ordinal()][index] = info;
+					index++;
+				}
+			}
+		}
+	}
+
+	private static final double DAY_IN_MILLIS = 86400.0;
+	private static String getOnlineTime(int score)
+	{
+		return (int)Math.ceil((double)score/DAY_IN_MILLIS) + " Days";
+	}
+	
+	private static class RankingInfo
+	{
+		private final String playerName;
+		private final String score;
+		
+		private RankingInfo(String playerName, String score)
+		{
+			this.playerName = playerName;
+			this.score = score;
+		}
+		
+		private CharSequence getPlayerName()
+		{
+			return playerName;
+		}
+		
+		private String getScore()
+		{
+			return score;
+		}
+	}
+
+	@Override
+	public void onShutdown()
+	{
+		
+	}
+	
+	@Override
+	public void onWriteCommand(Player player, String bypass, String arg1, String arg2, String arg3, String arg4, String arg5)
+	{
+	}
+}
