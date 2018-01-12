@@ -1,5 +1,8 @@
 package ai;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -7,8 +10,6 @@ import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.instances.NpcInstance;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * AI мобов Guard of the Grave на Crypts Of Disgrace.<br>

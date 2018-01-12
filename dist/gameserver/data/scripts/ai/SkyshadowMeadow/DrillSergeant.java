@@ -1,8 +1,8 @@
 package ai.SkyshadowMeadow;
 
-import org.apache.commons.lang3.ArrayUtils;
-
 import java.util.List;
+
+import org.apache.commons.lang3.ArrayUtils;
 
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.Fighter;

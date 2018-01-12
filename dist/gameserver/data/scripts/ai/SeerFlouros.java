@@ -1,5 +1,8 @@
 package ai;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Mystic;
 import l2f.gameserver.data.xml.holder.NpcHolder;
@@ -7,8 +10,6 @@ import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.SimpleSpawner;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * AI Seer Flouros.<br>

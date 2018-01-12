@@ -1,21 +1,26 @@
 package actions;
 
+import java.text.NumberFormat;
+import java.util.List;
+import java.util.Locale;
+
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.base.Experience;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.instances.RaidBossInstance;
-import l2f.gameserver.model.reward.*;
+import l2f.gameserver.model.reward.CalculateRewardChances;
+import l2f.gameserver.model.reward.RewardData;
+import l2f.gameserver.model.reward.RewardGroup;
+import l2f.gameserver.model.reward.RewardList;
+import l2f.gameserver.model.reward.RewardType;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.stats.Stats;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.HtmlUtils;
-import org.apache.commons.lang3.StringUtils;
 import services.community.CommunityDropCalculator;
-
-import java.text.NumberFormat;
-import java.util.List;
-import java.util.Locale;
 
 public abstract class RewardListInfo
 {

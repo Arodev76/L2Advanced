@@ -4,15 +4,14 @@ import java.util.Map;
 
 import l2f.gameserver.Config;
 import l2f.gameserver.ai.Fighter;
+import l2f.gameserver.model.AggroList.HateInfo;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Playable;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.PlayerGroup;
-import l2f.gameserver.model.AggroList.HateInfo;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.utils.NpcUtils;
-
 import quests._456_DontKnowDontCare;
 
 /**

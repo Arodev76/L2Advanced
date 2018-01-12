@@ -1,5 +1,10 @@
 package ai;
 
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.DefaultAI;
@@ -10,10 +15,6 @@ import l2f.gameserver.model.SimpleSpawner;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.List;
 
 /**
  * AI 18811	Guardian of the Altar - Спавит рандомных охранников если атакован

@@ -8,12 +8,12 @@ import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.network.serverpackets.SocialAction;
 import l2f.gameserver.network.serverpackets.components.NpcString;
+import l2f.gameserver.scripts.Functions;
 
 /**
- * @author SirGipsySorin
+ * @author Grivesky
   * - AI for mobs Sel Mahum Recruit (22,780) and Sel Mahum Recruit (22,782) and Sel Mahum Soldier (22,783) and Sel Mahum Recruit (22,784) and Sel Mahum Soldier (22,785).
   * - If the attack swears to chat with a 20% chance, Agrita main mob.
   * - AI is tested and works.

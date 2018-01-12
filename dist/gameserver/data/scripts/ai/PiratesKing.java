@@ -1,5 +1,6 @@
 package ai;
 
+import events.PiratesTreasure.PiratesTreasure;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.ThreadPoolManager;
@@ -8,7 +9,6 @@ import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Playable;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.utils.ItemFunctions;
-import events.PiratesTreasure.PiratesTreasure;
 
 /**
  * @author Aro

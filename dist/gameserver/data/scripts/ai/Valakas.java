@@ -3,6 +3,7 @@ package ai;
 import java.util.HashMap;
 import java.util.Map;
 
+import bosses.ValakasManager;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -15,7 +16,6 @@ import l2f.gameserver.model.Zone;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.tables.SkillTable;
-import bosses.ValakasManager;
 
 /**
  * @author pchayka

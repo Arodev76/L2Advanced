@@ -2,13 +2,13 @@ package ai.custom;
 
 import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.model.instances.NpcInstance;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class SSQAnakimMinion extends Fighter
 {

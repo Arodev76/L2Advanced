@@ -1,5 +1,11 @@
 package ai.groups;
 
+import java.util.List;
+
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Fighter;
@@ -9,11 +15,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.tables.SkillTable;
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.List;
 
 public class ForgeoftheGods extends Fighter
 {

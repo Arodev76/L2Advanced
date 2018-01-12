@@ -1,6 +1,7 @@
 package ai.dragonvalley;
 
 import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.ai.Fighter;

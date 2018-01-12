@@ -1,13 +1,14 @@
 package ai;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Mystic;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.SimpleSpawner;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.utils.PositionUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /** Author: Bonux
 	При ударе монстра спавнятся 2 х Tanta Lizardman Scout и они агрятся на игрока.

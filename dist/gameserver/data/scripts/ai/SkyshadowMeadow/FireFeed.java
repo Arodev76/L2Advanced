@@ -1,5 +1,7 @@
 package ai.SkyshadowMeadow;
 
+import org.apache.log4j.Logger;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.DefaultAI;
 import l2f.gameserver.model.Creature;
@@ -7,10 +9,8 @@ import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.tables.SkillTable;
 
-import org.apache.log4j.Logger;
-
 /**
- * @author SirGipsySorin
+ * @author Grivesky
   * - AI for Fire Feed (18933).
   * - Uninstall it in 10-60 seconds.
   * - AI is tested and works.

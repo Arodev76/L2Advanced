@@ -2,6 +2,8 @@ package ai;
 
 import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Fighter;
@@ -13,8 +15,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
 import l2f.gameserver.tables.SkillTable;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * AI Seduced Investigator для Rim Pailaka

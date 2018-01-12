@@ -1,5 +1,7 @@
 package ai.custom;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.DefaultAI;
 import l2f.gameserver.model.Creature;
@@ -9,7 +11,6 @@ import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.scripts.Functions;
-import org.apache.commons.lang3.ArrayUtils;
 
 public class FreyaEventAI extends DefaultAI
 {

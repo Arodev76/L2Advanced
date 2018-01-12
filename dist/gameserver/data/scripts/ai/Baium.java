@@ -1,17 +1,26 @@
 package ai;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.util.HashMap;
 import java.util.Map;
 
+import bosses.BaiumManager;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.DefaultAI;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.instances.NpcInstance;
-import bosses.BaiumManager;
 
+/**
+ * AI boss Baium.<br>
+ * - Instantly kills the first striker<br>
+ * - For the attack uses only the skills according to the following scheme:
+ * <li>Standard set: 80% - 4127, 10% - 4128, 10% - 4129
+ * <li>if xn < 50%: 70% - 4127, 10% - 4128, 10% - 4129, 10% - 4131
+ * <li>if xn < 25%: 60% - 4127, 10% - 4128, 10% - 4129, 10% - 4131, 10% - 4130
+ *
+ * @author SYS
+ */
 public class Baium extends DefaultAI
 {
 	private boolean _firstTimeAttacked = true;

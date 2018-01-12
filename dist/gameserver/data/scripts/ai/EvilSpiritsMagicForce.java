@@ -1,6 +1,7 @@
 package ai;
 
 import java.util.Collection;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Fighter;

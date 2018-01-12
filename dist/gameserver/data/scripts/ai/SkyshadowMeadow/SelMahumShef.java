@@ -9,12 +9,12 @@ import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;
 import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.network.serverpackets.components.NpcString;
+import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 
 /**
- * @author SirGipsySorin
+ * @author Aro
   * - AI for Sel Mahum Shef (18,908).
   * - Is next, skill buff the player, the player resaya HP.
   * - AI is tested and works.

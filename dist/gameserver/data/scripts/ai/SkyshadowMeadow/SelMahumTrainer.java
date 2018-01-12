@@ -10,12 +10,12 @@ import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.network.serverpackets.SocialAction;
 import l2f.gameserver.network.serverpackets.components.NpcString;
+import l2f.gameserver.scripts.Functions;
 
 /**
- * @author SirGipsySorin
+ * @author Grivesky
   * - AI for mobs Sel Mahum Drill Sergeant (22775), Sel Mahum Training Officer (22,776), Sel Mahum Drill Sergeant (22778).
   * - If the attack swears to chat, Agrita Coaches mobs.
   * - He uses a random Social Networks and makes Coaches mobs to repeat after him three times.

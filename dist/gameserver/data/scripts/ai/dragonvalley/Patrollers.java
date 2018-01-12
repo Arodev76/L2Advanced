@@ -7,8 +7,8 @@ import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.geodata.GeoEngine;
 import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.instances.MonsterInstance;
+import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
 

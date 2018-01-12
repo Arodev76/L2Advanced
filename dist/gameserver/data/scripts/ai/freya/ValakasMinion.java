@@ -1,10 +1,10 @@
 package ai.freya;
 
+import bosses.ValakasManager;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Mystic;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
-import bosses.ValakasManager;
 
 public class ValakasMinion extends Mystic
 {

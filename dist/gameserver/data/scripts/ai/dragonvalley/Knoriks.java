@@ -1,8 +1,8 @@
 package ai.dragonvalley;
 
 import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Creature;
+import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;

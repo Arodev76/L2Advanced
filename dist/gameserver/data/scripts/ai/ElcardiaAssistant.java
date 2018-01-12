@@ -1,8 +1,15 @@
 package ai;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ScheduledFuture;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.ai.DefaultAI;
@@ -16,16 +23,10 @@ import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import quests._10293_SevenSignsForbiddenBook;
 import quests._10294_SevenSignsMonasteryofSilence;
 import quests._10295_SevenSignsSolinasTomb;
 import quests._10296_SevenSignsPoweroftheSeal;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ScheduledFuture;
 
 public class ElcardiaAssistant extends DefaultAI
 {

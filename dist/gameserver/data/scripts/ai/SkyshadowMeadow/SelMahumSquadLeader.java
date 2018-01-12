@@ -6,15 +6,15 @@ import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.network.serverpackets.ChangeWaitType;
 import l2f.gameserver.network.serverpackets.SocialAction;
 import l2f.gameserver.network.serverpackets.components.NpcString;
+import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
 
 /**
- * @author SirGipsySorin
+ * @author Grivesky
   * - AI for mobs Sel Mahum Squad Leader (22 786, 22 787, 22 788).
   * - When the fire appears Katel (18,933) nptsy sbigayutsya then sit down and put food on the character's head.
   * - When the fire comes on (18927), is a 30% chance that they will want to sleep and come running to him, and sleep will appear above his head.

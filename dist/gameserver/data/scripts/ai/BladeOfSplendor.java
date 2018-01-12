@@ -1,5 +1,8 @@
 package ai;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.data.xml.holder.NpcHolder;
@@ -8,8 +11,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.scripts.Functions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 public class BladeOfSplendor extends RndTeleportFighter

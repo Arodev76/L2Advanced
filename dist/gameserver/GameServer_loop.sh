@@ -1,9 +1,7 @@
 #!/bin/bash
 
-while :;
-do
-java -Xbootclasspath/p:./jsr167.jar -server -Dfile.encoding=UTF-8 -Xmx15G -XX:PermSize=3G -XX:+UseConcMarkSweepGC -XX:+UseTLAB -XX:+CMSIncrementalMode -XX:+CMSIncrementalPacing -cp config:./lameguard-1.9.5.jar:./../libs/* com.lameguard.LameGuard l2f.gameserver.GameServer > log/stdout.log 2>&1
-        [ $? -ne 2 ] && break
-        sleep 30;
+while :; do
+	java -server -Xmn512m -Xms2096m -Xmx2096m -Xnoclassgc -XX:+AggressiveOpts -XX:TargetSurvivorRatio=90 -XX:SurvivorRatio=16 -XX:MaxTenuringThreshold=12 -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:+CMSIncrementalPacing -XX:+CMSParallelRemarkEnabled -XX:UseSSE=3 -XX:+UseFastAccessorMethods -Dfile.encoding=UTF-8 -cp config:./../libs/* l2f.gameserver.GameServer > log/stdout.log 2>&1
+	[ $? -ne 2 ] && break
+	sleep 10
 done
-

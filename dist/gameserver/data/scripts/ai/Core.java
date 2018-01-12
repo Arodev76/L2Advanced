@@ -1,5 +1,8 @@
 package ai;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -11,9 +14,6 @@ import l2f.gameserver.network.serverpackets.PlaySound;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * AI боса Core:
