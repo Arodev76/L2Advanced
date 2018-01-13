@@ -1,5 +1,7 @@
 package events.Christmas;
 
+import java.io.File;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.DefaultAI;
 import l2f.gameserver.model.Player;
@@ -10,8 +12,6 @@ import l2f.gameserver.skills.SkillsEngine;
 import l2f.gameserver.skills.effects.EffectTemplate;
 import l2f.gameserver.stats.Stats;
 import l2f.gameserver.stats.funcs.FuncTemplate;
-
-import java.io.File;
 
 public class ctreeAI extends DefaultAI
 {

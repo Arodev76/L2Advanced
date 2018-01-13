@@ -1,5 +1,6 @@
 package ai.residences.fortress.siege;
 
+import ai.residences.SiegeGuardFighter;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.entity.events.impl.FortressSiegeEvent;
@@ -10,7 +11,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 import npc.model.residences.SiegeGuardInstance;
-import ai.residences.SiegeGuardFighter;
 
 /**
  * @author VISTALL

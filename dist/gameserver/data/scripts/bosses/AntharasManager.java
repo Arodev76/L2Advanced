@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import bosses.EpicBossState.State;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Config;
@@ -30,11 +34,6 @@ import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.ReflectionUtils;
 import l2f.gameserver.utils.TimeUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import bosses.EpicBossState.State;
 
 public class AntharasManager extends Functions implements ScriptFile, OnDeathListener
 {

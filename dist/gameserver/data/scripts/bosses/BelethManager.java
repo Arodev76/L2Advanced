@@ -6,6 +6,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
@@ -24,9 +27,6 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class BelethManager extends Functions implements ScriptFile
 {

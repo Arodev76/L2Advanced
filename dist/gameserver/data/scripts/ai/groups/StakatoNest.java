@@ -1,5 +1,9 @@
 package ai.groups;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -7,7 +11,12 @@ import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.model.*;
+import l2f.gameserver.model.Creature;
+import l2f.gameserver.model.MinionList;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.model.Skill;
+import l2f.gameserver.model.World;
+import l2f.gameserver.model.Zone;
 import l2f.gameserver.model.instances.MinionInstance;
 import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.model.instances.NpcInstance;
@@ -15,9 +24,6 @@ import l2f.gameserver.network.serverpackets.MagicSkillUse;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.PositionUtils;
 import l2f.gameserver.utils.ReflectionUtils;
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class StakatoNest extends Fighter
 {

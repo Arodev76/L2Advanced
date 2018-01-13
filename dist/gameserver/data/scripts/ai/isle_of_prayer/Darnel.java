@@ -3,6 +3,8 @@ package ai.isle_of_prayer;
 import java.util.HashMap;
 import java.util.Map;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
+import instances.CrystalCaverns;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -10,14 +12,12 @@ import l2f.gameserver.ai.DefaultAI;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.idfactory.IdFactory;
 import l2f.gameserver.model.Creature;
+import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.instances.TrapInstance;
 import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.model.Skill;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
-import gnu.trove.map.hash.TIntObjectHashMap;
-import instances.CrystalCaverns;
 
 /**
  * @author Diamond

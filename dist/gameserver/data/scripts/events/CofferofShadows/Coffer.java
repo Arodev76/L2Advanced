@@ -1,5 +1,9 @@
 package events.CofferofShadows;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
 import handler.items.ScriptItemHandler;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Config;
@@ -12,10 +16,6 @@ import l2f.gameserver.model.reward.RewardList;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.ItemFunctions;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
 
 
 public class Coffer extends ScriptItemHandler implements ScriptFile

@@ -1,5 +1,8 @@
 package events.CustomDropItems;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Config;
 import l2f.gameserver.listener.actor.OnDeathListener;
@@ -9,9 +12,6 @@ import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CustomDropItems extends Functions implements ScriptFile, OnDeathListener
 {

@@ -1,5 +1,6 @@
 package ai.residences.clanhall;
 
+import ai.residences.SiegeGuardMystic;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Skill;
@@ -12,7 +13,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.PositionUtils;
 import l2f.gameserver.utils.ReflectionUtils;
-import ai.residences.SiegeGuardMystic;
 
 /**
  * @author VISTALL

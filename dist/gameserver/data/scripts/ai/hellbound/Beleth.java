@@ -1,5 +1,6 @@
 package ai.hellbound;
 
+import bosses.BelethManager;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.Mystic;
@@ -7,7 +8,6 @@ import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Playable;
 import l2f.gameserver.model.World;
 import l2f.gameserver.model.instances.NpcInstance;
-import bosses.BelethManager;
 
 public class Beleth extends Mystic
 {

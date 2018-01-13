@@ -1,5 +1,7 @@
 package ai.seedofdestruction;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -13,12 +15,10 @@ import l2f.gameserver.model.World;
 import l2f.gameserver.model.entity.Reflection;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.network.serverpackets.ExStartScenePlayer;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
+import l2f.gameserver.network.serverpackets.ExStartScenePlayer;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class Tiat extends Fighter
 {

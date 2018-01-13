@@ -1,5 +1,9 @@
 package ai.residences.dominion;
 
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+
+import ai.residences.SiegeGuardFighter;
 import l2f.gameserver.Config;
 import l2f.gameserver.instancemanager.QuestManager;
 import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
@@ -13,12 +17,7 @@ import l2f.gameserver.model.quest.Quest;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2f.gameserver.network.serverpackets.components.NpcString;
-
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-
 import quests._732_ProtectTheReligiousAssociationLeader;
-import ai.residences.SiegeGuardFighter;
 
 /**
  * @author VISTALL

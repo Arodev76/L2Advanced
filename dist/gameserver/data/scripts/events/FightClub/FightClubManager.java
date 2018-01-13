@@ -1,8 +1,16 @@
 package events.FightClub;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Announcements;
 import l2f.gameserver.Config;
+import l2f.gameserver.Announcements;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.listener.actor.player.OnPlayerExitListener;
 import l2f.gameserver.listener.actor.player.OnTeleportListener;
@@ -26,14 +34,6 @@ import l2f.gameserver.skills.AbnormalEffect;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
 import npc.model.events.FightClubManagerInstance.Rate;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class FightClubManager extends Functions implements ScriptFile, OnPlayerExitListener, OnTeleportListener
 {

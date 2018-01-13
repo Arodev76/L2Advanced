@@ -1,5 +1,8 @@
 package ai.hellbound;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.Fighter;
@@ -9,8 +12,6 @@ import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.SimpleSpawner;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class DarionChallenger extends Fighter
 {

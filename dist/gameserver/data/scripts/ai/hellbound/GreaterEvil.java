@@ -1,7 +1,6 @@
 package ai.hellbound;
 
 import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.utils.Location;
 

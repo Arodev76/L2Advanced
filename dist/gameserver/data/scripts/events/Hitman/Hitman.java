@@ -7,8 +7,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import l2f.gameserver.Announcements;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
+import l2f.gameserver.Announcements;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.listener.actor.OnDeathListener;
 import l2f.gameserver.listener.actor.player.OnPlayerExitListener;
@@ -21,13 +25,11 @@ import l2f.gameserver.model.base.TeamType;
 import l2f.gameserver.model.entity.olympiad.Olympiad;
 import l2f.gameserver.model.instances.GuardInstance;
 import l2f.gameserver.model.instances.MonsterInstance;
+import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.utils.ItemFunctions;
 import npc.model.events.HitmanInstance.Order;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Created with Eclipse + JRebel

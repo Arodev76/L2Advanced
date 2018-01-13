@@ -1,5 +1,14 @@
 package bosses;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ScheduledFuture;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import bosses.FourSepulchersSpawn.GateKeeper;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
@@ -18,14 +27,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
 import npc.model.SepulcherNpcInstance;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.ScheduledFuture;
 
 public class FourSepulchersManager extends Functions implements ScriptFile, OnDeathListener
 {

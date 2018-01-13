@@ -1,5 +1,8 @@
 package ai.residences.dominion;
 
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.ai.DefaultAI;
 import l2f.gameserver.instancemanager.QuestManager;
@@ -14,10 +17,6 @@ import l2f.gameserver.model.quest.Quest;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2f.gameserver.network.serverpackets.components.NpcString;
-
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-
 import quests._730_ProtectTheSuppliesSafe;
 
 /**

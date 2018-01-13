@@ -1,5 +1,12 @@
 package events.FightClub;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ScheduledFuture;
+
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
@@ -19,13 +26,6 @@ import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ScheduledFuture;
 
 @SuppressWarnings("unused")
 public class FightClubArena extends FightClubManager implements OnDeathListener, OnPlayerExitListener

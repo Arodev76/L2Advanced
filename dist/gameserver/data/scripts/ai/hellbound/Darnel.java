@@ -1,10 +1,9 @@
 package ai.hellbound;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.util.HashMap;
 import java.util.Map;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;

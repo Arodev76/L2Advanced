@@ -5,9 +5,6 @@ import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.instancemanager.naia.NaiaCoreManager;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.utils.ReflectionUtils;
 
 public class MutatedElpy extends Fighter
 {

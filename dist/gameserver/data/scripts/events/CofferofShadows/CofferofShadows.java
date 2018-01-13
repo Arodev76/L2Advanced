@@ -1,7 +1,13 @@
 package events.CofferofShadows;
 
-import l2f.gameserver.Announcements;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
+import l2f.gameserver.Announcements;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
 import l2f.gameserver.model.Player;
@@ -12,11 +18,6 @@ import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Util;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.List;
 
 // Эвент Coffer of Shadows
 public class CofferofShadows extends Functions implements ScriptFile, OnPlayerEnterListener

@@ -1,5 +1,17 @@
 package bosses;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.data.xml.holder.NpcHolder;
@@ -15,17 +27,6 @@ import l2f.gameserver.utils.ReflectionUtils;
 import npc.model.SepulcherMonsterInstance;
 import npc.model.SepulcherNpcInstance;
 import npc.model.SepulcherRaidInstance;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class FourSepulchersSpawn extends Functions implements ScriptFile
 {
