@@ -2,6 +2,8 @@ package npc.model.events;
 
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.commons.collections.CollectionUtils;
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.model.Party;
@@ -10,8 +12,6 @@ import l2f.gameserver.model.entity.events.EventType;
 import l2f.gameserver.model.entity.events.impl.UndergroundColiseumEvent;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author VISTALL

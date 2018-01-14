@@ -1,5 +1,7 @@
 package npc.model.residences.clanhall;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.residence.Castle;
@@ -11,8 +13,6 @@ import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * @author VISTALL

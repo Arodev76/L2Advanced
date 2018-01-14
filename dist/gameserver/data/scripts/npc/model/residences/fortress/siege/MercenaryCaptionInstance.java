@@ -2,6 +2,7 @@ package npc.model.residences.fortress.siege;
 
 import java.util.List;
 
+import ai.residences.fortress.siege.MercenaryCaption;
 import l2f.gameserver.listener.actor.OnDeathListener;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.entity.events.impl.FortressSiegeEvent;
@@ -12,7 +13,6 @@ import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
-import ai.residences.fortress.siege.MercenaryCaption;
 
 /**
  * @author VISTALL

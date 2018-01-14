@@ -1,5 +1,10 @@
 package npc.model;
 
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+import org.napile.primitive.sets.IntSet;
+import org.napile.primitive.sets.impl.HashIntSet;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -10,12 +15,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-import org.napile.primitive.sets.IntSet;
-import org.napile.primitive.sets.impl.HashIntSet;
-
 
 /**
  * Открывает двери 5го этажа Tully Workshop

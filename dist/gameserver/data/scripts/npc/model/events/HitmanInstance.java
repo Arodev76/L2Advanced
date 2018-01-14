@@ -1,9 +1,12 @@
 package npc.model.events;
 
-import events.Hitman.Hitman;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.StringTokenizer;
+
+import org.apache.commons.lang3.StringUtils;
+
+import events.Hitman.Hitman;
 import l2f.gameserver.Config;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.Player;
@@ -11,7 +14,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author Aro

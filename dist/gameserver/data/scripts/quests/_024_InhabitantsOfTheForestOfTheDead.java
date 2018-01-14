@@ -1,12 +1,12 @@
 package quests;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.quest.Quest;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.scripts.ScriptFile;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class _024_InhabitantsOfTheForestOfTheDead extends Quest implements ScriptFile
 {

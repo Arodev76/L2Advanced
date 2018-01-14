@@ -1,11 +1,10 @@
 package npc.model;
 
-import instances.Frintezza;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import instances.Frintezza;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Party;
 import l2f.gameserver.model.Player;

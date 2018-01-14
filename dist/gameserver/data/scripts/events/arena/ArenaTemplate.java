@@ -1,5 +1,9 @@
 package events.arena;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
 import l2f.gameserver.model.Creature;
@@ -7,10 +11,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Zone;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Location;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 
 public abstract class ArenaTemplate extends Functions

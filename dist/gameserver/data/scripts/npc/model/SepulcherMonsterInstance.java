@@ -2,6 +2,7 @@ package npc.model;
 
 import java.util.concurrent.Future;
 
+import bosses.FourSepulchersSpawn;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Creature;
@@ -13,7 +14,6 @@ import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-import bosses.FourSepulchersSpawn;
 
 public class SepulcherMonsterInstance extends MonsterInstance
 {

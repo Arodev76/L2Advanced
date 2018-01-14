@@ -1,5 +1,9 @@
 package npc.model.residences.clanhall;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Future;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -16,10 +20,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Future;
 
 /**
  * @author VISTALL

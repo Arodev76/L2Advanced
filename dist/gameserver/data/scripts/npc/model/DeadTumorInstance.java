@@ -1,5 +1,7 @@
 package npc.model;
 
+import java.util.List;
+
 import instances.HeartInfinityAttack;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.model.Player;
@@ -9,8 +11,6 @@ import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-
-import java.util.List;
 
 /**
  * @author pchayka

@@ -2,6 +2,9 @@ package handler.items;
 
 import java.util.List;
 
+import org.napile.primitive.sets.IntSet;
+import org.napile.primitive.sets.impl.HashIntSet;
+
 import l2f.gameserver.data.xml.holder.EnchantItemHolder;
 import l2f.gameserver.handler.items.ItemHandler;
 import l2f.gameserver.model.Playable;
@@ -11,9 +14,6 @@ import l2f.gameserver.model.instances.WarehouseInstance;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.serverpackets.ChooseInventoryItem;
 import l2f.gameserver.scripts.ScriptFile;
-
-import org.napile.primitive.sets.IntSet;
-import org.napile.primitive.sets.impl.HashIntSet;
 
 public class EnchantScrolls extends ScriptItemHandler implements ScriptFile
 {

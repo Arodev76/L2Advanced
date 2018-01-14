@@ -2,6 +2,8 @@ package npc.model.events;
 
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.model.GameObjectsStorage;
@@ -11,8 +13,6 @@ import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class FightClubManagerInstance extends NpcInstance
 {

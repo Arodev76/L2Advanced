@@ -1,12 +1,13 @@
 package instances;
 
-import events.GvG.GvG;
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ScheduledFuture;
 
+import org.apache.commons.lang3.mutable.MutableInt;
+
+import events.GvG.GvG;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.lang.reference.HardReferences;
 import l2f.commons.threading.RunnableImpl;
@@ -34,8 +35,6 @@ import l2f.gameserver.network.serverpackets.Revive;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.mutable.MutableInt;
 
 /**
  * Инстанс для GvG турнира

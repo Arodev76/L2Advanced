@@ -1,5 +1,7 @@
 package quests;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.model.Player;
@@ -12,8 +14,6 @@ import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.scripts.ScriptFile;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public abstract class Dominion_KillSpecialUnitQuest extends Quest implements ScriptFile
 {

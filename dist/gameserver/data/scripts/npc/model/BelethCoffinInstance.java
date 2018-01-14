@@ -2,6 +2,7 @@ package npc.model;
 
 import java.util.StringTokenizer;
 
+import bosses.BelethManager;
 import l2f.gameserver.model.CommandChannel;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
@@ -9,7 +10,6 @@ import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
-import bosses.BelethManager;
 
 /**
  * @author pchayka

@@ -5,6 +5,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.StringTokenizer;
 
+import bosses.BaiumManager;
+import bosses.EpicBossState;
+import bosses.EpicBossState.State;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.handler.admincommands.AdminCommandHandler;
@@ -15,9 +18,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.templates.npc.NpcTemplate;
-import bosses.BaiumManager;
-import bosses.EpicBossState;
-import bosses.EpicBossState.State;
 
 public class AdminEpic implements IAdminCommandHandler, ScriptFile
 {

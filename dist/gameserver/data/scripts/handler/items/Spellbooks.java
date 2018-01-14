@@ -1,9 +1,8 @@
 package handler.items;
 
-import gnu.trove.set.hash.TIntHashSet;
-
 import java.util.List;
 
+import gnu.trove.set.hash.TIntHashSet;
 import l2f.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2f.gameserver.handler.items.ItemHandler;
 import l2f.gameserver.model.Playable;
@@ -11,13 +10,12 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.SkillLearn;
 import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.network.serverpackets.MagicSkillUse;
 import l2f.gameserver.network.serverpackets.SkillList;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
+import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.tables.SkillTable;
-import handler.items.ScriptItemHandler;
 
 /**
  * @author VISTALL

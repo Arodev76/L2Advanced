@@ -1,10 +1,10 @@
 package npc.model;
 
+import bosses.ValakasManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-import bosses.ValakasManager;
 
 /**
  * @author pchayka

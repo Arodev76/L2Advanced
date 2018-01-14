@@ -1,5 +1,9 @@
 package npc.model;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
@@ -8,10 +12,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Util;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 public class PriestOfBlessingInstance extends NpcInstance
 {

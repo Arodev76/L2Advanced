@@ -1,5 +1,7 @@
 package quests;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
 import l2f.gameserver.listener.event.OnStartStopListener;
@@ -12,8 +14,6 @@ import l2f.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.quest.Quest;
 import l2f.gameserver.model.quest.QuestState;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * @author pchayka

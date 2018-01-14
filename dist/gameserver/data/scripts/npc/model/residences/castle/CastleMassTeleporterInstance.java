@@ -1,5 +1,9 @@
 package npc.model.residences.castle;
 
+import java.util.List;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Player;
@@ -12,10 +16,6 @@ import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-
-import java.util.List;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author VISTALL

@@ -1,5 +1,8 @@
 package npc.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Zone;
@@ -10,9 +13,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author VISTALL

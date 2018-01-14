@@ -1,5 +1,7 @@
 package npc.model.events;
 
+import java.util.concurrent.ScheduledFuture;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -14,10 +16,8 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
 
-import java.util.concurrent.ScheduledFuture;
-
 /**
- * @author SirGipsySorin
+ * @author Grivesky
  */
 @SuppressWarnings("serial")
 public class SumielInstance extends NpcInstance

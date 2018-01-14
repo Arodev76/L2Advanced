@@ -1,5 +1,8 @@
 package npc.model;
 
+import java.util.List;
+import java.util.StringTokenizer;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.MultiSellHolder;
@@ -14,9 +17,6 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
 import l2f.gameserver.utils.Util;
-
-import java.util.List;
-import java.util.StringTokenizer;
 
 /**
  * @author pchayka

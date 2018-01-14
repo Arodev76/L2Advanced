@@ -1,5 +1,7 @@
 package handler.items;
 
+import java.util.List;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.handler.items.ItemHandler;
@@ -12,8 +14,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.tables.FishTable;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Util;
-
-import java.util.List;
 
 public class FishItem extends ScriptItemHandler implements ScriptFile
 {

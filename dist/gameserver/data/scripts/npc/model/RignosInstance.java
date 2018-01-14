@@ -1,5 +1,7 @@
 package npc.model;
 
+import java.util.concurrent.Future;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Player;
@@ -8,8 +10,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-
-import java.util.concurrent.Future;
 
 public class RignosInstance extends NpcInstance
 {

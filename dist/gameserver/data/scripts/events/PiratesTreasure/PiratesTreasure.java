@@ -1,13 +1,13 @@
 package events.PiratesTreasure;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Announcements;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  *

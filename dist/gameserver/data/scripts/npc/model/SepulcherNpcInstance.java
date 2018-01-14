@@ -1,5 +1,10 @@
 package npc.model;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.Future;
+
 import bosses.FourSepulchersManager;
 import bosses.FourSepulchersSpawn;
 import bosses.FourSepulchersSpawn.GateKeeper;
@@ -16,11 +21,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.PositionUtils;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Future;
 
 public class SepulcherNpcInstance extends NpcInstance
 {

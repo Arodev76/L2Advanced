@@ -1,5 +1,7 @@
 package npc.model;
 
+import java.util.StringTokenizer;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.ItemHolder;
@@ -14,8 +16,6 @@ import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.Util;
-
-import java.util.StringTokenizer;
 
 
 public final class ClassMasterInstance extends MerchantInstance

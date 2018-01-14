@@ -4,6 +4,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.napile.primitive.maps.IntObjectMap;
+
 import l2f.gameserver.dao.CastleDamageZoneDAO;
 import l2f.gameserver.dao.CastleDoorUpgradeDAO;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
@@ -40,9 +42,6 @@ import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.ReflectionUtils;
 import npc.model.residences.ResidenceManager;
-
-import org.napile.primitive.maps.IntObjectMap;
-
 
 public class ChamberlainInstance extends ResidenceManager
 {

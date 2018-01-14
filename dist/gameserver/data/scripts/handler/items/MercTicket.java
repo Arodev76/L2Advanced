@@ -1,5 +1,10 @@
 package handler.items;
 
+import java.util.Collection;
+
+import org.napile.primitive.sets.IntSet;
+import org.napile.primitive.sets.impl.HashIntSet;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.dao.CastleHiredGuardDAO;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
@@ -17,10 +22,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.templates.item.support.MerchantGuard;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
-import org.napile.primitive.sets.IntSet;
-import org.napile.primitive.sets.impl.HashIntSet;
-
-import java.util.Collection;
 
 public class MercTicket extends ScriptItemHandler implements ScriptFile
 {

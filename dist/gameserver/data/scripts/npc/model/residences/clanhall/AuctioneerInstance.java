@@ -9,6 +9,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.dao.SiegeClanDAO;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
@@ -25,10 +29,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.HtmlUtils;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AuctioneerInstance extends NpcInstance
 {

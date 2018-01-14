@@ -1,5 +1,6 @@
 package npc.model;
 
+import bosses.BaiumManager;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
@@ -7,7 +8,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-import bosses.BaiumManager;
 
 /**
  * @author pchayka

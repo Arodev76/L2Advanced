@@ -3,6 +3,8 @@ package npc.model.residences;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
@@ -22,8 +24,6 @@ import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.ReflectionUtils;
 import l2f.gameserver.utils.TimeUtils;
 import l2f.gameserver.utils.WarehouseFunctions;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * some rework by VISTALL

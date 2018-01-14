@@ -2,6 +2,8 @@ package instances;
 
 import java.util.concurrent.ScheduledFuture;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.listener.actor.OnDeathListener;
@@ -13,8 +15,6 @@ import l2f.gameserver.network.serverpackets.ExSendUIEvent;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * @author pchayka

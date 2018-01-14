@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Announcements;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.data.xml.holder.NpcHolder;
@@ -22,9 +25,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class TvTArena2 extends Functions implements ScriptFile, OnDeathListener, OnTeleportListener, OnPlayerExitListener
 {

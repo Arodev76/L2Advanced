@@ -3,6 +3,8 @@ package handler.items;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.handler.items.ItemHandler;
@@ -13,8 +15,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 //TODO [G1ta0] вынести в датапак
 public class Extractable extends SimpleItemHandler implements ScriptFile

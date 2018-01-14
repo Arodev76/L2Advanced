@@ -5,14 +5,14 @@ import java.util.concurrent.Future;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Player;
+import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.World;
 import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.Skill;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 
 /**
- * @author SirGipsySorin
+ * @author Grivesky
  * @date 21.01.2013
  */
 @SuppressWarnings("serial")

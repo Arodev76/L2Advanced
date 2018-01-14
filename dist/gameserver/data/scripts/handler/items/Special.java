@@ -2,6 +2,8 @@ package handler.items;
 
 import java.util.Calendar;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import bosses.AntharasManager;
 import bosses.ValakasManager;
 import l2f.commons.util.Rnd;
@@ -25,9 +27,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.ArrayUtils;
-
 import quests._464_Oath;
 
 public class Special extends SimpleItemHandler implements ScriptFile

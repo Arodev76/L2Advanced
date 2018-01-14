@@ -2,6 +2,8 @@ package npc.model.residences.fortress.siege;
 
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Spawner;
@@ -12,8 +14,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * @author VISTALL

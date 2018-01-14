@@ -1,12 +1,11 @@
 package quests;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ai.CharacterAI;
 import l2f.gameserver.instancemanager.ReflectionManager;

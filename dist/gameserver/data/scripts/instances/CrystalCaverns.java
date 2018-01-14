@@ -1,5 +1,13 @@
 package instances;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ScheduledFuture;
+
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.listener.actor.OnDeathListener;
@@ -12,16 +20,9 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-import org.apache.commons.lang3.ArrayUtils;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ScheduledFuture;
 
 /**
- * @author SirGipsySorin
+ * @author Grivesky
  */
 public class CrystalCaverns extends Reflection
 {
