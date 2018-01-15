@@ -1,5 +1,7 @@
 package quests;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.model.Player;
@@ -11,8 +13,6 @@ import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class _709_PathToBecomingALordDion extends Quest implements ScriptFile
 {

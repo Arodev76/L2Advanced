@@ -14,9 +14,14 @@ import java.util.StringTokenizer;
 import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import actions.RewardListInfo;
 import l2f.gameserver.Config;
-import l2f.gameserver.cache.ImagesCache;
 import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.ImagesCache;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;
 import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
@@ -28,17 +33,12 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.RadarControl;
 import l2f.gameserver.network.serverpackets.ShowBoard;
 import l2f.gameserver.scripts.ScriptFile;
+import l2f.gameserver.taskmanager.AutoImageSenderManager;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.npc.MinionData;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.BbsUtil;
 import l2f.gameserver.utils.HtmlUtils;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import actions.RewardListInfo;
 
 public class CommunityBosses implements ScriptFile, ICommunityBoardHandler
 {

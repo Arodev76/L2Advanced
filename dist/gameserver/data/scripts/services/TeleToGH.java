@@ -1,5 +1,8 @@
 package services;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
@@ -13,9 +16,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class TeleToGH extends Functions implements ScriptFile
 {

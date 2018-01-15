@@ -3,6 +3,8 @@ package quests;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Creature;
@@ -15,8 +17,6 @@ import l2f.gameserver.network.serverpackets.MagicSkillUse;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class _144_PailakaInjuredDragon extends Quest implements ScriptFile
 {

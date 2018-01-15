@@ -28,6 +28,7 @@ import l2f.gameserver.model.quest.Quest;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2f.gameserver.network.serverpackets.MagicSkillUse;
+import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.RadarControl;
 import l2f.gameserver.network.serverpackets.ShortCutRegister;
 import l2f.gameserver.network.serverpackets.SocialAction;

@@ -1,5 +1,11 @@
 package services;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.instancemanager.ReflectionManager;
@@ -14,12 +20,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
 import l2f.gameserver.utils.ReflectionUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class TeleToParnassus extends Functions implements ScriptFile
 {

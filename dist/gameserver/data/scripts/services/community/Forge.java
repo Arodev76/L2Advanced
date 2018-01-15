@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
@@ -25,9 +28,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.templates.item.WeaponTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Forge implements ScriptFile, ICommunityBoardHandler
 {

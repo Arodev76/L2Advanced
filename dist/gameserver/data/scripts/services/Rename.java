@@ -1,5 +1,13 @@
 package services;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map.Entry;
+
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.Config;
 import l2f.gameserver.cache.Msg;
@@ -26,14 +34,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.StringUtils;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map.Entry;
 
 public class Rename extends Functions
 {

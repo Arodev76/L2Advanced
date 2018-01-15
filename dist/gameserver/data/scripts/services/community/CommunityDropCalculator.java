@@ -7,6 +7,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import actions.RewardListInfo;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.data.xml.holder.ItemHolder;
@@ -25,11 +29,6 @@ import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import actions.RewardListInfo;
 
 /**
  * Community Board page containing Drop Calculator

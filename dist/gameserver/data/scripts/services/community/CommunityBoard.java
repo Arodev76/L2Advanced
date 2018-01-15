@@ -6,12 +6,15 @@ import java.util.Date;
 import java.util.StringTokenizer;
 import java.util.concurrent.TimeUnit;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.GameServer;
 import l2f.gameserver.GameTimeController;
+import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.cache.ImagesCache;
 import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.data.xml.holder.BuyListHolder;
 import l2f.gameserver.data.xml.holder.BuyListHolder.NpcTradeList;
 import l2f.gameserver.data.xml.holder.MultiSellHolder;
@@ -32,10 +35,6 @@ import l2f.gameserver.tables.FakePlayersTable;
 import l2f.gameserver.taskmanager.AutoImageSenderManager;
 import l2f.gameserver.utils.TimeUtils;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 
 public class CommunityBoard implements ScriptFile, ICommunityBoardHandler
 {

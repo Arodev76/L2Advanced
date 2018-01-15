@@ -1,7 +1,5 @@
 package services.community;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,10 +12,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.map.hash.TIntObjectHashMap;
 import javolution.util.FastMap;
 import l2f.gameserver.Config;
-import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.database.DatabaseFactory;
@@ -48,9 +50,6 @@ import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.BbsUtil;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CommunityClan extends Functions implements ScriptFile, ICommunityBoardHandler
 {

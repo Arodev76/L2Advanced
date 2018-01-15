@@ -1,5 +1,7 @@
 package quests;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Player;
@@ -10,8 +12,6 @@ import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class _128_PailakaSongofIceandFire extends Quest implements ScriptFile
 {

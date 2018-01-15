@@ -1,5 +1,8 @@
 package quests;
 
+import ai.GuardofDawn;
+import ai.GuardofDawnFemale;
+import ai.GuardofDawnStat;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.model.Effect;
 import l2f.gameserver.model.Player;
@@ -13,9 +16,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
-import ai.GuardofDawn;
-import ai.GuardofDawnFemale;
-import ai.GuardofDawnStat;
 
 public class _195_SevenSignsSecretRitualofthePriests extends Quest implements ScriptFile
 {

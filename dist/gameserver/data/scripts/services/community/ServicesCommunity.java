@@ -1,5 +1,8 @@
 package services.community;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javolution.text.TextBuilder;
 import l2f.gameserver.Config;
 import l2f.gameserver.ServicesConfig;
@@ -13,9 +16,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.ItemFunctions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 
 public class ServicesCommunity extends Functions implements ScriptFile, ICommunityBoardHandler
 {

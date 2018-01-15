@@ -1,5 +1,7 @@
 package services;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.model.Player;
@@ -7,9 +9,6 @@ import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.templates.item.ItemTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 
 /**
  * @author Buemo

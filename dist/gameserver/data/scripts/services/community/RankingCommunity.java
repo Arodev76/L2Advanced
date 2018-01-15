@@ -7,6 +7,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
@@ -22,9 +25,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.taskmanager.AutoImageSenderManager;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class RankingCommunity implements ScriptFile, ICommunityBoardHandler
 {

@@ -8,6 +8,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;
@@ -37,10 +41,6 @@ import l2f.gameserver.stats.Stats;
 import l2f.gameserver.stats.funcs.FuncTemplate;
 import l2f.gameserver.templates.item.ItemTemplate.Grade;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 {

@@ -1,5 +1,14 @@
 package services.community;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
@@ -9,14 +18,6 @@ import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.ShowBoard;
 import l2f.gameserver.scripts.ScriptFile;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class StatManager implements ScriptFile, ICommunityBoardHandler
 {
