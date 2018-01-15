@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="L2Advanced Full" default="build" basedir=".">
+<project name="L2Advanced" default="build" basedir=".">
 	<description>
 		This script will build the GameServer.
 	</description>
 
-	<property name="build" location="./build/L2Advanced Full" />
+	<property name="build" location="../build/L2_Advanced_HighFive" />
 	<property name="build.bin" location="${build}/bin" />
 	<property name="build.dist" location="${build}/dist" />
 	<property name="build.dist.tools" location="${build.dist}/tools" />
@@ -32,12 +32,16 @@
 	</tstamp>
 	
 	<target name="clean" description="Remove the output directories.">
-			<delete dir="${build.bin}" />
-		</target>	
+
+		<delete dir="${build.bin}" />
+
+	</target>
 	
-	<target name="init" depends="clean" description="Create the output directories.">
-			<mkdir dir="${build.bin}" />
-		</target>
+	<target name="init" description="Create the output directories.">
+
+		<mkdir dir="${build.bin}" />
+
+	</target>
 
 	<target name="dist" depends="init" description="Export the files to the output directory.">
 		<sync todir="${build.dist}" includeemptydirs="true">

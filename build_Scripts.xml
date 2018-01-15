@@ -18,6 +18,10 @@
 		</fileset>
 	</path>
 
+	<tstamp>
+		<format property="build.tstamp" pattern="yyyy.MM.dd HH:mm" />
+	</tstamp>
+
 	<target name="verifyRequirements" description="Checks if the necessary requirements for building L2J are fulfilled">
 		<available classname="javax.script.ScriptContext" property="JDK8.present" />
 		<fail unless="JDK8.present" message="JDK 8 or greater is required." />

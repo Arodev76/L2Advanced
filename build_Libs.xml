@@ -18,6 +18,10 @@
 			<include name="*.jar" />
 		</fileset>
 	</path>
+
+	<tstamp>
+		<format property="build.tstamp" pattern="yyyy.MM.dd HH:mm" />
+	</tstamp>
 	
 	<target name="clean" description="Remove the output directories.">
 		<delete dir="${build}" />
