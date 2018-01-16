@@ -1,13 +1,13 @@
 package l2f.commons.compiler;
 
+import java.io.IOException;
+import java.net.URI;
+
 import javax.tools.FileObject;
 import javax.tools.ForwardingJavaFileManager;
 import javax.tools.JavaFileObject;
 import javax.tools.JavaFileObject.Kind;
 import javax.tools.StandardJavaFileManager;
-
-import java.io.IOException;
-import java.net.URI;
 
 public class MemoryJavaFileManager extends ForwardingJavaFileManager<StandardJavaFileManager>
 {

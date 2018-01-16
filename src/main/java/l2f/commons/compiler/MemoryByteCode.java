@@ -1,9 +1,10 @@
 package l2f.commons.compiler;
 
-import javax.tools.SimpleJavaFileObject;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.net.URI;
+
+import javax.tools.SimpleJavaFileObject;
 
 public class MemoryByteCode extends SimpleJavaFileObject
 {

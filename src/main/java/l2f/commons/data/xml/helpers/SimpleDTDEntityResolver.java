@@ -1,11 +1,11 @@
 package l2f.commons.data.xml.helpers;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-
-import java.io.File;
-import java.io.IOException;
 
 public class SimpleDTDEntityResolver implements EntityResolver
 {

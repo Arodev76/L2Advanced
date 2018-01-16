@@ -1,10 +1,10 @@
 package l2f.commons.data.xml.helpers;
 
-import l2f.commons.data.xml.AbstractParser;
-
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
+
+import l2f.commons.data.xml.AbstractParser;
 
 public class ErrorHandlerImpl implements ErrorHandler
 {

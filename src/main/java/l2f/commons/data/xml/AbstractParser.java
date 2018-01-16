@@ -1,15 +1,15 @@
 package l2f.commons.data.xml;
 
+import java.io.File;
+import java.io.InputStream;
+
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+
 import l2f.commons.crypt.CryptUtil;
 import l2f.commons.data.xml.helpers.ErrorHandlerImpl;
 import l2f.commons.data.xml.helpers.SimpleDTDEntityResolver;
 import l2f.commons.logging.LoggerObject;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
-
-import java.io.File;
-import java.io.InputStream;
-
 
 public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObject
 {

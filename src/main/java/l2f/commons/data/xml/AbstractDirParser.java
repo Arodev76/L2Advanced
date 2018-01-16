@@ -1,10 +1,10 @@
 package l2f.commons.data.xml;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.FileFilterUtils;
-
 import java.io.File;
 import java.util.Collection;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.FileFilterUtils;
 
 public abstract class AbstractDirParser<H extends AbstractHolder> extends AbstractParser<H>
 {

@@ -1,7 +1,5 @@
 package l2f.commons.net.utils;
 
-import l2f.commons.net.AdvIP;
-
 public class NetUtils
 {
 	private final static NetList PRIVATE = new NetList();

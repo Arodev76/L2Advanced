@@ -1,11 +1,11 @@
 package l2f.commons.threading;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public final class LoggingRejectedExecutionHandler
 		implements RejectedExecutionHandler

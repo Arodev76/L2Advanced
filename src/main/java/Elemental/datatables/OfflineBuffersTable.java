@@ -5,19 +5,17 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Collection;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import Elemental.managers.OfflineBufferManager;
 import Elemental.managers.OfflineBufferManager.BufferData;
+import l2f.gameserver.Config;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.model.Skill;
 
 /**
- * Tabla para manejar todos los buffers offline y los buffs que cada uno tiene vendiendo
  *
  * @author Aro
  */
@@ -26,7 +24,7 @@ public class OfflineBuffersTable
 	private static final Logger _log = LoggerFactory.getLogger(OfflineBuffersTable.class);
 
 	/**
-	 * Restaura todos los offline buff stores de la db
+	 * Restores all the offline buff stores of the db
 	 */
 	public void restoreOfflineBuffers()
 	{
@@ -117,7 +115,7 @@ public class OfflineBuffersTable
 	}
 
 	/**
-	 * Invocado cuando un pj loguea a su pj estando en un buff store
+	 * Summoned when a pj loguea to your pj being in a buff store
 	 *
 	 * @param trader
 	 */
@@ -128,14 +126,14 @@ public class OfflineBuffersTable
 			// Remove the buffer from the manager
 			OfflineBufferManager.getInstance().getBuffStores().remove(trader.getObjectId());
 
-			// Borramos el buff store
+			// We delete the buff store
 			try (PreparedStatement st = con.prepareStatement("DELETE FROM character_offline_buffers WHERE charId=?"))
 			{
 				st.setInt(1, trader.getObjectId());
 				st.executeUpdate();
 			}
 
-			// Borramos tambien sus buffs
+			// We also delete your buffs
 			try (PreparedStatement st = con.prepareStatement("DELETE FROM character_offline_buffer_buffs WHERE charId=?"))
 			{
 				st.setInt(1, trader.getObjectId());
@@ -149,7 +147,7 @@ public class OfflineBuffersTable
 	}
 
 	/**
-	 * Invocado cuando un pj desloguea estando en un buff store
+	 * Summoned when a pj dislodges while being in a buff store
 	 *
 	 * @param trader
 	 */
@@ -161,7 +159,7 @@ public class OfflineBuffersTable
 
 		try (Connection con = DatabaseFactory.getInstance().getConnection())
 		{
-			// Guardamos primero el offline buffer
+			// We save the offline buffer first
 			try (PreparedStatement st = con.prepareStatement("REPLACE INTO character_offline_buffers VALUES (?,?,?)"))
 			{
 				st.setInt(1, trader.getObjectId());
@@ -170,7 +168,7 @@ public class OfflineBuffersTable
 				st.executeUpdate();
 			}
 
-			// Luego guardamos cada buff del store
+			// Then we save each buff from the store
 			try (PreparedStatement st = con.prepareStatement("REPLACE INTO character_offline_buffer_buffs VALUES (?,?)"))
 			{
 				st.setInt(1, trader.getObjectId());
@@ -186,7 +184,7 @@ public class OfflineBuffersTable
 
 	/**
 	 * @param skills
-	 * @return Une toda la lista de buffs para que este toda en un string separados por ,
+	 * @return Join the whole list of buffs so that they are all in a string separated by ,
 	 */
 	private final String joinAllSkillsToString(Collection<Skill> skills)
 	{

@@ -1,11 +1,10 @@
 package l2f.commons.math.random;
 
-import l2f.commons.util.Rnd;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2f.commons.util.Rnd;
 
 public class RndSelector<E>
 {
