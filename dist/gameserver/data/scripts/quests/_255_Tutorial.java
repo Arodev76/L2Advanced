@@ -1446,7 +1446,7 @@ public class _255_Tutorial extends Quest implements ScriptFile, OnPlayerEnterLis
 			html.append("</td></tr></table>");
 			html.append("<br></td></tr><tr>");
 			html.append("<td align=center height=150>");
-			html.append("<table width=280><tr><td align=center><img src=\"%image:servername.png%\" width=240 height=64></td></tr>");
+			html.append("<table width=280><tr><td align=center><img src=\"%image:30000.png%\" width=240 height=64></td></tr>");
 			html.append("<tr><td align=center><br><font color=LEVEL name=hs12>Welcome to L2Advanced ! </font></td></tr>");
 			html.append("</table>");
 			html.append("<br1>");

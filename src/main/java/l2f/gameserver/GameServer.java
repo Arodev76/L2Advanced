@@ -6,6 +6,12 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.util.Date;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+//import Elemental.datatables.CharacterMonthlyRanking;
+import Elemental.datatables.OfflineBuffersTable;
+import net.sf.ehcache.CacheManager;
 import l2f.commons.listener.Listener;
 import l2f.commons.listener.ListenerList;
 import l2f.commons.net.AdvIP;
@@ -85,15 +91,6 @@ import l2f.gameserver.taskmanager.TaskManager;
 import l2f.gameserver.taskmanager.tasks.RestoreOfflineTraders;
 import l2f.gameserver.utils.Strings;
 import l2f.gameserver.vote.VoteMain;
-import net.sf.ehcache.CacheManager;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-//import Elemental.datatables.CharacterMonthlyRanking;
-import Elemental.datatables.OfflineBuffersTable;
-//import Elemental.datatables.ServerRanking;
-//import Elemental.managers.AutoRaidEventManager;
 
 public class GameServer
 {
@@ -153,7 +150,7 @@ public class GameServer
 	@SuppressWarnings("unchecked")
 	public GameServer() throws Exception
 	{
-		int update = 6810;
+		int update = 25;
 		_instance = this;
 		_serverStarted = time();
 		_listeners = new GameServerListenerList();
@@ -164,7 +161,7 @@ public class GameServer
 
 		_log.info("=================================================");
 		_log.info("Copyright: ............... " + "L2Advanced");
-		_log.info("Revision: ................ " + version.getRevisionNumber());
+		_log.info("Update: .................. " + update + " VIP Version");
 		_log.info("Build date: .............. " + version.getBuildDate());
 		_log.info("Compiler version: ........ " + version.getBuildJdk());
 		_log.info("Chronicle: ............... " + "High Five Part 5");

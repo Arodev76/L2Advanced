@@ -90,7 +90,7 @@
 	
 	<target name="build" depends="jar" description="Create the Zip file.">
 		<delete dir="${build.bin}" />
-		<zip destfile="${build}/L2Advanced Gold Revision.zip" basedir="${build.dist}" level="9" />
+		<zip destfile="${build}/L2Advanced Vip Revision.zip" basedir="${build.dist}" level="9" />
 		<delete dir="${build.dist}" />
 	</target>
 </project>

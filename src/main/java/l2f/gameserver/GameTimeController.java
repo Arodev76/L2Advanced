@@ -2,6 +2,9 @@ package l2f.gameserver;
 
 import java.util.Calendar;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.listener.Listener;
 import l2f.commons.listener.ListenerList;
 import l2f.commons.threading.RunnableImpl;
@@ -11,9 +14,6 @@ import l2f.gameserver.listener.game.OnStartListener;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.ClientSetTime;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class GameTimeController
 {

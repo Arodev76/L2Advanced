@@ -18,6 +18,7 @@ import java.util.StringTokenizer;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import l2f.gameserver.Announcements;
 import l2f.commons.configuration.ExProperties;
 import l2f.commons.net.AdvIP;
 import l2f.commons.net.nio.impl.SelectorConfig;

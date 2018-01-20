@@ -32,7 +32,6 @@ import l2f.gameserver.network.serverpackets.ShowBoard;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Util;
 
-
 public class PartyMatchingBBSManager extends Functions implements ICommunityBoardHandler
 {
 	public List<Player> partyMatchingPlayersList = new ArrayList<>();

@@ -1,5 +1,17 @@
 package l2f.gameserver;
 
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Calendar;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import jonelo.sugar.util.Base64;
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.database.DatabaseFactory;
@@ -10,17 +22,6 @@ import l2f.gameserver.network.serverpackets.Ex2ndPasswordCheck;
 import l2f.gameserver.network.serverpackets.Ex2ndPasswordVerify;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Calendar;
 
 public class SecondaryPasswordAuth
 {
