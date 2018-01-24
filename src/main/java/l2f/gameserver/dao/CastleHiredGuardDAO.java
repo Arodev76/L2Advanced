@@ -1,18 +1,19 @@
 package l2f.gameserver.dao;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.entity.residence.Castle;
 import l2f.gameserver.model.entity.residence.Residence;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 /**
  * @author VISTALL

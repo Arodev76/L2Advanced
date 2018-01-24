@@ -3,32 +3,24 @@ package l2f.gameserver.network.telnet.commands;
 import java.io.File;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 import javax.management.MBeanServer;
 
-import l2f.commons.dao.JdbcEntityStats;
+import org.apache.commons.io.FileUtils;
+
+import l2f.gameserver.Config;
 import l2f.commons.lang.StatsUtils;
 import l2f.commons.net.nio.impl.SelectorThread;
 import l2f.commons.threading.RunnableStatsManager;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.dao.ItemsDAO;
-import l2f.gameserver.dao.MailDAO;
-import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.geodata.PathFindBuffers;
 import l2f.gameserver.network.telnet.TelnetCommand;
 import l2f.gameserver.network.telnet.TelnetCommandHolder;
 import l2f.gameserver.taskmanager.AiTaskManager;
 import l2f.gameserver.taskmanager.EffectTaskManager;
-import l2f.gameserver.utils.GameStats;
-import net.sf.ehcache.Cache;
-import net.sf.ehcache.statistics.LiveCacheStatistics;
-
-import org.apache.commons.io.FileUtils;
 
 public class TelnetPerfomance implements TelnetCommandHolder
 {
@@ -237,98 +229,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 			}
 			
 		});
-		
-		_commands.add(new TelnetCommand("dbstats", "ds")
-		{
-			
-			@Override
-			public String getUsage()
-			{
-				return "dbstats";
-			}
-			
-			@SuppressWarnings("deprecation")
-			@Override
-			public String handle(String[] args)
-			{
-				StringBuilder sb = new StringBuilder();
-				
-				sb.append("Basic database usage\n");
-				sb.append("=================================================\n");
-				sb.append("Connections").append("\n");
-				try
-				{
-					sb.append("     Busy: ........................ ").append(DatabaseFactory.getInstance().getBusyConnectionCount()).append("\n");
-					sb.append("     Idle: ........................ ").append(DatabaseFactory.getInstance().getIdleConnectionCount()).append("\n");
-				}
-				catch (SQLException e)
-				{
-					return "Error: " + e.getMessage() + "\n";
-				}
-				
-				sb.append("Players").append("\n");
-				sb.append("     Update: ...................... ").append(GameStats.getUpdatePlayerBase()).append("\n");
-				
-				double cacheHitCount, cacheMissCount, cacheHitRatio;
-				Cache cache;
-				LiveCacheStatistics cacheStats;
-				JdbcEntityStats entityStats;
-				
-				cache = ItemsDAO.getInstance().getCache();
-				cacheStats = cache.getLiveCacheStatistics();
-				entityStats = ItemsDAO.getInstance().getStats();
-				
-				cacheHitCount = cacheStats.getCacheHitCount();
-				cacheMissCount = cacheStats.getCacheMissCount();
-				cacheHitRatio = cacheHitCount / (cacheHitCount + cacheMissCount);
-				
-				sb.append("Items").append("\n");
-				sb.append("     getLoadCount: ................ ").append(entityStats.getLoadCount()).append("\n");
-				sb.append("     getInsertCount: .............. ").append(entityStats.getInsertCount()).append("\n");
-				sb.append("     getUpdateCount: .............. ").append(entityStats.getUpdateCount()).append("\n");
-				sb.append("     getDeleteCount: .............. ").append(entityStats.getDeleteCount()).append("\n");
-				sb.append("Cache").append("\n");
-				sb.append("     getPutCount: ................. ").append(cacheStats.getPutCount()).append("\n");
-				sb.append("     getUpdateCount: .............. ").append(cacheStats.getUpdateCount()).append("\n");
-				sb.append("     getRemovedCount: ............. ").append(cacheStats.getRemovedCount()).append("\n");
-				sb.append("     getEvictedCount: ............. ").append(cacheStats.getEvictedCount()).append("\n");
-				sb.append("     getExpiredCount: ............. ").append(cacheStats.getExpiredCount()).append("\n");
-				sb.append("     getSize: ..................... ").append(cacheStats.getSize()).append("\n");
-				sb.append("     getInMemorySize: ............. ").append(cacheStats.getInMemorySize()).append("\n");
-				sb.append("     getOnDiskSize: ............... ").append(cacheStats.getOnDiskSize()).append("\n");
-				sb.append("     cacheHitRatio: ............... ").append(String.format("%2.2f", cacheHitRatio)).append("\n");
-				sb.append("=================================================\n");
-				
-				cache = MailDAO.getInstance().getCache();
-				cacheStats = cache.getLiveCacheStatistics();
-				entityStats = MailDAO.getInstance().getStats();
-				
-				cacheHitCount = cacheStats.getCacheHitCount();
-				cacheMissCount = cacheStats.getCacheMissCount();
-				cacheHitRatio = cacheHitCount / (cacheHitCount + cacheMissCount);
-				
-				sb.append("Mail").append("\n");
-				sb.append("     getLoadCount: ................ ").append(entityStats.getLoadCount()).append("\n");
-				sb.append("     getInsertCount: .............. ").append(entityStats.getInsertCount()).append("\n");
-				sb.append("     getUpdateCount: .............. ").append(entityStats.getUpdateCount()).append("\n");
-				sb.append("     getDeleteCount: .............. ").append(entityStats.getDeleteCount()).append("\n");
-				sb.append("Cache").append("\n");
-				sb.append("     getPutCount: ................. ").append(cacheStats.getPutCount()).append("\n");
-				sb.append("     getUpdateCount: .............. ").append(cacheStats.getUpdateCount()).append("\n");
-				sb.append("     getRemovedCount: ............. ").append(cacheStats.getRemovedCount()).append("\n");
-				sb.append("     getEvictedCount: ............. ").append(cacheStats.getEvictedCount()).append("\n");
-				sb.append("     getExpiredCount: ............. ").append(cacheStats.getExpiredCount()).append("\n");
-				sb.append("     getSize: ..................... ").append(cacheStats.getSize()).append("\n");
-				sb.append("     getInMemorySize: ............. ").append(cacheStats.getInMemorySize()).append("\n");
-				sb.append("     getOnDiskSize: ............... ").append(cacheStats.getOnDiskSize()).append("\n");
-				sb.append("     cacheHitRatio: ............... ").append(String.format("%2.2f", cacheHitRatio)).append("\n");
-				sb.append("=================================================\n");
-				
-				return sb.toString();
-			}
-			
-		});
-		
+
 		_commands.add(new TelnetCommand("aistats", "as")
 		{
 			

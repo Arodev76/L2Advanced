@@ -1,5 +1,8 @@
 package l2f.gameserver.ai;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.lang.reference.HardReferences;
 import l2f.commons.threading.RunnableImpl;
@@ -8,8 +11,6 @@ import l2f.gameserver.model.GameObject;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public abstract class AbstractAI extends RunnableImpl
 {

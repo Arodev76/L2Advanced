@@ -1,14 +1,13 @@
 package l2f.gameserver.ai;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.instances.RaceManagerInstance;
 import l2f.gameserver.network.serverpackets.MonRaceInfo;
-
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class RaceManager extends DefaultAI
 {

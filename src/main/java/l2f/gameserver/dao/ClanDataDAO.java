@@ -5,6 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.entity.residence.Castle;
@@ -13,9 +16,6 @@ import l2f.gameserver.model.entity.residence.Fortress;
 import l2f.gameserver.model.entity.residence.Residence;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.tables.ClanTable;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ClanDataDAO
 {

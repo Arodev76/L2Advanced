@@ -1,18 +1,19 @@
 package l2f.gameserver.dao;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
-import l2f.gameserver.model.entity.residence.Dominion;
-import l2f.gameserver.utils.SqlBatch;
-import org.apache.log4j.Logger;
-import org.napile.primitive.maps.IntObjectMap;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collection;
+
+import org.apache.log4j.Logger;
+import org.napile.primitive.maps.IntObjectMap;
+
+import l2f.commons.dbutils.DbUtils;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
+import l2f.gameserver.model.entity.residence.Dominion;
+import l2f.gameserver.utils.SqlBatch;
 
 /**
  * @author VISTALL

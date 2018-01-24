@@ -5,10 +5,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import l2f.gameserver.database.DatabaseFactory;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.database.DatabaseFactory;
 
 public class CaptchaPunishmentDAO
 {

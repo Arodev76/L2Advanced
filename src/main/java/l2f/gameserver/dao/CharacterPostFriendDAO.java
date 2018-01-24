@@ -1,16 +1,17 @@
 package l2f.gameserver.dao;
 
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.Player;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.CHashIntObjectMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.model.Player;
 
 public class CharacterPostFriendDAO
 {

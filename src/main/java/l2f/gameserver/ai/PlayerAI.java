@@ -1,6 +1,7 @@
 package l2f.gameserver.ai;
 
 import static l2f.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.geodata.GeoEngine;
 import l2f.gameserver.model.Creature;

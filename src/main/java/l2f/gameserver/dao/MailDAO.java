@@ -9,7 +9,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import l2f.commons.dao.JdbcDAO;
 import l2f.commons.dao.JdbcEntityState;
@@ -18,12 +23,6 @@ import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.model.mail.Mail;
-import net.sf.ehcache.Cache;
-import net.sf.ehcache.CacheManager;
-import net.sf.ehcache.Element;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class MailDAO implements JdbcDAO<Integer, Mail>
 {
@@ -56,7 +55,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 	private AtomicLong update = new AtomicLong();
 	private AtomicLong delete = new AtomicLong();
 
-	private final Cache cache;
+	private static Map<Integer, Mail> _cache;
 	private final JdbcEntityStats stats = new JdbcEntityStats(){
 		@Override
 		public long getLoadCount()
@@ -85,12 +84,12 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 
 	private MailDAO()
 	{
-		cache = CacheManager.getInstance().getCache(Mail.class.getName());
+		_cache = new ConcurrentHashMap<>();
 	}
-
-	public Cache getCache()
+	
+	public Map<Integer, Mail> getCache()
 	{
-		return cache;
+		return _cache;
 	}
 
 	@Override
@@ -409,14 +408,9 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 	@Override
 	public Mail load(Integer id)
 	{
-		Mail mail;
-
-		Element ce = cache.get(id);
-		if (ce != null)
-		{
-			mail = (Mail) ce.getObjectValue();
+		Mail mail = _cache.get(id);
+		if (mail != null)
 			return mail;
-		}
 
 		try
 		{
@@ -429,7 +423,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			return null;
 		}
 
-		cache.put(new Element(mail.getMessageId(), mail));
+		_cache.put(mail.getMessageId(), mail);
 
 		return mail;
 	}
@@ -469,7 +463,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			return;
 		}
 
-		cache.put(new Element(mail.getMessageId(), mail));
+		_cache.put(mail.getMessageId(), mail);
 	}
 
 	@Override
@@ -489,7 +483,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			return;
 		}
 
-		cache.putIfAbsent(new Element(mail.getMessageId(), mail));
+		_cache.putIfAbsent(mail.getMessageId(), mail);
 	}
 
 	@Override
@@ -518,6 +512,6 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			return;
 		}
 
-		cache.remove(mail.getExpireTime());
+		_cache.remove(mail.getExpireTime());
 	}
 }

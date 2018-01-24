@@ -1,20 +1,21 @@
 package l2f.gameserver.dao;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.database.mysql;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.utils.Location;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.Config;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.database.mysql;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.utils.Location;
 
 public class CharacterDAO
 {
