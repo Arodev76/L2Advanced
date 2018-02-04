@@ -1,10 +1,10 @@
 package l2f.gameserver.data.xml.holder;
 
-import l2f.commons.data.xml.AbstractHolder;
-import l2f.gameserver.templates.item.support.EnchantScroll;
-
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
+
+import l2f.commons.data.xml.AbstractHolder;
+import l2f.gameserver.templates.item.support.EnchantScroll;
 
 /**
  * @author VISTALL

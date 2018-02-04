@@ -1,16 +1,17 @@
 package l2f.gameserver.data.xml.parser;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.CharTemplateHolder;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.item.CreateItem;
-import org.dom4j.Element;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class CharTemplateParser extends AbstractFileParser<CharTemplateHolder>
 {

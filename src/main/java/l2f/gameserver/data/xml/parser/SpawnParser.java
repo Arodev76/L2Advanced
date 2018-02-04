@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.dom4j.Element;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.data.xml.AbstractDirParser;
 import l2f.commons.geometry.Polygon;
@@ -16,8 +18,6 @@ import l2f.gameserver.templates.spawn.PeriodOfDay;
 import l2f.gameserver.templates.spawn.SpawnNpcInfo;
 import l2f.gameserver.templates.spawn.SpawnTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.dom4j.Element;
 
 /**
  * @author VISTALL

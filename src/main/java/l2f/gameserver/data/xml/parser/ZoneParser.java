@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractDirParser;
 import l2f.commons.geometry.Circle;
 import l2f.commons.geometry.Polygon;
@@ -17,8 +19,6 @@ import l2f.gameserver.model.World;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.dom4j.Element;
 
 /**
  * @author G1ta0

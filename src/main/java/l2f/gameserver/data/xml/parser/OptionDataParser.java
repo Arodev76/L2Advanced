@@ -3,13 +3,13 @@ package l2f.gameserver.data.xml.parser;
 import java.io.File;
 import java.util.Iterator;
 
+import org.dom4j.Element;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.OptionDataHolder;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.OptionDataTemplate;
-
-import org.dom4j.Element;
 
 public final class OptionDataParser extends StatParser<OptionDataHolder>
 {

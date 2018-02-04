@@ -3,12 +3,12 @@ package l2f.gameserver.data.xml.parser;
 import java.io.File;
 import java.util.Iterator;
 
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.DressCloakHolder;
 import l2f.gameserver.model.DressCloakData;
-
-import org.dom4j.Element;
 
 public final class DressCloakParser extends AbstractFileParser<DressCloakHolder>
 {

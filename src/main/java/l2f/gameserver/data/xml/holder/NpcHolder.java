@@ -1,15 +1,15 @@
 package l2f.gameserver.data.xml.holder;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import gnu.trove.iterator.TIntObjectIterator;
 import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.data.xml.AbstractHolder;
 import l2f.commons.lang.ArrayUtils;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public final class NpcHolder extends AbstractHolder
 {

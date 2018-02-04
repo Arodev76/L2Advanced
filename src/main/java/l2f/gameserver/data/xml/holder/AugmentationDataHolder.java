@@ -1,13 +1,13 @@
 package l2f.gameserver.data.xml.holder;
 
-import l2f.commons.data.xml.AbstractHolder;
-import l2f.gameserver.templates.augmentation.AugmentationInfo;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+
+import l2f.commons.data.xml.AbstractHolder;
+import l2f.gameserver.templates.augmentation.AugmentationInfo;
 
 public class AugmentationDataHolder extends AbstractHolder
 {

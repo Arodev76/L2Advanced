@@ -1,16 +1,15 @@
 package l2f.gameserver.data.xml.parser;
 
-import gnu.trove.list.array.TIntArrayList;
-
 import java.io.File;
 import java.util.Iterator;
 
+import org.dom4j.Element;
+
+import gnu.trove.list.array.TIntArrayList;
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.HennaHolder;
 import l2f.gameserver.templates.Henna;
-
-import org.dom4j.Element;
 
 /**
  * @author: VISTALL

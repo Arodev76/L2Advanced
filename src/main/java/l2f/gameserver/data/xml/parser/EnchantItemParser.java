@@ -3,13 +3,13 @@ package l2f.gameserver.data.xml.parser;
 import java.io.File;
 import java.util.Iterator;
 
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.EnchantItemHolder;
 import l2f.gameserver.templates.item.support.EnchantScroll;
 import l2f.gameserver.templates.item.support.FailResultType;
-
-import org.dom4j.Element;
 
 public class EnchantItemParser extends AbstractFileParser<EnchantItemHolder>
 {

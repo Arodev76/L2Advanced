@@ -1,12 +1,12 @@
 package l2f.gameserver.data.xml.holder;
 
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.TreeIntObjectMap;
+
 import l2f.commons.data.xml.AbstractHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.events.EventType;
 import l2f.gameserver.model.entity.events.GlobalEvent;
-
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.TreeIntObjectMap;
 
 public final class EventHolder extends AbstractHolder
 {

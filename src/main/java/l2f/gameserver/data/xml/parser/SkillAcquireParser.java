@@ -1,18 +1,17 @@
 package l2f.gameserver.data.xml.parser;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.dom4j.Element;
+
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.data.xml.AbstractDirParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2f.gameserver.model.SkillLearn;
-
-import org.dom4j.Element;
 
 public final class SkillAcquireParser extends AbstractDirParser<SkillAcquireHolder>
 {

@@ -4,6 +4,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.dom4j.Attribute;
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractDirParser;
 import l2f.commons.data.xml.AbstractHolder;
 import l2f.gameserver.model.entity.residence.ResidenceType;
@@ -29,9 +32,6 @@ import l2f.gameserver.stats.triggers.TriggerInfo;
 import l2f.gameserver.stats.triggers.TriggerType;
 import l2f.gameserver.templates.item.ArmorTemplate;
 import l2f.gameserver.templates.item.WeaponTemplate;
-
-import org.dom4j.Attribute;
-import org.dom4j.Element;
 
 public abstract class StatParser<H extends AbstractHolder> extends AbstractDirParser<H>
 {

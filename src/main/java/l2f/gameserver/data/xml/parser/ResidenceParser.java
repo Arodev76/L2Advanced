@@ -1,5 +1,17 @@
 package l2f.gameserver.data.xml.parser;
 
+import java.io.File;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.dom4j.Attribute;
+import org.dom4j.Element;
+import org.napile.primitive.sets.IntSet;
+import org.napile.primitive.sets.impl.HashIntSet;
+
 import l2f.commons.data.xml.AbstractDirParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
@@ -15,17 +27,6 @@ import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.item.support.MerchantGuard;
 import l2f.gameserver.utils.Location;
-import org.dom4j.Attribute;
-import org.dom4j.Element;
-import org.napile.primitive.sets.IntSet;
-import org.napile.primitive.sets.impl.HashIntSet;
-
-import java.io.File;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public final class ResidenceParser extends AbstractDirParser<ResidenceHolder>
 {

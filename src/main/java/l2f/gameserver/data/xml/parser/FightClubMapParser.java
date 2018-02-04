@@ -1,5 +1,14 @@
 package l2f.gameserver.data.xml.parser;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.dom4j.Element;
+
 import javolution.util.FastMap;
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.data.xml.AbstractDirParser;
@@ -9,10 +18,6 @@ import l2f.gameserver.data.xml.holder.ZoneHolder;
 import l2f.gameserver.model.entity.events.fightclubmanager.FightClubMap;
 import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.utils.Location;
-import org.dom4j.Element;
-
-import java.io.File;
-import java.util.*;
 
 /**
  * @author VISTALL

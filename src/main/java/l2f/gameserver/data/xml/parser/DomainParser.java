@@ -3,14 +3,14 @@ package l2f.gameserver.data.xml.parser;
 import java.io.File;
 import java.util.Iterator;
 
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.commons.geometry.Polygon;
 import l2f.gameserver.Config;
 import l2f.gameserver.instancemanager.MapRegionManager;
 import l2f.gameserver.model.Territory;
 import l2f.gameserver.templates.mapregion.DomainArea;
-
-import org.dom4j.Element;
 
 public class DomainParser extends AbstractFileParser<MapRegionManager>
 {

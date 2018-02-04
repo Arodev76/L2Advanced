@@ -1,10 +1,10 @@
 package l2f.gameserver.data.xml.holder;
 
-import l2f.commons.data.xml.AbstractHolder;
-import l2f.gameserver.model.exchange.Change;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import l2f.commons.data.xml.AbstractHolder;
+import l2f.gameserver.model.exchange.Change;
 
 public final class ExchangeItemHolder extends AbstractHolder
 {

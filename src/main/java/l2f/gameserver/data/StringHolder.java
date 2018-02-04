@@ -1,10 +1,5 @@
 package l2f.gameserver.data;
 
-import l2f.commons.data.xml.AbstractHolder;
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.utils.Language;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -12,6 +7,11 @@ import java.io.LineNumberReader;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
+
+import l2f.commons.data.xml.AbstractHolder;
+import l2f.gameserver.Config;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.utils.Language;
 
 /**
  * Author: VISTALL

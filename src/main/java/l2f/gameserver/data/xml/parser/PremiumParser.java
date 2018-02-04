@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.PremiumHolder;
@@ -13,8 +15,6 @@ import l2f.gameserver.model.premium.PremiumGift;
 import l2f.gameserver.model.premium.PremiumKeys;
 import l2f.gameserver.model.premium.PremiumRemoveItems;
 import l2f.gameserver.utils.TimeUtils;
-
-import org.dom4j.Element;
 
 public final class PremiumParser extends AbstractFileParser<PremiumHolder>
 {

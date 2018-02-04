@@ -1,15 +1,5 @@
 package l2f.gameserver.data.xml.parser;
 
-import l2f.commons.data.xml.AbstractFileParser;
-import l2f.commons.lang.ArrayUtils;
-import l2f.commons.math.random.RndSelector;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.xml.holder.AugmentationDataHolder;
-import l2f.gameserver.data.xml.holder.ItemHolder;
-import l2f.gameserver.templates.augmentation.AugmentationInfo;
-import l2f.gameserver.templates.augmentation.OptionGroup;
-import l2f.gameserver.templates.item.ItemTemplate;
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -21,6 +11,16 @@ import org.napile.primitive.lists.IntList;
 import org.napile.primitive.lists.impl.ArrayIntList;
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
+
+import l2f.commons.data.xml.AbstractFileParser;
+import l2f.commons.lang.ArrayUtils;
+import l2f.commons.math.random.RndSelector;
+import l2f.gameserver.Config;
+import l2f.gameserver.data.xml.holder.AugmentationDataHolder;
+import l2f.gameserver.data.xml.holder.ItemHolder;
+import l2f.gameserver.templates.augmentation.AugmentationInfo;
+import l2f.gameserver.templates.augmentation.OptionGroup;
+import l2f.gameserver.templates.item.ItemTemplate;
 
 public class AugmentationDataParser extends AbstractFileParser<AugmentationDataHolder>
 {

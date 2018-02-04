@@ -6,13 +6,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.TreeIntObjectMap;
+
 import l2f.commons.data.xml.AbstractHolder;
 import l2f.gameserver.model.GameObject;
 import l2f.gameserver.model.entity.Reflection;
 import l2f.gameserver.model.entity.residence.Residence;
-
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.TreeIntObjectMap;
 
 /**
  * @author VISTALL

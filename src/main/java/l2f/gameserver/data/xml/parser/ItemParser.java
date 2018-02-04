@@ -1,5 +1,10 @@
 package l2f.gameserver.data.xml.parser;
 
+import java.io.File;
+import java.util.Iterator;
+
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.data.xml.holder.OptionDataHolder;
@@ -8,11 +13,11 @@ import l2f.gameserver.stats.conditions.Condition;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.OptionDataTemplate;
 import l2f.gameserver.templates.StatsSet;
-import l2f.gameserver.templates.item.*;
-import org.apache.commons.lang3.StringUtils;
-
-import java.io.File;
-import java.util.Iterator;
+import l2f.gameserver.templates.item.ArmorTemplate;
+import l2f.gameserver.templates.item.Bodypart;
+import l2f.gameserver.templates.item.EtcItemTemplate;
+import l2f.gameserver.templates.item.ItemTemplate;
+import l2f.gameserver.templates.item.WeaponTemplate;
 
 public final class ItemParser extends StatParser<ItemHolder>
 {

@@ -7,6 +7,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
+import org.dom4j.Attribute;
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.commons.geometry.Polygon;
 import l2f.commons.geometry.Rectangle;
@@ -18,11 +23,6 @@ import l2f.gameserver.model.base.Race;
 import l2f.gameserver.templates.mapregion.RestartArea;
 import l2f.gameserver.templates.mapregion.RestartPoint;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
-import org.dom4j.Attribute;
-import org.dom4j.Element;
 
 public class RestartPointParser extends AbstractFileParser<MapRegionManager>
 {
