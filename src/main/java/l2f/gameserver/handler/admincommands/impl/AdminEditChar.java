@@ -8,6 +8,8 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.database.mysql;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
@@ -29,8 +31,6 @@ import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.StringUtils;
 
 @SuppressWarnings("unused")
 public class AdminEditChar implements IAdminCommandHandler

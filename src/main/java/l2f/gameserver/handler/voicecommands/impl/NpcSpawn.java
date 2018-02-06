@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.commons.lang3.math.NumberUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
@@ -17,13 +19,11 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SpawnTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 
-import org.apache.commons.lang3.math.NumberUtils;
-
 public class NpcSpawn extends Functions implements IVoicedCommandHandler
 {
 	private static final String[] COMMANDS =
 	{
-		"npcspawn"
+		"npcspawn", "spawnnpc"
 	};
 	
 	private static final int[] NPCS = {37031, 37032, 37033, 37034, 37035, 37036, 37037, 37038, 37039, 37040, 32323, 30120};

@@ -14,12 +14,12 @@
  */
 package l2f.gameserver.handler.voicecommands.impl;
 
+import Elemental.managers.GmEventManager;
+import Elemental.managers.GmEventManager.StateEnum;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.scripts.Functions;
-import Elemental.managers.GmEventManager;
-import Elemental.managers.GmEventManager.StateEnum;
 
 /**
  * Un voiced para poder registrarse o salirse de un evento creado por un gm

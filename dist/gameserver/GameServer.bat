@@ -20,7 +20,7 @@ set JAVA_OPTS=%JAVA_OPTS% -XX:+UseConcMarkSweepGC
 set JAVA_OPTS=%JAVA_OPTS% -XX:UseSSE=3
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseFastAccessorMethods
 
-java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -server -Dfile.encoding=UTF-8 -Xmx1024m -XX:+UseConcMarkSweepGC -XX:+UseTLAB -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:./gc.log -cp config;./../libs/* l2f.gameserver.GameServer
+java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -server -Dfile.encoding=UTF-8 -Xmx2096m -XX:+UseConcMarkSweepGC -XX:+UseTLAB -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:./gc.log -cp config;./../libs/* l2f.gameserver.GameServer
 
 if ERRORLEVEL 2 goto restart
 if ERRORLEVEL 1 goto error

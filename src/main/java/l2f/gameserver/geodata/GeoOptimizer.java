@@ -1,11 +1,5 @@
 package l2f.gameserver.geodata;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
-import l2f.gameserver.model.World;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -16,6 +10,13 @@ import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.CRC32;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.threading.RunnableImpl;
+import l2f.gameserver.Config;
+import l2f.gameserver.model.World;
 
 public class GeoOptimizer
 {

@@ -1,5 +1,8 @@
 package l2f.gameserver.handler.voicecommands.impl.BotReport;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.dao.CaptchaPunishmentDAO;
 import l2f.gameserver.model.Creature;
@@ -8,9 +11,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Zone;
 import l2f.gameserver.utils.AutoBan;
 import l2f.gameserver.utils.TimeUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Class that is handling Bot Reports of the player Checking if Bot can be reported, handling Captcha Window Handling Captcha Answer and Success/Fail of it

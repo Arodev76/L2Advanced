@@ -1,5 +1,7 @@
 package l2f.gameserver.handler.admincommands.impl;
 
+import java.util.Map;
+
 //import l2f.extensions.scripts.ScriptFile;
 //import l2f.gameserver.handler.AdminCommandHandler;
 
@@ -11,8 +13,6 @@ import l2f.gameserver.model.base.Element;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.serverpackets.InventoryUpdate;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-
-import java.util.Map;
 
 public class AdminAttribute implements IAdminCommandHandler
 {

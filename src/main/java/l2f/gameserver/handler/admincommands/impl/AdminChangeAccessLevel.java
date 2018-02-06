@@ -1,8 +1,19 @@
 package l2f.gameserver.handler.admincommands.impl;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.Announcements;
 import l2f.gameserver.Config;
+import l2f.gameserver.Announcements;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.database.mysql;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
@@ -11,16 +22,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.utils.Files;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 /**
  * changelvl - Изменение уровня доступа

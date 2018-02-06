@@ -8,6 +8,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.apache.commons.lang3.tuple.Pair;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Config;
@@ -33,10 +37,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.skills.AbnormalEffect;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.tuple.Pair;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Wedding implements IVoicedCommandHandler
 {

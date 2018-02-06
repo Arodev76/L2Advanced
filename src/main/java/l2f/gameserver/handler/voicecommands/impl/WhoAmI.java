@@ -1,5 +1,10 @@
 package l2f.gameserver.handler.voicecommands.impl;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
+import org.apache.commons.lang3.text.StrBuilder;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
@@ -12,10 +17,6 @@ import l2f.gameserver.stats.Formulas;
 import l2f.gameserver.stats.Stats;
 import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2f.gameserver.utils.Strings;
-import org.apache.commons.lang3.text.StrBuilder;
-
-import java.text.NumberFormat;
-import java.util.Locale;
 
 public class WhoAmI implements IVoicedCommandHandler
 {

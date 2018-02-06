@@ -7,8 +7,8 @@ import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
+import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 
 

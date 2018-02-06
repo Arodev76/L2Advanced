@@ -1,13 +1,13 @@
 package l2f.gameserver.handler.admincommands.impl;
 
+import org.apache.commons.lang3.math.NumberUtils;
+
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.GameObject;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import org.apache.commons.lang3.math.NumberUtils;
 
 public class AdminKill implements IAdminCommandHandler
 {

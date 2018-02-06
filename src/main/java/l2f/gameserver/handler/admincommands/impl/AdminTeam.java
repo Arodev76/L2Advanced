@@ -1,5 +1,7 @@
 package l2f.gameserver.handler.admincommands.impl;
 
+import java.util.List;
+
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.GameObject;
@@ -8,8 +10,6 @@ import l2f.gameserver.model.World;
 import l2f.gameserver.model.base.TeamType;
 import l2f.gameserver.model.entity.Hero;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import java.util.List;
 
 public class AdminTeam implements IAdminCommandHandler
 {

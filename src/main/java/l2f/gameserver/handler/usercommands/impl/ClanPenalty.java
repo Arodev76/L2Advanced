@@ -8,7 +8,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.utils.Strings;
 
-
 /**
  * Support for command: /clanpenalty
  */

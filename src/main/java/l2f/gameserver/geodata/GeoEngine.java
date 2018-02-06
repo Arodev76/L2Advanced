@@ -19,15 +19,15 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.geometry.Shape;
 import l2f.gameserver.Config;
 import l2f.gameserver.geodata.GeoOptimizer.BlockLink;
 import l2f.gameserver.model.GameObject;
 import l2f.gameserver.model.World;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class GeoEngine
 {
