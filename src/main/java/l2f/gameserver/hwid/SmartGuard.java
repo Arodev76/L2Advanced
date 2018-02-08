@@ -1,11 +1,12 @@
 package l2f.gameserver.hwid;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.crypt.BlowfishEngine;
+import java.io.IOException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
+import l2f.gameserver.Config;
+import l2f.gameserver.crypt.BlowfishEngine;
 
 /**
  * @author FireMoon

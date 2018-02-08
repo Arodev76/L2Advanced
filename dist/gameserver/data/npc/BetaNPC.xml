@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE list SYSTEM "npc.dtd">
 <list>
-	<npc id="53000" template_id="37006" name="Open Beta" title="Free Items">
+	<npc id="53000" name="BETA-SHOP" title="L2Advanced Helper">
+	<set name="displayId" value="60110"/>
+		<set name="aggroRange" value="0" />
+		<set name="displayId" value="31862"/>
+		<set name="ai_type" value="CharacterAI" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="40" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2444.468" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="780" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="382" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1345.8" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1303" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="471" />
+		<set name="baseRunSpd" value="120" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="79.0"/>
+		<set name="collision_radius" value="22.0"/>
+		<set name="level" value="70" />
+		<set name="rewardExp" value="0" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="0" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Npc" />
+	</npc>
+	<npc id="53001" template_id="37006" name="Open Beta" title="Free Items">
 		<set name="aggroRange" value="0" />
 		<set name="ai_type" value="CharacterAI" />
 		<set name="baseAtkRange" value="40" />
@@ -37,6 +75,100 @@
 		<set name="texture" value="" />
 		<set name="type" value="Npc" />
 		<!-- <set name="type" value="Npc" /> -->
+		<attributes>
+			<defence attribute="fire" value="150" />
+			<defence attribute="water" value="150" />
+			<defence attribute="wind" value="150" />
+			<defence attribute="earth" value="150" />
+			<defence attribute="holy" value="150" />
+			<defence attribute="unholy" value="150" />
+		</attributes>
+	</npc>
+	<npc id="53002" template_id="35062" name="Flag" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="CharacterAI" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="40" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="158000" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="2" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="3" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="295" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="989" />
+		<set name="baseMpReg" value="0.9" />
+		<set name="basePAtk" value="9" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="753" />
+		<set name="baseRunSpd" value="120" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="50" />
+		<set name="collision_height" value="58.0" />
+		<set name="collision_radius" value="15.0" />
+		<set name="level" value="1" />
+		<set name="rewardExp" value="0" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="0" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="fightClub.FlagToCapture" />
+		<skills>
+			<skill id="4416" level="19" />	<!--Others-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="53003" template_id="32027" name="Flag Holder" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="CharacterAI" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="40" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2974.357" />
+		<set name="baseHpRate" value="10" />
+		<set name="baseHpReg" value="8.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="1113" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="451" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1607.4" />
+		<set name="baseMpReg" value="3" />
+		<set name="basePAtk" value="1770" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="556" />
+		<set name="baseRunSpd" value="120" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="50" />
+		<set name="collision_height" value="31.0" />
+		<set name="collision_radius" value="30.0" />
+		<set name="level" value="78" />
+		<set name="rewardExp" value="0" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="0" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="fightClub.FlagHolder" />
+		<skills>
+			<skill id="4416" level="19" />	<!--Others-->
+		</skills>
 		<attributes>
 			<defence attribute="fire" value="150" />
 			<defence attribute="water" value="150" />

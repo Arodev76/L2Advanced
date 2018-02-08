@@ -1,14 +1,15 @@
 package l2f.gameserver.idfactory;
 
-import l2f.commons.math.PrimeFinder;
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.sql.SQLException;
 import java.util.BitSet;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.math.PrimeFinder;
+import l2f.commons.threading.RunnableImpl;
+import l2f.gameserver.ThreadPoolManager;
 
 public class BitSetIDFactory extends IdFactory
 {

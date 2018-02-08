@@ -1,12 +1,18 @@
 package l2f.gameserver.hwid;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.utils.TimeUtils;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.*;
+import l2f.gameserver.Config;
+import l2f.gameserver.ThreadPoolManager;
+import l2f.gameserver.utils.TimeUtils;
 
 /**
  * Class which cleans auto bans created by Lameguard in file {@value #PATH}{@value #ORIGINAL_FILE_NAME}

@@ -678,7 +678,7 @@
 	<armor id="57011" name="Ninja Suit" add_name="">
 		<set name="crystal_type" value="NONE"/>
 		<set name="dropable" value="true"/>
-		<set name="icon" value="L2Advanced.icon1.g_co_ninja_u"/>
+		<set name="icon" value="L2AvA.icon1.g_co_ninja_u"/>
 		<set name="sellable" value="true"/>
 		<set name="tradeable" value="true"/>
 		<set name="type" value="NONE"/>
@@ -690,7 +690,7 @@
 	<armor id="57012" name="Dark Assasin Suit" add_name="">
 		<set name="crystal_type" value="NONE"/>
 		<set name="dropable" value="true"/>
-		<set name="icon" value="L2Advanced.ico.Asm_ico"/>
+		<set name="icon" value="L2AvA.ico.Asm_ico"/>
 		<set name="sellable" value="true"/>
 		<set name="tradeable" value="true"/>
 		<set name="type" value="NONE"/>

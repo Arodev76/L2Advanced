@@ -1,9 +1,9 @@
 package l2f.gameserver.hwid;
 
-import l2f.gameserver.model.Player;
-
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+
+import l2f.gameserver.model.Player;
 
 public class HwidGamer
 {

@@ -1,16 +1,17 @@
 package l2f.gameserver.idfactory;
 
-import gnu.trove.list.array.TIntArrayList;
-import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.database.DatabaseFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Arrays;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.list.array.TIntArrayList;
+import l2f.commons.dbutils.DbUtils;
+import l2f.gameserver.database.DatabaseFactory;
 
 public abstract class IdFactory
 {
