@@ -4637,7 +4637,7 @@
 			<class id="47" />	<!--orcMonk-->
 			<class id="48" />	<!--tyrant-->
 			<class id="113" />	<!--titan-->
-			<class id="114" />	<!--grandKhauatari-->
+			<class id="114" />	<!--grandKhavatari-->
 		</teach_classes>
 		<attributes>
 			<defence attribute="fire" value="150" />

@@ -4002,7 +4002,7 @@
 			<item id="5588" count="1" equipable="false" shortcut="12"/>
 		</template>
 
-		<template id="114" name="Grand Khauatari">
+		<template id="114" name="Grand Khavatari">
 			<set name="raceId" value="3"/>
 			<set name="baseSTR" value="40"/>
 			<set name="baseCON" value="47"/>

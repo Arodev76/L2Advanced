@@ -43,7 +43,7 @@ public class FightClubEventManager
 
 	public enum CLASSES
 	{
-		FIGHTERS(13113, ClassId.duelist, ClassId.dreadnought, ClassId.titan, ClassId.grandKhauatari, ClassId.maestro, ClassId.doombringer, ClassId.maleSoulhound, ClassId.femaleSoulhound),
+		FIGHTERS(13113, ClassId.duelist, ClassId.dreadnought, ClassId.titan, ClassId.grandKhavatari, ClassId.maestro, ClassId.doombringer, ClassId.maleSoulhound, ClassId.femaleSoulhound),
 		TANKS(13112, ClassId.phoenixKnight, ClassId.hellKnight, ClassId.evaTemplar, ClassId.shillienTemplar, ClassId.trickster),
 		ARCHERS(13114, ClassId.sagittarius, ClassId.moonlightSentinel, ClassId.ghostSentinel, ClassId.fortuneSeeker),
 		DAGGERS(13114, ClassId.adventurer, ClassId.windRider, ClassId.ghostHunter),

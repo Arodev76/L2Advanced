@@ -68,7 +68,7 @@ public class _735_MakeSpearsDull extends Dominion_KillSpecialUnitQuest
 				ClassId.ghostHunter,
 				ClassId.ghostSentinel,
 				ClassId.titan,
-				ClassId.grandKhauatari,
+				ClassId.grandKhavatari,
 				ClassId.fortuneSeeker,
 				ClassId.berserker,
 				ClassId.maleSoulbreaker,

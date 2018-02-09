@@ -58,7 +58,7 @@ public class DragonValley implements ScriptFile, OnPlayerExitListener
 		weight.put(ClassId.shillienSaint, -0.6);
 		weight.put(ClassId.titan, 0.3);
 		weight.put(ClassId.dominator, 0.1);
-		weight.put(ClassId.grandKhauatari, 0.2);
+		weight.put(ClassId.grandKhavatari, 0.2);
 		weight.put(ClassId.doomcryer, 0.1);
 		weight.put(ClassId.fortuneSeeker, 0.9);
 		weight.put(ClassId.maestro, 0.7);

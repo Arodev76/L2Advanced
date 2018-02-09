@@ -143,7 +143,7 @@ public enum PlayerClass
 	ShillienSaint(darkelf, Priest, Fourth), //112
 
 	Titan(orc, Fighter, Fourth), //113
-	GrandKhauatari(orc, Fighter, Fourth), //114
+	GrandKhavatari(orc, Fighter, Fourth), //114
 	Dominator(orc, Mystic, Fourth), //115
 	Doomcryer(orc, Mystic, Fourth), //116
 
@@ -255,7 +255,7 @@ public enum PlayerClass
 		subclassSetMap.put(EvaSaint, EnumSet.of(ElvenElder));
 		subclassSetMap.put(SpectralDancer, EnumSet.of(Bladedancer));
 		subclassSetMap.put(Titan, EnumSet.of(Destroyer));
-		subclassSetMap.put(GrandKhauatari, EnumSet.of(Tyrant));
+		subclassSetMap.put(GrandKhavatari, EnumSet.of(Tyrant));
 		subclassSetMap.put(Dominator, EnumSet.of(Overlord));
 		subclassSetMap.put(Doomcryer, EnumSet.of(Warcryer));
 	}

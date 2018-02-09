@@ -14964,7 +14964,7 @@
 			<skill id="995" level="1" cost="150000000" name="Rush Impact" min_level="83" />
 			<skill id="777" level="1" cost="0" name="Demolition Impact" min_level="83" item_id="14183" item_count="1" clicked="true" />
 		</class>
-		<class id="114"> <!--grandKhauatari-->
+		<class id="114"> <!--grandKhavatari-->
 			<skill id="329" level="1" cost="8330000" name="Health" min_level="76" />
 			<skill id="328" level="1" cost="8330000" name="Wisdom" min_level="76" />
 			<skill id="335" level="1" cost="8330000" name="Fortitude" min_level="76" />

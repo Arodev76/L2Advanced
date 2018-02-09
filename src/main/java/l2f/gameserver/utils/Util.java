@@ -497,8 +497,8 @@ public class Util
 			case shillienSaint:
 				return "Shillien Saint";
 
-			case grandKhauatari:
-				return "Grand Khauatari";
+			case grandKhavatari:
+				return "Grand Khavatari";
 
 			case fortuneSeeker:
 				return "Fortune Seeker";

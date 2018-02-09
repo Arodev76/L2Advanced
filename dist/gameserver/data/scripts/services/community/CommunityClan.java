@@ -84,7 +84,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 		"SpectralMaster",
 		"ShillienSaint",
 		"Titan",
-		"GrandKhauatari",
+		"GrandKhavatari",
 		"Dominator",
 		"Doomcryer",
 		"FortuneSeeker",

@@ -151,7 +151,7 @@ public enum ClassId
 	shillienSaint(112, "Shillien Saint", true, Race.darkelf, shillienElder, null, 4, ClassType2.Healer),
 
 	titan(113, "Titan", false, Race.orc, destroyer, null, 4, ClassType2.Warrior),
-	grandKhauatari(114, "Grand Khauatari", false, Race.orc, tyrant, null, 4, ClassType2.Warrior),
+	grandKhavatari(114, "Grand Khavatari", false, Race.orc, tyrant, null, 4, ClassType2.Warrior),
 	dominator(115, "Dominator", true, Race.orc, overlord, null, 4, ClassType2.Enchanter),
 	doomcryer(116, "Doomcryer", true, Race.orc, warcryer, null, 4, ClassType2.Enchanter),
 
