@@ -21,14 +21,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * ????? ?????????? ??????? Java ??????<br>
- * ? ???????? ??????????? ???????????? Eclipse Java Compiler
+ * Класс компиляции внешних Java файлов<br>
+ * В качестве компилятора используется Eclipse Java Compiler
  * 
  * @author G1ta0
  */
 public class Compiler
 {
-	private static final Logger _log = LoggerFactory.getLogger(Compiler.class);
+	static final Logger _log = LoggerFactory.getLogger(Compiler.class);
 
 	private static final JavaCompiler javac = new EclipseCompiler();
 
@@ -40,6 +40,7 @@ public class Compiler
 	public boolean compile(File... files)
 	{
 		// javac options
+		@SuppressWarnings("unused")
 		List<String> options = new ArrayList<String>();
 		options.add("-Xlint:all");
 		options.add("-warn:none");
@@ -70,6 +71,14 @@ public class Compiler
 
 	private class DefaultDiagnosticListener implements DiagnosticListener<JavaFileObject>
 	{
+		/**
+		 * 
+		 */
+		public DefaultDiagnosticListener()
+		{
+			// TODO Auto-generated constructor stub
+		}
+
 		@Override
 		public void report(Diagnostic<? extends JavaFileObject> diagnostic)
 		{

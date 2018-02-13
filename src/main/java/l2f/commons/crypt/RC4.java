@@ -78,11 +78,11 @@ public class RC4
             xorIndex = ((state[x] &0xff) + (state[y] & 0xff)) & 0xff;
             result[i] = (byte)((buf[i] ^ state[xorIndex]) & 0xff);
         }
-        if (_block) {
+        if(_block) {
         	x = 0;
         	y = 0;
         } else 
-        	if (x>5000 || y > 5000) {
+        	if(x>5000 || y > 5000) {
         		x = 0; y = 0;
         	}
         

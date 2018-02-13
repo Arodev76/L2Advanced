@@ -11,39 +11,39 @@ public class Start
 
 	/**
 	 * @param args
-	 * @throws java.io.IOException 
+	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException 
 	{
 		//String command = "";
 		//BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
 		
-		System.out.print("Path to file:\n");
+		System.out.println("Path to file:");
 		String path = Scanning(System.in).next();
 		
-		System.out.print("User name:\n");
+		System.out.println("User name:");
 		String user = Scanning(System.in).next();
 		
-		System.out.print("Key:\n");
+		System.out.println("Key:");
 		int key = Integer.valueOf(Scanning(System.in).next());
 		
-		System.out.print("IP adress:\n");
+		System.out.println("IP adress:");
 		String ipadr = Scanning(System.in).next();
 		
-		System.out.print("Crypting file...\n");
+		System.out.println("Crypting file...");
 		String newKey = key + ipadr + user;
 		NewCrypt crypt = new NewCrypt(newKey.getBytes());
 		
 		File file = new File(path);
-		if (!file.exists())
+		if(!file.exists())
 		{
-			System.out.print("File not found..\n");
+			System.out.println("File not found..");
 			System.exit(0);
 		}
 		
-		if (file.length() >= Integer.MAX_VALUE)
+		if(file.length() >= Integer.MAX_VALUE)
 		{
-			System.out.print("Big file!\n");
+			System.out.println("Big file!");
 			System.exit(0);
 		}
 		
@@ -52,7 +52,7 @@ public class Start
 		data = crypt.crypt(data);
 		
 		File file2 = new File("start.bin");
-		if (file2.exists())
+		if(file2.exists())
 		{
 			file2.createNewFile();
 			FileOutputStream out = new FileOutputStream(file2);

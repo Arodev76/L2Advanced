@@ -8,7 +8,8 @@ import java.util.List;
 public final class CollectionUtils
 {
 	private CollectionUtils()
-	{}
+	{
+	}
 	
 	private static <T extends Comparable<T>> void eqBrute(List<T> list, int lo, int hi)
 	{
@@ -16,7 +17,7 @@ public final class CollectionUtils
 		{
 			if (list.get(hi).compareTo(list.get(lo)) < 0)
 			{
-				T e = list.get(lo);
+				final T e = list.get(lo);
 				list.set(lo, list.get(hi));
 				list.set(hi, e);
 			}
@@ -27,7 +28,7 @@ public final class CollectionUtils
 			pmin = list.get(pmin).compareTo(list.get(lo + 2)) < 0 ? pmin : lo + 2;
 			if (pmin != lo)
 			{
-				T e = list.get(lo);
+				final T e = list.get(lo);
 				list.set(lo, list.get(pmin));
 				list.set(pmin, e);
 			}
@@ -40,7 +41,7 @@ public final class CollectionUtils
 			pmin = list.get(pmin).compareTo(list.get(lo + 3)) < 0 ? pmin : lo + 3;
 			if (pmin != lo)
 			{
-				T e = list.get(lo);
+				final T e = list.get(lo);
 				list.set(lo, list.get(pmin));
 				list.set(pmin, e);
 			}
@@ -48,7 +49,7 @@ public final class CollectionUtils
 			pmax = list.get(pmax).compareTo(list.get(hi - 2)) > 0 ? pmax : hi - 2;
 			if (pmax != hi)
 			{
-				T e = list.get(hi);
+				final T e = list.get(hi);
 				list.set(hi, list.get(pmax));
 				list.set(pmax, e);
 			}
@@ -65,19 +66,16 @@ public final class CollectionUtils
 			eqBrute(list, lo, hi);
 			return;
 		} /* * Pick a pivot and move it out of the way */
-		T e, pivot = list.get((lo + hi) / 2);
+		T e;
+		final T pivot = list.get((lo + hi) / 2);
 		list.set((lo + hi) / 2, list.get(hi));
 		list.set(hi, pivot);
 		while (lo < hi)
 		{ /* * Search forward from a[lo] until an element is found that * is greater than the pivot or lo >= hi */
-			while (list.get(lo).compareTo(pivot) <= 0 && lo < hi)
-			{
+			while ((list.get(lo).compareTo(pivot) <= 0) && (lo < hi))
 				lo++;
-			} /* * Search backward from a[hi] until element is found that * is less than the pivot, or hi <= lo */
-			while (pivot.compareTo(list.get(hi)) <= 0 && lo < hi)
-			{
+			while ((pivot.compareTo(list.get(hi)) <= 0) && (lo < hi))
 				hi--;
-			} /* * Swap elements a[lo] and a[hi] */
 			if (lo < hi)
 			{
 				e = list.get(lo);
@@ -91,11 +89,11 @@ public final class CollectionUtils
 		eqSort(list, hi + 1, hi0);
 	}
 	
-	/** 
+	/**
 	 * An enhanced quick sort
 	 * @author Jim Boritz
-	 * @param list 
-	 * @param <T> 
+	 * @param list
+	 * @param <T>
 	 */
 	public static <T extends Comparable<T>> void eqSort(List<T> list)
 	{
@@ -108,7 +106,7 @@ public final class CollectionUtils
 		{
 			if (c.compare(list.get(hi), list.get(lo)) < 0)
 			{
-				T e = list.get(lo);
+				final T e = list.get(lo);
 				list.set(lo, list.get(hi));
 				list.set(hi, e);
 			}
@@ -119,7 +117,7 @@ public final class CollectionUtils
 			pmin = c.compare(list.get(pmin), list.get(lo + 2)) < 0 ? pmin : lo + 2;
 			if (pmin != lo)
 			{
-				T e = list.get(lo);
+				final T e = list.get(lo);
 				list.set(lo, list.get(pmin));
 				list.set(pmin, e);
 			}
@@ -132,7 +130,7 @@ public final class CollectionUtils
 			pmin = c.compare(list.get(pmin), list.get(lo + 3)) < 0 ? pmin : lo + 3;
 			if (pmin != lo)
 			{
-				T e = list.get(lo);
+				final T e = list.get(lo);
 				list.set(lo, list.get(pmin));
 				list.set(pmin, e);
 			}
@@ -140,7 +138,7 @@ public final class CollectionUtils
 			pmax = c.compare(list.get(pmax), list.get(hi - 2)) > 0 ? pmax : hi - 2;
 			if (pmax != hi)
 			{
-				T e = list.get(hi);
+				final T e = list.get(hi);
 				list.set(hi, list.get(pmax));
 				list.set(pmax, e);
 			}
@@ -157,19 +155,16 @@ public final class CollectionUtils
 			eqBrute(list, lo, hi, c);
 			return;
 		} /* * Pick a pivot and move it out of the way */
-		T e, pivot = list.get((lo + hi) / 2);
+		T e;
+		final T pivot = list.get((lo + hi) / 2);
 		list.set((lo + hi) / 2, list.get(hi));
 		list.set(hi, pivot);
 		while (lo < hi)
 		{ /* * Search forward from a[lo] until an element is found that * is greater than the pivot or lo >= hi */
-			while (c.compare(list.get(lo), pivot) <= 0 && lo < hi)
-			{
+			while ((c.compare(list.get(lo), pivot) <= 0) && (lo < hi))
 				lo++;
-			} /* * Search backward from a[hi] until element is found that * is less than the pivot, or hi <= lo */
-			while (c.compare(pivot, list.get(hi)) <= 0 && lo < hi)
-			{
+			while ((c.compare(pivot, list.get(hi)) <= 0) && (lo < hi))
 				hi--;
-			} /* * Swap elements a[lo] and a[hi] */
 			if (lo < hi)
 			{
 				e = list.get(lo);
@@ -183,23 +178,23 @@ public final class CollectionUtils
 		eqSort(list, hi + 1, hi0, c);
 	}
 	
-	/** 
+	/**
 	 * An enhanced quick sort
 	 * @author Jim Boritz
-	 * @param list 
-	 * @param c 
-	 * @param <T> 
+	 * @param list
+	 * @param c
+	 * @param <T>
 	 */
 	public static <T> void eqSort(List<T> list, Comparator<? super T> c)
 	{
 		eqSort(list, 0, list.size() - 1, c);
 	}
 	
-	/** 
+	/**
 	 * An insertion sort
 	 * @author Jason Harrison
-	 * @param list 
-	 * @param <T> 
+	 * @param list
+	 * @param <T>
 	 */
 	public static <T extends Comparable<T>> void insertionSort(List<T> list)
 	{
@@ -207,7 +202,7 @@ public final class CollectionUtils
 		{
 			int j = i;
 			T A;
-			T B = list.get(i);
+			final T B = list.get(i);
 			while ((j > 0) && ((A = list.get(j - 1)).compareTo(B) > 0))
 			{
 				list.set(j, A);
@@ -216,13 +211,13 @@ public final class CollectionUtils
 			list.set(j, B);
 		}
 	}
-
-	/** 
+	
+	/**
 	 * An insertion sort
 	 * @author Jason Harrison
-	 * @param list 
-	 * @param c 
-	 * @param <T> 
+	 * @param list
+	 * @param c
+	 * @param <T>
 	 */
 	public static <T> void insertionSort(List<T> list, Comparator<? super T> c)
 	{
@@ -230,7 +225,7 @@ public final class CollectionUtils
 		{
 			int j = i;
 			T A;
-			T B = list.get(i);
+			final T B = list.get(i);
 			while ((j > 0) && (c.compare(A = list.get(j - 1), B) > 0))
 			{
 				list.set(j, A);
@@ -239,7 +234,7 @@ public final class CollectionUtils
 			list.set(j, B);
 		}
 	}
-
+	
 	/**
 	 * copy from {@link java.util.AbstractList}
 	 * @param collection
@@ -249,15 +244,15 @@ public final class CollectionUtils
 	public static <E> int hashCode(Collection<E> collection)
 	{
 		int hashCode = 1;
-		Iterator<E> i = collection.iterator();
+		final Iterator<E> i = collection.iterator();
 		while (i.hasNext())
 		{
-			E obj = i.next();
-			hashCode = 31 * hashCode + (obj == null ? 0 : obj.hashCode());
+			final E obj = i.next();
+			hashCode = (31 * hashCode) + (obj == null ? 0 : obj.hashCode());
 		}
 		return hashCode;
 	}
-
+	
 	public static <E> E safeGet(List<E> list, int index)
 	{
 		return list.size() > index ? list.get(index) : null;

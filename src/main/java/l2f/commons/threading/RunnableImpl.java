@@ -5,14 +5,14 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author VISTALL
- * @date 19:13/04.04.2011
+ * @date 03:13/12.02.2018
  */
 public abstract class RunnableImpl implements Runnable
 {
 	public static final Logger _log = LoggerFactory.getLogger(RunnableImpl.class);
-
+	
 	public abstract void runImpl() throws Exception;
-
+	
 	@Override
 	public final void run()
 	{
@@ -20,7 +20,7 @@ public abstract class RunnableImpl implements Runnable
 		{
 			runImpl();
 		}
-		catch (Exception e)
+		catch (final Exception e)
 		{
 			_log.error("Exception: RunnableImpl.run(): " + e, e);
 		}

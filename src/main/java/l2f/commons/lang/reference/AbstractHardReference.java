@@ -1,26 +1,31 @@
 package l2f.commons.lang.reference;
 
+/**
+ * Base class of an object holding a reference to another object.
+ * @author G1ta0
+ * @param <T>
+ */
 public class AbstractHardReference<T> implements HardReference<T>
 {
 	private T reference;
-
+	
 	public AbstractHardReference(T reference)
 	{
 		this.reference = reference;
 	}
-
+	
 	@Override
 	public T get()
 	{
 		return reference;
 	}
-
+	
 	@Override
 	public void clear()
 	{
 		reference = null;
 	}
-
+	
 	@SuppressWarnings("rawtypes")
 	@Override
 	public boolean equals(Object o)

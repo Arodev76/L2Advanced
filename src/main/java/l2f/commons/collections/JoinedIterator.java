@@ -36,56 +36,56 @@ import java.util.List;
  * invoke the Iterators in sequence until all Iterators are exhausted.
  * @param <E> 
  *
- * @modify VISTALL
+ * @modify Arodev
  */
 public class JoinedIterator<E> implements Iterator<E>
 {
 	// wrapped iterators
 	private Iterator<E>[] _iterators;
-
+	
 	// index of current iterator in the wrapped iterators array
 	private int _currentIteratorIndex;
-
+	
 	// the current iterator
 	private Iterator<E> _currentIterator;
-
+	
 	// the last used iterator
 	private Iterator<E> _lastUsedIterator;
-
+	
 	public JoinedIterator(List<Iterator<E>> iterators)
 	{
-		this(iterators.toArray(new Iterator[iterators.size()]));
+		this(iterators.toArray(new Iterator<?>[iterators.size()]));
 	}
-
-	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public JoinedIterator(Iterator... iterators)
+	
+	@SuppressWarnings("unchecked")
+	public JoinedIterator(@SuppressWarnings("rawtypes") Iterator... iterators)
 	{
 		if (iterators == null)
 			throw new NullPointerException("Unexpected NULL iterators argument");
 		_iterators = iterators;
 	}
-
+	
 	@Override
 	public boolean hasNext()
 	{
 		updateCurrentIterator();
 		return _currentIterator.hasNext();
 	}
-
+	
 	@Override
 	public E next()
 	{
 		updateCurrentIterator();
 		return _currentIterator.next();
 	}
-
+	
 	@Override
 	public void remove()
 	{
 		updateCurrentIterator();
 		_lastUsedIterator.remove();
 	}
-
+	
 	// call this before any Iterator method to make sure that the current Iterator
 	// is not exhausted
 	protected void updateCurrentIterator()
@@ -100,8 +100,8 @@ public class JoinedIterator<E> implements Iterator<E>
 			// before calling hasNext() or next() (although they shouldn't)
 			_lastUsedIterator = _currentIterator;
 		}
-
-		while (!_currentIterator.hasNext() && _currentIteratorIndex < _iterators.length - 1)
+		
+		while (!_currentIterator.hasNext() && (_currentIteratorIndex < (_iterators.length - 1)))
 		{
 			_currentIteratorIndex++;
 			_currentIterator = _iterators[_currentIteratorIndex];

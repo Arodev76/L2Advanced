@@ -150,7 +150,7 @@ public class GameServer
 	@SuppressWarnings("unchecked")
 	public GameServer() throws Exception
 	{
-		int update = 30;
+		int update = 33;
 		_instance = this;
 		_serverStarted = time();
 		_listeners = new GameServerListenerList();

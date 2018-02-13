@@ -32,172 +32,148 @@ import java.util.Map;
  */
 public class StrTable
 {
-	private final Map<Integer, Map<String, String>> rows = new HashMap<Integer, Map<String, String>>();
-	private final Map<String, Integer> columns = new LinkedHashMap<String, Integer>();
-	private final List<String> titles = new ArrayList<String>();
-
-	public StrTable(String title)
-	{
-		if (title != null)
-			titles.add(title);
-	}
-
-	public StrTable()
-	{
-		this(null);
-	}
-
-	public StrTable set(int rowIndex, String colName, boolean val)
-	{
-		return set(rowIndex, colName, Boolean.toString(val));
-	}
-
-	public StrTable set(int rowIndex, String colName, byte val)
-	{
-		return set(rowIndex, colName, Byte.toString(val));
-	}
-	
-	public StrTable set(int rowIndex, String colName, char val)
-	{
-		return set(rowIndex, colName, String.valueOf(val));
-	}
-	
-	public StrTable set(int rowIndex, String colName, short val)
-	{
-		return set(rowIndex, colName, Short.toString(val));
-	}
-	
-	public StrTable set(int rowIndex, String colName, int val)
-	{
-		return set(rowIndex, colName, Integer.toString(val));
-	}
-	
-	public StrTable set(int rowIndex, String colName, long val)
-	{
-		return set(rowIndex, colName, Long.toString(val));
-	}
-	
-	public StrTable set(int rowIndex, String colName, float val)
-	{
-		return set(rowIndex, colName, Float.toString(val));
-	}
-	
-	public StrTable set(int rowIndex, String colName, double val)
-	{
-		return set(rowIndex, colName, Double.toString(val));
-	}
-	
-	public StrTable set(int rowIndex, String colName, Object val)
-	{
-		return set(rowIndex, colName, String.valueOf(val));
-	}
-	
-	public StrTable set(int rowIndex, String colName, String val)
-	{
-		Map<String, String> row;
-
-		if (rows.containsKey(rowIndex))
-			row = rows.get(rowIndex);
-		else
-		{
-			row = new HashMap<String, String>();
-			rows.put(rowIndex, row);
-		}
-
-		row.put(colName, val);
-
-		int columnSize;
-		if (!columns.containsKey(colName))
-			columnSize = Math.max(colName.length(), val.length());
-		else if (columns.get(colName) >= (columnSize = val.length()))
-			return this;
-		columns.put(colName, columnSize);
-
-		return this;
-	}
-
-	public StrTable addTitle(String s)
-	{
-		titles.add(s);
-		return this;
-	}
-
-	private static StringBuilder right(StringBuilder result, String s, int sz)
-	{
-		result.append(s);
-		if ((sz -= s.length()) > 0)
-			for (int i = 0; i < sz; i++)
-				result.append(" ");
-		return result;
-	}
-
-	private static StringBuilder center(StringBuilder result, String s, int sz)
-	{
-		int offset = result.length();
-		result.append(s);
-		int i;
-		while ((i = sz - (result.length() - offset)) > 0)
-		{
-			result.append(" ");
-			if (i > 1)
-				result.insert(offset, " ");
-		}
-		return result;
-	}
-
-	private static StringBuilder repeat(StringBuilder result, String s, int sz)
-	{
-		for (int i = 0; i < sz; i++)
-			result.append(s);
-		return result;
-	}
-
-	@Override
-	public String toString()
-	{
-		StringBuilder result = new StringBuilder();
-
-		if (columns.isEmpty())
-			return result.toString();
-
-		StringBuilder header = new StringBuilder("|");
-		StringBuilder line = new StringBuilder("|");
-		for (String c : columns.keySet())
-		{
-			center(header, c, columns.get(c) + 2).append("|");
-			repeat(line, "-", columns.get(c) + 2).append("|");
-		}
-
-		if (!titles.isEmpty())
-		{
-			result.append(" ");
-			repeat(result, "-", header.length() - 2).append(" ").append("\n");
-			for (String title : titles)
-			{
-				result.append("| ");
-				right(result, title, header.length() - 3).append("|").append("\n");
-			}
-		}
-
-		result.append(" ");
-		repeat(result, "-", header.length() - 2).append(" ").append("\n");
-
-		result.append(header).append("\n");
-		result.append(line).append("\n");
-
-		for (Map<String, String> row : rows.values())
-		{
-			result.append("|");
-			for (String c : columns.keySet())
-			{
-				center(result, row.containsKey(c) ? row.get(c) : "-", columns.get(c) + 2).append("|");
-			}
-			result.append("\n");
-		}
-
-		result.append(" ");
-		repeat(result, "-", header.length() - 2).append(" ").append("\n");
-
-		return result.toString();
-	}
+    private final Map<Integer, Map<String, String>> rows;
+    private final Map<String, Integer> columns;
+    private final List<String> titles;
+    
+    public StrTable(final String title) {
+        this.rows = new HashMap<>();
+        this.columns = new LinkedHashMap<>();
+        this.titles = new ArrayList<>();
+        if (title != null) {
+            this.titles.add(title);
+        }
+    }
+    
+    public StrTable() {
+        this(null);
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final boolean val) {
+        return this.set(rowIndex, colName, Boolean.toString(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final byte val) {
+        return this.set(rowIndex, colName, Byte.toString(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final char val) {
+        return this.set(rowIndex, colName, String.valueOf(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final short val) {
+        return this.set(rowIndex, colName, Short.toString(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final int val) {
+        return this.set(rowIndex, colName, Integer.toString(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final long val) {
+        return this.set(rowIndex, colName, Long.toString(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final float val) {
+        return this.set(rowIndex, colName, Float.toString(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final double val) {
+        return this.set(rowIndex, colName, Double.toString(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final Object val) {
+        return this.set(rowIndex, colName, String.valueOf(val));
+    }
+    
+    public StrTable set(final int rowIndex, final String colName, final String val) {
+        Map<String, String> row;
+        if (this.rows.containsKey(rowIndex)) {
+            row = this.rows.get(rowIndex);
+        }
+        else {
+            row = new HashMap<>();
+            this.rows.put(rowIndex, row);
+        }
+        row.put(colName, val);
+        int columnSize;
+        if (!this.columns.containsKey(colName)) {
+            columnSize = Math.max(colName.length(), val.length());
+        }
+        else if (this.columns.get(colName) >= (columnSize = val.length())) {
+            return this;
+        }
+        this.columns.put(colName, columnSize);
+        return this;
+    }
+    
+    public StrTable addTitle(final String s) {
+        this.titles.add(s);
+        return this;
+    }
+    
+    private static StringBuilder right(final StringBuilder result, final String s, int sz) {
+        result.append(s);
+        if ((sz -= s.length()) > 0) {
+            for (int i = 0; i < sz; ++i) {
+                result.append(" ");
+            }
+        }
+        return result;
+    }
+    
+    private static StringBuilder center(final StringBuilder result, final String s, final int sz) {
+        final int offset = result.length();
+        result.append(s);
+        int i;
+        while ((i = sz - (result.length() - offset)) > 0) {
+            result.append(" ");
+            if (i > 1) {
+                result.insert(offset, " ");
+            }
+        }
+        return result;
+    }
+    
+    private static StringBuilder repeat(final StringBuilder result, final String s, final int sz) {
+        for (int i = 0; i < sz; ++i) {
+            result.append(s);
+        }
+        return result;
+    }
+    
+    @Override
+    public String toString() {
+        final StringBuilder result = new StringBuilder();
+        if (this.columns.isEmpty()) {
+            return result.toString();
+        }
+        final StringBuilder header = new StringBuilder("|");
+        final StringBuilder line = new StringBuilder("|");
+        for (final String c : this.columns.keySet()) {
+            center(header, c, this.columns.get(c) + 2).append("|");
+            repeat(line, "-", this.columns.get(c) + 2).append("|");
+        }
+        if (!this.titles.isEmpty()) {
+            result.append(" ");
+            repeat(result, "-", header.length() - 2).append(" ").append("\n");
+            for (final String title : this.titles) {
+                result.append("| ");
+                right(result, title, header.length() - 3).append("|").append("\n");
+            }
+        }
+        result.append(" ");
+        repeat(result, "-", header.length() - 2).append(" ").append("\n");
+        result.append(header).append("\n");
+        result.append(line).append("\n");
+        for (final Map<String, String> row : this.rows.values()) {
+            result.append("|");
+            for (final String c2 : this.columns.keySet()) {
+                center(result, row.containsKey(c2) ? row.get(c2) : "-", this.columns.get(c2) + 2).append("|");
+            }
+            result.append("\n");
+        }
+        result.append(" ");
+        repeat(result, "-", header.length() - 2).append(" ").append("\n");
+        return result.toString();
+    }
 }

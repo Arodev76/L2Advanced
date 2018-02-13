@@ -3,62 +3,59 @@ package l2f.commons.util.concurrent.locks;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 
 /**
- * ????? ?????????????? ?????????? ? ????????? ??????. ?????????? ?????? {@link java.util.concurrent.locks.ReentrantLock}
- * ?????????? ?????? ??????, ????? ??????????????.
- * 
- * @author G1ta0
+ * Class providing locking with re-entry. Simplified analogue {@link java.util.concurrent.locks.ReentrantLock} Consumes less memory, less productive.
+ * @author Arodev
  */
 public class ReentrantLock
 {
 	private static final AtomicIntegerFieldUpdater<ReentrantLock> stateUpdater = AtomicIntegerFieldUpdater.newUpdater(ReentrantLock.class, "state");
-
+	
 	private Thread owner;
 	private volatile int state;
-
+	
 	public ReentrantLock()
-	{}
-
+	{
+	}
+	
 	private final int getState()
 	{
 		return state;
 	}
-
+	
 	private void setState(int newState)
 	{
 		state = newState;
 	}
-
+	
 	private boolean compareAndSetState(int expect, int update)
 	{
 		return stateUpdater.compareAndSet(this, expect, update);
 	}
-
+	
 	private Thread getExclusiveOwnerThread()
 	{
 		return owner;
 	}
-
+	
 	private void setExclusiveOwnerThread(Thread thread)
 	{
 		owner = thread;
 	}
-
+	
 	public void lock()
 	{
 		if (compareAndSetState(0, 1))
 			setExclusiveOwnerThread(Thread.currentThread());
 		else
 			for (;;)
-			{
 				if (tryLock())
 					break;
-			}
 	}
-
+	
 	public boolean tryLock()
 	{
 		final Thread current = Thread.currentThread();
-		int c = getState();
+		final int c = getState();
 		if (c == 0)
 		{
 			if (compareAndSetState(0, 1))
@@ -69,7 +66,7 @@ public class ReentrantLock
 		}
 		else if (current == getExclusiveOwnerThread())
 		{
-			int nextc = c + 1;
+			final int nextc = c + 1;
 			if (nextc < 0)
 				throw new Error("Maximum lock count exceeded");
 			setState(nextc);
@@ -77,10 +74,10 @@ public class ReentrantLock
 		}
 		return false;
 	}
-
+	
 	public boolean unlock()
 	{
-		int c = getState() - 1;
+		final int c = getState() - 1;
 		if (Thread.currentThread() != getExclusiveOwnerThread())
 			throw new IllegalMonitorStateException();
 		boolean free = false;

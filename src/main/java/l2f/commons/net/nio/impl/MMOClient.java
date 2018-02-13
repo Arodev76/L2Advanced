@@ -13,22 +13,22 @@ public abstract class MMOClient<T extends MMOConnection>
 	{
 		_connection = con;
 	}
-
+	
 	protected void setConnection(T con)
 	{
 		_connection = con;
 	}
-
+	
 	public T getConnection()
 	{
 		return _connection;
 	}
-
+	
 	public boolean isAuthed()
 	{
 		return isAuthed;
 	}
-
+	
 	public void setAuthed(boolean isAuthed)
 	{
 		this.isAuthed = isAuthed;
@@ -39,25 +39,27 @@ public abstract class MMOClient<T extends MMOConnection>
 		if (isConnected())
 			_connection.closeNow();
 	}
-
+	
 	public void closeLater()
 	{
 		if (isConnected())
 			_connection.closeLater();
 	}
-
+	
 	public boolean isConnected()
 	{
-		return _connection != null && !_connection.isClosed();
+		return (_connection != null) && !_connection.isClosed();
 	}
-
+	
 	public abstract boolean decrypt(ByteBuffer buf, int size);
-
+	
 	public abstract boolean encrypt(ByteBuffer buf, int size);
-
+	
 	protected void onDisconnection()
-	{}
-
+	{
+	}
+	
 	protected void onForcedDisconnection()
-	{}
+	{
+	}
 }

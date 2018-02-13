@@ -264,6 +264,7 @@ public class Base64
 		return encodeObject(serializableObject, NO_OPTIONS);
 	}
 
+	@SuppressWarnings("null")
 	public static String encodeObject(java.io.Serializable serializableObject, int options)
 	{
 		java.io.ByteArrayOutputStream baos = null;
@@ -352,6 +353,7 @@ public class Base64
 		return encodeBytes(source, off, len, NO_OPTIONS);
 	}
 
+	@SuppressWarnings("null")
 	public static String encodeBytes(byte[] source, int off, int len, int options)
 	{
 		int dontBreakLines = (options & DONT_BREAK_LINES);
@@ -532,6 +534,7 @@ public class Base64
 		return out;
 	}
 
+	@SuppressWarnings("null")
 	public static byte[] decode(String s)
 	{
 		byte[] bytes;
@@ -602,6 +605,7 @@ public class Base64
 		return bytes;
 	}
 
+	@SuppressWarnings("null")
 	public static Object decodeToObject(String encodedObject)
 	{
 		byte[] objBytes = decode(encodedObject);
@@ -621,7 +625,7 @@ public class Base64
 		{
 			e.printStackTrace();
 		}
-		catch (ClassNotFoundException e)
+		catch (java.lang.ClassNotFoundException e)
 		{
 			e.printStackTrace();
 		}

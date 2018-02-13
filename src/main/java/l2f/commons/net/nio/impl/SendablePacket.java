@@ -10,7 +10,7 @@ public abstract class SendablePacket<T extends MMOClient> extends l2f.commons.ne
 	{
 		return ((SelectorThread) Thread.currentThread()).getWriteBuffer();
 	}
-
+	
 	@SuppressWarnings("unchecked")
 	@Override
 	public T getClient()
@@ -18,5 +18,6 @@ public abstract class SendablePacket<T extends MMOClient> extends l2f.commons.ne
 		return (T) ((SelectorThread) Thread.currentThread()).getWriteClient();
 	}
 	
+	@Override
 	protected abstract boolean write();
 }

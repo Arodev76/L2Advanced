@@ -5,12 +5,18 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Вспомогательный класс для работы с HardReference
+ * @author G1ta0
+ */
 public class HardReferences
 {
-	private HardReferences(){}
+	private HardReferences()
+	{
+	}
 	
 	private static class EmptyReferencedHolder extends AbstractHardReference<Object>
-	{		
+	{
 		public EmptyReferencedHolder(Object reference)
 		{
 			super(reference);
@@ -22,15 +28,21 @@ public class HardReferences
 	@SuppressWarnings("unchecked")
 	public static <T> HardReference<T> emptyRef()
 	{
-		return (HardReference<T>)EMPTY_REF;
+		return (HardReference<T>) EMPTY_REF;
 	}
 	
+	/**
+	 * Получить список объектов, исходя из коллекции ссылок. Нулевые ссылки будут отфильтрованы.
+	 * @param <T>
+	 * @param refs коллекция ссылок
+	 * @return коллекцию объектов, на которые указываю ссылки
+	 */
 	public static <T> Collection<T> unwrap(Collection<HardReference<T>> refs)
 	{
-		List<T> result = new ArrayList<T>(refs.size());
-		for (HardReference<T> ref : refs)
+		final List<T> result = new ArrayList<>(refs.size());
+		for (final HardReference<T> ref : refs)
 		{
-			T obj = ref.get();
+			final T obj = ref.get();
 			if (obj != null)
 				result.add(obj);
 		}
@@ -40,6 +52,7 @@ public class HardReferences
 	private static class WrappedIterable<T> implements Iterable<T>
 	{
 		final Iterable<HardReference<T>> refs;
+		
 		WrappedIterable(Iterable<HardReference<T>> refs)
 		{
 			this.refs = refs;
@@ -59,13 +72,13 @@ public class HardReferences
 			{
 				return iterator.hasNext();
 			}
-
+			
 			@Override
 			public T next()
 			{
 				return iterator.next().get();
 			}
-
+			
 			@Override
 			public void remove()
 			{
@@ -76,12 +89,18 @@ public class HardReferences
 		@Override
 		public Iterator<T> iterator()
 		{
-			return new WrappedIterator<T>(refs.iterator());
+			return new WrappedIterator<>(refs.iterator());
 		}
 	}
 	
+	/**
+	 * Итерация по коллекции ссылок на объекты.
+	 * @param <T>
+	 * @param refs коллекция ссылок на объекты
+	 * @return враппер, который будет возвращать при итерации объекты, на которые указывают ссылки
+	 */
 	public static <T> Iterable<T> iterate(Iterable<HardReference<T>> refs)
 	{
-		return new WrappedIterable<T>(refs);
+		return new WrappedIterable<>(refs);
 	}
 }

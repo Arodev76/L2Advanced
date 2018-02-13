@@ -26,35 +26,37 @@ import l2f.commons.util.Base64;
 public class CryptUtil
 {
 	private static final Logger _log = Logger.getLogger(CryptUtil.class);
+	
 	private static Cipher _encCipher;
 	private static Cipher _decCipher;
+	private final static String _pass = "ALNF__etJIEHFVI#@$234JjJ&R(#*&?45?[:F{EWKF3DFGSDJ343HDFP345MVCSND85445VNSKJ";	
 	private static SecretKey _key = null;
-	private static final byte[] _salt = { -116, 30, -95, -101, 2, 112, 2, 93 };
+	private final static byte _salt[] = new byte[]{(byte)0x8C, (byte)0x1E, (byte)0xA1, (byte)0x9B, (byte)0x02, (byte)0x70, (byte)0x02, (byte)0x5D };
 
 	private static boolean _initiated = false;
 
 	private static void init()
 	{
-		if (_initiated) {
+		if (_initiated)
 			return;
-		}
+		
 		try
 		{
-			KeySpec keySpec = new PBEKeySpec("ALNF__etJIEHFVI#@$234JjJ&R(#*&?45?[:F{EWKF3DFGSDJ343HDFP345MVCSND85445VNSKJ".toCharArray(), _salt, 19);
+			KeySpec keySpec = new PBEKeySpec(_pass.toCharArray(), _salt, 19);
 			AlgorithmParameterSpec paramSpec = new PBEParameterSpec(_salt, 19);
 			_key = SecretKeyFactory.getInstance("PBEWithMD5AndDES").generateSecret(keySpec);
-
+			
 			_encCipher = Cipher.getInstance(_key.getAlgorithm());
 			_decCipher = Cipher.getInstance(_key.getAlgorithm());
-
-			_encCipher.init(1, _key, paramSpec);
-			_decCipher.init(2, _key, paramSpec);
+			
+			_encCipher.init(Cipher.ENCRYPT_MODE, _key, paramSpec);
+			_decCipher.init(Cipher.DECRYPT_MODE, _key, paramSpec);
 		}
 		catch (Exception e)
 		{
 			_log.error("Cannot init crypto engine.", e);
 		}
-
+		
 		_initiated = true;
 	}
 
@@ -93,13 +95,13 @@ public class CryptUtil
 	{
 		init();
 		out = new CipherOutputStream(out, _encCipher);
+		
 		try
 		{
 			int num;
 			byte[] buffer = new byte[1024];
 			while ((num = in.read(buffer)) >= 0)
-			{
-				out.write(buffer, 0, num); }
+				out.write(buffer, 0, num);
 			out.flush();
 			out.close();
 		}
@@ -117,39 +119,36 @@ public class CryptUtil
 	}
 
 	@SuppressWarnings("resource")
-	public static InputStream decryptOnDemand(File file)
-			throws IOException
+	public static InputStream decryptOnDemand(File file) throws IOException
 	{
-		InputStream output;
 		InputStream input = new FileInputStream(file);
-
-		if ((byte)input.read() == 0)
+		InputStream output;
+		if ((byte)input.read() == 0x00)
 		{
 			byte[] bytes = new byte[0];
 			output = new ByteArrayInputStream(bytes);
 			output = decrypt(input, output);
 			output.reset();
 		}
-		else {
+		else
 			output = new FileInputStream(file);
-		}
+
 		return output;
 	}
 
 	@SuppressWarnings("resource")
-	public static InputStream decryptOnDemand(InputStream input)
-			throws IOException
+	public static InputStream decryptOnDemand(InputStream input) throws IOException
 	{
 		InputStream output;
-		if ((byte)input.read() == 0)
+		if ((byte)input.read() == 0x00)
 		{
 			byte[] bytes = new byte[0];
 			output = new ByteArrayInputStream(bytes);
 			output = decrypt(input, output);
 		}
-		else {
+		else
 			output = input;
-		}
+
 		output.reset();
 		return output;
 	}
@@ -159,6 +158,7 @@ public class CryptUtil
 	{
 		init();
 		in = new CipherInputStream(in, _decCipher);
+
 		try
 		{
 			@SuppressWarnings("unused")

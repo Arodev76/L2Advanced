@@ -8,73 +8,36 @@ import java.util.Arrays;
  */
 
 /**
- * Used to keep hash table capacities prime numbers.
- * Not of interest for users; only for implementors of hashtables.
- *
- * <p>Choosing prime numbers as hash table capacities is a good idea
- * to keep them working fast, particularly under hash table
- * expansions.
- *
- * <p>However, JDK 1.2, JGL 3.1 and many other toolkits do nothing to
- * keep capacities prime.  This class provides efficient means to
- * choose prime capacities.
- *
- * <p>Choosing a prime is <tt>O(log 300)</tt> (binary search in a list
- * of 300 ints).  Memory requirements: 1 KB static memory.
- *
+ * Used to keep hash table capacities prime numbers. Not of interest for users; only for implementors of hashtables.
+ * <p>
+ * Choosing prime numbers as hash table capacities is a good idea to keep them working fast, particularly under hash table expansions.
+ * <p>
+ * However, JDK 1.2, JGL 3.1 and many other toolkits do nothing to keep capacities prime. This class provides efficient means to choose prime capacities.
+ * <p>
+ * Choosing a prime is <tt>O(log 300)</tt> (binary search in a list of 300 ints). Memory requirements: 1 KB static memory.
  * @author wolfgang.hoschek@cern.ch
  * @version 1.0, 09/24/99
  */
 public final class PrimeFinder
 {
 	/**
-	 * The largest prime this class can generate; currently equal to
-	 * <tt>Integer.MAX_VALUE</tt>.
+	 * The largest prime this class can generate; currently equal to <tt>Integer.MAX_VALUE</tt>.
 	 */
-	public static final int largestPrime = Integer.MAX_VALUE; //yes, it is prime.
-
+	public static final int largestPrime = Integer.MAX_VALUE; // yes, it is prime.
+	
 	/**
-	 * The prime number list consists of 11 chunks.
-	 *
-	 * Each chunk contains prime numbers.
-	 *
-	 * A chunk starts with a prime P1. The next element is a prime
-	 * P2. P2 is the smallest prime for which holds: P2 >= 2*P1.
-	 *
-	 * The next element is P3, for which the same holds with respect
-	 * to P2, and so on.
-	 *
-	 * Chunks are chosen such that for any desired capacity >= 1000
-	 * the list includes a prime number <= desired capacity * 1.11.
-	 *
-	 * Therefore, primes can be retrieved which are quite close to any
-	 * desired capacity, which in turn avoids wasting memory.
-	 *
-	 * For example, the list includes
-	 * 1039,1117,1201,1277,1361,1439,1523,1597,1759,1907,2081.
-	 *
-	 * So if you need a prime >= 1040, you will find a prime <=
-	 * 1040*1.11=1154.
-	 *
-	 * Chunks are chosen such that they are optimized for a hashtable
-	 * growthfactor of 2.0;
-	 *
-	 * If your hashtable has such a growthfactor then, after initially
-	 * "rounding to a prime" upon hashtable construction, it will
-	 * later expand to prime capacities such that there exist no
-	 * better primes.
-	 *
-	 * In total these are about 32*10=320 numbers -> 1 KB of static
-	 * memory needed.
-	 *
-	 * If you are stingy, then delete every second or fourth chunk.
+	 * The prime number list consists of 11 chunks. Each chunk contains prime numbers. A chunk starts with a prime P1. The next element is a prime P2. P2 is the smallest prime for which holds: P2 >= 2*P1. The next element is P3, for which the same holds with respect to P2, and so on. Chunks are
+	 * chosen such that for any desired capacity >= 1000 the list includes a prime number <= desired capacity * 1.11. Therefore, primes can be retrieved which are quite close to any desired capacity, which in turn avoids wasting memory. For example, the list includes
+	 * 1039,1117,1201,1277,1361,1439,1523,1597,1759,1907,2081. So if you need a prime >= 1040, you will find a prime <= 1040*1.11=1154. Chunks are chosen such that they are optimized for a hashtable growthfactor of 2.0; If your hashtable has such a growthfactor then, after initially "rounding to a
+	 * prime" upon hashtable construction, it will later expand to prime capacities such that there exist no better primes. In total these are about 32*10=320 numbers -> 1 KB of static memory needed. If you are stingy, then delete every second or fourth chunk.
 	 */
-
-	private static final int[] primeCapacities = {
-		//chunk #0
+	
+	private static final int[] primeCapacities =
+	{
+		// chunk #0
 		largestPrime,
-
-		//chunk #1
+		
+		// chunk #1
 		5,
 		11,
 		23,
@@ -104,8 +67,8 @@ public final class PrimeFinder
 		421439783,
 		842879579,
 		1685759167,
-
-		//chunk #2
+		
+		// chunk #2
 		433,
 		877,
 		1759,
@@ -129,8 +92,8 @@ public final class PrimeFinder
 		463646329,
 		927292699,
 		1854585413,
-
-		//chunk #3
+		
+		// chunk #3
 		953,
 		1907,
 		3821,
@@ -153,8 +116,8 @@ public final class PrimeFinder
 		501165979,
 		1002331963,
 		2004663929,
-
-		//chunk #4
+		
+		// chunk #4
 		1039,
 		2081,
 		4177,
@@ -176,8 +139,8 @@ public final class PrimeFinder
 		274174111,
 		548348231,
 		1096696463,
-
-		//chunk #5
+		
+		// chunk #5
 		31,
 		67,
 		137,
@@ -204,8 +167,8 @@ public final class PrimeFinder
 		293871013,
 		587742049,
 		1175484103,
-
-		//chunk #6
+		
+		// chunk #6
 		599,
 		1201,
 		2411,
@@ -228,8 +191,8 @@ public final class PrimeFinder
 		317534141,
 		635068283,
 		1270136683,
-
-		//chunk #7
+		
+		// chunk #7
 		311,
 		631,
 		1277,
@@ -253,8 +216,8 @@ public final class PrimeFinder
 		336098327,
 		672196673,
 		1344393353,
-
-		//chunk #8
+		
+		// chunk #8
 		3,
 		7,
 		17,
@@ -284,8 +247,8 @@ public final class PrimeFinder
 		359339171,
 		718678369,
 		1437356741,
-
-		//chunk #9
+		
+		// chunk #9
 		43,
 		89,
 		179,
@@ -312,8 +275,8 @@ public final class PrimeFinder
 		379577741,
 		759155483,
 		1518310967,
-
-		//chunk #10
+		
+		// chunk #10
 		379,
 		761,
 		1523,
@@ -336,21 +299,19 @@ public final class PrimeFinder
 		200019221,
 		400038451,
 		800076929,
-		1600153859 };
-
+		1600153859
+	};
+	
 	static
-	{ //initializer
+	{ // initializer
 		// The above prime numbers are formatted for human readability.
 		// To find numbers fast, we sort them once and for all.
-
+		
 		Arrays.sort(primeCapacities);
 	}
-
+	
 	/**
-	 * Returns a prime number which is <code>&gt;= desiredCapacity</code>
-	 * and very close to <code>desiredCapacity</code> (within 11% if
-	 * <code>desiredCapacity &gt;= 1000</code>).
-	 *
+	 * Returns a prime number which is <code>&gt;= desiredCapacity</code> and very close to <code>desiredCapacity</code> (within 11% if <code>desiredCapacity &gt;= 1000</code>).
 	 * @param desiredCapacity the capacity desired by the user.
 	 * @return the capacity which should be used for a hashtable.
 	 */

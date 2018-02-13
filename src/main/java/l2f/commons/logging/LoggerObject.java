@@ -4,40 +4,38 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author VISTALL
- * @date  20:49/30.11.2010
+ * @author Arodev
+ * @date  01:42/12.02.2018
  */
 public abstract class LoggerObject
 {
-	protected final Logger _log = LoggerFactory.getLogger(getClass());
-
-	public void error(String st, Exception e)
-	{
-		_log.error(getClass().getSimpleName() + ": " + st, e);
-	}
-
-	public void error(String st)
-	{
-		_log.error(getClass().getSimpleName() + ": " + st);
-	}
-
-	public void warn(String st, Exception e)
-	{
-		_log.warn(getClass().getSimpleName() + ": " + st, e);
-	}
-
-	public void warn(String st)
-	{
-		_log.warn(getClass().getSimpleName() + ": " + st);
-	}
-
-	public void info(String st, Exception e)
-	{
-		_log.info(getClass().getSimpleName() + ": " + st, e);
-	}
-
-	public void info(String st)
-	{
-		_log.info(getClass().getSimpleName() + ": " + st);
-	}
+    protected final Logger _log;
+    
+    public LoggerObject() {
+        this._log = LoggerFactory.getLogger(this.getClass());
+    }
+    
+    public void error(final String st, final Exception e) {
+        this._log.error(this.getClass().getSimpleName() + ": " + st, e);
+    }
+    
+    public void error(final String st) {
+        this._log.error(this.getClass().getSimpleName() + ": " + st);
+    }
+    
+    public void warn(final String st, final Exception e) {
+        this._log.warn(this.getClass().getSimpleName() + ": " + st, e);
+    }
+    
+    public void warn(final String st) {
+        this._log.warn(this.getClass().getSimpleName() + ": " + st);
+    }
+    
+    public void info(final String st, final Exception e) {
+        this._log.info(this.getClass().getSimpleName() + ": " + st, e);
+    }
+    
+    public void info(final String st) {
+        this._log.info(this.getClass().getSimpleName() + ": " + st);
+    }
 }
