@@ -13,7 +13,7 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author Grivesky
- * @date 21.01.2013
+ * @update 20:42/17.02.2018
  */
 @SuppressWarnings("serial")
 public class BirthDayCakeInstance extends NpcInstance

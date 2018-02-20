@@ -3,10 +3,10 @@ package l2f.gameserver.network.telnet;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
-import l2f.gameserver.Config;
-
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
+
+import l2f.commons.configuration.Config;
 
 public class TelnetServer
 {

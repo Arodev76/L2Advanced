@@ -4,20 +4,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.instancemanager.SpawnManager;
 import l2f.gameserver.model.Spawner;
 import l2f.gameserver.model.entity.events.GlobalEvent;
 import l2f.gameserver.model.instances.NpcInstance;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-public class SpawnExObject implements SpawnableObject
-{
 /**
  * @author Aro
- * @date 20:32/08.10.2017
+ * @date 15:13/18.02.2018
  */
+public class SpawnExObject implements SpawnableObject
+{
 	private static final long serialVersionUID = -7028054454807368464L;
 
 	private static final Logger _log = LoggerFactory.getLogger(SpawnExObject.class);

@@ -1,7 +1,5 @@
 package l2f.gameserver.model.instances;
 
-import gnu.trove.iterator.TIntObjectIterator;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
@@ -12,16 +10,20 @@ import java.util.TreeSet;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.iterator.TIntObjectIterator;
 import l2f.commons.collections.MultiValueSet;
+import l2f.commons.configuration.Config;
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.CharacterAI;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.CtrlIntention;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.data.xml.holder.MultiSellHolder;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
@@ -105,14 +107,8 @@ import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
 import l2f.gameserver.utils.Strings;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class NpcInstance extends Creature
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -5056116095408645007L;
 	public static final String NO_CHAT_WINDOW = "noChatWindow";
 	public static final String NO_RANDOM_WALK = "noRandomWalk";

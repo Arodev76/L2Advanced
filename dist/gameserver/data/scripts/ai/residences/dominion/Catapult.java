@@ -3,7 +3,7 @@ package ai.residences.dominion;
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ai.DefaultAI;
 import l2f.gameserver.instancemanager.QuestManager;
 import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
@@ -21,7 +21,7 @@ import quests._729_ProtectTheTerritoryCatapult;
 
 /**
  * @author VISTALL
- * @date 3:35/23.06.2011
+ * @update 19:05/17.02.2018
  */
 public class Catapult extends DefaultAI
 {

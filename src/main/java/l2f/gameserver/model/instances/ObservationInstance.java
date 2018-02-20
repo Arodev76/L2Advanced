@@ -1,5 +1,9 @@
 package l2f.gameserver.model.instances;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;
@@ -7,10 +11,6 @@ import l2f.gameserver.model.Zone;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
 
 public final class ObservationInstance extends NpcInstance
 {

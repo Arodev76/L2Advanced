@@ -1,6 +1,11 @@
 package l2f.gameserver.model.instances;
 
-import l2f.gameserver.Config;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.MultiSellHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.Hero;
@@ -13,10 +18,6 @@ import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.npc.NpcTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.List;
 
 public class OlympiadManagerInstance extends NpcInstance
 {

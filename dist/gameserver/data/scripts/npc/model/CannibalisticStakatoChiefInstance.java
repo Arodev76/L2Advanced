@@ -1,7 +1,7 @@
 package npc.model;
 
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Party;
 import l2f.gameserver.model.Player;

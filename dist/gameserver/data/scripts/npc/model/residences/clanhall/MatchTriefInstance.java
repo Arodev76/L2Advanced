@@ -9,7 +9,7 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL
- * @date 19:55/22.04.2011
+ * @update 20:55/17.02.2018
  */
 public class MatchTriefInstance extends CTBBossInstance
 {

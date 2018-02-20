@@ -8,8 +8,8 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.listener.actor.player.OnPlayerExitListener;

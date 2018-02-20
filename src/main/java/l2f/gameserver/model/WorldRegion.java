@@ -7,6 +7,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.lang.ArrayUtils;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
@@ -14,9 +17,6 @@ import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.model.entity.Reflection;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.L2GameServerPacket;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class WorldRegion implements Iterable<GameObject>
 {

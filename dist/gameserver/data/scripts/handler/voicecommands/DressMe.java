@@ -6,10 +6,10 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.data.xml.holder.DressArmorHolder;
 import l2f.gameserver.data.xml.holder.DressCloakHolder;
 import l2f.gameserver.data.xml.holder.DressShieldHolder;

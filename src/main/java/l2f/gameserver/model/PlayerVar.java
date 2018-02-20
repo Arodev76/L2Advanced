@@ -1,14 +1,14 @@
 package l2f.gameserver.model;
 
+import java.util.concurrent.ScheduledFuture;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.skills.AbnormalEffect;
 
-import java.util.concurrent.ScheduledFuture;
-
 /**
  * @author Akumu
- * @date 14:53/29.04.12
+ * @update 12:27/18.02.18
  */
 public class PlayerVar
 {

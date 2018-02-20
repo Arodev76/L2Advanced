@@ -1,8 +1,8 @@
 package services;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;

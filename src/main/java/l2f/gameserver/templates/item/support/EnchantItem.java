@@ -3,11 +3,11 @@ package l2f.gameserver.templates.item.support;
 import java.util.Collections;
 import java.util.Set;
 
-import l2f.gameserver.templates.item.ItemTemplate;
-
 import org.napile.primitive.Containers;
 import org.napile.primitive.sets.IntSet;
 import org.napile.primitive.sets.impl.HashIntSet;
+
+import l2f.gameserver.templates.item.ItemTemplate;
 
 public class EnchantItem
 {

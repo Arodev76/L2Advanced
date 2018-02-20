@@ -8,7 +8,7 @@ import l2f.gameserver.scripts.Functions;
 
 /**
  * @author VISTALL
- * @date 20:10/19.04.2011
+ * @update 19:19/17.02.2018
  */
 public class RebelCommander extends SiegeGuardFighter
 {

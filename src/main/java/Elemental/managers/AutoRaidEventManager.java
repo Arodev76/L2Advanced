@@ -7,7 +7,7 @@
 //
 //import l2f.commons.util.Rnd;
 //import l2f.gameserver.Announcements;
-//import l2f.gameserver.Config;
+//import l2f.commons.configuration.Config;
 //import l2f.gameserver.ThreadPoolManager;
 //import l2f.gameserver.data.xml.holder.NpcHolder;
 //import l2f.gameserver.instancemanager.ReflectionManager;

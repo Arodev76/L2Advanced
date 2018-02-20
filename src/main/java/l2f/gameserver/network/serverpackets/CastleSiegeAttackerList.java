@@ -3,13 +3,13 @@ package l2f.gameserver.network.serverpackets;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.entity.events.impl.SiegeEvent;
 import l2f.gameserver.model.entity.events.objects.SiegeClanObject;
 import l2f.gameserver.model.entity.residence.Residence;
 import l2f.gameserver.model.pledge.Alliance;
 import l2f.gameserver.model.pledge.Clan;
-
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * Populates the Siege Attacker List in the SiegeInfo Window<BR>

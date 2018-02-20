@@ -1,5 +1,7 @@
 package l2f.gameserver.model.instances.residences;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
@@ -9,13 +11,8 @@ import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.npc.NpcTemplate;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class SiegeFlagInstance extends NpcInstance
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private SiegeClanObject _owner;
 	private long _lastAnnouncedAttackedTime = 0;

@@ -3,7 +3,7 @@ package l2f.gameserver.model.entity.achievements;
 import java.util.Map.Entry;
 import java.util.concurrent.ScheduledFuture;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.listener.actor.OnKillListener;
 import l2f.gameserver.model.Creature;

@@ -4,7 +4,7 @@ import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
 
 import ai.residences.SiegeGuardFighter;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.instancemanager.QuestManager;
 import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
 import l2f.gameserver.model.Creature;
@@ -21,7 +21,7 @@ import quests._731_ProtectTheMilitaryAssociationLeader;
 
 /**
  * @author VISTALL
- * @date 4:32/23.06.2011
+ * @update 19:07/17.02.2018
  */
 public class MilitaryAssociationLeader extends SiegeGuardFighter
 {

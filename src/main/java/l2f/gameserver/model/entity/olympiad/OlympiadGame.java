@@ -5,9 +5,13 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ScheduledFuture;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.lang.ArrayUtils;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.InstantZoneHolder;
 import l2f.gameserver.instancemanager.OlympiadHistoryManager;
@@ -33,10 +37,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.InstantZone;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.Log;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class OlympiadGame
 {

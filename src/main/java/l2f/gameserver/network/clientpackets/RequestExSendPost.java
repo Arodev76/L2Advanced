@@ -5,8 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import Elemental.managers.MailManager;
+import l2f.commons.configuration.Config;
 import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.Config;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.database.mysql;
 import l2f.gameserver.handler.admincommands.impl.AdminMail;
@@ -26,11 +29,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.ArrayUtils;
-
-import Elemental.managers.MailManager;
-
 
 /**
  * Request for sending a new message. In response, sends {@link ExReplyWritePost}.

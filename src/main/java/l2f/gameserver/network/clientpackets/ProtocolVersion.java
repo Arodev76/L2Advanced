@@ -1,16 +1,17 @@
 package l2f.gameserver.network.clientpackets;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.hwid.SmartGuard;
-import l2f.gameserver.network.serverpackets.KeyPacket;
-import l2f.gameserver.network.serverpackets.SendStatus;
+import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
+import java.util.Arrays;
+
 import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.nio.ByteBuffer;
-import java.nio.charset.Charset;
-import java.util.Arrays;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.hwid.SmartGuard;
+import l2f.gameserver.network.serverpackets.KeyPacket;
+import l2f.gameserver.network.serverpackets.SendStatus;
 
 public class ProtocolVersion extends L2GameClientPacket
 {

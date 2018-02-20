@@ -1,15 +1,16 @@
 package l2f.gameserver.model.entity;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.idfactory.IdFactory;
 import l2f.gameserver.instancemanager.CoupleManager;
 import l2f.gameserver.model.Player;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 public class Couple
 {

@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import l2f.gameserver.database.mysql;
 import l2f.gameserver.model.pledge.Clan;
@@ -7,8 +9,6 @@ import l2f.gameserver.network.GameClient;
 import l2f.gameserver.network.serverpackets.CharacterDeleteFail;
 import l2f.gameserver.network.serverpackets.CharacterDeleteSuccess;
 import l2f.gameserver.network.serverpackets.CharacterSelectionInfo;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CharacterDelete extends L2GameClientPacket
 {

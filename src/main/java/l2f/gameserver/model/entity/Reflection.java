@@ -1,7 +1,5 @@
 package l2f.gameserver.model.entity;
 
-import gnu.trove.set.hash.TIntHashSet;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -13,6 +11,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.apache.commons.lang3.StringUtils;
+import org.napile.primitive.Containers;
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.set.hash.TIntHashSet;
 import l2f.commons.listener.Listener;
 import l2f.commons.listener.ListenerList;
 import l2f.commons.threading.RunnableImpl;
@@ -46,13 +52,6 @@ import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.templates.spawn.SpawnTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.NpcUtils;
-
-import org.apache.commons.lang3.StringUtils;
-import org.napile.primitive.Containers;
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Reflection
 {

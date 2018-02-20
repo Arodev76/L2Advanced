@@ -1,7 +1,13 @@
 package l2f.gameserver.network.clientpackets;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.math.SafeMath;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.BuyListHolder;
 import l2f.gameserver.data.xml.holder.BuyListHolder.NpcTradeList;
 import l2f.gameserver.instancemanager.ReflectionManager;
@@ -12,11 +18,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.items.TradeItem;
 import l2f.gameserver.network.serverpackets.ExBuySellList;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * format:		cddb, b - array of (dd)

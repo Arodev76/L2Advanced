@@ -22,8 +22,8 @@ import java.util.regex.Pattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.geometry.Shape;
-import l2f.gameserver.Config;
 import l2f.gameserver.geodata.GeoOptimizer.BlockLink;
 import l2f.gameserver.model.GameObject;
 import l2f.gameserver.model.World;

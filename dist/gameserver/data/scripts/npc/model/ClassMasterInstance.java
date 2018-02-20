@@ -2,7 +2,7 @@ package npc.model;
 
 import java.util.StringTokenizer;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.model.Player;
@@ -17,12 +17,8 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.Util;
 
-
 public final class ClassMasterInstance extends MerchantInstance
 {
-	/**
-	 * @author Aro
-	 */
 	private static final long serialVersionUID = -6206315361251464210L;
 
 	public ClassMasterInstance(int objectId, NpcTemplate template)

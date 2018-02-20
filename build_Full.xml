@@ -65,7 +65,7 @@
 				<attribute name="Build-Date" value="${build.tstamp}" />
 			</manifest>
 		</jar>
-		<jar destfile="${build.dist}/libs/l2f-gameserver..jar" level="9">
+		<jar destfile="${build.dist}/libs/l2f-gameserver.jar" level="9">
 			<fileset dir="${build.bin}">
 				<exclude name="**/commons/**"/>
 	            <exclude name="**/loginserver/**"/>

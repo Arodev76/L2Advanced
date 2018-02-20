@@ -1,6 +1,9 @@
 package l2f.gameserver.network.serverpackets;
 
-import l2f.gameserver.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.instancemanager.CursedWeaponsManager;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.model.Creature;
@@ -15,9 +18,6 @@ import l2f.gameserver.model.pledge.Alliance;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.skills.effects.EffectCubic;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CharInfo extends L2GameServerPacket
 {

@@ -16,7 +16,7 @@ import org.xml.sax.SAXException;
 
 import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.crypt.CryptUtil;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.base.MultiSellEntry;
 import l2f.gameserver.model.base.MultiSellIngredient;

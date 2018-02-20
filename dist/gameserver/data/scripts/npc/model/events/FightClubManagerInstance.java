@@ -4,8 +4,8 @@ import java.util.StringTokenizer;
 
 import org.apache.commons.lang3.StringUtils;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;

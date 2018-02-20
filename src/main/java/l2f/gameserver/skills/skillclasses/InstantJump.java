@@ -3,7 +3,7 @@ package l2f.gameserver.skills.skillclasses;
 import java.util.List;
 
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.geodata.GeoEngine;

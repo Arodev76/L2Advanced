@@ -1,5 +1,9 @@
 package l2f.gameserver.model.entity.events.objects;
 
+import java.io.Serializable;
+import java.util.List;
+import java.util.concurrent.Future;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -8,10 +12,6 @@ import l2f.gameserver.model.entity.events.impl.KrateisCubeEvent;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.Location;
-
-import java.io.Serializable;
-import java.util.List;
-import java.util.concurrent.Future;
 
 public class KrateisCubePlayerObject implements Serializable, Comparable<KrateisCubePlayerObject>
 {

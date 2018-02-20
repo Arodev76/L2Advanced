@@ -17,7 +17,7 @@ import org.napile.primitive.maps.impl.HashIntObjectMap;
 import l2f.commons.data.xml.AbstractDirParser;
 import l2f.commons.geometry.Polygon;
 import l2f.commons.time.cron.SchedulingPattern;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.DoorHolder;
 import l2f.gameserver.data.xml.holder.InstantZoneHolder;
 import l2f.gameserver.data.xml.holder.SpawnHolder;

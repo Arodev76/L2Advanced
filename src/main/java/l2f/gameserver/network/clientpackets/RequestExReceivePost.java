@@ -1,5 +1,9 @@
 package l2f.gameserver.network.clientpackets;
 
+import java.util.Set;
+
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.math.SafeMath;
 import l2f.gameserver.dao.MailDAO;
@@ -14,18 +18,12 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Log;
-import org.apache.commons.lang3.StringUtils;
-
-import java.util.Set;
 
 public class RequestExReceivePost extends L2GameClientPacket
 {
-	private int postId;
-
-	/**
-	 * format: d
-	 */
-	@Override
+    private int postId;
+    
+    @Override
 	protected void readImpl()
 	{
 		postId = readD();

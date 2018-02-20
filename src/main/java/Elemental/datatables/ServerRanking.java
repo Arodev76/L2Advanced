@@ -28,7 +28,7 @@
 //import java.util.TreeMap;
 //import java.util.concurrent.ConcurrentHashMap;
 //
-//import l2f.gameserver.Config;
+//import l2f.commons.configuration.Config;
 //import l2f.gameserver.ThreadPoolManager;
 //import l2f.gameserver.data.htm.HtmCache;
 //import l2f.gameserver.database.DatabaseFactory;

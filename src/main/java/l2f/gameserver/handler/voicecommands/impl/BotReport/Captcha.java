@@ -7,9 +7,9 @@ import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.PledgeCrest;

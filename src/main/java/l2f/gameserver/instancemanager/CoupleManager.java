@@ -1,5 +1,15 @@
 package l2f.gameserver.instancemanager;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
@@ -8,15 +18,6 @@ import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.Couple;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class CoupleManager
 {

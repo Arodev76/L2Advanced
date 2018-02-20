@@ -1,5 +1,8 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.tuple.Pair;
+
+import Elemental.managers.GmEventManager;
 import l2f.commons.lang.ArrayUtils;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
@@ -19,10 +22,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.TeleportUtils;
-
-import org.apache.commons.lang3.tuple.Pair;
-
-import Elemental.managers.GmEventManager;
 
 public class RequestRestartPoint extends L2GameClientPacket
 {

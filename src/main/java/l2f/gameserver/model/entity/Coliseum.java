@@ -2,6 +2,9 @@ package l2f.gameserver.model.entity;
 
 import java.util.ArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.instancemanager.UnderGroundColliseumManager;
@@ -12,9 +15,6 @@ import l2f.gameserver.model.base.TeamType;
 import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Coliseum
 {

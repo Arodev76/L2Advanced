@@ -13,7 +13,7 @@ import l2f.gameserver.utils.Location;
 
 /**
  * @author Grivesky
- * @date 22.01.2012  
+ * @update 17.02.2018  
  * @AI for Mobs Furnace is MOS
  */
 

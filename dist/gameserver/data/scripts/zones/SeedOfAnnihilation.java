@@ -7,7 +7,7 @@ import java.util.Map;
 
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.cache.Msg;

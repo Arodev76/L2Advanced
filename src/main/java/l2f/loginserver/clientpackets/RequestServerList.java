@@ -2,9 +2,9 @@ package l2f.loginserver.clientpackets;
 
 import l2f.loginserver.L2LoginClient;
 import l2f.loginserver.SessionKey;
+import l2f.loginserver.serverpackets.LoginFail.LoginFailReason;
 import l2f.loginserver.serverpackets.ServerList;
 import l2f.loginserver.serverpackets.ServerListFake;
-import l2f.loginserver.serverpackets.LoginFail.LoginFailReason;
 
 /**
  * Format: ddc

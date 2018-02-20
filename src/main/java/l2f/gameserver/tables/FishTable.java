@@ -1,19 +1,20 @@
 package l2f.gameserver.tables;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.reward.RewardData;
-import l2f.gameserver.templates.FishTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.map.hash.TIntObjectHashMap;
+import l2f.commons.dbutils.DbUtils;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.model.reward.RewardData;
+import l2f.gameserver.templates.FishTemplate;
 
 public class FishTable
 {

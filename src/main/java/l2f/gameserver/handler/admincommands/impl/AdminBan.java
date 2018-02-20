@@ -3,7 +3,7 @@ package l2f.gameserver.handler.admincommands.impl;
 import java.util.Collection;
 import java.util.StringTokenizer;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.GameObjectsStorage;

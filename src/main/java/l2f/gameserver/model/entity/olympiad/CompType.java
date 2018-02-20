@@ -1,6 +1,6 @@
 package l2f.gameserver.model.entity.olympiad;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 
 public enum CompType
 {

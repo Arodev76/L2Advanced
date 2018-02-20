@@ -1,10 +1,10 @@
 package l2f.loginserver.serverpackets;
 
-import l2f.commons.net.nio.impl.SendablePacket;
-import l2f.loginserver.L2LoginClient;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.commons.net.nio.impl.SendablePacket;
+import l2f.loginserver.L2LoginClient;
 
 public abstract class L2LoginServerPacket extends SendablePacket<L2LoginClient>
 {

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.poll.Poll;

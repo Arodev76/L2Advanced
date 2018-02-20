@@ -1,10 +1,9 @@
 package l2f.gameserver.utils;
 
+import org.apache.commons.lang3.StringUtils;
 
 import gnu.trove.iterator.TIntLongIterator;
 import gnu.trove.map.hash.TIntLongHashMap;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class AntiFlood
 {

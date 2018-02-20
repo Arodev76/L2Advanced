@@ -1,12 +1,12 @@
 package l2f.gameserver.instancemanager;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.data.xml.AbstractHolder;
 import l2f.gameserver.model.GameObject;
 import l2f.gameserver.model.World;
 import l2f.gameserver.templates.mapregion.RegionData;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * Менеджер специальных зон регионов.

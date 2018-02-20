@@ -2,6 +2,9 @@ package l2f.gameserver.network.serverpackets;
 
 import java.util.Calendar;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2f.gameserver.model.entity.residence.Castle;
@@ -9,9 +12,6 @@ import l2f.gameserver.model.entity.residence.ClanHall;
 import l2f.gameserver.model.entity.residence.Residence;
 import l2f.gameserver.model.pledge.Alliance;
 import l2f.gameserver.model.pledge.Clan;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * Shows the Siege Info<BR>

@@ -2,11 +2,11 @@ package l2f.gameserver.network.clientpackets;
 
 import java.util.Collection;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.model.Player;
+import l2f.gameserver.network.serverpackets.components.SystemMsg;
 
 public class RequestBlock extends L2GameClientPacket
 {

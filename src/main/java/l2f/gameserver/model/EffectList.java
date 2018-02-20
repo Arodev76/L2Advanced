@@ -1,8 +1,5 @@
 package l2f.gameserver.model;
 
-import gnu.trove.list.array.TIntArrayList;
-import gnu.trove.set.hash.TIntHashSet;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashMap;
@@ -12,14 +9,16 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import l2f.gameserver.Config;
+import org.apache.commons.lang3.ArrayUtils;
+
+import gnu.trove.list.array.TIntArrayList;
+import gnu.trove.set.hash.TIntHashSet;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.skills.EffectType;
 import l2f.gameserver.skills.effects.EffectTemplate;
 import l2f.gameserver.skills.skillclasses.Transformation;
 import l2f.gameserver.stats.Stats;
 import l2f.gameserver.stats.funcs.FuncTemplate;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class EffectList
 {

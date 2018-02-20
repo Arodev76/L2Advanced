@@ -1,6 +1,6 @@
 package l2f.gameserver.network.loginservercon.lspackets;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.network.loginservercon.AuthServerCommunication;
 import l2f.gameserver.network.loginservercon.ReceivablePacket;

@@ -1,14 +1,5 @@
 package l2f.gameserver.model.actor.instances.player;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.network.serverpackets.ExAutoSoulShot;
-import l2f.gameserver.network.serverpackets.ShortCutInit;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,6 +7,16 @@ import java.sql.SQLException;
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.dbutils.DbUtils;
+import l2f.gameserver.cache.Msg;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.network.serverpackets.ExAutoSoulShot;
+import l2f.gameserver.network.serverpackets.ShortCutInit;
 
 public class ShortCutList
 {

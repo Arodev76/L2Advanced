@@ -16,7 +16,7 @@
 //import java.util.regex.Pattern;
 //
 //import l2f.commons.dbutils.DbUtils;
-//import l2f.gameserver.Config;
+//import l2f.commons.configuration.Config;
 //import l2f.gameserver.ThreadPoolManager;
 //import l2f.gameserver.database.DatabaseFactory;
 //import l2f.gameserver.model.GameObjectsStorage;

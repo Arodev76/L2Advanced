@@ -5,8 +5,11 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.cache.ImagesCache;
-import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.SevenSignsFestival.SevenSignsFestival;
 import l2f.gameserver.model.instances.NpcInstance;
@@ -15,9 +18,6 @@ import l2f.gameserver.scripts.Scripts;
 import l2f.gameserver.scripts.Scripts.ScriptClassAndMethod;
 import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.Strings;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * the HTML parser in the client knowns these standard and non-standard tags and attributes VOLUMN UNKNOWN UL U TT TR TITLE TEXTCODE TEXTAREA TD TABLE SUP SUB STRIKE SPIN SELECT RIGHT PRE P OPTION OL MULTIEDIT LI LEFT INPUT IMG I HTML H7 H6 H5 H4 H3 H2 H1 FONT EXTEND EDIT COMMENT COMBOBOX CENTER

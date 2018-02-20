@@ -11,7 +11,6 @@ import l2f.gameserver.scripts.ScriptFile;
 /**
  * @author pchayka
  */
-
 public class _278_HomeSecurity extends Quest implements ScriptFile
 {
 	private static final int Tunatun = 31537;

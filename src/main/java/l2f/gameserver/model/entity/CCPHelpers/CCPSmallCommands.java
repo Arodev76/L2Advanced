@@ -1,8 +1,11 @@
 package l2f.gameserver.model.entity.CCPHelpers;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
@@ -12,9 +15,6 @@ import l2f.gameserver.network.serverpackets.InventoryUpdate;
 import l2f.gameserver.network.serverpackets.NetPingPacket;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.FakePlayersTable;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class CCPSmallCommands
 {

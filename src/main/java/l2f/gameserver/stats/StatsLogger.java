@@ -1,19 +1,20 @@
 package l2f.gameserver.stats;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.utils.TimeUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Collection;
 import java.util.concurrent.CopyOnWriteArrayList;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
+import l2f.gameserver.ThreadPoolManager;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.model.Skill;
+import l2f.gameserver.utils.TimeUtils;
 
 public class StatsLogger
 {

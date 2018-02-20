@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 import bosses.BaiumManager;
 import bosses.EpicBossState;
 import bosses.EpicBossState.State;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.handler.admincommands.AdminCommandHandler;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;

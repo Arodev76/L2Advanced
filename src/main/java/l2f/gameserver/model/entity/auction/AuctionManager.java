@@ -1,7 +1,20 @@
 package l2f.gameserver.model.entity.auction;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javolution.util.FastMap;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.dao.ItemsDAO;
 import l2f.gameserver.data.xml.holder.HennaHolder;
 import l2f.gameserver.data.xml.holder.SoulCrystalHolder;
@@ -21,18 +34,6 @@ import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.TradeHelper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 
 public class AuctionManager
 {

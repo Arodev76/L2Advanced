@@ -1,5 +1,7 @@
 package l2f.loginserver.clientpackets;
 
+import javax.crypto.Cipher;
+
 import l2f.loginserver.Config;
 import l2f.loginserver.GameServerManager;
 import l2f.loginserver.IpBanManager;
@@ -13,8 +15,6 @@ import l2f.loginserver.gameservercon.GameServer;
 import l2f.loginserver.gameservercon.lspackets.GetAccountInfo;
 import l2f.loginserver.serverpackets.LoginFail.LoginFailReason;
 import l2f.loginserver.serverpackets.LoginOk;
-
-import javax.crypto.Cipher;
 
 /**
  * Format: b[128]ddddddhc

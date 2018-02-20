@@ -1,16 +1,15 @@
 package l2f.gameserver.model.entity.olympiad;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Announcements;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.entity.Hero;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class OlympiadEndTask extends RunnableImpl
 {

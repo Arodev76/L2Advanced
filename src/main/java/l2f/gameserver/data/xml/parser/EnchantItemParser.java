@@ -6,7 +6,7 @@ import java.util.Iterator;
 import org.dom4j.Element;
 
 import l2f.commons.data.xml.AbstractFileParser;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.EnchantItemHolder;
 import l2f.gameserver.templates.item.support.EnchantScroll;
 import l2f.gameserver.templates.item.support.FailResultType;

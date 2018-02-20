@@ -3,7 +3,7 @@ package l2f.gameserver.handler.voicecommands.impl.BotReport;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.dao.CaptchaPunishmentDAO;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.GameObjectsStorage;

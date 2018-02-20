@@ -10,9 +10,9 @@ import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;
 import l2f.gameserver.handler.bbs.ICommunityBoardHandler;

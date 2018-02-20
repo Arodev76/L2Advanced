@@ -12,8 +12,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;
 import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;

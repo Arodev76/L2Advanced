@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import l2f.commons.collections.MultiValueSet;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.BoatHolder;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;

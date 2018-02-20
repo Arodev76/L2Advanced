@@ -1,10 +1,10 @@
 package l2f.gameserver.tables;
 
+import java.util.Map;
+
 import gnu.trove.map.hash.TIntIntHashMap;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.skills.SkillsEngine;
-
-import java.util.Map;
 
 public class SkillTable
 {

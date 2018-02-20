@@ -10,7 +10,7 @@ import static l2f.gameserver.geodata.GeoEngine.WEST;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.geodata.PathFindBuffers.GeoNode;
 import l2f.gameserver.geodata.PathFindBuffers.PathFindBuffer;
 import l2f.gameserver.model.GameObject;

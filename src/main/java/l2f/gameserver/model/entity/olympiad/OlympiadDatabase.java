@@ -11,9 +11,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.Announcements;
-import l2f.gameserver.Config;
 import l2f.gameserver.dao.OlympiadNobleDAO;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.instancemanager.ServerVariables;
@@ -22,9 +25,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class OlympiadDatabase
 {

@@ -1,5 +1,9 @@
 package l2f.gameserver.model.items.listeners;
 
+import java.util.Collections;
+import java.util.Map;
+import java.util.Set;
+
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.ArmorSetsHolder;
 import l2f.gameserver.listener.inventory.OnEquipListener;
@@ -10,10 +14,6 @@ import l2f.gameserver.model.items.Inventory;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.serverpackets.SkillList;
 import l2f.gameserver.tables.SkillTable;
-
-import java.util.Collections;
-import java.util.Map;
-import java.util.Set;
 
 public final class ArmorSetListener implements OnEquipListener
 {

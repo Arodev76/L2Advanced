@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.PremiumHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.database.LoginDatabaseFactory;

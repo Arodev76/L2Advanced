@@ -9,7 +9,7 @@ import java.util.NavigableMap;
 import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.data.xml.holder.RecipeHolder;
 import l2f.gameserver.model.GameObjectsStorage;

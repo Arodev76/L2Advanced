@@ -1,6 +1,6 @@
 package l2f.gameserver.model.entity.CCPHelpers;
 
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.poll.Poll;
 import l2f.gameserver.model.entity.poll.PollAnswer;

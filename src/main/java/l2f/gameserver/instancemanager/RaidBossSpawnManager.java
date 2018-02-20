@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.database.mysql;

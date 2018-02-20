@@ -1,5 +1,9 @@
 package l2f.gameserver.network.serverpackets;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import Elemental.managers.GmEventManager;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
@@ -7,11 +11,6 @@ import l2f.gameserver.model.base.RestartType;
 import l2f.gameserver.model.entity.events.GlobalEvent;
 import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.model.pledge.Clan;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import Elemental.managers.GmEventManager;
 
 public class Die extends L2GameServerPacket
 {

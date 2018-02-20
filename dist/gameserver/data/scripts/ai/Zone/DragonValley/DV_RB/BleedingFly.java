@@ -11,7 +11,7 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.utils.NpcUtils;
 
 /**
- * @author Aro 
+ * @author Arodev
  * 
  * PTS http://www.youtube.com/watch?v=PiuIeRkqdJc
  */

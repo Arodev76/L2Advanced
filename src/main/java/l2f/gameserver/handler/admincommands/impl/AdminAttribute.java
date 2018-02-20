@@ -5,7 +5,7 @@ import java.util.Map;
 //import l2f.extensions.scripts.ScriptFile;
 //import l2f.gameserver.handler.AdminCommandHandler;
 
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.GameObject;
 import l2f.gameserver.model.Player;

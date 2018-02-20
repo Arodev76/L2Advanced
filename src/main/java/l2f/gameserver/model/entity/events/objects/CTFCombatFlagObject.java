@@ -1,5 +1,9 @@
 package l2f.gameserver.model.entity.events.objects;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.GameObjectsStorage;
@@ -10,9 +14,6 @@ import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.model.items.attachment.FlagItemAttachment;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.ItemFunctions;
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CTFCombatFlagObject implements SpawnableObject, FlagItemAttachment
 {

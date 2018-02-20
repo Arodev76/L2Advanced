@@ -13,7 +13,7 @@ import l2f.gameserver.utils.ReflectionUtils;
 
 /**
  * @author Bonux
- * @date 02/06/2011
+ * @update 20:58/17.02.2018
  */
 public class _10292_SevenSignsGirlOfDoubt extends Quest implements ScriptFile
 {

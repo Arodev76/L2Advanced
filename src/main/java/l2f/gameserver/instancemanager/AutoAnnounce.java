@@ -1,8 +1,12 @@
 package l2f.gameserver.instancemanager;
 
-import l2f.gameserver.Announcements;
-import l2f.gameserver.Config;
-import l2f.gameserver.model.AutoAnnounces;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,13 +16,9 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.Announcements;
+import l2f.gameserver.model.AutoAnnounces;
 
 public class AutoAnnounce implements Runnable
 {

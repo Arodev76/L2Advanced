@@ -1,12 +1,11 @@
 package l2f.gameserver.templates;
 
-import gnu.trove.map.hash.TIntIntHashMap;
-
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import gnu.trove.map.hash.TIntIntHashMap;
 import l2f.gameserver.model.Skill;
 
 public class CubicTemplate

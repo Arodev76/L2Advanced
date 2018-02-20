@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.data.xml.holder.SoulCrystalHolder;
 import l2f.gameserver.model.Party;

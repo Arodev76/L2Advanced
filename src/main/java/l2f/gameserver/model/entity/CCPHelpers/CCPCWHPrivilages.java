@@ -1,14 +1,14 @@
 package l2f.gameserver.model.entity.CCPHelpers;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import java.util.List;
+
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.database.mysql;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.model.pledge.UnitMember;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-
-import java.util.List;
 
 public class CCPCWHPrivilages
 {

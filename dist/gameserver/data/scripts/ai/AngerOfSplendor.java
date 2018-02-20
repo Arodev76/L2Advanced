@@ -9,7 +9,6 @@ import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.network.serverpackets.StatusUpdate;
 
-
 public class AngerOfSplendor extends Fighter
 {
 

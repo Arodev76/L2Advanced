@@ -4,13 +4,13 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javolution.util.FastMap;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.instances.NpcInstance;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Clase muy eficiente para manejar los decays de todos los npcs. Basado en el de l2j

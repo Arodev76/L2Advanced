@@ -1,6 +1,6 @@
 package l2f.gameserver.network.clientpackets;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.SecondaryPasswordAuth;
 import l2f.gameserver.network.serverpackets.Ex2ndPasswordAck;
 

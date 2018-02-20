@@ -1,11 +1,12 @@
- package l2f.gameserver.model.reward;
+package l2f.gameserver.model.reward;
  
- import l2f.gameserver.templates.item.EtcItemTemplate.EtcItemType;
- import l2f.gameserver.templates.item.ItemTemplate;
- import org.slf4j.Logger;
- import org.slf4j.LoggerFactory;
- 
- public enum RewardItemGroup
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.templates.item.EtcItemTemplate.EtcItemType;
+import l2f.gameserver.templates.item.ItemTemplate;
+
+public enum RewardItemGroup
  {
    WEAPON(1.0D), 
    ARMOR(1.0D), 

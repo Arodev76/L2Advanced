@@ -5,7 +5,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.ExNavitAdventEffect;

@@ -9,7 +9,7 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL
- * @date 19:48/22.04.2011
+ * @update 20:53/17.02.2018
  */
 public class MatchClericInstance extends CTBBossInstance
 {

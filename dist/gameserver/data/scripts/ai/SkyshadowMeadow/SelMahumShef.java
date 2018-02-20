@@ -14,7 +14,7 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 
 /**
- * @author Aro
+ * @author Arodev
   * - AI for Sel Mahum Shef (18,908).
   * - Is next, skill buff the player, the player resaya HP.
   * - AI is tested and works.

@@ -1,10 +1,10 @@
 package l2f.gameserver.model.items;
 
-import l2f.gameserver.model.base.Element;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+
+import l2f.gameserver.model.base.Element;
 
 public class ItemAttributes implements Serializable
 {

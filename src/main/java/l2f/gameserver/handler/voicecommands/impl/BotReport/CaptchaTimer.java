@@ -3,7 +3,7 @@ package l2f.gameserver.handler.voicecommands.impl.BotReport;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;

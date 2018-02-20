@@ -1,19 +1,23 @@
 package l2f.gameserver.model;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.model.Skill.AddedSkill;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.items.Inventory;
 import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.network.serverpackets.*;
+import l2f.gameserver.network.serverpackets.Earthquake;
+import l2f.gameserver.network.serverpackets.ExRedSky;
+import l2f.gameserver.network.serverpackets.L2GameServerPacket;
+import l2f.gameserver.network.serverpackets.SkillList;
+import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 public class CursedWeapon
 {

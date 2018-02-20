@@ -6,11 +6,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.loginserver.database.L2DatabaseFactory;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
+import l2f.commons.configuration.Server;
+import l2f.commons.dbutils.DbUtils;
+import l2f.loginserver.database.L2DatabaseFactory;
 
 public class GameServerRegister
 {

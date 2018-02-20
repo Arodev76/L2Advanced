@@ -1,5 +1,7 @@
 package l2f.gameserver.model.instances.residences.dominion;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.commons.geometry.Circle;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
@@ -15,13 +17,8 @@ import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.templates.npc.NpcTemplate;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class OutpostInstance extends SiegeFlagInstance
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private class OnZoneEnterLeaveListenerImpl implements OnZoneEnterLeaveListener

@@ -1,11 +1,12 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.StringUtils;
+import org.napile.primitive.maps.IntObjectMap;
+
 import l2f.gameserver.dao.CharacterPostFriendDAO;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import org.apache.commons.lang3.StringUtils;
-import org.napile.primitive.maps.IntObjectMap;
 
 public class RequestExDeletePostFriendForPostBox extends L2GameClientPacket
 {

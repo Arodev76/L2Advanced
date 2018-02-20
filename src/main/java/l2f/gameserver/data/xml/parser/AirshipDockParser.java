@@ -8,8 +8,8 @@ import java.util.List;
 
 import org.dom4j.Element;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.data.xml.AbstractFileParser;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.AirshipDockHolder;
 import l2f.gameserver.model.entity.events.objects.BoatPoint;
 import l2f.gameserver.network.serverpackets.components.SceneMovie;
@@ -17,7 +17,7 @@ import l2f.gameserver.templates.AirshipDock;
 
 /**
  * Author: VISTALL
- * Date:  10:50/14.12.2010
+ * upDate:  23:22/17.02.2018
  */
 public final class AirshipDockParser extends AbstractFileParser<AirshipDockHolder>
 {

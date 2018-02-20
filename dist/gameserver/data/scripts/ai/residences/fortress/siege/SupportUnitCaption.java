@@ -14,7 +14,7 @@ import npc.model.residences.SiegeGuardInstance;
 
 /**
  * @author VISTALL
- * @date 16:41/17.04.2011
+ * @update 19:20/17.02.2018
  */
 public class SupportUnitCaption extends SiegeGuardMystic
 {

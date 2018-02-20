@@ -1,6 +1,5 @@
 package l2f.gameserver.tables;
 
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,7 +10,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import l2f.gameserver.Config;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.idfactory.IdFactory;
 import l2f.gameserver.model.GameObjectsStorage;
@@ -25,10 +28,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.SiegeUtils;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ClanTable
 {

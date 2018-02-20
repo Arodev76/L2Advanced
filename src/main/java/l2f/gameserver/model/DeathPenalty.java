@@ -2,7 +2,7 @@ package l2f.gameserver.model;
 
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.tables.SkillTable;

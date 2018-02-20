@@ -1,10 +1,9 @@
 package l2f.gameserver.network.serverpackets;
 
-import l2f.gameserver.model.Creature;
-
 import java.util.Collection;
 import java.util.Collections;
 
+import l2f.gameserver.model.Creature;
 
 public class MagicSkillLaunched extends L2GameServerPacket
 {

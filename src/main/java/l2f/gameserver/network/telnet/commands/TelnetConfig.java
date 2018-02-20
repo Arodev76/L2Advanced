@@ -3,7 +3,7 @@ package l2f.gameserver.network.telnet.commands;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.network.telnet.TelnetCommand;
 import l2f.gameserver.network.telnet.TelnetCommandHolder;
 

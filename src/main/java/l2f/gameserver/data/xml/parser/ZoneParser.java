@@ -12,7 +12,7 @@ import l2f.commons.geometry.Circle;
 import l2f.commons.geometry.Polygon;
 import l2f.commons.geometry.Rectangle;
 import l2f.commons.geometry.Shape;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.ZoneHolder;
 import l2f.gameserver.model.Territory;
 import l2f.gameserver.model.World;

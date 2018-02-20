@@ -48,7 +48,7 @@ public class SelectorThread<T extends MMOClient> extends Thread
 	private final Queue<ByteBuffer> _bufferPool;
 	private final List<MMOConnection<T>> _connections;
 
-	private static final List<SelectorThread> ALL_SELECTORS = new ArrayList<>();
+	private static final List<SelectorThread> ALL_SELECTORS = new ArrayList<SelectorThread>();
 	private static SelectorStats stats = new SelectorStats();
 
 	public SelectorThread(SelectorConfig sc, IPacketHandler<T> packetHandler, IMMOExecutor<T> executor, IClientFactory<T> clientFactory, IAcceptFilter acceptFilter) throws IOException
@@ -64,8 +64,8 @@ public class SelectorThread<T extends MMOClient> extends Thread
 		_clientFactory = clientFactory;
 		_executor = executor;
 
-		_bufferPool = new ArrayDeque<>(_sc.HELPER_BUFFER_COUNT);
-		_connections = new CopyOnWriteArrayList<>();
+		_bufferPool = new ArrayDeque<ByteBuffer>(_sc.HELPER_BUFFER_COUNT);
+		_connections = new CopyOnWriteArrayList<MMOConnection<T>>();
 
 		DIRECT_WRITE_BUFFER = ByteBuffer.wrap(new byte[_sc.WRITE_BUFFER_SIZE]).order(_sc.BYTE_ORDER);
 		WRITE_BUFFER = ByteBuffer.wrap(new byte[_sc.WRITE_BUFFER_SIZE]).order(_sc.BYTE_ORDER);
@@ -76,14 +76,15 @@ public class SelectorThread<T extends MMOClient> extends Thread
 			_bufferPool.add(ByteBuffer.wrap(new byte[HELPER_BUFFER_SIZE]).order(_sc.BYTE_ORDER));
 	}
 
-    public void openServerSocket(final InetAddress address, final int tcpPort) throws IOException {
-        @SuppressWarnings("resource")
-		final ServerSocketChannel selectable = ServerSocketChannel.open();
-        selectable.configureBlocking(false);
+	public void openServerSocket(InetAddress address, int tcpPort) throws IOException
+	{
+		ServerSocketChannel selectable = ServerSocketChannel.open();
+		selectable.configureBlocking(false);
+
 		selectable.socket().bind(address == null ? new InetSocketAddress(tcpPort) : new InetSocketAddress(address, tcpPort));
-        selectable.register(this.getSelector(), selectable.validOps());
-        this.setName("SelectorThread:" + selectable.socket().getLocalPort());
-    }
+		selectable.register(getSelector(), selectable.validOps());
+		setName("SelectorThread:" + selectable.socket().getLocalPort());
+	}
 
 	protected ByteBuffer getPooledBuffer()
 	{
@@ -238,10 +239,7 @@ public class SelectorThread<T extends MMOClient> extends Thread
 		}
 	}
 
-	@SuppressWarnings({
-		"unchecked",
-		"resource"
-	})
+	@SuppressWarnings("unchecked")
 	protected void acceptConnection(SelectionKey key)
 	{
 		ServerSocketChannel ssc = (ServerSocketChannel) key.channel();
@@ -256,7 +254,7 @@ public class SelectorThread<T extends MMOClient> extends Thread
 					sc.configureBlocking(false);
 					clientKey = sc.register(getSelector(), SelectionKey.OP_READ);
 
-					MMOConnection<T> con = new MMOConnection<>(this, sc.socket(), clientKey);
+					MMOConnection<T> con = new MMOConnection<T>(this, sc.socket(), clientKey);
 					T client = getClientFactory().create(con);
 					client.setConnection(con);
 					con.setClient(client);

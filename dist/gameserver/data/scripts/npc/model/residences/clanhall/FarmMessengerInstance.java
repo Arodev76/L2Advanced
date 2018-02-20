@@ -24,7 +24,7 @@ import quests._655_AGrandPlanForTamingWildBeasts;
 
 /**
  * @author VISTALL
- * @date 19:05/05.05.2011
+ * @update 20:52/17.02.2018
  */
 public class FarmMessengerInstance extends NpcInstance
 {

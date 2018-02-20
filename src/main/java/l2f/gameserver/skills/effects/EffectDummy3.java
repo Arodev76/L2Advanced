@@ -1,6 +1,5 @@
 package l2f.gameserver.skills.effects;
 	
-import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Effect;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.stats.Env;

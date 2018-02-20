@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import l2f.commons.data.xml.AbstractDirParser;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.TeleportLocation;

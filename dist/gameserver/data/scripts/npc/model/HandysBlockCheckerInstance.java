@@ -1,6 +1,6 @@
 package npc.model;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.instancemanager.games.HandysBlockCheckerManager;
 import l2f.gameserver.instancemanager.games.HandysBlockCheckerManager.ArenaParticipantsHolder;

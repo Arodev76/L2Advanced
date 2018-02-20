@@ -1,7 +1,10 @@
 package l2f.gameserver.network.clientpackets;
 
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.math.SafeMath;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.items.TradeItem;
@@ -11,9 +14,6 @@ import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.TradeHelper;
-
-import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class SetPrivateStoreBuyList extends L2GameClientPacket
 {

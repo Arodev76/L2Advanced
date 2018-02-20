@@ -16,7 +16,7 @@ import l2f.gameserver.utils.ReflectionUtils;
 
 /**
  * @author VISTALL
- * @date 10:50/20.06.2011
+ * @update 20:50/17.02.2018
  */
 public class AuctionedDoormanInstance extends NpcInstance
 {

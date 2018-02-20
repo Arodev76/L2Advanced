@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.model.reward.RewardItemResult;

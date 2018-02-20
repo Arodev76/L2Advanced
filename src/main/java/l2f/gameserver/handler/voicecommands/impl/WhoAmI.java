@@ -5,8 +5,8 @@ import java.util.Locale;
 
 import org.apache.commons.lang3.text.StrBuilder;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;

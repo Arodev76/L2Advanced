@@ -1,12 +1,11 @@
 package l2f.gameserver.network.serverpackets;
 
-
 import java.util.List;
-
-import l2f.gameserver.model.Player;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.model.Player;
 
 public class ShowBoard extends L2GameServerPacket
 {

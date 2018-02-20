@@ -1,6 +1,6 @@
 package l2f.gameserver.model.base;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 
 public class Experience
 {

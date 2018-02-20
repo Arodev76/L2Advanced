@@ -3,7 +3,7 @@ package l2f.gameserver.model.entity.achievements;
 import java.util.List;
 
 import javolution.util.FastTable;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.Player;
 
 /**

@@ -16,8 +16,9 @@ import l2f.gameserver.scripts.ScriptFile;
 
 /**
  * Autor: Bonux
- * Date: 30.08.09
- * Time: 17:49
+ *  
+ * @update 19:47/17.02.2018
+ * 
  * http://www.lineage2.com/archive/2009/06/master_of_encha.html
  **/
 public class MasterOfEnchanting extends Functions implements ScriptFile, OnPlayerEnterListener

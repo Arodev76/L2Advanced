@@ -1,7 +1,7 @@
 package services.community;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
@@ -12,7 +12,6 @@ import l2f.gameserver.scripts.ScriptFile;
  * Вызов всплывающего окна у НПС - [scripts_services.ShowInfo:show info_folder info_page|Имя папки, Имя страницы]
  * Вызов всплывающего окна из комьюнити - [bypass _bbsscripts:services.community.ShowInfo:show info_folder info_page|Имя папки, Имя страницы]
 **/
-
 public class ShowInfo extends Functions implements ScriptFile
 {
 	public void show(String[] param)

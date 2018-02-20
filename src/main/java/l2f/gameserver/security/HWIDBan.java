@@ -5,13 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.database.DatabaseFactory;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.lameguard.HWID;
+
+import l2f.commons.dbutils.DbUtils;
+import l2f.gameserver.database.DatabaseFactory;
 
 public class HWIDBan
 {

@@ -1,10 +1,10 @@
 package l2f.loginserver.crypt;
 
-import jonelo.jacksum.JacksumAPI;
-import jonelo.jacksum.algorithm.AbstractChecksum;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import jonelo.jacksum.JacksumAPI;
+import jonelo.jacksum.algorithm.AbstractChecksum;
 
 public class PasswordHash
 {

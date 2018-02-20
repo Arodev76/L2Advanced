@@ -1,5 +1,9 @@
 package l2f.gameserver.model.entity.events.objects;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.instancemanager.ReflectionManager;
@@ -8,10 +12,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.base.TeamType;
 import l2f.gameserver.stats.Env;
 import l2f.gameserver.utils.Location;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 public class DuelSnapshotObject implements Serializable
 {

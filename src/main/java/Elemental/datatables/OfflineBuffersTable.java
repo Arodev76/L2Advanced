@@ -10,15 +10,11 @@ import org.slf4j.LoggerFactory;
 
 import Elemental.managers.OfflineBufferManager;
 import Elemental.managers.OfflineBufferManager.BufferData;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
 
-/**
- *
- * @author Aro
- */
 public class OfflineBuffersTable
 {
 	private static final Logger _log = LoggerFactory.getLogger(OfflineBuffersTable.class);

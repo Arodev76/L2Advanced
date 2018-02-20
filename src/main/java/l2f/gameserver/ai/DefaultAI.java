@@ -18,7 +18,7 @@ import l2f.commons.lang.reference.HardReference;
 import l2f.commons.math.random.RndSelector;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.geodata.GeoEngine;

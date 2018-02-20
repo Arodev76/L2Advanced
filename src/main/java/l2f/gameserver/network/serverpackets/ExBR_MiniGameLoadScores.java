@@ -6,16 +6,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import l2f.gameserver.instancemanager.games.MiniGameScoreManager;
-import l2f.gameserver.model.Player;
-
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.TreeIntObjectMap;
 
+import l2f.gameserver.instancemanager.games.MiniGameScoreManager;
+import l2f.gameserver.model.Player;
 
 /**
  * @author VISTALL
- * @date  0:07:05/10.04.2010
+ * @update  01:45/19.02.2018
  */
 public class ExBR_MiniGameLoadScores extends L2GameServerPacket
 {

@@ -1,11 +1,10 @@
 package l2f.loginserver.gameservercon.gspackets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import l2f.loginserver.accounts.Account;
 import l2f.loginserver.gameservercon.ReceivablePacket;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ChangeAccessLevel extends ReceivablePacket
 {

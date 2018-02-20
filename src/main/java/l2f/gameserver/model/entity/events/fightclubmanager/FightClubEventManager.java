@@ -11,9 +11,12 @@ import java.util.StringTokenizer;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.collections.MultiValueSet;
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
@@ -34,9 +37,6 @@ import l2f.gameserver.network.serverpackets.TutorialShowQuestionMark;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class FightClubEventManager
 {

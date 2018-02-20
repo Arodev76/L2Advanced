@@ -17,8 +17,8 @@ import org.slf4j.LoggerFactory;
 
 import gnu.trove.map.hash.TIntObjectHashMap;
 import javolution.util.FastMap;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;

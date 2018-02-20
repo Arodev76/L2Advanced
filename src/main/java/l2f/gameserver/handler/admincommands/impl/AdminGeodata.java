@@ -1,6 +1,6 @@
 package l2f.gameserver.handler.admincommands.impl;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.geodata.GeoEngine;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.Player;

@@ -8,7 +8,7 @@ import java.util.List;
 import org.dom4j.Element;
 
 import l2f.commons.data.xml.AbstractFileParser;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.PremiumHolder;
 import l2f.gameserver.model.premium.PremiumAccount;
 import l2f.gameserver.model.premium.PremiumGift;

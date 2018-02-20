@@ -12,10 +12,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
 
-/**
- * @author Aro
- */
-
 public class Patrollers extends Fighter
 {
 	protected Location[] _points;

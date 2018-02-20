@@ -1,7 +1,7 @@
 package l2f.gameserver.model.actor.recorder;
 
 import l2f.commons.collections.CollectionUtils;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.base.Element;
 import l2f.gameserver.model.base.TeamType;

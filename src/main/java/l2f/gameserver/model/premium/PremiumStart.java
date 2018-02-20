@@ -1,6 +1,6 @@
 package l2f.gameserver.model.premium;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.PremiumHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.actor.instances.player.Bonus;

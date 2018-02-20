@@ -1,5 +1,8 @@
 package l2f.gameserver.model.entity.events.impl.fightclub;
 
+import java.util.Collection;
+import java.util.concurrent.CopyOnWriteArrayList;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Creature;
@@ -7,9 +10,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.events.fightclubmanager.FightClubPlayer;
 import l2f.gameserver.model.entity.events.impl.AbstractFightClub;
 import l2f.gameserver.model.instances.NpcInstance;
-
-import java.util.Collection;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class FFATreasureHuntEvent extends AbstractFightClub
 {

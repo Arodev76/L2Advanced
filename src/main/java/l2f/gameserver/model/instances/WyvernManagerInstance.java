@@ -1,15 +1,16 @@
 package l2f.gameserver.model.instances;
 
+import java.util.StringTokenizer;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.SevenSigns;
 import l2f.gameserver.model.entity.residence.Residence;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.tables.PetDataTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.StringTokenizer;
 
 public final class WyvernManagerInstance extends NpcInstance
 {

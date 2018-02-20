@@ -1,11 +1,12 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.base.EnchantSkillLearn;
 import l2f.gameserver.network.serverpackets.ExEnchantSkillInfoDetail;
 import l2f.gameserver.tables.SkillTreeTable;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class RequestExEnchantSkillInfoDetail extends L2GameClientPacket
 {

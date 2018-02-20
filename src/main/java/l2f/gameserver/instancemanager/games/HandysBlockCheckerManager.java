@@ -1,14 +1,13 @@
 package l2f.gameserver.instancemanager.games;
 
-import gnu.trove.map.hash.TIntIntHashMap;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import gnu.trove.map.hash.TIntIntHashMap;
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.model.Player;

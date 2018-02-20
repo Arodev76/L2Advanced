@@ -3,12 +3,12 @@ package l2f.loginserver.clientpackets;
 import l2f.loginserver.Config;
 import l2f.loginserver.GameServerManager;
 import l2f.loginserver.L2LoginClient;
-import l2f.loginserver.SessionKey;
 import l2f.loginserver.L2LoginClient.LoginClientState;
+import l2f.loginserver.SessionKey;
 import l2f.loginserver.accounts.Account;
 import l2f.loginserver.gameservercon.GameServer;
-import l2f.loginserver.serverpackets.PlayOk;
 import l2f.loginserver.serverpackets.LoginFail.LoginFailReason;
+import l2f.loginserver.serverpackets.PlayOk;
 
 /**
  * Fromat is ddc

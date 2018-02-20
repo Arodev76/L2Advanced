@@ -2,11 +2,11 @@ package l2f.gameserver.taskmanager.actionrunner;
 
 import java.util.concurrent.Future;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.commons.threading.RunnableImpl;
+import l2f.gameserver.ThreadPoolManager;
 
 public abstract class ActionWrapper extends RunnableImpl
 {

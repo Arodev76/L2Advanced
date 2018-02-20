@@ -12,7 +12,6 @@ import l2f.gameserver.model.Zone;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Location;
 
-
 public abstract class ArenaTemplate extends Functions
 {
 	// Эти переменные выставляются автоматически при вызове скрипта

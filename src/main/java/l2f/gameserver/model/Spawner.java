@@ -3,9 +3,12 @@ package l2f.gameserver.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.collections.MultiValueSet;
+import l2f.commons.configuration.Config;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.geodata.GeoEngine;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.model.entity.Reflection;
@@ -19,9 +22,6 @@ import l2f.gameserver.taskmanager.SpawnTaskManager;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.templates.spawn.SpawnRange;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public abstract class Spawner extends EventOwner implements Cloneable
 {

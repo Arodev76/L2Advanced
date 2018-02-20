@@ -14,7 +14,7 @@ import npc.model.residences.SiegeGuardInstance;
 
 /**
  * @author VISTALL
- * @date 16:43/17.04.2011
+ * @update 19:16/17.02.2018
  */
 public class General extends SiegeGuardFighter
 {

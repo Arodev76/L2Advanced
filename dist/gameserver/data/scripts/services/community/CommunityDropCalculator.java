@@ -11,8 +11,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import actions.RewardListInfo;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;

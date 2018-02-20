@@ -1,7 +1,7 @@
 package l2f.gameserver.utils;
 
 import l2f.gameserver.Announcements;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.instancemanager.CursedWeaponsManager;
 import l2f.gameserver.model.Player;

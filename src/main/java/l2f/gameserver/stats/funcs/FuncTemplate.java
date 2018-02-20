@@ -1,12 +1,13 @@
 package l2f.gameserver.stats.funcs;
 
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.stats.conditions.Condition;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
+import l2f.gameserver.stats.Stats;
+import l2f.gameserver.stats.conditions.Condition;
 
 public final class FuncTemplate
 {

@@ -16,7 +16,7 @@ import l2f.gameserver.utils.ReflectionUtils;
 
 /**
  * @author VISTALL
- * @date 12:21/08.05.2011
+ * @update 18:58/17.02.2018
  * 35630
  *
  * При убийстве если верить Аи, то говорит он 1010635, но на aинале он говорит как и  GiselleVonHellmann

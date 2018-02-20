@@ -17,7 +17,7 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL
- * @date 19:35/19.04.2011
+ * @update 20:35/17.02.2018
  */
 public class PowerControlUnitInstance extends NpcInstance
 {

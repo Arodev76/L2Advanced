@@ -17,8 +17,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.crypt.CryptUtil;
-import l2f.gameserver.Config;
 import l2f.gameserver.model.items.TradeItem;
 import l2f.gameserver.templates.item.ItemTemplate;
 

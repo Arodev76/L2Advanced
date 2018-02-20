@@ -1,5 +1,15 @@
 package l2f.gameserver.model.actor.instances.player;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.database.DatabaseFactory;
@@ -10,15 +20,6 @@ import l2f.gameserver.model.Zone.ZoneType;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BookMarkList
 {

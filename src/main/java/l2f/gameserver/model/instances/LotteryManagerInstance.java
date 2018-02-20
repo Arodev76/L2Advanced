@@ -1,6 +1,8 @@
 package l2f.gameserver.model.instances;
 
-import l2f.gameserver.Config;
+import java.text.DateFormat;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.instancemanager.games.LotteryManager;
 import l2f.gameserver.model.Player;
@@ -13,8 +15,6 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Log;
-
-import java.text.DateFormat;
 
 public class LotteryManagerInstance extends NpcInstance
 {

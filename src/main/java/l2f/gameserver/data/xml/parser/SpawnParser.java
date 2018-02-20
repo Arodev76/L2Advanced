@@ -10,7 +10,7 @@ import org.dom4j.Element;
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.data.xml.AbstractDirParser;
 import l2f.commons.geometry.Polygon;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.SpawnHolder;
 import l2f.gameserver.model.Territory;
 import l2f.gameserver.templates.StatsSet;

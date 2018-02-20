@@ -1,13 +1,13 @@
 package l2f.gameserver.stats;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import l2f.commons.lang.ArrayUtils;
 import l2f.gameserver.stats.funcs.Func;
 import l2f.gameserver.stats.funcs.FuncTemplate;
 import l2f.gameserver.stats.triggers.TriggerInfo;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class StatTemplate
 {

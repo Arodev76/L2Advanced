@@ -1,10 +1,11 @@
 package l2f.gameserver.model.donatesystem;
 
-import l2f.gameserver.data.xml.holder.ItemHolder;
+import java.util.Iterator;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Iterator;
+import l2f.gameserver.data.xml.holder.ItemHolder;
 
 public class Donation
 {

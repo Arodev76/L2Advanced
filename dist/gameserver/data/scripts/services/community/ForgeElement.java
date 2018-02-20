@@ -1,7 +1,7 @@
 package services.community;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.data.xml.holder.FoundationHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.base.Element;

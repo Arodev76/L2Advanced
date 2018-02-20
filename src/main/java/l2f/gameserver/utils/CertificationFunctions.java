@@ -1,6 +1,8 @@
 package l2f.gameserver.utils;
 
-import l2f.gameserver.Config;
+import java.util.Collection;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
@@ -14,8 +16,6 @@ import l2f.gameserver.network.serverpackets.SkillList;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.Functions;
-
-import java.util.Collection;
 
 public class CertificationFunctions
 {

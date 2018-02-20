@@ -1,17 +1,18 @@
 package l2f.gameserver.network.clientpackets;
 
-import l2f.gameserver.Config;
+import org.napile.primitive.maps.IntObjectMap;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.dao.CharacterPostFriendDAO;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.ExConfirmAddingPostFriend;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import org.napile.primitive.maps.IntObjectMap;
 
 /**
  * @author VISTALL
- * @date 21:06/22.03.2011
+ * @update 00:27/19.02.2018
  */
 public class RequestExAddPostFriendForPostBox extends L2GameClientPacket
 {

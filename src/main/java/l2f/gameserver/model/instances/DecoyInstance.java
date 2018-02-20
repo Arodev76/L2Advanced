@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
@@ -18,9 +21,6 @@ import l2f.gameserver.network.serverpackets.L2GameServerPacket;
 import l2f.gameserver.network.serverpackets.MyTargetSelected;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class DecoyInstance extends NpcInstance
 {

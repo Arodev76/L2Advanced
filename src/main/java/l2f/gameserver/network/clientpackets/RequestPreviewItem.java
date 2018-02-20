@@ -1,7 +1,13 @@
 package l2f.gameserver.network.clientpackets;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.BuyListHolder;
 import l2f.gameserver.data.xml.holder.BuyListHolder.NpcTradeList;
@@ -17,11 +23,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.ArmorTemplate.ArmorType;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class RequestPreviewItem extends L2GameClientPacket
 {

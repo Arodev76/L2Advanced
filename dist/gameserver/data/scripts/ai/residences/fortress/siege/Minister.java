@@ -14,7 +14,7 @@ import npc.model.residences.SiegeGuardInstance;
 
 /**
  * @author kekess
- * @date 02:41/05.06.2012
+ * @update 19:18/17.02.2018
  */
 public class Minister extends SiegeGuardFighter
 {

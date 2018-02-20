@@ -1,10 +1,10 @@
 package l2f.gameserver.network.loginservercon.lspackets;
 
-import l2f.gameserver.network.loginservercon.AuthServerCommunication;
-import l2f.gameserver.network.loginservercon.ReceivablePacket;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.network.loginservercon.AuthServerCommunication;
+import l2f.gameserver.network.loginservercon.ReceivablePacket;
 
 public class LoginServerFail extends ReceivablePacket
 {

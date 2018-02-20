@@ -10,9 +10,6 @@ import l2f.gameserver.model.Playable;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.utils.ItemFunctions;
 
-/**
- * @author Aro
- */
 public class PiratesKing extends Fighter
 {
 

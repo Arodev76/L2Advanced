@@ -1,7 +1,15 @@
 package l2f.gameserver.model.reward;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.commons.lang3.StringUtils;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.instancemanager.SpawnManager;
 import l2f.gameserver.model.Player;
@@ -9,16 +17,9 @@ import l2f.gameserver.model.base.Experience;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.npc.NpcTemplate;
-import org.apache.commons.lang3.StringUtils;
-
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
- * Created by Michał on 04.12.13.
+ * Created by Michał update 18.02.18.
  */
 public class CalculateRewardChances
 {

@@ -25,7 +25,7 @@ import quests._504_CompetitionForTheBanditStronghold;
 
 /**
  * @author VISTALL
- * @date 11:15:08/11.07.2010
+ * @update 20:51:08/17.02.2018
  */
 public class BanditMessagerInstance extends NpcInstance
 {

@@ -1,6 +1,6 @@
 package l2f.gameserver.model;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.base.ClassId;
 import l2f.gameserver.model.base.Experience;
 

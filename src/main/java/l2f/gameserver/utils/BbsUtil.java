@@ -1,7 +1,7 @@
 package l2f.gameserver.utils;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.Player;
 
 public class BbsUtil

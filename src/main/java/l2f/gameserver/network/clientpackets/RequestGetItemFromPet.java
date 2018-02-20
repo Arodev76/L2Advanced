@@ -1,13 +1,14 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.PetInstance;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.model.items.PcInventory;
 import l2f.gameserver.model.items.PetInventory;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class RequestGetItemFromPet extends L2GameClientPacket
 {

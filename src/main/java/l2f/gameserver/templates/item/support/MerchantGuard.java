@@ -1,8 +1,8 @@
 package l2f.gameserver.templates.item.support;
 
-import l2f.gameserver.model.entity.SevenSigns;
-
 import org.napile.primitive.sets.IntSet;
+
+import l2f.gameserver.model.entity.SevenSigns;
 
 public class MerchantGuard
 {

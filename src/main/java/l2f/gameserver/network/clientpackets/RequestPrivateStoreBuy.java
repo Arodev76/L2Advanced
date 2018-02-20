@@ -1,11 +1,12 @@
 package l2f.gameserver.network.clientpackets;
 
-import l2f.gameserver.Config;
+import org.apache.commons.lang3.ArrayUtils;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.TradeHelper;
-import org.apache.commons.lang3.ArrayUtils;
 
 public class RequestPrivateStoreBuy extends L2GameClientPacket
 {

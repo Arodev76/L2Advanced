@@ -12,7 +12,7 @@ import org.dom4j.Element;
 import javolution.util.FastMap;
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.data.xml.AbstractDirParser;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.FightClubMapHolder;
 import l2f.gameserver.data.xml.holder.ZoneHolder;
 import l2f.gameserver.model.entity.events.fightclubmanager.FightClubMap;

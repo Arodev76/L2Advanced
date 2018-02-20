@@ -1,8 +1,7 @@
 package l2f.gameserver.data.xml;
 
-import l2f.gameserver.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.data.StringHolder;
-import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.data.xml.holder.BuyListHolder;
 import l2f.gameserver.data.xml.holder.MultiSellHolder;
 import l2f.gameserver.data.xml.holder.ProductHolder;
@@ -46,10 +45,6 @@ public abstract class Parsers
 {
 	public static void parseAll()
 	{
-//		if ((!Config.EXTERNAL_HOSTNAME.equalsIgnoreCase("127.0.0.1")) && (!Config.EXTERNAL_HOSTNAME.equalsIgnoreCase("178.33.90.147")))
-//		{
-//			return;
-//		}
 		HtmCache.getInstance().reload();
 		StringHolder.getInstance().load();
 		//

@@ -1,11 +1,11 @@
 package l2f.gameserver.taskmanager;
 
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.items.ItemInstance;
-
 import java.util.Collection;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
+
+import l2f.gameserver.ThreadPoolManager;
+import l2f.gameserver.model.items.ItemInstance;
 
 public class ItemsAutoDestroy
 {

@@ -8,7 +8,7 @@
 //import java.util.List;
 //import l2f.commons.dao.JdbcEntityState;
 //import l2f.commons.dbutils.DbUtils;
-//import l2f.gameserver.Config;
+//import l2f.commons.configuration.Config;
 //import l2f.gameserver.dao.CharacterDAO;
 //import l2f.gameserver.data.htm.HtmCache;
 //import l2f.gameserver.data.xml.holder.ExchangeItemHolder;

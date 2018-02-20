@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import java.util.Set;
+
 import l2f.commons.math.SafeMath;
 import l2f.gameserver.dao.MailDAO;
 import l2f.gameserver.model.Player;
@@ -9,9 +11,6 @@ import l2f.gameserver.network.serverpackets.ExReplySentPost;
 import l2f.gameserver.network.serverpackets.ExShowSentPostList;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import java.util.Set;
-
 
 /**
  * Запрос на удаление письма с приложениями. Возвращает приложения отправителю на личный склад и удаляет письмо. Ответ на кнопку Cancel в {@link ExReplySentPost}.

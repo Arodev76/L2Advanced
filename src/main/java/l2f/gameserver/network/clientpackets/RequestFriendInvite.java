@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Request;
 import l2f.gameserver.model.Request.L2RequestType;
@@ -7,8 +9,6 @@ import l2f.gameserver.model.World;
 import l2f.gameserver.network.serverpackets.FriendAddRequest;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class RequestFriendInvite extends L2GameClientPacket
 {

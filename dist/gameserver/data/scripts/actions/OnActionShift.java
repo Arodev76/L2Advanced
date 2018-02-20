@@ -6,8 +6,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.handler.admincommands.impl.AdminEditChar;
 import l2f.gameserver.model.AggroList.HateComparator;
 import l2f.gameserver.model.AggroList.HateInfo;

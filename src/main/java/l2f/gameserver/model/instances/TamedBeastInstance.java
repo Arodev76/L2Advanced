@@ -1,10 +1,16 @@
 package l2f.gameserver.model.instances;
 
+import java.util.AbstractMap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.Future;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.lang.reference.HardReferences;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.model.Creature;
@@ -16,12 +22,6 @@ import l2f.gameserver.network.serverpackets.NpcInfo;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Future;
 
 public final class TamedBeastInstance extends FeedableBeastInstance
 {

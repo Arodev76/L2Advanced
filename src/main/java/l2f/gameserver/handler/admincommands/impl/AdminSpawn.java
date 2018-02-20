@@ -11,7 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import l2f.commons.collections.MultiValueSet;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ai.CharacterAI;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;

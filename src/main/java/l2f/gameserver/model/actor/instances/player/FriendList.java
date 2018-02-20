@@ -1,5 +1,11 @@
 package l2f.gameserver.model.actor.instances.player;
 
+import java.sql.Connection;
+import java.util.Collections;
+import java.util.Map;
+
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.dao.CharacterFriendDAO;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
@@ -7,11 +13,6 @@ import l2f.gameserver.model.World;
 import l2f.gameserver.network.serverpackets.L2Friend;
 import l2f.gameserver.network.serverpackets.L2FriendStatus;
 import l2f.gameserver.network.serverpackets.SystemMessage;
-import org.apache.commons.lang3.StringUtils;
-
-import java.sql.Connection;
-import java.util.Collections;
-import java.util.Map;
 
 public class FriendList
 {

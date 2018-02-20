@@ -6,7 +6,7 @@ import java.util.Map;
 
 import org.apache.commons.lang3.math.NumberUtils;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2f.gameserver.model.Player;

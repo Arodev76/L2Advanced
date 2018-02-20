@@ -2,13 +2,13 @@ package l2f.gameserver.network.serverpackets;
 
 import java.util.regex.Matcher;
 
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.scripts.Functions;
 
 /**
  * @author VISTALL
- * @date 16:25/24.04.2011
+ * @update 00:49/19.02.2018
  */
 public class ExNpcQuestHtmlMessage extends NpcHtmlMessage
 {

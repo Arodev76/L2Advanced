@@ -1,7 +1,7 @@
 package ai;
 
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.geodata.GeoEngine;

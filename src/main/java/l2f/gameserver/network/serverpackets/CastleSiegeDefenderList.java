@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2f.gameserver.model.entity.events.impl.SiegeEvent;
 import l2f.gameserver.model.entity.events.objects.SiegeClanObject;
 import l2f.gameserver.model.entity.residence.Castle;
 import l2f.gameserver.model.pledge.Alliance;
 import l2f.gameserver.model.pledge.Clan;
-
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * Populates the Siege Defender List in the SiegeInfo Window<BR>

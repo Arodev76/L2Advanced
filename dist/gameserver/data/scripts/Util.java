@@ -1,4 +1,4 @@
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.BuyListHolder;
 import l2f.gameserver.data.xml.holder.EventHolder;

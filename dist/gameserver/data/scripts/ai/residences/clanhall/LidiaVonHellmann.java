@@ -12,7 +12,7 @@ import l2f.gameserver.utils.PositionUtils;
 
 /**
  * @author VISTALL
- * @date 18:22/10.05.2011
+ * @update 19:00/17.02.2018
  */
 public class LidiaVonHellmann extends SiegeGuardFighter
 {

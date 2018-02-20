@@ -3,8 +3,11 @@ package l2f.gameserver.model;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.listener.actor.OnAttackListener;
 import l2f.gameserver.listener.actor.OnMagicUseListener;
 import l2f.gameserver.network.serverpackets.AbnormalStatusUpdate;
@@ -21,9 +24,6 @@ import l2f.gameserver.stats.funcs.Func;
 import l2f.gameserver.stats.funcs.FuncOwner;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.taskmanager.EffectTaskManager;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public abstract class Effect extends RunnableImpl implements Comparable<Effect>, FuncOwner
 {

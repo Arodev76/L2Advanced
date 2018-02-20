@@ -7,9 +7,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.lameguard.session.LameClientV195;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.net.nio.impl.MMOClient;
 import l2f.commons.net.nio.impl.MMOConnection;
-import l2f.gameserver.Config;
 import l2f.gameserver.SecondaryPasswordAuth;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.database.DatabaseFactory;
@@ -22,12 +27,6 @@ import l2f.gameserver.network.loginservercon.SessionKey;
 import l2f.gameserver.network.loginservercon.gspackets.PlayerLogout;
 import l2f.gameserver.network.serverpackets.L2GameServerPacket;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.lameguard.session.LameClientV195;
-
 
 public class GameClient extends MMOClient<MMOConnection<GameClient>> implements LameClientV195
 {

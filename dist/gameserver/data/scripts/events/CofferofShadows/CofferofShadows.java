@@ -6,7 +6,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;

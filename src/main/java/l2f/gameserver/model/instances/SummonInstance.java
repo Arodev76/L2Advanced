@@ -1,10 +1,12 @@
 package l2f.gameserver.model.instances;
 
+import java.util.concurrent.Future;
+
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
@@ -15,8 +17,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import java.util.concurrent.Future;
 
 public class SummonInstance extends Summon
 {

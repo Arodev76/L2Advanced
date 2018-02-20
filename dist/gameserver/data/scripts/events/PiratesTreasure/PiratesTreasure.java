@@ -9,11 +9,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Location;
 
-/**
- *
- * @author Aro
- */
-
 public class PiratesTreasure extends Functions implements ScriptFile
 {
     

@@ -5,9 +5,13 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
+import org.napile.primitive.Containers;
+import org.napile.primitive.sets.IntSet;
+import org.napile.primitive.sets.impl.HashIntSet;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.dao.JdbcEntity;
 import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.Config;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.dao.ItemsDAO;
 import l2f.gameserver.data.xml.holder.ItemHolder;
@@ -41,10 +45,6 @@ import l2f.gameserver.templates.item.ItemTemplate.ItemClass;
 import l2f.gameserver.templates.item.ItemType;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-
-import org.napile.primitive.Containers;
-import org.napile.primitive.sets.IntSet;
-import org.napile.primitive.sets.impl.HashIntSet;
 
 public final class ItemInstance extends GameObject implements JdbcEntity
 {

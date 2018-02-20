@@ -1,14 +1,15 @@
 package l2f.gameserver.taskmanager;
 
+import java.util.concurrent.Future;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.threading.SteppingRunnableQueueManager;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.premium.PremiumEnd;
-import java.util.concurrent.Future;
 
 public class LazyPrecisionTaskManager extends SteppingRunnableQueueManager
 {

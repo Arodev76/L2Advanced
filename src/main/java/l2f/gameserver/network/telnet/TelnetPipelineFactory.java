@@ -4,7 +4,7 @@ import static org.jboss.netty.channel.Channels.pipeline;
 
 import java.nio.charset.Charset;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 
 import org.jboss.netty.channel.ChannelHandler;
 import org.jboss.netty.channel.ChannelPipeline;

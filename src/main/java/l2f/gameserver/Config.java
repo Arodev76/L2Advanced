@@ -22,7 +22,7 @@ import l2f.gameserver.Announcements;
 import l2f.commons.configuration.ExProperties;
 import l2f.commons.net.AdvIP;
 import l2f.commons.net.nio.impl.SelectorConfig;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.model.actor.instances.player.Bonus;
 import l2f.gameserver.model.base.Experience;
 import l2f.gameserver.model.base.PlayerAccess;
@@ -46,88 +46,88 @@ public class Config
 
 	public static final int NCPUS = Runtime.getRuntime().availableProcessors();
 	/** Configuration files */
-	public static final String OTHER_CONFIG_FILE = "config/mod/other.ini";
-	public static final String RESIDENCE_CONFIG_FILE = "config/residence.ini";
-	public static final String SPOIL_CONFIG_FILE = "config/spoil.ini";
-	public static final String ALT_SETTINGS_FILE = "config/altsettings.ini";
-	public static final String FORMULAS_CONFIGURATION_FILE = "config/formulas.ini";
-	public static final String PVP_CONFIG_FILE = "config/pvp.ini";
-	public static final String TELNET_CONFIGURATION_FILE = "config/telnet.ini";
-	public static final String CONFIGURATION_FILE = "config/server.ini";
-	public static final String AI_CONFIG_FILE = "config/ai.ini";
-	public static final String GEODATA_CONFIG_FILE = "config/geodata.ini";
-	public static final String EVENTS_CONFIG_FILE = "config/events/events.ini";
-	public static final String SERVICES_FILE = "config/services/services.ini";
-	public static final String OLYMPIAD = "config/olympiad.ini";
-	public static final String DEVELOP_FILE = "config/develop.ini";
-	public static final String EXT_FILE = "config/ext.ini";
-	public static final String RATES_FILE = "config/rates.ini";
-	public static final String WEDDING_FILE = "config/services/Wedding.ini";
-	public static final String CHAT_FILE = "config/chat.ini";
-	public static final String NPC_FILE = "config/npc.ini";
-	public static final String BOSS_FILE = "config/boss.ini";
+	public static final String OTHER_CONFIG_FILE = "config/mod/other.properties";
+	public static final String RESIDENCE_CONFIG_FILE = "config/residence.properties";
+	public static final String SPOIL_CONFIG_FILE = "config/spoil.properties";
+	public static final String ALT_SETTINGS_FILE = "config/altsettings.properties";
+	public static final String FORMULAS_CONFIGURATION_FILE = "config/formulas.properties";
+	public static final String PVP_CONFIG_FILE = "config/pvp.properties";
+	public static final String TELNET_CONFIGURATION_FILE = "config/telnet.properties";
+	public static final String CONFIGURATION_FILE = "config/server.properties";
+	public static final String AI_CONFIG_FILE = "config/ai.properties";
+	public static final String GEODATA_CONFIG_FILE = "config/geodata.properties";
+	public static final String EVENTS_CONFIG_FILE = "config/events/events.properties";
+	public static final String SERVICES_FILE = "config/services/services.properties";
+	public static final String OLYMPIAD = "config/olympiad.properties";
+	public static final String DEVELOP_FILE = "config/develop.properties";
+	public static final String EXT_FILE = "config/ext.properties";
+	public static final String RATES_FILE = "config/rates.properties";
+	public static final String WEDDING_FILE = "config/services/Wedding.properties";
+	public static final String CHAT_FILE = "config/chat.properties";
+	public static final String NPC_FILE = "config/npc.properties";
+	public static final String BOSS_FILE = "config/boss.properties";
 	public static final String FAKE_PLAYERS_LIST = "config/fake_players.list";
-	public static final String PREMIUM_FILE = "config/services/premium.ini";
-	public static final String TOP_FILE = "config/services/tops.ini";
-	public static final String EPIC_BOSS_FILE = "config/epic.ini";
-	public static final String PAYMENT_FILE = "config/services/payment.ini";
-	public static final String ITEM_USE_FILE = "config/UseItems.ini";
-	public static final String INSTANCES_FILE = "config/instances.ini";
-	public static final String ITEMS_FILE = "config/items.ini";
+	public static final String PREMIUM_FILE = "config/services/premium.properties";
+	public static final String TOP_FILE = "config/services/tops.properties";
+	public static final String EPIC_BOSS_FILE = "config/epic.properties";
+	public static final String PAYMENT_FILE = "config/services/payment.properties";
+	public static final String ITEM_USE_FILE = "config/UseItems.properties";
+	public static final String INSTANCES_FILE = "config/instances.properties";
+	public static final String ITEMS_FILE = "config/items.properties";
 	public static final String ANUSEWORDS_CONFIG_FILE = "config/Abusewords.txt";
-	public static final String ADV_IP_FILE = "config/advipsystem.ini";
-	public static final String NPCBUFFER_CONFIG_FILE = "config/npcbuffer.ini";
-	public static final String SMARTGUARD_CONFIG_FILE = "config/SmartGuard.ini";
-	public static final String l2f_TEAM_CONFIG_FILE = "config/DonatorManager.ini";
+	public static final String ADV_IP_FILE = "config/advipsystem.properties";
+	public static final String NPCBUFFER_CONFIG_FILE = "config/npcbuffer.properties";
+	public static final String SMARTGUARD_CONFIG_FILE = "config/SmartGuard.properties";
+	public static final String l2f_TEAM_CONFIG_FILE = "config/DonatorManager.properties";
 
-	public static final String DONATION_STORE = "config/services/DonationStore.ini";
+	public static final String DONATION_STORE = "config/services/DonationStore.properties";
 
 	public static final String GM_PERSONAL_ACCESS_FILE = "config/GMAccess.xml";
 	public static final String GM_ACCESS_FILES_DIR = "config/GMAccess.d/";
 
-	public static final String COMMANDS_CONFIG_FILE = "config/mod/commands.ini";
-	public static final String TALKING_GUARD_CONFIG_FILE = "config/mod/TalkingGuard.ini";
-	public static final String BUFFER_CONFIG_FILE = "config/services/Buffer.ini";
-	public static final String ACC_MOVE_FILE = "config/services/CharMove.ini";
+	public static final String COMMANDS_CONFIG_FILE = "config/mod/commands.properties";
+	public static final String TALKING_GUARD_CONFIG_FILE = "config/mod/TalkingGuard.properties";
+	public static final String BUFFER_CONFIG_FILE = "config/services/Buffer.properties";
+	public static final String ACC_MOVE_FILE = "config/services/CharMove.properties";
 
 	/** events */
-	public static final String EVENT_APRIL_FOOLS_CONFIG_FILE = "config/events/AprilFools.ini";
-	public static final String EVENT_CAPTURE_THE_FLAG_CONFIG_FILE = "config/events/CaptureTheFlag.ini";
-	public static final String EVENT_CHANGE_OF_HEART_CONFIG_FILE = "config/events/ChangeOfHeart.ini";
-	public static final String EVENT_COFFER_OF_SHADOWS_CONFIG_FILE = "config/events/CofferOfShadows.ini";
-	public static final String EVENT_FIGHT_CLUB_FILE = "config/events/FightClub.ini";
-	public static final String EVENT_GLITTERING_MEDAL_CONFIG_FILE = "config/events/GlitteringMedal.ini";
-	public static final String EVENT_HITMAN = "config/events/Hitman.ini";
-	public static final String EVENT_L2_DAY_CONFIG_FILE = "config/events/L2Day.ini";
-	public static final String EVENT_LAST_HERO_CONFIG_FILE = "config/events/LastHero.ini";
-	public static final String EVENT_MARCH_8_CONFIG_FILE = "config/events/March8.ini";
-	public static final String EVENT_MASTER_OF_ENCHANING_CONFIG_FILE = "config/events/MasterOfEnchaning.ini";
-	public static final String EVENT_OTHER_EVENTS_CONFIG_FILE = "config/events/OtherEvents.ini";
-	public static final String EVENT_SAVING_SNOWMAN_CONFIG_FILE = "config/events/SavingSnowman.ini";
-	public static final String EVENT_TEAM_VS_TEAM_CONFIG_FILE = "config/events/TeamVSTeam.ini";
-	public static final String EVENT_KOREAN_STYLE_CONFIG_FILE = "config/events/KoreanStyle.ini";
-	public static final String EVENT_THE_FALL_HARVEST_CONFIG_FILE = "config/events/TheFallHarvest.ini";
-	public static final String EVENT_TRICK_OF_TRANSMUTATION_CONFIG_FILE = "config/events/TrickOfTransmutation.ini";
-	public static final String EVENT_WORLD_DROP_CONFIG_FILE = "config/events/WorldDrop.ini";
-	public static final String PC_CONFIG_FILE = "config/events/PcBangPoints.ini";
-	public static final String DEFENSE_TOWNS_CONFIG_FILE = "config/events/DefenseTowns.ini";
-	public static final String VIKTORINA_CONFIG_FILE = "config/events/Victorina.ini";
-	public static final String PVP_MOD_CONFIG_FILE = "config/mod/PvPmod.ini";
+	public static final String EVENT_APRIL_FOOLS_CONFIG_FILE = "config/events/AprilFools.properties";
+	public static final String EVENT_CAPTURE_THE_FLAG_CONFIG_FILE = "config/events/CaptureTheFlag.properties";
+	public static final String EVENT_CHANGE_OF_HEART_CONFIG_FILE = "config/events/ChangeOfHeart.properties";
+	public static final String EVENT_COFFER_OF_SHADOWS_CONFIG_FILE = "config/events/CofferOfShadows.properties";
+	public static final String EVENT_FIGHT_CLUB_FILE = "config/events/FightClub.properties";
+	public static final String EVENT_GLITTERING_MEDAL_CONFIG_FILE = "config/events/GlitteringMedal.properties";
+	public static final String EVENT_HITMAN = "config/events/Hitman.properties";
+	public static final String EVENT_L2_DAY_CONFIG_FILE = "config/events/L2Day.properties";
+	public static final String EVENT_LAST_HERO_CONFIG_FILE = "config/events/LastHero.properties";
+	public static final String EVENT_MARCH_8_CONFIG_FILE = "config/events/March8.properties";
+	public static final String EVENT_MASTER_OF_ENCHANING_CONFIG_FILE = "config/events/MasterOfEnchaning.properties";
+	public static final String EVENT_OTHER_EVENTS_CONFIG_FILE = "config/events/OtherEvents.properties";
+	public static final String EVENT_SAVING_SNOWMAN_CONFIG_FILE = "config/events/SavingSnowman.properties";
+	public static final String EVENT_TEAM_VS_TEAM_CONFIG_FILE = "config/events/TeamVSTeam.properties";
+	public static final String EVENT_KOREAN_STYLE_CONFIG_FILE = "config/events/KoreanStyle.properties";
+	public static final String EVENT_THE_FALL_HARVEST_CONFIG_FILE = "config/events/TheFallHarvest.properties";
+	public static final String EVENT_TRICK_OF_TRANSMUTATION_CONFIG_FILE = "config/events/TrickOfTransmutation.properties";
+	public static final String EVENT_WORLD_DROP_CONFIG_FILE = "config/events/WorldDrop.properties";
+	public static final String PC_CONFIG_FILE = "config/events/PcBangPoints.properties";
+	public static final String DEFENSE_TOWNS_CONFIG_FILE = "config/events/DefenseTowns.properties";
+	public static final String VIKTORINA_CONFIG_FILE = "config/events/Victorina.properties";
+	public static final String PVP_MOD_CONFIG_FILE = "config/mod/PvPmod.properties";
 
-	public static final String ZONE_DRAGONVALLEY_FILE = "config/zones/DragonValley.ini";
-	public static final String ZONE_LAIROFANTHARAS_FILE = "config/zones/LairOfAntharas.ini";
+	public static final String ZONE_DRAGONVALLEY_FILE = "config/zones/DragonValley.properties";
+	public static final String ZONE_LAIROFANTHARAS_FILE = "config/zones/LairOfAntharas.properties";
 	/** Community PvP */
-	public static final String BOARD_MANAGER_CONFIG_FILE = "config/CommunityPvP/board_manager.ini";
-	public static final String BUFFER_MANAGER_CONFIG_FILE = "config/CommunityPvP/buffer_manager.ini";
-	public static final String CLASS_MASTER_CONFIG_FILE = "config/CommunityPvP/class_master.ini";
-	public static final String SHOP_MANAGER_CONFIG_FILE = "config/CommunityPvP/shop_manager.ini";
-	public static final String TELEPORT_MANAGER_CONFIG_FILE = "config/CommunityPvP/teleport_manager.ini";
-	public static final String ENCHANT_CB_CONFIG_FILE = "config/CommunityPvP/EnchantCB.ini";
+	public static final String BOARD_MANAGER_CONFIG_FILE = "config/CommunityPvP/board_manager.properties";
+	public static final String BUFFER_MANAGER_CONFIG_FILE = "config/CommunityPvP/buffer_manager.properties";
+	public static final String CLASS_MASTER_CONFIG_FILE = "config/CommunityPvP/class_master.properties";
+	public static final String SHOP_MANAGER_CONFIG_FILE = "config/CommunityPvP/shop_manager.properties";
+	public static final String TELEPORT_MANAGER_CONFIG_FILE = "config/CommunityPvP/teleport_manager.properties";
+	public static final String ENCHANT_CB_CONFIG_FILE = "config/CommunityPvP/EnchantCB.properties";
 
 	// Prims
-	public static final String RAID_EVENT_CONFIG_FILE = "config/events/RaidEvent.ini";
-	public static final String BUFF_STORE_CONFIG_FILE = "config/mod/OfflineBuffer.ini";
-	public static final String FORGE_CONFIG_FILE = "config/services/forge.ini";
+	public static final String RAID_EVENT_CONFIG_FILE = "config/events/RaidEvent.properties";
+	public static final String BUFF_STORE_CONFIG_FILE = "config/mod/OfflineBuffer.properties";
+	public static final String FORGE_CONFIG_FILE = "config/services/forge.properties";
 
 	public static boolean EVENT_HITMAN_ENABLED;
 	public static int EVENT_HITMAN_COST_ITEM_ID;
@@ -135,7 +135,6 @@ public class Config
 	public static int EVENT_HITMAN_TASKS_PER_PAGE;
 	public static String[] EVENT_HITMAN_ALLOWED_ITEM_LIST;
 
-	public static int HTM_CACHE_MODE;
 	public static boolean LOG_SERVICES;
 	public static boolean ALLOW_ADDONS_CONFIG;
 
@@ -2207,8 +2206,6 @@ public class Config
 
 		WEAR_DELAY = serverSettings.getProperty("WearDelay", 5);
 
-		HTM_CACHE_MODE = serverSettings.getProperty("HtmCacheMode", HtmCache.LAZY);
-
 		ALT_VITALITY_NEVIT_UP_POINT = serverSettings.getProperty("WebServerDelay", 10);
 		ALT_VITALITY_NEVIT_POINT = serverSettings.getProperty("WebServerDelay", 10);
 
@@ -2220,7 +2217,7 @@ public class Config
 	}
 	  public static void loadHitmanSettings()
 	  {
-	    ExProperties eventHitmanSettings = load("config/events/Hitman.ini");
+	    ExProperties eventHitmanSettings = load("config/events/Hitman.properties");
 
 	    EVENT_HITMAN_ENABLED = eventHitmanSettings.getProperty("HitmanEnabled", false);
 	    EVENT_HITMAN_COST_ITEM_ID = eventHitmanSettings.getProperty("CostItemId", 57);
@@ -2391,7 +2388,7 @@ public class Config
 		NpcBuffer_EnableTimeOut = npcbuffer.getProperty("EnableTimeOut", true);
 		SCHEME_ALLOW_FLAG = npcbuffer.getProperty("EnableBuffforFlag", false);
 		NpcBuffer_TimeOutTime = npcbuffer.getProperty("TimeoutTime", 10);
-		NpcBuffer_MinLevel = npcbuffer.getProperty("MinimumLevel", 20);
+		NpcBuffer_MinLevel = npcbuffer.getProperty("MpropertiesmumLevel", 20);
 		NpcBuffer_PriceCancel = npcbuffer.getProperty("RemoveBuffsPrice", 100000);
 		NpcBuffer_PriceHeal = npcbuffer.getProperty("HealPrice", 100000);
 		NpcBuffer_PriceBuffs = npcbuffer.getProperty("BuffsPrice", 100000);
@@ -2456,7 +2453,7 @@ public class Config
 		ExProperties eventFightClubSettings = load(EVENT_FIGHT_CLUB_FILE);
 
 		FIGHT_CLUB_ENABLED = eventFightClubSettings.getProperty("FightClubEnabled", false);
-		MINIMUM_LEVEL_TO_PARRICIPATION = eventFightClubSettings.getProperty("MinimumLevel", 1);
+		MINIMUM_LEVEL_TO_PARRICIPATION = eventFightClubSettings.getProperty("MpropertiesmumLevel", 1);
 		MAXIMUM_LEVEL_TO_PARRICIPATION = eventFightClubSettings.getProperty("MaximumLevel", 85);
 		MAXIMUM_LEVEL_DIFFERENCE = eventFightClubSettings.getProperty("MaximumLevelDifference", 10);
 		ALLOWED_RATE_ITEMS = eventFightClubSettings.getProperty("AllowedItems", "").trim().replaceAll(" ", "").split(",");
@@ -2820,7 +2817,7 @@ public class Config
 		ExProperties spoilSettings = load(SPOIL_CONFIG_FILE);
 
 		BASE_SPOIL_RATE = spoilSettings.getProperty("BasePercentChanceOfSpoilSuccess", 78.);
-		MINIMUM_SPOIL_RATE = spoilSettings.getProperty("MinimumPercentChanceOfSpoilSuccess", 1.);
+		MINIMUM_SPOIL_RATE = spoilSettings.getProperty("MpropertiesmumPercentChanceOfSpoilSuccess", 1.);
 		ALT_SPOIL_FORMULA = spoilSettings.getProperty("AltFormula", false);
 		MANOR_SOWING_BASIC_SUCCESS = spoilSettings.getProperty("BasePercentChanceOfSowingSuccess", 100.);
 		MANOR_SOWING_ALT_BASIC_SUCCESS = spoilSettings.getProperty("BasePercentChanceOfSowingAltSuccess", 10.);
@@ -2939,7 +2936,7 @@ public class Config
 		ExProperties properties = load(EXT_FILE);
 
 		EX_NEW_PETITION_SYSTEM = properties.getProperty("NewPetitionSystem", false);
-		EX_JAPAN_MINIGAME = properties.getProperty("JapanMinigame", false);
+		EX_JAPAN_MINIGAME = properties.getProperty("JapanMpropertiesgame", false);
 		EX_LECTURE_MARK = properties.getProperty("LectureMark", false);
 		ENABLE_AUTO_HUNTING_REPORT = properties.getProperty("AllowAutoHuntingReport", true);
 
@@ -2988,8 +2985,8 @@ public class Config
 		CAN_BE_CWH_NO_TARADEABLE = itemsProperties.getProperty("CanBeCwhNoTradeable", false);
 		CAN_BE_CWH_IS_AUGMENTED = itemsProperties.getProperty("CanBeCwhIsAugmented", false);
 		CAN_BE_WH_IS_AUGMENTED = itemsProperties.getProperty("CanBeWhIsAugmented", false);
-		ALLOW_SOUL_SPIRIT_SHOT_INFINITELY = itemsProperties.getProperty("AllowSoulSpiritShotInfinitely", false);
-		ALLOW_ARROW_INFINITELY = itemsProperties.getProperty("AllowArrowInfinitely", false);
+		ALLOW_SOUL_SPIRIT_SHOT_INFINITELY = itemsProperties.getProperty("AllowSoulSpiritShotInfpropertiestely", false);
+		ALLOW_ARROW_INFINITELY = itemsProperties.getProperty("AllowArrowInfpropertiestely", false);
 		ALLOW_START_ITEMS = itemsProperties.getProperty("AllowStartItems", false);
 		START_ITEMS_MAGE = itemsProperties.getProperty("StartItemsMageIds", new int[]
 		{
@@ -3090,7 +3087,7 @@ public class Config
 		VITAMIN_SUPERPET_FOOD_ID = altSettings.getProperty("VitaminSuperPetID", -1);
 		ALT_SAVE_UNSAVEABLE = altSettings.getProperty("AltSaveUnsaveable", false);
 		SHIELD_SLAM_BLOCK_IS_MUSIC = altSettings.getProperty("ShieldSlamBlockIsMusic", false);
-		ALT_SAVE_EFFECTS_REMAINING_TIME = altSettings.getProperty("AltSaveEffectsRemainingTime", 5);
+		ALT_SAVE_EFFECTS_REMAINING_TIME = altSettings.getProperty("AltSaveEffectsRemapropertiesngTime", 5);
 		ALLOW_PET_ATTACK_MASTER = altSettings.getProperty("allowPetAttackMaster", true);
 		TELEPORT_PET_TO_MASTER = altSettings.getProperty("TeleportPetToMaster", false);
 		ALT_SHOW_REUSE_MSG = altSettings.getProperty("AltShowSkillReuseMessage", true);

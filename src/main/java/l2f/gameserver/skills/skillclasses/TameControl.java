@@ -2,7 +2,7 @@ package l2f.gameserver.skills.skillclasses;
 
 import java.util.List;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;

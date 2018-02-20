@@ -11,7 +11,7 @@ import javax.management.MBeanServer;
 
 import org.apache.commons.io.FileUtils;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.commons.lang.StatsUtils;
 import l2f.commons.net.nio.impl.SelectorThread;
 import l2f.commons.threading.RunnableStatsManager;

@@ -1,7 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
 import l2f.commons.lang.ArrayUtils;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;

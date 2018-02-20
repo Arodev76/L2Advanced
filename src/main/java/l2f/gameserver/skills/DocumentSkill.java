@@ -1,18 +1,25 @@
 package l2f.gameserver.skills;
 
-import l2f.gameserver.model.Skill.SkillType;
-import l2f.gameserver.model.base.EnchantSkillLearn;
-import l2f.gameserver.stats.conditions.Condition;
-import l2f.gameserver.tables.SkillTreeTable;
-import l2f.gameserver.templates.StatsSet;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import java.io.File;
-import java.util.*;
+import l2f.gameserver.model.Skill.SkillType;
+import l2f.gameserver.model.base.EnchantSkillLearn;
+import l2f.gameserver.stats.conditions.Condition;
+import l2f.gameserver.tables.SkillTreeTable;
+import l2f.gameserver.templates.StatsSet;
 
 public final class DocumentSkill extends DocumentBase
 {

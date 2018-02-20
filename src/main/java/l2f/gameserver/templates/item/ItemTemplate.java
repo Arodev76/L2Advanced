@@ -3,6 +3,10 @@ package l2f.gameserver.templates.item;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.napile.primitive.Containers;
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+
 import l2f.commons.lang.ArrayUtils;
 import l2f.commons.time.cron.SchedulingPattern;
 import l2f.gameserver.handler.items.IItemHandler;
@@ -21,11 +25,6 @@ import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.augmentation.AugmentationInfo;
 import l2f.gameserver.templates.item.EtcItemTemplate.EtcItemType;
 import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
-
-import org.napile.primitive.Containers;
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-
 
 public abstract class ItemTemplate extends StatTemplate
 {

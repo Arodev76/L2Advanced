@@ -4,13 +4,13 @@ import java.io.File;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.net.nio.impl.SelectorConfig;
 import l2f.commons.net.nio.impl.SelectorThread;
 import l2f.loginserver.database.L2DatabaseFactory;
 import l2f.loginserver.gameservercon.GameServerCommunication;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AuthServer
 {

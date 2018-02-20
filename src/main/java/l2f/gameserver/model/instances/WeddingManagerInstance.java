@@ -1,7 +1,7 @@
 package l2f.gameserver.model.instances;
 
 import l2f.gameserver.Announcements;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.instancemanager.CoupleManager;
 import l2f.gameserver.model.GameObjectsStorage;

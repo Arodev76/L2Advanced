@@ -3,7 +3,11 @@ package l2f.gameserver.instancemanager;
 import java.util.Collections;
 import java.util.Map;
 import java.util.WeakHashMap;
-import l2f.gameserver.Config;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.model.Player;
@@ -11,8 +15,6 @@ import l2f.gameserver.network.serverpackets.L2GameServerPacket;
 import l2f.gameserver.network.serverpackets.SetupGauge;
 import l2f.gameserver.network.serverpackets.SocialAction;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class AwayManager
 {

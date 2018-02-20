@@ -9,6 +9,9 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.dao.ItemsDAO;
@@ -19,9 +22,6 @@ import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.model.items.ItemInstance.ItemLocation;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.scripts.Functions;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CCPRepair
 {

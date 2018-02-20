@@ -2,7 +2,7 @@ package l2f.gameserver.network.clientpackets;
 
 import java.util.Map;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;
 import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2f.gameserver.instancemanager.QuestManager;

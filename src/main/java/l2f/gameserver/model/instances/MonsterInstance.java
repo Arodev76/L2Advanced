@@ -1,7 +1,5 @@
 package l2f.gameserver.model.instances;
 
-import gnu.trove.set.hash.TIntHashSet;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,10 +8,11 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import gnu.trove.set.hash.TIntHashSet;
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Announcements;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.instancemanager.CursedWeaponsManager;

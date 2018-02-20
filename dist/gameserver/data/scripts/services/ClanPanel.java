@@ -1,6 +1,6 @@
 //package services;
 //
-//import l2f.gameserver.Config;
+//import l2f.commons.configuration.Config;
 //import l2f.gameserver.dao.ClanDataDAO;
 //import l2f.gameserver.data.htm.HtmCache;
 //import l2f.gameserver.model.Player;

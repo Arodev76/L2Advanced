@@ -2,10 +2,10 @@ package l2f.gameserver.model.entity.olympiad;
 
 import java.util.Calendar;
 
-import l2f.gameserver.Config;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 
 /**
  * Doing Weekly Task(giving points and new fight to all Noble Players)

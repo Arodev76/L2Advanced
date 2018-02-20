@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 import org.apache.commons.lang3.StringUtils;
 
 import events.Hitman.Hitman;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
@@ -15,10 +15,6 @@ import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 
-/**
- * @author Aro
- * Date: 24.11.17 Time: 13:42
- */
 public class HitmanInstance extends NpcInstance
 {
 	private static final long serialVersionUID = 1L;

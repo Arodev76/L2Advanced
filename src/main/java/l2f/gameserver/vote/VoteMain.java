@@ -11,14 +11,14 @@ import java.sql.ResultSet;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import l2f.gameserver.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class VoteMain
 {

@@ -1,9 +1,10 @@
 package l2f.gameserver.network.clientpackets;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.model.Player;
+import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 
 public class RequestLinkHtml extends L2GameClientPacket
 {

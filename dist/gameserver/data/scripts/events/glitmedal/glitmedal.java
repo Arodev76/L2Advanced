@@ -7,8 +7,8 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.MultiSellHolder;
@@ -25,8 +25,7 @@ import l2f.gameserver.utils.Util;
 
 /**
  * User: darkevil
- * Date: 26.02.2008
- * Time: 1:17:42
+ * @update 19:47/17.02.2018
  */
 public class glitmedal extends Functions implements ScriptFile, OnDeathListener, OnPlayerEnterListener
 {

@@ -2,9 +2,12 @@ package l2f.gameserver.model.instances;
 
 import java.util.StringTokenizer;
 
-import l2f.gameserver.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.data.xml.holder.BuyListHolder;
 import l2f.gameserver.data.xml.holder.BuyListHolder.NpcTradeList;
 import l2f.gameserver.data.xml.holder.MultiSellHolder;
@@ -19,9 +22,6 @@ import l2f.gameserver.network.serverpackets.ShopPreviewList;
 import l2f.gameserver.templates.mapregion.DomainArea;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class MerchantInstance extends NpcInstance
 {

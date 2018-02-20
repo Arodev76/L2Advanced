@@ -5,6 +5,9 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.CHashIntObjectMap;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.util.Rnd;
@@ -41,12 +44,9 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.DoorTemplate;
 import l2f.gameserver.utils.Location;
 
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.CHashIntObjectMap;
-
 /**
  * @author VISTALL
- * @date 15:14/14.02.2011
+ * @update 13:17/18.02.2018
  */
 public class DominionSiegeEvent extends SiegeEvent<Dominion, SiegeClanObject>
 {

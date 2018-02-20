@@ -1,5 +1,8 @@
 package l2f.gameserver.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.instancemanager.MapRegionManager;
@@ -10,9 +13,6 @@ import l2f.gameserver.model.entity.Reflection;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.templates.mapregion.RestartArea;
 import l2f.gameserver.templates.mapregion.RestartPoint;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class TeleportUtils
 {

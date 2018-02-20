@@ -5,8 +5,8 @@ import java.util.Iterator;
 
 import org.dom4j.Element;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.data.xml.AbstractFileParser;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.DressCloakHolder;
 import l2f.gameserver.model.DressCloakData;
 

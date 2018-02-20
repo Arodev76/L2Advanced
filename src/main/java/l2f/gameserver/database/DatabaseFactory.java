@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import l2f.commons.dbcp.BasicDataSource;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 
 public class DatabaseFactory extends BasicDataSource
 {

@@ -11,7 +11,6 @@ import l2f.gameserver.scripts.ScriptFile;
 /**
  * @author pchayka
  */
-
 public class _290_ThreatRemoval extends Quest implements ScriptFile
 {
 	private static final int GuardPinaps = 30201;

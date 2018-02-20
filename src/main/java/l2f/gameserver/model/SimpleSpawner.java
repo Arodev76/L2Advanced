@@ -2,6 +2,9 @@ package l2f.gameserver.model;
 
 import java.util.ArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.data.xml.holder.NpcHolder;
@@ -10,9 +13,6 @@ import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.templates.spawn.SpawnRange;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @SuppressWarnings("serial")
 public class SimpleSpawner extends Spawner implements Cloneable

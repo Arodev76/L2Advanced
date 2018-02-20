@@ -11,7 +11,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
 
-
 /**
  * Данный инстанс используется в городе-инстансе на Hellbound как точка выхода
  * @author SYS

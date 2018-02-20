@@ -12,7 +12,6 @@ import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.scripts.Functions;
 
-
 public class BladeOfSplendor extends RndTeleportFighter
 {
 	private static final Logger LOG = LoggerFactory.getLogger(BladeOfSplendor.class);

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.geodata.GeoEngine;

@@ -1,6 +1,6 @@
 @echo off
-COLOR 0A
-title L2Advanced: High Five: Part 5 LS
+COLOR 0B
+title L2Advanced: High Five: Part 2 LS
 :start
 echo Starting Login Server.
 echo.

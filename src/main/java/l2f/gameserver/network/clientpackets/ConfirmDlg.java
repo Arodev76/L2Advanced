@@ -1,9 +1,9 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.tuple.Pair;
+
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
 import l2f.gameserver.model.Player;
-
-import org.apache.commons.lang3.tuple.Pair;
 
 public class ConfirmDlg extends L2GameClientPacket
 {

@@ -1,11 +1,12 @@
 package l2f.gameserver.utils;
 
-import l2f.commons.annotations.Nullable;
+import java.lang.reflect.InvocationTargetException;
+
 import org.apache.commons.lang3.reflect.MethodUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.InvocationTargetException;
+import l2f.commons.annotations.Nullable;
 
 /**
  * Class helping to Invoke the Methods<p/>

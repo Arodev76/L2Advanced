@@ -1,15 +1,20 @@
 package l2f.gameserver.skills;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.tables.SkillTable;
+import java.io.File;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.util.*;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.model.Skill;
+import l2f.gameserver.tables.SkillTable;
 
 public class SkillsEngine
 {

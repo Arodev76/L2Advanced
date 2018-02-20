@@ -7,8 +7,11 @@ import java.util.Map;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.text.PrintfFormat;
-import l2f.gameserver.Config;
 import l2f.gameserver.hwid.HwidGamer;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.GameObject;
@@ -16,9 +19,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.base.Element;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.model.pledge.Clan;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Log
 {

@@ -1,6 +1,6 @@
 package l2f.gameserver.handler.voicecommands.impl;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2f.gameserver.model.Player;
 

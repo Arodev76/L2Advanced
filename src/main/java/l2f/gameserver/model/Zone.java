@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.Future;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.listener.Listener;
 import l2f.commons.listener.ListenerList;
@@ -23,9 +26,6 @@ import l2f.gameserver.stats.funcs.FuncAdd;
 import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Zone
 {

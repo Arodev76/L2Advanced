@@ -1,12 +1,11 @@
 package l2f.gameserver.model.entity.olympiad;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.instancemanager.OlympiadHistoryManager;
 import l2f.gameserver.model.entity.Hero;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ValidationTask extends RunnableImpl
 {

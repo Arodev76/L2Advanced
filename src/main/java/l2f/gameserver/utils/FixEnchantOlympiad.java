@@ -1,7 +1,7 @@
 package l2f.gameserver.utils;
 
 import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.serverpackets.InventoryUpdate;

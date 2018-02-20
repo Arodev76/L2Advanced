@@ -2,7 +2,7 @@ package l2f.gameserver.handler.usercommands.impl;
 
 import java.text.SimpleDateFormat;
 
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.handler.usercommands.IUserCommandHandler;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;

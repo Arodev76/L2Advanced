@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 
 import org.apache.commons.lang3.StringUtils;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.database.mysql;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.GameObject;

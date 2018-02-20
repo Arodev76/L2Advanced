@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.database.LoginDatabaseFactory;

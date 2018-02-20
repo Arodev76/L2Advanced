@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import l2f.commons.data.xml.AbstractHolder;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.handler.voicecommands.impl.ACP;
 import l2f.gameserver.handler.voicecommands.impl.AchievementsVoice;
 import l2f.gameserver.handler.voicecommands.impl.AntiGrief;

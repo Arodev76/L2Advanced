@@ -13,8 +13,8 @@ import l2f.gameserver.templates.item.ItemTemplate;
 /**
  * @author Buemo
  * @editor RuleZzz
- * @update Buemo
- * @date 30.12.11
+ * @update Arodev
+ * @date 17.02.18
  */
 public class SellPcService extends Functions implements ScriptFile
 {

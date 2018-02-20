@@ -1,9 +1,15 @@
 package l2f.gameserver.model.instances;
 
+import java.util.Calendar;
+import java.util.StringTokenizer;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.time.cron.SchedulingPattern;
-import l2f.gameserver.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.SevenSigns;
 import l2f.gameserver.model.items.ItemInstance;
@@ -16,11 +22,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.Calendar;
-import java.util.StringTokenizer;
 
 public class SignsPriestInstance extends NpcInstance
 {

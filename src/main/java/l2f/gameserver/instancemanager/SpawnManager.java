@@ -1,6 +1,16 @@
 package l2f.gameserver.instancemanager;
 
-import l2f.gameserver.Config;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.GameTimeController;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.data.xml.holder.SpawnHolder;
@@ -15,12 +25,6 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.templates.spawn.PeriodOfDay;
 import l2f.gameserver.templates.spawn.SpawnTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class SpawnManager
 {

@@ -1,5 +1,8 @@
 package l2f.gameserver.network.serverpackets.components;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.data.StringHolder;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.model.Creature;
@@ -8,8 +11,6 @@ import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.item.ItemTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CustomMessage
 {

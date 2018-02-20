@@ -1,13 +1,12 @@
 package l2f.gameserver.network.loginservercon.lspackets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import l2f.gameserver.network.loginservercon.AuthServerCommunication;
 import l2f.gameserver.network.loginservercon.ReceivablePacket;
 import l2f.gameserver.network.loginservercon.gspackets.OnlineStatus;
 import l2f.gameserver.network.loginservercon.gspackets.PlayerInGame;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AuthResponse extends ReceivablePacket
 {

@@ -1,5 +1,11 @@
 package l2f.gameserver.skills.effects;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Effect;
 import l2f.gameserver.model.EffectList;
@@ -9,11 +15,6 @@ import l2f.gameserver.stats.Env;
 import l2f.gameserver.stats.StatTemplate;
 import l2f.gameserver.stats.conditions.Condition;
 import l2f.gameserver.templates.StatsSet;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.lang.reflect.InvocationTargetException;
-import java.util.List;
 
 public final class EffectTemplate extends StatTemplate
 {

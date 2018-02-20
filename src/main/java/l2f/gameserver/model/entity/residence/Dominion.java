@@ -1,5 +1,8 @@
 package l2f.gameserver.model.entity.residence;
 
+import org.napile.primitive.sets.IntSet;
+import org.napile.primitive.sets.impl.TreeIntSet;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.dao.DominionDAO;
 import l2f.gameserver.data.xml.holder.EventHolder;
@@ -14,14 +17,9 @@ import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
-import org.napile.primitive.sets.IntSet;
-import org.napile.primitive.sets.impl.TreeIntSet;
 
 public class Dominion extends Residence
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private IntSet _flags = new TreeIntSet();
 	private Castle _castle;

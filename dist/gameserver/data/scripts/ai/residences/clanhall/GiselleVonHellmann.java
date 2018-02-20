@@ -16,7 +16,7 @@ import l2f.gameserver.utils.ReflectionUtils;
 
 /**
  * @author VISTALL
- * @date 18:25/10.05.2011
+ * @update 18:59/17.02.2018
  * 35631
  * lidia_zone1
  * lidia_zone2

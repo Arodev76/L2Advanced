@@ -1,6 +1,6 @@
 package l2f.gameserver.model.entity.events.actions;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;

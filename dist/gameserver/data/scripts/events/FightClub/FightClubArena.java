@@ -7,8 +7,8 @@ import java.util.concurrent.ScheduledFuture;
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.listener.actor.OnDeathListener;
 import l2f.gameserver.listener.actor.player.OnPlayerExitListener;

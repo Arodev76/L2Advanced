@@ -8,8 +8,8 @@ import java.util.List;
 import org.dom4j.Element;
 
 import gnu.trove.map.hash.TIntIntHashMap;
+import l2f.commons.configuration.Config;
 import l2f.commons.data.xml.AbstractFileParser;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.CubicHolder;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.tables.SkillTable;
@@ -17,7 +17,7 @@ import l2f.gameserver.templates.CubicTemplate;
 
 /**
  * @author VISTALL
- * @date  15:24/22.12.2010
+ * @update  23:24/17.02.2018
  */
 public final class CubicParser extends AbstractFileParser<CubicHolder>
 {

@@ -6,7 +6,7 @@ import java.util.concurrent.Future;
 
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.InstantZoneHolder;
 import l2f.gameserver.instancemanager.DimensionalRiftManager;

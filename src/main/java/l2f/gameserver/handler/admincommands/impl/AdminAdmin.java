@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 import l2f.commons.lang.StatsUtils;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.instancemanager.SoDManager;
 import l2f.gameserver.instancemanager.SoIManager;

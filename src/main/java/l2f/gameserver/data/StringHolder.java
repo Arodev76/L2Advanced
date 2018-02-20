@@ -8,8 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.data.xml.AbstractHolder;
-import l2f.gameserver.Config;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.utils.Language;
 

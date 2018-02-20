@@ -3,13 +3,13 @@ package l2f.gameserver.templates;
 import java.util.List;
 import java.util.Map;
 
+import org.napile.primitive.maps.IntObjectMap;
+
 import l2f.commons.time.cron.SchedulingPattern;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.model.Territory;
 import l2f.gameserver.templates.spawn.SpawnTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.napile.primitive.maps.IntObjectMap;
 
 public class InstantZone
 {

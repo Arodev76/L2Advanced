@@ -4,11 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import l2f.loginserver.database.L2DatabaseFactory;
-import l2f.loginserver.gameservercon.ReceivablePacket;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.loginserver.database.L2DatabaseFactory;
+import l2f.loginserver.gameservercon.ReceivablePacket;
 
 public class ChangeAllowedHwid extends ReceivablePacket
 {

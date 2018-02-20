@@ -25,7 +25,7 @@ public class Config
 {
 	private final static Logger _log = LoggerFactory.getLogger(Config.class);
 
-	public static final String LOGIN_CONFIGURATION_FILE = "config/loginserver.ini";
+	public static final String LOGIN_CONFIGURATION_FILE = "config/loginserver.properties";
 	public static final String SERVER_NAMES_FILE = "config/servername.xml";
 
 	public static String LOGIN_HOST;

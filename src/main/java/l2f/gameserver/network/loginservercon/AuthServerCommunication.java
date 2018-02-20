@@ -1,12 +1,5 @@
 package l2f.gameserver.network.loginservercon;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.network.GameClient;
-import l2f.gameserver.network.loginservercon.gspackets.AuthRequest;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -15,12 +8,25 @@ import java.nio.channels.CancelledKeyException;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
+import l2f.gameserver.ThreadPoolManager;
+import l2f.gameserver.network.GameClient;
+import l2f.gameserver.network.loginservercon.gspackets.AuthRequest;
 
 public class AuthServerCommunication extends Thread
 {

@@ -15,7 +15,7 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL
- * @date 15:40/12.07.2011
+ * @update 20:45/17.02.2018
  *
  * events/kerthang_manager004.htm  - не лидер пати, но в пати
  * events/kerthang_manager008.htm  - нету пати

@@ -5,8 +5,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Effect;
@@ -16,8 +18,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.stats.Env;
 import l2f.gameserver.stats.Stats;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * Cancellation, Touch of Death, Insane Crusher, Banes, Infinity Spear effect

@@ -18,15 +18,15 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import org.apache.log4j.Logger;
+
 import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.clientpackets.EnterWorld;
 import l2f.gameserver.network.serverpackets.TutorialCloseHtml;
 import l2f.gameserver.network.serverpackets.TutorialShowHtml;
-
-import org.apache.log4j.Logger;
 
 /**
  * @author Nik

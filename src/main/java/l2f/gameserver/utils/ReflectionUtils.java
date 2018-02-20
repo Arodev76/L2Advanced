@@ -1,5 +1,10 @@
 package l2f.gameserver.utils;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 import l2f.gameserver.data.xml.holder.InstantZoneHolder;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.model.CommandChannel;
@@ -10,11 +15,6 @@ import l2f.gameserver.model.entity.Reflection;
 import l2f.gameserver.model.instances.DoorInstance;
 import l2f.gameserver.templates.InstantZone;
 import l2f.gameserver.templates.InstantZoneEntryType;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
 
 public class ReflectionUtils
 {

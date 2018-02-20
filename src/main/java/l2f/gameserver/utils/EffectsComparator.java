@@ -1,9 +1,9 @@
 package l2f.gameserver.utils;
 
-import l2f.gameserver.model.Effect;
-
 import java.io.Serializable;
 import java.util.Comparator;
+
+import l2f.gameserver.model.Effect;
 
 public class EffectsComparator implements Comparator<Effect>, Serializable
 {

@@ -16,7 +16,7 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL
- * @date 8:41/19.04.2011
+ * @update 20:41/17.02.2018
  */
 public class MercenaryCaptionInstance extends MonsterInstance
 {

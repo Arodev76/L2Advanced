@@ -9,12 +9,12 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.loginserver.database.L2DatabaseFactory;
 import l2f.loginserver.gameservercon.GameServer;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class GameServerManager
 {

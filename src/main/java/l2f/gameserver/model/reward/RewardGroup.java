@@ -6,7 +6,7 @@ import java.util.List;
 
 import l2f.commons.math.SafeMath;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.stats.Stats;
 

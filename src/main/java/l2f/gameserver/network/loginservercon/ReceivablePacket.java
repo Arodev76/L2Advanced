@@ -1,9 +1,9 @@
 package l2f.gameserver.network.loginservercon;
 
+import java.nio.ByteBuffer;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.nio.ByteBuffer;
 
 public abstract class ReceivablePacket extends l2f.commons.net.nio.ReceivablePacket<AuthServerCommunication>
 {

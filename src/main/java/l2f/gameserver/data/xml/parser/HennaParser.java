@@ -6,14 +6,14 @@ import java.util.Iterator;
 import org.dom4j.Element;
 
 import gnu.trove.list.array.TIntArrayList;
+import l2f.commons.configuration.Config;
 import l2f.commons.data.xml.AbstractFileParser;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.HennaHolder;
 import l2f.gameserver.templates.Henna;
 
 /**
  * @author: VISTALL
- * @date:  9:04/06.12.2010
+ * @update:  00:02/18.02.2018
  */
 public final class HennaParser extends AbstractFileParser<HennaHolder>
 {

@@ -13,7 +13,7 @@ import org.napile.primitive.sets.IntSet;
 import org.napile.primitive.sets.impl.HashIntSet;
 
 import l2f.commons.data.xml.AbstractDirParser;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.TeleportLocation;

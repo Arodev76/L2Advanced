@@ -1,5 +1,12 @@
 package l2f.gameserver.model;
 
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.lang.reference.HardReferences;
 import l2f.gameserver.geodata.GeoEngine;
@@ -14,12 +21,6 @@ import l2f.gameserver.scripts.Events;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public abstract class GameObject extends EventOwner
 {

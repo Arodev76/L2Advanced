@@ -1,6 +1,6 @@
 package l2f.gameserver.skills.effects;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Effect;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.stats.Env;

@@ -1,7 +1,9 @@
 package l2f.gameserver.skills.skillclasses;
 
+import java.util.List;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Manor;
@@ -12,8 +14,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
-
-import java.util.List;
 
 public class Sowing extends Skill
 {

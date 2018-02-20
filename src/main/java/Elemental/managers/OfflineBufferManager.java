@@ -22,7 +22,7 @@ import java.util.StringTokenizer;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.CharTemplateHolder;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.model.Player;

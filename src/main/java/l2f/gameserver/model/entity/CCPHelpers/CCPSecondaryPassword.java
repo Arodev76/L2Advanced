@@ -6,7 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.StringTokenizer;
 
-import l2f.gameserver.data.htm.HtmCache;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.database.LoginDatabaseFactory;
 import l2f.gameserver.instancemanager.QuestManager;
 import l2f.gameserver.model.Player;
@@ -16,9 +19,6 @@ import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.SocialAction;
 import l2f.gameserver.network.serverpackets.TutorialShowHtml;
 import l2f.gameserver.skills.AbnormalEffect;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CCPSecondaryPassword
 {

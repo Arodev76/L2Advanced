@@ -6,7 +6,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.SimpleSpawner;
@@ -20,7 +20,7 @@ import l2f.gameserver.tables.SkillTable;
 /**
  * 
  * @author n0nam3, pchayka
- * @date 12/10/2010 20:06
+ * @update 19:45/17.02.2018
  * 
  * http://www.lineage2.com/archive/2010/06/gift_of_vitalit.html
  *

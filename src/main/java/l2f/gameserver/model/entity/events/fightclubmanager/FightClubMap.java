@@ -1,10 +1,10 @@
 package l2f.gameserver.model.entity.events.fightclubmanager;
 
+import java.util.Map;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.utils.Location;
-
-import java.util.Map;
 
 public class FightClubMap
 {

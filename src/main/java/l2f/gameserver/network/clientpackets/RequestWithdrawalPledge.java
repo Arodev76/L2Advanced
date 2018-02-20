@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
 import l2f.gameserver.model.pledge.Clan;
@@ -9,8 +11,6 @@ import l2f.gameserver.network.serverpackets.PledgeShowMemberListDeleteAll;
 import l2f.gameserver.network.serverpackets.SkillList;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class RequestWithdrawalPledge extends L2GameClientPacket
 {

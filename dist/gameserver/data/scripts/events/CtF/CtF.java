@@ -14,7 +14,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Location;
 
-
 public class CtF extends Functions implements ScriptFile, OnDeathListener, OnPlayerExitListener
 {
         /*private static Logger _log = Logger.getLogger(CtF.class.getName());

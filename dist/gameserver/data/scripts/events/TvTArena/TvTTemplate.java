@@ -29,7 +29,6 @@ import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
 
-
 public abstract class TvTTemplate extends Functions
 {
 	private static int ITEM_ID = 4357;

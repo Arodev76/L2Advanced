@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.instancemanager.MatchingRoomManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.matching.MatchingRoom;
-
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author VISTALL

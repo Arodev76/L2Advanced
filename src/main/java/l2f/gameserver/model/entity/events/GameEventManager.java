@@ -4,11 +4,11 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.concurrent.ScheduledFuture;
 
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.Player;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.ThreadPoolManager;
+import l2f.gameserver.model.Player;
 
 public class GameEventManager
 {

@@ -1,7 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
 import l2f.commons.math.SafeMath;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.instancemanager.CastleManorManager;

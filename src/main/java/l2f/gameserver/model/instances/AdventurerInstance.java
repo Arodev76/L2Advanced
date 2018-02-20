@@ -1,5 +1,8 @@
 package l2f.gameserver.model.instances;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.instancemanager.RaidBossSpawnManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Spawner;
@@ -8,9 +11,6 @@ import l2f.gameserver.network.serverpackets.RadarControl;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AdventurerInstance extends NpcInstance
 {

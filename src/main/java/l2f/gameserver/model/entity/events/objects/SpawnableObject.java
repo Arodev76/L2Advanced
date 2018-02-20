@@ -1,8 +1,8 @@
 package l2f.gameserver.model.entity.events.objects;
 
-import l2f.gameserver.model.entity.events.GlobalEvent;
-
 import java.io.Serializable;
+
+import l2f.gameserver.model.entity.events.GlobalEvent;
 
 public interface SpawnableObject extends Serializable
 {

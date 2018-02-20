@@ -1,7 +1,7 @@
 package services.petevolve;
 
 import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.model.Player;

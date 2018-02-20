@@ -1,14 +1,13 @@
 package l2f.gameserver.instancemanager;
 
-import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.utils.Log;
-import l2f.gameserver.utils.Strings;
-
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.utils.Log;
+import l2f.gameserver.utils.Strings;
 
 public class BypassManager
 {

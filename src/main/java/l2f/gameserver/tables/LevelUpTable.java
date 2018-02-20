@@ -1,18 +1,19 @@
 package l2f.gameserver.tables;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.LvlupData;
-import l2f.gameserver.model.base.ClassId;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.dbutils.DbUtils;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.model.LvlupData;
+import l2f.gameserver.model.base.ClassId;
 
 public class LevelUpTable
 {

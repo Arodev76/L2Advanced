@@ -1,12 +1,12 @@
 package l2f.gameserver.network.serverpackets;
 
-import l2f.gameserver.model.Player;
-
 import org.napile.primitive.maps.IntObjectMap;
+
+import l2f.gameserver.model.Player;
 
 /**
  * @author VISTALL
- * @date 22:01/22.03.2011
+ * @update 00:51/19.02.2018
  */
 public class ExReceiveShowPostFriend extends L2GameServerPacket
 {

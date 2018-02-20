@@ -3,6 +3,10 @@ package l2f.gameserver.model.entity.residence;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.dao.ClanDataDAO;
 import l2f.gameserver.dao.ClanHallDAO;
@@ -21,15 +25,8 @@ import l2f.gameserver.templates.DoorTemplate;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.item.ItemTemplate;
 
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class ClanHall extends Residence
 {
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private static final Logger _log = LoggerFactory.getLogger(ClanHall.class);

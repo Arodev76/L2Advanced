@@ -1,14 +1,14 @@
 package l2f.gameserver.skills.skillclasses;
 
+import java.util.List;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.stats.Stats;
 import l2f.gameserver.templates.StatsSet;
-import java.util.List;
 
 public class ManaHeal extends Skill
 {

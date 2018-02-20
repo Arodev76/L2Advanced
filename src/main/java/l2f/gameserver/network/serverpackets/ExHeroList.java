@@ -2,12 +2,11 @@ package l2f.gameserver.network.serverpackets;
 
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.entity.Hero;
 import l2f.gameserver.model.entity.olympiad.Olympiad;
 import l2f.gameserver.templates.StatsSet;
-
-import org.apache.commons.lang3.StringUtils;
-
 
 /**
  * Format: (ch) d [SdSdSdd]

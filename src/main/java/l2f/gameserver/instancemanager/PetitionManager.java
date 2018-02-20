@@ -1,6 +1,17 @@
 package l2f.gameserver.instancemanager;
 
-import l2f.gameserver.Config;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.handler.petition.IPetitionHandler;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;
@@ -10,21 +21,11 @@ import l2f.gameserver.network.serverpackets.Say2;
 import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.tables.GmListTable;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Petition Manager
  * @author n0nam3
- * @date 21/08/2010 0:11
+ * @update 01:17/18.02.2018
  */
 public final class PetitionManager implements IPetitionHandler
 {

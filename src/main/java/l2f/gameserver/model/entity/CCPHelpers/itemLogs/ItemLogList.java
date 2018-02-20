@@ -12,13 +12,13 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import l2f.gameserver.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.utils.BatchStatement;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ItemLogList
 {

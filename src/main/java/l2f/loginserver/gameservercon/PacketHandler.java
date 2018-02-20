@@ -2,6 +2,9 @@ package l2f.loginserver.gameservercon;
 
 import java.nio.ByteBuffer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.loginserver.gameservercon.gspackets.AuthRequest;
 import l2f.loginserver.gameservercon.gspackets.BonusRequest;
 import l2f.loginserver.gameservercon.gspackets.ChangeAccessLevel;
@@ -15,9 +18,6 @@ import l2f.loginserver.gameservercon.gspackets.PlayerAuthRequest;
 import l2f.loginserver.gameservercon.gspackets.PlayerInGame;
 import l2f.loginserver.gameservercon.gspackets.PlayerLogout;
 import l2f.loginserver.gameservercon.gspackets.SetAccountInfo;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class PacketHandler
 {

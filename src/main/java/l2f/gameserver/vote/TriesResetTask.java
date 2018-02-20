@@ -1,9 +1,9 @@
 package l2f.gameserver.vote;
 
+import java.util.Calendar;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Calendar;
 
 public class TriesResetTask
 {

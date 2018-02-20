@@ -1,11 +1,11 @@
 package l2f.gameserver.utils;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class GetIP 
 {

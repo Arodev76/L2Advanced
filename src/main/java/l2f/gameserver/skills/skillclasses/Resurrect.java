@@ -1,5 +1,9 @@
 package l2f.gameserver.skills.skillclasses;
 
+import java.util.List;
+
+import org.apache.commons.lang3.tuple.Pair;
+
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
 import l2f.gameserver.listener.actor.player.impl.ReviveAnswerListener;
@@ -16,9 +20,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
-import org.apache.commons.lang3.tuple.Pair;
-
-import java.util.List;
 
 public class Resurrect extends Skill
 {

@@ -6,12 +6,12 @@ import java.sql.SQLException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.dao.OlympiadNobleDAO;
 import l2f.gameserver.data.StringHolder;
-import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.data.xml.holder.BuyListHolder;
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.data.xml.holder.FightClubMapHolder;
@@ -128,11 +128,7 @@ public class AdminReload implements IAdminCommandHandler
 			}
 			case admin_reload_htm:
 			{
-				HtmCache.getInstance().clear();
-				if (Config.HTM_CACHE_MODE == 2)
-				{
-					HtmCache.getInstance().reload();
-				}
+				HtmCache.getInstance().reload();
 				activeChar.sendMessage("HtmCache reloaded!");
 				break;
 			}

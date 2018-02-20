@@ -5,14 +5,14 @@ import java.util.Iterator;
 
 import org.dom4j.Element;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.data.xml.AbstractFileParser;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.SoulCrystalHolder;
 import l2f.gameserver.templates.SoulCrystal;
 
 /**
  * @author VISTALL
- * @date  10:55/08.12.2010
+ * @update  00:15/18.02.2018
  */
 public final class SoulCrystalParser extends AbstractFileParser<SoulCrystalHolder>
 {

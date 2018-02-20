@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.util.Rnd;
 import l2f.commons.util.concurrent.atomic.AtomicState;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ai.CtrlEvent;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.cache.Msg;

@@ -1,7 +1,5 @@
 package l2f.gameserver.tables;
 
-import gnu.trove.list.array.TDoubleArrayList;
-
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,15 +15,6 @@ import java.util.StringTokenizer;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import l2f.commons.crypt.CryptUtil;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Options;
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.stats.triggers.TriggerInfo;
-import l2f.gameserver.stats.triggers.TriggerType;
-import l2f.gameserver.templates.item.ItemTemplate;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.DOMException;
@@ -33,6 +22,16 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
+
+import gnu.trove.list.array.TDoubleArrayList;
+import l2f.commons.configuration.Config;
+import l2f.commons.crypt.CryptUtil;
+import l2f.commons.util.Rnd;
+import l2f.gameserver.model.Options;
+import l2f.gameserver.stats.Stats;
+import l2f.gameserver.stats.triggers.TriggerInfo;
+import l2f.gameserver.stats.triggers.TriggerType;
+import l2f.gameserver.templates.item.ItemTemplate;
 
 public class AugmentationData
 {

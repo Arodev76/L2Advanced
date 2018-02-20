@@ -1,14 +1,15 @@
 package l2f.gameserver.network.clientpackets;
 
+import java.nio.BufferUnderflowException;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.net.nio.impl.ReceivablePacket;
 import l2f.gameserver.GameServer;
 import l2f.gameserver.network.GameClient;
 import l2f.gameserver.network.serverpackets.L2GameServerPacket;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.nio.BufferUnderflowException;
-import java.util.List;
 
 /**
  * Packets received by the game server from clients

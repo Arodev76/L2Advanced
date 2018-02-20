@@ -8,8 +8,8 @@ import java.util.Map.Entry;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.database.DatabaseFactory;

@@ -1,6 +1,7 @@
 package l2f.gameserver.skills.effects;
 
 import static l2f.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
+
 import l2f.gameserver.model.Effect;
 import l2f.gameserver.model.Summon;
 import l2f.gameserver.stats.Env;

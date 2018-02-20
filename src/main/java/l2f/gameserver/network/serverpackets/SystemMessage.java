@@ -3,14 +3,14 @@ package l2f.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.DoorInstance;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.StringUtils;
 
 //@Deprecated
 public class SystemMessage extends L2GameServerPacket

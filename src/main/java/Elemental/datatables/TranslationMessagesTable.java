@@ -21,7 +21,7 @@
 //
 //import javax.xml.parsers.DocumentBuilderFactory;
 //
-//import l2f.gameserver.Config;
+//import l2f.commons.configuration.Config;
 //import l2f.gameserver.model.Player;
 //import l2f.gameserver.util.filter.XMLFilter;
 //

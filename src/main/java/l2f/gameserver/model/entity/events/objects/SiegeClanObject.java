@@ -1,5 +1,8 @@
 package l2f.gameserver.model.entity.events.objects;
 
+import java.io.Serializable;
+import java.util.Comparator;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.entity.events.impl.SiegeEvent;
@@ -7,9 +10,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.network.serverpackets.L2GameServerPacket;
 import l2f.gameserver.network.serverpackets.components.IStaticPacket;
-
-import java.io.Serializable;
-import java.util.Comparator;
 
 public class SiegeClanObject implements Serializable
 {

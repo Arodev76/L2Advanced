@@ -1,10 +1,10 @@
 package l2f.gameserver.model.entity.events.fightclubmanager;
 
-import l2f.gameserver.utils.Location;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import l2f.gameserver.utils.Location;
 
 public class FightClubTeam implements Serializable
 {

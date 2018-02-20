@@ -1,7 +1,7 @@
 package ai;
 
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.ai.Guard;
 import l2f.gameserver.geodata.GeoEngine;

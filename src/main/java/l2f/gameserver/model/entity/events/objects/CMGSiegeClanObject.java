@@ -1,12 +1,12 @@
 package l2f.gameserver.model.entity.events.objects;
 
+import org.napile.primitive.sets.IntSet;
+import org.napile.primitive.sets.impl.HashIntSet;
+
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.events.impl.SiegeEvent;
 import l2f.gameserver.model.pledge.Clan;
-
-import org.napile.primitive.sets.IntSet;
-import org.napile.primitive.sets.impl.HashIntSet;
 
 public class CMGSiegeClanObject extends SiegeClanObject
 {

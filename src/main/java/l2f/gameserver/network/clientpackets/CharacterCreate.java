@@ -3,7 +3,10 @@ package l2f.gameserver.network.clientpackets;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import l2f.gameserver.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2f.gameserver.database.DatabaseFactory;
@@ -26,9 +29,6 @@ import l2f.gameserver.templates.PlayerTemplate;
 import l2f.gameserver.templates.item.CreateItem;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CharacterCreate extends L2GameClientPacket
 {

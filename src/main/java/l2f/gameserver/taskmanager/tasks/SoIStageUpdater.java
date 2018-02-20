@@ -2,14 +2,14 @@ package l2f.gameserver.taskmanager.tasks;
 
 import java.util.Calendar;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.instancemanager.SoIManager;
 import l2f.gameserver.taskmanager.Task;
 import l2f.gameserver.taskmanager.TaskManager;
 import l2f.gameserver.taskmanager.TaskManager.ExecutedTask;
 import l2f.gameserver.taskmanager.TaskTypes;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class SoIStageUpdater extends Task
 {

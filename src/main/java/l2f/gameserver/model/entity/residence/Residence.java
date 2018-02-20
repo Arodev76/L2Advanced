@@ -1,5 +1,18 @@
 package l2f.gameserver.model.entity.residence;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntity;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.dbutils.DbUtils;
@@ -21,25 +34,10 @@ import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
 
 @SuppressWarnings("rawtypes")
 public abstract class Residence implements JdbcEntity
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	public class ResidenceCycleTask extends RunnableImpl

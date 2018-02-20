@@ -1,5 +1,9 @@
 package l2f.gameserver.model.entity.events.objects;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.GameObjectsStorage;
@@ -13,9 +17,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class FortressCombatFlagObject implements SpawnableObject, FlagItemAttachment
 {

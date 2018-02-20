@@ -1,6 +1,12 @@
 package l2f.gameserver.skills.skillclasses;
 
-import l2f.gameserver.model.*;
+import java.util.List;
+
+import l2f.gameserver.model.Creature;
+import l2f.gameserver.model.GameObjectsStorage;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.model.Skill;
+import l2f.gameserver.model.Zone;
 import l2f.gameserver.model.Zone.ZoneType;
 import l2f.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2f.gameserver.network.serverpackets.Say2;
@@ -9,8 +15,6 @@ import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.network.serverpackets.components.IStaticPacket;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
-
-import java.util.List;
 
 public class TakeCastle extends Skill
 {

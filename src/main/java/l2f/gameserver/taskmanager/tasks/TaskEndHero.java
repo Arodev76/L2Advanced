@@ -1,5 +1,8 @@
 package l2f.gameserver.taskmanager.tasks;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.Hero;
@@ -7,9 +10,6 @@ import l2f.gameserver.taskmanager.Task;
 import l2f.gameserver.taskmanager.TaskManager;
 import l2f.gameserver.taskmanager.TaskManager.ExecutedTask;
 import l2f.gameserver.taskmanager.TaskTypes;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class TaskEndHero extends Task
 {

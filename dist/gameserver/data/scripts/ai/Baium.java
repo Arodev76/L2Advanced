@@ -11,16 +11,6 @@ import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.instances.NpcInstance;
 
-/**
- * AI boss Baium.<br>
- * - Instantly kills the first striker<br>
- * - For the attack uses only the skills according to the following scheme:
- * <li>Standard set: 80% - 4127, 10% - 4128, 10% - 4129
- * <li>if xn < 50%: 70% - 4127, 10% - 4128, 10% - 4129, 10% - 4131
- * <li>if xn < 25%: 60% - 4127, 10% - 4128, 10% - 4129, 10% - 4131, 10% - 4130
- *
- * @author SYS
- */
 public class Baium extends DefaultAI
 {
 	private boolean _firstTimeAttacked = true;

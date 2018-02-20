@@ -12,10 +12,10 @@ import org.napile.primitive.lists.impl.ArrayIntList;
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.commons.lang.ArrayUtils;
 import l2f.commons.math.random.RndSelector;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.AugmentationDataHolder;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.templates.augmentation.AugmentationInfo;

@@ -1,6 +1,16 @@
 package l2f.gameserver.network.serverpackets;
 
-import l2f.gameserver.Config;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.data.xml.holder.CharTemplateHolder;
 import l2f.gameserver.database.DatabaseFactory;
@@ -10,15 +20,6 @@ import l2f.gameserver.model.items.Inventory;
 import l2f.gameserver.templates.PlayerTemplate;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.AutoBan;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CharacterSelectionInfo extends L2GameServerPacket
 {

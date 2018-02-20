@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.hwid.HwidGamer;
 import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
@@ -42,7 +42,6 @@ import l2f.gameserver.templates.item.WeaponTemplate;
 import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Util;
-
 
 public class _255_Tutorial extends Quest implements ScriptFile, OnPlayerEnterListener
 {

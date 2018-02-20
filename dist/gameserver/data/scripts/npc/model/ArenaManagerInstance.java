@@ -16,7 +16,7 @@ import l2f.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL
- * @date 17:17/07.07.2011
+ * @update 20:27/17.02.2018
  */
 public class ArenaManagerInstance extends WarehouseInstance
 {

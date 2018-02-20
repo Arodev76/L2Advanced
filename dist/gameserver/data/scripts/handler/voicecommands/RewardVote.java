@@ -1,13 +1,17 @@
 package handler.voicecommands;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;

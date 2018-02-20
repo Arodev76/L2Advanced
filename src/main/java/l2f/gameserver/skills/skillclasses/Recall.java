@@ -1,6 +1,8 @@
 package l2f.gameserver.skills.skillclasses;
 
-import l2f.gameserver.Config;
+import java.util.List;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
@@ -12,8 +14,6 @@ import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.Location;
-
-import java.util.List;
 
 public class Recall extends Skill
 {

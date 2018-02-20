@@ -1,9 +1,10 @@
 package l2f.gameserver.model.petition;
 
-import l2f.gameserver.handler.petition.IPetitionHandler;
-import l2f.gameserver.scripts.Scripts;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.handler.petition.IPetitionHandler;
+import l2f.gameserver.scripts.Scripts;
 
 public class PetitionSubGroup extends PetitionGroup
 {

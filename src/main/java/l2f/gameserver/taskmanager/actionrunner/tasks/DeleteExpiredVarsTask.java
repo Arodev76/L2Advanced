@@ -1,18 +1,19 @@
 package l2f.gameserver.taskmanager.actionrunner.tasks;
 
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.database.mysql;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.utils.Strings;
-import org.apache.log4j.Logger;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.apache.log4j.Logger;
+
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.database.mysql;
+import l2f.gameserver.model.GameObjectsStorage;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.utils.Strings;
 
 public class DeleteExpiredVarsTask extends AutomaticTask
 {

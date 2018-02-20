@@ -4,19 +4,19 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.security.interfaces.RSAPrivateKey;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.net.nio.impl.MMOClient;
 import l2f.commons.net.nio.impl.MMOConnection;
 import l2f.loginserver.accounts.Account;
 import l2f.loginserver.crypt.LoginCrypt;
 import l2f.loginserver.crypt.ScrambledKeyPair;
 import l2f.loginserver.serverpackets.AccountKicked;
+import l2f.loginserver.serverpackets.AccountKicked.AccountKickedReason;
 import l2f.loginserver.serverpackets.L2LoginServerPacket;
 import l2f.loginserver.serverpackets.LoginFail;
-import l2f.loginserver.serverpackets.AccountKicked.AccountKickedReason;
 import l2f.loginserver.serverpackets.LoginFail.LoginFailReason;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class L2LoginClient extends MMOClient<MMOConnection<L2LoginClient>>
 {

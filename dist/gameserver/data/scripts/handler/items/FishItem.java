@@ -2,7 +2,7 @@ package handler.items;
 
 import java.util.List;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.handler.items.ItemHandler;
 import l2f.gameserver.model.Playable;

@@ -1,15 +1,16 @@
 package l2f.gameserver.model.entity;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.idfactory.IdFactory;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.templates.npc.NpcTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 public class MonsterRace
 {

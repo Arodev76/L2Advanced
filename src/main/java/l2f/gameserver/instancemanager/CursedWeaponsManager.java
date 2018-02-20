@@ -1,7 +1,5 @@
 package l2f.gameserver.instancemanager;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
@@ -13,10 +11,20 @@ import java.util.concurrent.ScheduledFuture;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.w3c.dom.DOMException;
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.xml.sax.SAXException;
+
+import gnu.trove.map.hash.TIntObjectHashMap;
+import l2f.commons.configuration.Config;
 import l2f.commons.dbutils.DbUtils;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.database.DatabaseFactory;
@@ -28,15 +36,6 @@ import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.w3c.dom.DOMException;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.xml.sax.SAXException;
 
 public class CursedWeaponsManager
 {

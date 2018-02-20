@@ -8,7 +8,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 import l2f.commons.logging.LoggerObject;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.taskmanager.actionrunner.tasks.AutomaticTask;
 import l2f.gameserver.taskmanager.actionrunner.tasks.DeleteExpiredMailTask;

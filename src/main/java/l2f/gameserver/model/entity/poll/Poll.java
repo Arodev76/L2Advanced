@@ -1,8 +1,8 @@
 package l2f.gameserver.model.entity.poll;
 
-import l2f.gameserver.model.Player;
-
 import java.util.List;
+
+import l2f.gameserver.model.Player;
 
 public class Poll
 {

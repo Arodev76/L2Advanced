@@ -14,7 +14,7 @@ public class UnicodeReader extends Reader
 
 	private static final int BOM_SIZE = 4;
 
-	UnicodeReader(InputStream in, String defaultEnc)
+	public UnicodeReader(InputStream in, String defaultEnc)
 	{
 		internalIn = new PushbackInputStream(in, BOM_SIZE);
 		this.defaultEnc = defaultEnc;

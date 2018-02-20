@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.List;
 
 import instances.Frintezza;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Party;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.Reflection;

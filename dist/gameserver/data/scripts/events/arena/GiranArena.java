@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.listener.actor.OnDeathListener;
 import l2f.gameserver.listener.actor.player.OnPlayerExitListener;
 import l2f.gameserver.listener.actor.player.OnTeleportListener;

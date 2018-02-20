@@ -1,7 +1,6 @@
 package l2f.gameserver.model;
 
 import static l2f.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
-import gnu.trove.set.hash.TIntHashSet;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,13 +20,21 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.CHashIntObjectMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.set.hash.TIntHashSet;
+import l2f.commons.configuration.Config;
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.lang.reference.HardReferences;
 import l2f.commons.listener.Listener;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.commons.util.concurrent.atomic.AtomicState;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.ai.CharacterAI;
 import l2f.gameserver.ai.CtrlEvent;
@@ -107,13 +114,6 @@ import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.PositionUtils;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.CHashIntObjectMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 //import Elemental.templates.Ranking;
 

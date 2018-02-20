@@ -10,7 +10,6 @@ import l2f.gameserver.scripts.ScriptFile;
 /**
  * @author pchayka
  */
-
 public class _461_RumbleInTheBase extends Quest implements ScriptFile
 {
 	private static final int Stan = 30200;

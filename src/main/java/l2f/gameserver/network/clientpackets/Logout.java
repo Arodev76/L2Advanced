@@ -1,6 +1,6 @@
 package l2f.gameserver.network.clientpackets;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.PartyMatchingBBSManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Zone;

@@ -1,11 +1,10 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import l2f.gameserver.instancemanager.games.HandysBlockCheckerManager;
 import l2f.gameserver.model.Player;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Format: chdd

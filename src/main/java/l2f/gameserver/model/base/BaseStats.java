@@ -1,7 +1,11 @@
 package l2f.gameserver.model.base;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Creature;
+import java.io.File;
+import java.io.IOException;
+import java.util.NoSuchElementException;
+
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,12 +13,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.NoSuchElementException;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.model.Creature;
 
 public enum BaseStats
 {

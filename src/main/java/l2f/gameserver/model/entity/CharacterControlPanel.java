@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import l2f.gameserver.Config;
+import org.apache.commons.lang3.StringUtils;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.instancemanager.QuestManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;
@@ -20,8 +22,6 @@ import l2f.gameserver.model.quest.Quest;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.network.serverpackets.DeleteObject;
 import l2f.gameserver.network.serverpackets.L2GameServerPacket;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class CharacterControlPanel
 {

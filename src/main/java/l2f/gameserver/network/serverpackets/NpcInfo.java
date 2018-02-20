@@ -1,6 +1,8 @@
 package l2f.gameserver.network.serverpackets;
 
-import l2f.gameserver.Config;
+import org.apache.commons.lang3.StringUtils;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Summon;
 import l2f.gameserver.model.base.TeamType;
@@ -9,8 +11,6 @@ import l2f.gameserver.model.pledge.Alliance;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class NpcInfo extends L2GameServerPacket
 {

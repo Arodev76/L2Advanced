@@ -1,7 +1,5 @@
 package l2f.gameserver.model.instances;
 
-import gnu.trove.list.array.TIntArrayList;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,9 +13,13 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-import l2f.gameserver.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.list.array.TIntArrayList;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
@@ -41,15 +43,12 @@ import l2f.gameserver.skills.effects.EffectCubic;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+/**
+ * @author Arodev
+ * @update 16:07/18.02.2018
+ */
 public class SchemeBufferInstance extends NpcInstance
 {
-/**
- * @author Aro
- * @date 23:32/02.01.2018
- */
 	private static final long serialVersionUID = 1050954721426616212L;
 
 	private static final Logger _log = LoggerFactory.getLogger(SchemeBufferInstance.class);

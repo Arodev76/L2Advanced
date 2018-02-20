@@ -1,19 +1,19 @@
 package l2f.gameserver.network;
 
+import java.nio.ByteBuffer;
+import java.util.List;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.net.nio.impl.MMOConnection;
 import l2f.commons.net.nio.impl.ReceivablePacket;
-import l2f.gameserver.Config;
 import l2f.gameserver.GameServer;
 import l2f.gameserver.network.loginservercon.SessionKey;
 import l2f.gameserver.network.serverpackets.CharacterSelectionInfo;
 import l2f.gameserver.network.serverpackets.L2GameServerPacket;
 import l2f.gameserver.security.FakePlayersEngine;
 
-import java.nio.ByteBuffer;
-import java.util.List;
-
 /**
- * Created by Michał on 18.01.14.
+ * Created by Michał update 18.02.18.
  */
 public class FakeGameClient extends GameClient
 {

@@ -2,7 +2,7 @@ package services;
 
 import java.util.ArrayList;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.SimpleSpawner;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;

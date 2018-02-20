@@ -15,10 +15,10 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.concurrent.locks.Lock;
 
-import l2f.loginserver.ThreadPoolManager;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.loginserver.ThreadPoolManager;
 
 public class GameServerCommunication extends Thread
 {

@@ -1,7 +1,7 @@
 package services;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
@@ -9,11 +9,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Util;
 
-/**
- * 
- * @author Aro
- *
- */
 public class NickColor extends Functions
 {
 	public void list(String[] param)

@@ -2,9 +2,9 @@ package services;
 
 import java.util.Collection;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.data.xml.holder.OptionDataHolder;
 import l2f.gameserver.model.Options;
 import l2f.gameserver.model.Player;

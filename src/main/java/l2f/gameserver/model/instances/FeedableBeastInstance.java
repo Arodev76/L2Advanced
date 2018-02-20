@@ -1,5 +1,12 @@
 package l2f.gameserver.model.instances;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import gnu.trove.list.array.TIntArrayList;
 import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.threading.RunnableImpl;
@@ -14,13 +21,7 @@ import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.network.serverpackets.SocialAction;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.InvocationTargetException;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-			
 public class FeedableBeastInstance extends MonsterInstance
 {
 	private static final Logger _log = LoggerFactory.getLogger(NpcInstance.class);

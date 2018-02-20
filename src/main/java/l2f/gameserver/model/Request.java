@@ -3,14 +3,14 @@ package l2f.gameserver.model;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Request extends MultiValueSet<String>
 {

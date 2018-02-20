@@ -11,8 +11,12 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.StringHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.database.mysql;
@@ -31,10 +35,6 @@ import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.HtmlUtils;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Hero
 {

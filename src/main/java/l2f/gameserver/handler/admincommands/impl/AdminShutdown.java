@@ -6,7 +6,7 @@ import java.util.Calendar;
 import org.apache.commons.lang3.math.NumberUtils;
 
 import l2f.commons.lang.StatsUtils;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.GameTimeController;
 import l2f.gameserver.Shutdown;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;

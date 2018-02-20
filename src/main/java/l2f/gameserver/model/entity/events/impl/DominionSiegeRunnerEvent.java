@@ -1,8 +1,15 @@
 package l2f.gameserver.model.entity.events.impl;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.Future;
+
 import l2f.commons.collections.MultiValueSet;
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.base.ClassId;
 import l2f.gameserver.model.entity.events.GlobalEvent;
@@ -16,12 +23,9 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.IStaticPacket;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 
-import java.util.*;
-import java.util.concurrent.Future;
-
 /**
  * @author VISTALL
- * @date 15:24/14.02.2011
+ * @update 15:02/18.02.2018
  */
 public class DominionSiegeRunnerEvent extends GlobalEvent
 {

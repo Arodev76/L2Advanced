@@ -1,7 +1,5 @@
 package l2f.gameserver.templates.npc;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -10,6 +8,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2f.commons.util.TroveUtils;
 import l2f.gameserver.ai.CharacterAI;
 import l2f.gameserver.idfactory.IdFactory;
@@ -27,10 +30,6 @@ import l2f.gameserver.scripts.Scripts;
 import l2f.gameserver.skills.effects.EffectTemplate;
 import l2f.gameserver.templates.CharTemplate;
 import l2f.gameserver.templates.StatsSet;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class NpcTemplate extends CharTemplate
 {

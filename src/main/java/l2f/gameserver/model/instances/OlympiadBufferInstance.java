@@ -1,11 +1,10 @@
 package l2f.gameserver.model.instances;
 
-import gnu.trove.set.hash.TIntHashSet;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import gnu.trove.set.hash.TIntHashSet;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;

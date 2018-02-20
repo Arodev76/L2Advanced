@@ -13,7 +13,7 @@ import npc.model.residences.SiegeGuardInstance;
 
 /**
  * @author VISTALL
- * @date 16:39/17.04.2011
+ * @update 19:15/17.02.2018
  */
 public class ArcherCaption extends SiegeGuardRanger
 {

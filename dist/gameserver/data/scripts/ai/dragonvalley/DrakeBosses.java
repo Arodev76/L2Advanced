@@ -2,7 +2,7 @@ package ai.dragonvalley;
 
 import java.util.Map;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.model.AggroList.HateInfo;
 import l2f.gameserver.model.Creature;

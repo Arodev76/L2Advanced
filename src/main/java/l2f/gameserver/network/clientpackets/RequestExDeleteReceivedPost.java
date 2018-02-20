@@ -2,12 +2,12 @@ package l2f.gameserver.network.clientpackets;
 
 import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.dao.MailDAO;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.mail.Mail;
 import l2f.gameserver.network.serverpackets.ExShowReceivedPostList;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * Запрос на удаление полученных сообщений. Удалить можно только письмо без вложения. Отсылается при нажатии на "delete" в списке полученных писем.

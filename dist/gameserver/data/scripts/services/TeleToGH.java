@@ -3,7 +3,7 @@ package services;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
 import l2f.gameserver.model.Creature;

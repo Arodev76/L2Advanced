@@ -2,9 +2,12 @@ package l2f.gameserver.model.instances;
 
 import java.util.concurrent.Future;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Effect;
@@ -15,9 +18,6 @@ import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.tables.PetDataTable;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @SuppressWarnings("serial")
 public final class PetBabyInstance extends PetInstance

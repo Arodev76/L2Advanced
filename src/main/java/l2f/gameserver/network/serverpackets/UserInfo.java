@@ -1,6 +1,6 @@
 package l2f.gameserver.network.serverpackets;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.instancemanager.CursedWeaponsManager;
 import l2f.gameserver.model.Player;

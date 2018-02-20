@@ -1,5 +1,8 @@
 package l2f.gameserver.instancemanager;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Playable;
@@ -9,13 +12,9 @@ import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
 import l2f.gameserver.utils.Util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * @author pchayka
  */
-
 public class SoDManager
 {
 	private static final String SPAWN_GROUP = "sod_free";

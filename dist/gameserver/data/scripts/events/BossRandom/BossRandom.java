@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.NpcHolder;

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.model.base.Experience;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.quest.Quest;

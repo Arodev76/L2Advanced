@@ -1,16 +1,17 @@
 package l2f.gameserver.templates;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.geometry.Polygon;
 import l2f.gameserver.ai.CharacterAI;
 import l2f.gameserver.ai.DoorAI;
 import l2f.gameserver.model.instances.DoorInstance;
 import l2f.gameserver.scripts.Scripts;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 public class DoorTemplate extends CharTemplate
 {

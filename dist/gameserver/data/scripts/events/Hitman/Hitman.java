@@ -11,7 +11,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.listener.actor.OnDeathListener;
@@ -34,7 +34,7 @@ import npc.model.events.HitmanInstance.Order;
 /**
  * Created with Eclipse + JRebel
  * Developer: Prims 
- * Date: 24.11.13 Time: 13:41
+ * @update 19:47/17.02.2018
  */
 public class Hitman extends Functions implements ScriptFile, OnDeathListener, OnPlayerExitListener
 {

@@ -1,5 +1,7 @@
 package l2f.gameserver.model.instances.residences.clanhall;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
@@ -10,13 +12,8 @@ import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 
-import org.apache.commons.lang3.StringUtils;
-
 public abstract class CTBBossInstance extends MonsterInstance
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public static final Skill SKILL = SkillTable.getInstance().getInfo(5456, 1);
 	private CTBTeamObject _matchTeamObject;

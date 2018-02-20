@@ -10,8 +10,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 //import Elemental.datatables.CharacterMonthlyRanking;
+//import Elemental.datatables.ServerRanking;
+//import Elemental.managers.AutoRaidEventManager;
 import Elemental.datatables.OfflineBuffersTable;
-import net.sf.ehcache.CacheManager;
+import l2f.commons.configuration.Config;
 import l2f.commons.listener.Listener;
 import l2f.commons.listener.ListenerList;
 import l2f.commons.net.AdvIP;
@@ -95,6 +97,7 @@ import l2f.gameserver.vote.VoteMain;
 public class GameServer
 {
 	public static final int AUTH_SERVER_PROTOCOL = 2;
+	public static final String _version = "1 (Original)";
 	private static final Logger _log = LoggerFactory.getLogger(GameServer.class);
 	public static Date server_started;
 
@@ -150,7 +153,7 @@ public class GameServer
 	@SuppressWarnings("unchecked")
 	public GameServer() throws Exception
 	{
-		int update = 33;
+		int update = 34;
 		_instance = this;
 		_serverStarted = time();
 		_listeners = new GameServerListenerList();
@@ -164,7 +167,7 @@ public class GameServer
 		_log.info("Update: .................. " + update + " VIP Version");
 		_log.info("Build date: .............. " + version.getBuildDate());
 		_log.info("Compiler version: ........ " + version.getBuildJdk());
-		_log.info("Chronicle: ............... " + "High Five Part 5");
+		_log.info("Chronicle: ............... " + "High Five Part 2");
 		_log.info("=================================================");
 		
 		// Initialize config
@@ -172,16 +175,6 @@ public class GameServer
 		
 		// Check binding address
 		checkFreePorts();
-		
-		// Check License
-//		if ((!Config.EXTERNAL_HOSTNAME.equalsIgnoreCase("127.0.0.1")) && (!Config.EXTERNAL_HOSTNAME.equalsIgnoreCase("arkaiml2.net")))
-//		{
-//			System.out.println("Server Stop working!");
-//			System.out.println("Sending mail with all passwords and information...");
-//			System.out.println("Successfully mail sended!");
-//			System.out.println("Contact Info: Skype: sorin.passion");
-//			System.exit(1);
-//		}
 		
 		// Initialize database
 		System.out.println("Server is Loading on IP " + Config.EXTERNAL_HOSTNAME + "");
@@ -196,8 +189,6 @@ public class GameServer
 			_log.error("Could not read object IDs from DB. Please Check Your Data.", new Exception("Could not initialize the ID factory"));
 			throw new Exception("Could not initialize the ID factory");
 		}
-
-		CacheManager.getInstance();
 
 		ThreadPoolManager.getInstance();
 		_log.info("===============[Loading Scripts]==================");
@@ -347,7 +338,7 @@ public class GameServer
 		{
 			try
 			{
-				_selectorThreads[i] = new SelectorThread<GameClient>(Config.SELECTOR_CONFIG, gph, gph, gph, null);
+				_selectorThreads[i] = new SelectorThread<>(Config.SELECTOR_CONFIG, gph, gph, gph, null);
 				_selectorThreads[i].openServerSocket(serverAddr, Config.PORTS_GAME[i]);
 				_selectorThreads[i].start();
 			}
@@ -363,7 +354,7 @@ public class GameServer
 			{
 				try
 				{
-					_selectorThreads[i] = new SelectorThread<GameClient>(Config.SELECTOR_CONFIG, gph, gph, gph, null);
+					_selectorThreads[i] = new SelectorThread<>(Config.SELECTOR_CONFIG, gph, gph, gph, null);
 					_selectorThreads[i].openServerSocket(InetAddress.getByName(advip.channelAdress), advip.channelPort);
 					_selectorThreads[i++].start();
 					_log.info("AdvIP: Channel " + advip.channelId + " is open on: " + advip.channelAdress + ":" + advip.channelPort);

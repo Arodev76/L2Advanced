@@ -1,5 +1,7 @@
 package l2f.gameserver.utils;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.idfactory.IdFactory;
 import l2f.gameserver.instancemanager.CursedWeaponsManager;
@@ -20,8 +22,6 @@ import l2f.gameserver.tables.PetDataTable;
 import l2f.gameserver.templates.item.ArmorTemplate.ArmorType;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public final class ItemFunctions
 {

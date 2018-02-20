@@ -1,5 +1,8 @@
 package l2f.gameserver.utils;
 
+import java.io.Serializable;
+
+import org.dom4j.Element;
 
 import l2f.commons.geometry.Point3D;
 import l2f.commons.util.Rnd;
@@ -8,15 +11,9 @@ import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.GameObject;
 import l2f.gameserver.model.World;
 import l2f.gameserver.templates.spawn.SpawnRange;
-import org.dom4j.Element;
-
-import java.io.Serializable;
 
 public class Location extends Point3D implements SpawnRange, Serializable
 {
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = 1L;
 	public int h;
 

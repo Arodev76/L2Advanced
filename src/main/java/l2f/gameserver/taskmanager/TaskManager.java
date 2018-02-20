@@ -22,6 +22,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.database.DatabaseFactory;
@@ -29,9 +32,6 @@ import l2f.gameserver.taskmanager.tasks.SoIStageUpdater;
 import l2f.gameserver.taskmanager.tasks.TaskEndHero;
 import l2f.gameserver.taskmanager.tasks.TaskNevitSystem;
 import l2f.gameserver.taskmanager.tasks.TaskRecom;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class TaskManager
 {

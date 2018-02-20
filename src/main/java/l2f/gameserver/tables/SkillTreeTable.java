@@ -5,15 +5,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.SkillLearn;
 import l2f.gameserver.model.base.AcquireType;
 import l2f.gameserver.model.base.EnchantSkillLearn;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class SkillTreeTable
 {

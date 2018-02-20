@@ -23,7 +23,7 @@ import l2f.gameserver.utils.ItemFunctions;
 
 /**
  * @author VISTALL
- * @date 13:49/11.05.2011
+ * @update 20:57/17.02.2018
  * 750
  */
 public class RainbowYetiInstance extends NpcInstance

@@ -1,12 +1,12 @@
 package l2f.gameserver.model.items;
 
+import java.util.Collection;
+
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.PetInstance;
 import l2f.gameserver.model.items.ItemInstance.ItemLocation;
 import l2f.gameserver.network.serverpackets.PetInventoryUpdate;
 import l2f.gameserver.utils.ItemFunctions;
-
-import java.util.Collection;
 
 public class PetInventory extends Inventory
 {

@@ -1,14 +1,22 @@
 package l2f.gameserver.model.entity.events.objects;
 
+import java.util.concurrent.ScheduledFuture;
+
+import org.apache.commons.lang3.ArrayUtils;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.idfactory.IdFactory;
 import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
-import l2f.gameserver.model.*;
+import l2f.gameserver.model.Creature;
+import l2f.gameserver.model.GameObjectsStorage;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.model.Skill;
+import l2f.gameserver.model.Zone;
 import l2f.gameserver.model.Zone.ZoneType;
 import l2f.gameserver.model.entity.events.EventType;
 import l2f.gameserver.model.entity.events.GlobalEvent;
@@ -26,9 +34,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-import org.apache.commons.lang3.ArrayUtils;
-
-import java.util.concurrent.ScheduledFuture;
 
 public class TerritoryWardObject implements SpawnableObject, FlagItemAttachment
 {

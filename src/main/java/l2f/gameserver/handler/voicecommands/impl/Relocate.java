@@ -2,7 +2,7 @@ package l2f.gameserver.handler.voicecommands.impl;
 
 import java.util.List;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2f.gameserver.model.Player;

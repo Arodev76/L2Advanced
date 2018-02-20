@@ -4,17 +4,17 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.commons.net.utils.Net;
-import l2f.commons.net.utils.NetList;
-import l2f.loginserver.database.L2DatabaseFactory;
-
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.commons.dbutils.DbUtils;
+import l2f.commons.net.utils.Net;
+import l2f.commons.net.utils.NetList;
+import l2f.loginserver.database.L2DatabaseFactory;
 
 public class Account
 {
@@ -37,7 +37,7 @@ public class Account
 	private int lastAccess;
 	private int lastServer;
 
-	private IntObjectMap<Pair<Integer, int[]>> _serversInfo = new HashIntObjectMap<Pair<Integer, int[]>>(2);
+	private IntObjectMap<Pair<Integer, int[]>> _serversInfo = new HashIntObjectMap<>(2);
 
 	public Account(String login)
 	{
@@ -166,7 +166,7 @@ public class Account
 
 	public void addAccountInfo(int serverId, int size, int[] deleteChars)
 	{
-		_serversInfo.put(serverId, new ImmutablePair<Integer, int[]>(size, deleteChars));
+		_serversInfo.put(serverId, new ImmutablePair<>(size, deleteChars));
 	}
 
 	public Pair<Integer, int[]> getAccountInfo(int serverId)

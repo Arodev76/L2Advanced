@@ -6,8 +6,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.commons.configuration.Config;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;
 import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;

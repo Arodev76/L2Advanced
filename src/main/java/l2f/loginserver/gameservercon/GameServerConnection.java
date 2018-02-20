@@ -13,13 +13,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.loginserver.Config;
 import l2f.loginserver.ThreadPoolManager;
 import l2f.loginserver.gameservercon.lspackets.PingRequest;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class GameServerConnection
 {

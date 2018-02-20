@@ -16,16 +16,16 @@ import java.util.TreeMap;
 import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.quest.Quest;
-
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.ClassUtils;
 import org.apache.commons.lang3.reflect.FieldUtils;
 import org.apache.commons.lang3.reflect.MethodUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.model.quest.Quest;
 
 public class Scripts
 {
@@ -86,7 +86,7 @@ public class Scripts
 				result = true;
 			} catch (ClassNotFoundException | IOException e)
 			{
-				_log.error("Fail to load l2f-scripts.jar!", e);
+				_log.error("Fail to load l2ro-scripts.jar!", e);
 				jarClasses.clear();
 			}
 		}

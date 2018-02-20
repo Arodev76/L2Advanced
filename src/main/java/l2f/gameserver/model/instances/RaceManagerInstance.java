@@ -1,5 +1,10 @@
 package l2f.gameserver.model.instances;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.cache.Msg;
@@ -7,15 +12,15 @@ import l2f.gameserver.instancemanager.ServerVariables;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.MonsterRace;
 import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.network.serverpackets.*;
+import l2f.gameserver.network.serverpackets.DeleteObject;
+import l2f.gameserver.network.serverpackets.L2GameServerPacket;
+import l2f.gameserver.network.serverpackets.MonRaceInfo;
+import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2f.gameserver.network.serverpackets.PlaySound;
+import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 public class RaceManagerInstance extends NpcInstance
 {

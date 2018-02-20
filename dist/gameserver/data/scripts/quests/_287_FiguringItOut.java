@@ -11,7 +11,6 @@ import l2f.gameserver.scripts.ScriptFile;
 /**
  * @author pchayka
  */
-
 public class _287_FiguringItOut extends Quest implements ScriptFile
 {
 	private static final int Laki = 32742;

@@ -1,9 +1,23 @@
 package l2f.gameserver.model.entity.residence;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
+
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.CTreeIntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.dbutils.DbUtils;
 import l2f.commons.math.SafeMath;
-import l2f.gameserver.Config;
 import l2f.gameserver.dao.CastleDAO;
 import l2f.gameserver.dao.CastleHiredGuardDAO;
 import l2f.gameserver.dao.ClanDataDAO;
@@ -25,26 +39,10 @@ import l2f.gameserver.templates.manor.CropProcure;
 import l2f.gameserver.templates.manor.SeedProduction;
 import l2f.gameserver.utils.GameStats;
 import l2f.gameserver.utils.Log;
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.CTreeIntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 @SuppressWarnings("rawtypes")
 public class Castle extends Residence
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private static final Logger _log = LoggerFactory.getLogger(Castle.class);

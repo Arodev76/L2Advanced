@@ -3,6 +3,9 @@ package l2f.gameserver.model.items;
 import java.io.Serializable;
 import java.util.Comparator;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.listener.Listener;
 import l2f.commons.listener.ListenerList;
@@ -15,9 +18,6 @@ import l2f.gameserver.model.items.listeners.StatsListener;
 import l2f.gameserver.templates.item.EtcItemTemplate.EtcItemType;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public abstract class Inventory extends ItemContainer
 {

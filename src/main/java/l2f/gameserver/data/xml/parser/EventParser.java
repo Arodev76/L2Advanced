@@ -13,8 +13,8 @@ import java.util.Set;
 import org.dom4j.Element;
 
 import l2f.commons.collections.MultiValueSet;
+import l2f.commons.configuration.Config;
 import l2f.commons.data.xml.AbstractDirParser;
-import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.model.entity.events.EventAction;
 import l2f.gameserver.model.entity.events.EventType;
@@ -51,7 +51,7 @@ import l2f.gameserver.utils.Location;
 
 /**
  * @author VISTALL
- * @date 12:56/10.12.2010
+ * @update 23:56/17.02.2018
  */
 public final class EventParser extends AbstractDirParser<EventHolder>
 {

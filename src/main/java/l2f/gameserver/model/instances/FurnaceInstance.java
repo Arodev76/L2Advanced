@@ -1,19 +1,19 @@
 package l2f.gameserver.model.instances;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.idfactory.IdFactory;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * @author Byldas
- * @date 26.09.11  
+ * @update 15:54/18.02.2018
  * @Instance for Mobs Furnace is MOS
  */
-
 public class FurnaceInstance extends NpcInstance
 {
 	private static final Logger _log = LoggerFactory.getLogger(FurnaceInstance.class);

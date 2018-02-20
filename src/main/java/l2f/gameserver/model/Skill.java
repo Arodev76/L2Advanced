@@ -10,11 +10,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.math.NumberUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.geometry.Polygon;
 import l2f.commons.lang.ArrayUtils;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.geodata.GeoEngine;
@@ -121,10 +125,6 @@ import l2f.gameserver.stats.funcs.FuncTemplate;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.PositionUtils;
-
-import org.apache.commons.lang3.math.NumberUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public abstract class Skill extends StatTemplate implements Cloneable
 {

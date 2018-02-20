@@ -4,8 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.gameserver.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.SpawnHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.SimpleSpawner;
@@ -14,9 +16,6 @@ import l2f.gameserver.templates.spawn.PeriodOfDay;
 import l2f.gameserver.templates.spawn.SpawnNpcInfo;
 import l2f.gameserver.templates.spawn.SpawnTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class SpawnTable
 {

@@ -2,7 +2,7 @@ package quests;
 
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.base.Race;
 import l2f.gameserver.model.instances.NpcInstance;

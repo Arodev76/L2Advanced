@@ -2,14 +2,14 @@ package l2f.gameserver.skills.skillclasses;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.templates.StatsSet;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Default extends Skill
 {

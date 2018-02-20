@@ -2,6 +2,8 @@ package l2f.gameserver.model.items;
 
 import java.util.Collection;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.collections.CollectionUtils;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.threading.RunnableImpl;
@@ -24,8 +26,6 @@ import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.templates.item.EtcItemTemplate.EtcItemType;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class PcInventory extends Inventory
 {

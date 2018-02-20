@@ -1,13 +1,14 @@
 package l2f.gameserver.utils;
 
-import l2f.gameserver.Config;
+import java.io.File;
+import java.io.IOException;
+import java.util.regex.Pattern;
+
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.regex.Pattern;
+import l2f.commons.configuration.Config;
 
 public class Strings
 {

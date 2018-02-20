@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.GameTimeController;
 import l2f.gameserver.handler.usercommands.IUserCommandHandler;
 import l2f.gameserver.model.Player;

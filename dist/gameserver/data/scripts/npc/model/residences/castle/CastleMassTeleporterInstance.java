@@ -19,7 +19,7 @@ import l2f.gameserver.utils.Location;
 
 /**
  * @author VISTALL
- * @date 17:46/12.07.2011
+ * @update 20:46/17.02.2018
  */
 public class CastleMassTeleporterInstance extends NpcInstance
 {

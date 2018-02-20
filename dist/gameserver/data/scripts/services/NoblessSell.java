@@ -1,6 +1,6 @@
 package services;
 
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.instancemanager.QuestManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.base.Race;

@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javolution.text.TextBuilder;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 
 public class StringUtils
 {

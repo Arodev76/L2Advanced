@@ -1,9 +1,9 @@
 package l2f.gameserver.network.serverpackets;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.model.pledge.Alliance;
 import l2f.gameserver.model.pledge.Clan;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class PledgeShowInfoUpdate extends L2GameServerPacket
 {

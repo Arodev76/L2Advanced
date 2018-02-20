@@ -1,7 +1,7 @@
 package l2f.gameserver.network.loginservercon.gspackets;
 
 import l2f.commons.net.AdvIP;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.GameServer;
 import l2f.gameserver.network.loginservercon.SendablePacket;
 

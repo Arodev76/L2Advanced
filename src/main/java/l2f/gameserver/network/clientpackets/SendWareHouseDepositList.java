@@ -1,7 +1,9 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import l2f.commons.configuration.Config;
 import l2f.commons.math.SafeMath;
-import l2f.gameserver.Config;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.items.ItemInstance;
@@ -10,7 +12,6 @@ import l2f.gameserver.model.items.Warehouse;
 import l2f.gameserver.model.items.Warehouse.WarehouseType;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.ItemTemplate;
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * Format: cdb, b - array of (dd)

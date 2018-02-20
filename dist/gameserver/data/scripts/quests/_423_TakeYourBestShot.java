@@ -12,7 +12,6 @@ import l2f.gameserver.utils.Location;
 /**
  * @author pchayka
  */
-
 public class _423_TakeYourBestShot extends Quest implements ScriptFile
 {
 	private static final int Johnny = 32744;

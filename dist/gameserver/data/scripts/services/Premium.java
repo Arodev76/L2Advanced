@@ -4,9 +4,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import l2f.commons.configuration.Config;
 import l2f.commons.lang.reference.HardReference;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.cache.HtmCache;
 import l2f.gameserver.dao.AccountBonusDAO;
 import l2f.gameserver.data.xml.holder.PremiumHolder;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;

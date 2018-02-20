@@ -7,7 +7,7 @@ import org.dom4j.Element;
 
 import l2f.commons.data.xml.AbstractDirParser;
 import l2f.commons.geometry.Polygon;
-import l2f.gameserver.Config;
+import l2f.commons.configuration.Config;
 import l2f.gameserver.data.xml.holder.DoorHolder;
 import l2f.gameserver.templates.DoorTemplate;
 import l2f.gameserver.templates.StatsSet;
