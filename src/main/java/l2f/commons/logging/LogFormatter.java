@@ -9,7 +9,7 @@ public class LogFormatter extends SimpleFormatter
 	String newline = System.getProperty("line.separator");
 	
 	@Override
-	public String format(LogRecord record)
+	public synchronized String format(LogRecord record)
 	{
 		Calendar date = Calendar.getInstance();
 		date.setTimeInMillis(record.getMillis());
@@ -25,7 +25,7 @@ public class LogFormatter extends SimpleFormatter
 		return text;
 	}
 	
-	private String getDate(Calendar c, int i)
+	private static String getDate(Calendar c, int i)
 	{
 		int intResult = c.get(i);
 		if (i == Calendar.MONTH)

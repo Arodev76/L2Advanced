@@ -24,7 +24,7 @@ import org.apache.commons.pool.impl.GenericObjectPool;
 public class BasicDataSource implements DataSource
 {
 	private final PoolingDataSource _source;
-	private final ObjectPool _connectionPool;
+	private final ObjectPool<?> _connectionPool;
 
 	/**
 	 * @param driver The fully qualified Java class name of the JDBC driver to be used.
@@ -39,7 +39,7 @@ public class BasicDataSource implements DataSource
 	 */
 	public BasicDataSource(String driver, String connectURI, String uname, String passwd, int maxActive, int maxIdle, int idleTimeOut, int idleTestPeriod, boolean poolPreparedStatements)
 	{
-		GenericObjectPool connectionPool = new GenericObjectPool(null);
+		GenericObjectPool<?> connectionPool = new GenericObjectPool<>(null);
 
 		connectionPool.setMaxActive(maxActive);
 		connectionPool.setMaxIdle(maxIdle);
@@ -52,9 +52,9 @@ public class BasicDataSource implements DataSource
 		connectionPool.setNumTestsPerEvictionRun(maxActive);
 		connectionPool.setMinEvictableIdleTimeMillis(idleTimeOut * 1000L);
 
-		GenericKeyedObjectPoolFactory statementPoolFactory = null;
+		GenericKeyedObjectPoolFactory<?, ?> statementPoolFactory = null;
 		if (poolPreparedStatements)
-			statementPoolFactory = new GenericKeyedObjectPoolFactory(null, -1, GenericObjectPool.WHEN_EXHAUSTED_FAIL, 0L, 1, GenericKeyedObjectPool.DEFAULT_MAX_TOTAL);
+			statementPoolFactory = new GenericKeyedObjectPoolFactory<>(null, -1, GenericObjectPool.WHEN_EXHAUSTED_FAIL, 0L, 1, GenericKeyedObjectPool.DEFAULT_MAX_TOTAL);
 		
 		final Properties connectionProperties = new Properties();
 		connectionProperties.put("user", uname);

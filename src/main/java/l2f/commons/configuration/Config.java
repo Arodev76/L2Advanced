@@ -6,12 +6,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.lang.reflect.Field;
-import java.security.KeyPairGenerator;
-import java.security.spec.RSAKeyGenParameterSpec;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -23,8 +20,6 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.commons.lang3.reflect.FieldUtils;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
@@ -33,7 +28,6 @@ import org.w3c.dom.Node;
 import gnu.trove.map.hash.TIntIntHashMap;
 import l2f.commons.net.AdvIP;
 import l2f.commons.net.nio.impl.SelectorConfig;
-import l2f.commons.util.Rnd;
 import l2f.gameserver.model.actor.instances.player.Bonus;
 import l2f.gameserver.model.base.Experience;
 import l2f.gameserver.model.base.PlayerAccess;
@@ -41,7 +35,6 @@ import l2f.gameserver.network.loginservercon.ServerType;
 import l2f.gameserver.utils.AddonsConfig;
 import l2f.gameserver.utils.GArray;
 import l2f.gameserver.utils.Location;
-import l2f.loginserver.crypt.PasswordHash;
 
 public class Config
 {
@@ -149,7 +142,7 @@ public class Config
 	public static int[] PORTS_GAME;
 	public static String GAMESERVER_HOSTNAME;
 	public static boolean ADVIPSYSTEM;
-	public static List<AdvIP> GAMEIPS = new ArrayList<AdvIP>();
+	public static List<AdvIP> GAMEIPS = new ArrayList<>();
 	public static String DATABASE_DRIVER;
 	public static int DATABASE_MAX_CONNECTIONS;
 	public static int DATABASE_MAX_IDLE_TIMEOUT;
@@ -334,7 +327,7 @@ public class Config
 	public static int ANCIENT_HERB_SPAWN_COUNT;
 	public static int ANCIENT_HERB_RESPAWN_TIME;
 	public static int ANCIENT_HERB_DESPAWN_TIME;
-	public static List<Location> HEIN_FIELDS_LOCATIONS = new ArrayList<Location>();
+	public static List<Location> HEIN_FIELDS_LOCATIONS = new ArrayList<>();
 
 	public static int DRAGONKNIGHT_2ND_D_CHANCE;
 	public static int DRAGONKNIGHT_3ND_D_CHANCE;
@@ -388,12 +381,12 @@ public class Config
 	public static int NpcBuffer_PriceScheme;
 	public static int NpcBuffer_MaxScheme;
 	public static boolean SCHEME_ALLOW_FLAG;
-	public static List<int[]> NpcBuffer_BuffSetMage = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetFighter = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetDagger = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetSupport = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetTank = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetArcher = new ArrayList<int[]>();
+	public static List<int[]> NpcBuffer_BuffSetMage = new ArrayList<>();
+	public static List<int[]> NpcBuffer_BuffSetFighter = new ArrayList<>();
+	public static List<int[]> NpcBuffer_BuffSetDagger = new ArrayList<>();
+	public static List<int[]> NpcBuffer_BuffSetSupport = new ArrayList<>();
+	public static List<int[]> NpcBuffer_BuffSetTank = new ArrayList<>();
+	public static List<int[]> NpcBuffer_BuffSetArcher = new ArrayList<>();
 
 	/** Community Board PVP */
 	public static boolean ALLOW_BBS_WAREHOUSE;
@@ -1091,7 +1084,7 @@ public class Config
 	/** Logging Chat Window */
 	public static boolean LOG_CHAT;
 
-	public static Map<Integer, PlayerAccess> gmlist = new HashMap<Integer, PlayerAccess>();
+	public static Map<Integer, PlayerAccess> gmlist = new HashMap<>();
 
 
 
@@ -1258,7 +1251,7 @@ public class Config
 
 	public static String CLASS_MASTERS_PRICE;
 	public static int CLASS_MASTERS_PRICE_ITEM;
-	public static List<Integer> ALLOW_CLASS_MASTERS_LIST = new ArrayList<Integer>();
+	public static List<Integer> ALLOW_CLASS_MASTERS_LIST = new ArrayList<>();
 	public static int[] CLASS_MASTERS_PRICE_LIST = new int[4];
 	public static boolean ALLOW_EVENT_GATEKEEPER;
 
@@ -1300,7 +1293,7 @@ public class Config
 	public static boolean DROP_ITEMS_ON_DIE;
 	public static boolean DROP_ITEMS_AUGMENTED;
 
-	public static List<Integer> KARMA_LIST_NONDROPPABLE_ITEMS = new ArrayList<Integer>();
+	public static List<Integer> KARMA_LIST_NONDROPPABLE_ITEMS = new ArrayList<>();
 
 	public static int PVP_TIME;
 
@@ -1321,16 +1314,16 @@ public class Config
 
 	public static boolean USE_ALT_ENCHANT;
 	public static boolean OLF_TSHIRT_CUSTOM_ENABLED;
-	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_CRYSTAL = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_BLESSED = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_CRYSTAL = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_BLESSED = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_CRYSTAL = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_BLESSED = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_OLF_TSHIRT_CHANCES = new ArrayList<Integer>();
+	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_CRYSTAL = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_BLESSED = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_CRYSTAL = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_BLESSED = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_CRYSTAL = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_BLESSED = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_OLF_TSHIRT_CHANCES = new ArrayList<>();
 	public static int ENCHANT_MAX;
 	public static int ENCHANT_MAX_WEAPON;
 	public static int ENCHANT_MAX_ARMOR;
@@ -1542,10 +1535,10 @@ public class Config
 	public static int COMMUNITYBOARD_BUFF_SONGDANCE_TIME;
 	public static int COMMUNITYBOARD_BUFF_PICE;
 	public static int COMMUNITYBOARD_BUFF_SAVE_PICE;
-	public static List<Integer> COMMUNITYBOARD_BUFF_ALLOW = new ArrayList<Integer>();
-	public static List<Integer> COMMUNITI_LIST_MAGE_SUPPORT = new ArrayList<Integer>();
-	public static List<Integer> COMMUNITI_LIST_FIGHTER_SUPPORT = new ArrayList<Integer>();
-	public static List<String> COMMUNITYBOARD_MULTISELL_ALLOW = new ArrayList<String>();
+	public static List<Integer> COMMUNITYBOARD_BUFF_ALLOW = new ArrayList<>();
+	public static List<Integer> COMMUNITI_LIST_MAGE_SUPPORT = new ArrayList<>();
+	public static List<Integer> COMMUNITI_LIST_FIGHTER_SUPPORT = new ArrayList<>();
+	public static List<String> COMMUNITYBOARD_MULTISELL_ALLOW = new ArrayList<>();
 	public static String BBS_DEFAULT;
 	public static String BBS_HOME_DIR;
 	public static boolean COMMUNITYBOARD_TELEPORT_ENABLED;
@@ -1891,7 +1884,7 @@ public class Config
 	public static int MIN_ONLINE_TIME;
 	public static int MIN_REFF_LEVEL;
 	public static double REF_PERCENT_GIVE;
-	public static List<Integer> ITEM_LIST = new ArrayList<Integer>();
+	public static List<Integer> ITEM_LIST = new ArrayList<>();
 
 	// Bot Report
 	public static boolean ENABLE_AUTO_HUNTING_REPORT;
@@ -2033,15 +2026,15 @@ public class Config
 	public static boolean COMMUNITYBOARD_ENCHANT_ATRIBUTE_PVP;
 
 	public static boolean USE_ALT_ENCHANT_PA;
-	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_PA = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_BLESSED_PA = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_CRYSTAL_PA = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_PA = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_CRYSTAL_PA = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_BLESSED_PA = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_PA = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA = new ArrayList<Integer>();
-	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_BLESSED_PA = new ArrayList<Integer>();
+	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_PA = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_BLESSED_PA = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_CRYSTAL_PA = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_PA = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_CRYSTAL_PA = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_BLESSED_PA = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_PA = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA = new ArrayList<>();
+	public static ArrayList<Integer> ENCHANT_ARMOR_JEWELRY_BLESSED_PA = new ArrayList<>();
 
 	public static int EVENT_LastHeroItemID;
 	public static double EVENT_LastHeroItemCOUNT;
@@ -2237,7 +2230,7 @@ public class Config
 		CHAT_RANGE = chatSettings.getProperty("ChatRange", 1250);
 		SHOUT_OFFSET = chatSettings.getProperty("ShoutOffset", 0);
 
-		TRADE_WORDS = new GArray<String>();
+		TRADE_WORDS = new GArray<>();
 
 		String T_WORLD = chatSettings.getProperty("TradeWords", "trade,sell,selling,buy,exchange,barter,Ð’Ð¢Ð¢,Ð’Ð¢S,WTB,WTB,WTT,WTS");
 		String[] T_WORLDS = T_WORLD.split(",", -1);
@@ -3894,7 +3887,7 @@ public class Config
 		DROPCHANCE_EQUIPMENT = pvpSettings.getProperty("ChanceOfDropEquippment", 17);
 		DROPCHANCE_ITEM = pvpSettings.getProperty("ChanceOfDropOther", 80);
 
-		KARMA_LIST_NONDROPPABLE_ITEMS = new ArrayList<Integer>();
+		KARMA_LIST_NONDROPPABLE_ITEMS = new ArrayList<>();
 		for (int id : pvpSettings.getProperty("ListOfNonDroppableItems", new int[]
 		{
 			57, 1147, 425, 1146, 461, 10, 2368, 7, 6, 2370, 2369, 3500, 3501, 3502, 4422,
